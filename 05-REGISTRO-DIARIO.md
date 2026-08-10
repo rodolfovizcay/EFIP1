@@ -1,176 +1,248 @@
-# Registro diario
+# Registro diario — EFIP I
 
-## Plantilla
+**Actualizado al cierre del Día 5 — 10/08/2026**
 
-### AAAA-MM-DD — Día X
-
-**Tiempo planificado:**  
-**Tiempo real:**  
-**Materias trabajadas:**  
-
-#### Objetivos
-
-- 
-
-#### Actividades realizadas
-
-- 
-
-#### Resultado de la evaluación
-
-| Materia o tema | Nota | Estado |
-|---|---:|---|
-|  |  |  |
-
-#### Aciertos
-
-- 
-
-#### Errores
-
-- 
-
-#### Tareas de recuperación
-
-- 
-
-#### Resumen generado
-
-- Archivo:
-
-#### Próxima jornada
-
-- 
+Este archivo funciona como índice acumulado de jornadas. El detalle completo se conserva en `EVALUACIONES/`, `RESUMENES/`, archivos diarios de estado y matrices.
 
 ---
 
-## 2026-08-05 — Día 1
+## 2026-08-05 — Día 1 — Diagnóstico general
 
-**Tiempo planificado:** 2 horas  
-**Tiempo real:** pendiente  
-**Tema:** Organización y diagnóstico general  
-
-### Objetivos
-
-- Ordenar el sistema de archivos.
-- Confirmar las fuentes.
-- Medir el punto de partida en las cinco materias.
-- Definir prioridades reales.
-- Crear la primera línea de base.
+**Duración planificada:** 2 h  
+**Tiempo real:** no registrado con precisión  
+**Materias:** las cinco materias EFIP I
 
 ### Resultado
 
-Pendiente de completar el diagnóstico inicial.
+| Materia | Nota diagnóstica |
+|---|---:|
+| Análisis y Diseño | 4,75/10 |
+| POO | 5,5/10 |
+| Algoritmos y Estructuras | 7,0/10 |
+| Base de Datos | 6,0/10 |
+| Comunicaciones | 4,75/10 |
+| **Promedio** | **5,6/10** |
 
+Situación integradora: **aprox. 5,5/10**.
 
-### Avance parcial — Bloque 1: Análisis y Diseño
+### Conclusión
 
-| Tema | Nota | Estado |
+La capacidad práctica era superior a la precisión terminológica. Prioridades iniciales: Análisis y Diseño, Comunicaciones, POO, Base de Datos y Estructuras.
+
+### Evidencia
+
+- `EVALUACIONES/2026-08-05_DIAGNOSTICO-INICIAL.md`
+- `EVALUACIONES/2026-08-05_RESPUESTAS-DIAGNOSTICO.md`
+- `RESUMENES/2026-08-05_ANALISIS-COMPLETO-DIA-01.md`
+- `RESUMENES/2026-08-05_RESUMEN-DIA-01.md`
+
+---
+
+## 2026-08-06 — Día 2 — Análisis y Diseño + POO
+
+**Estado:** CERRADO Y APROBADO
+
+### Resultado
+
+- Evaluación escrita: **8,1/10**.
+- Análisis y Diseño escrito aproximado: **8,3/10**.
+- POO escrito aproximado: **7,9/10**.
+- Defensa oral: **7,8/10**.
+- Resultado global: **8,0/10**.
+
+### Avances
+
+- modelos y metodología;
+- selección de proceso;
+- núcleo del PUD;
+- clase y objeto;
+- estado;
+- encapsulamiento;
+- constructor.
+
+### Pendientes detectados
+
+- Construcción/Transición;
+- iteración/incremento;
+- identidad;
+- sobrecarga/sobrescritura;
+- sintaxis Java.
+
+### Evidencia
+
+- `05-REGISTRO-DIARIO-DIA-02.md`
+- `04-MATRIZ-DE-PROGRESO-ACTUALIZACION-DIA-02.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-02.md`
+- `EVALUACIONES/2026-08-06_RESULTADOS-DIA-02.md`
+- `RESUMENES/2026-08-06_CIERRE-DIA-02.md`
+
+---
+
+## 2026-08-07 — Día 3 — Estructuras básicas + Modelo relacional
+
+**Estado:** CERRADO Y APROBADO
+
+### Resultado
+
+- Evaluación escrita: **8,6/10**.
+- Defensa oral final: **8,0/10**.
+- Resultado global aproximado: **8,3/10**.
+
+### Avances
+
+- TDA introducido;
+- estructuras estáticas/dinámicas;
+- arreglo, capacidad y longitud;
+- nodo y lista simplemente enlazada;
+- inserción al inicio;
+- relación, tupla, atributo, dominio;
+- grado, cardinalidad, PK y FK.
+
+### Recuperaciones
+
+- Construcción/Transición;
+- iteración/incremento;
+- estado/comportamiento;
+- inserción enlazada;
+- terminología relacional básica.
+
+### Pendientes detectados
+
+- TDA con interfaz independiente de implementación;
+- complejidades;
+- superclave/clave candidata;
+- precisión de FK;
+- sobrecarga/sobrescritura.
+
+### Evidencia
+
+- `05-REGISTRO-DIARIO-DIA-03.md`
+- `04-MATRIZ-DE-PROGRESO-ACTUALIZACION-DIA-03.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-03.md`
+- `EVALUACIONES/2026-08-07_RESULTADOS-DIA-03.md`
+- `RESUMENES/2026-08-07_CIERRE-DIA-03.md`
+
+---
+
+## 2026-08-08 — Día 4 — Comunicaciones
+
+**Estado:** CERRADO Y APROBADO  
+**Modalidad:** exclusivamente escrita
+
+### Resultado
+
+- Puntaje bruto: **5,16/6**.
+- Nota normalizada: **8,6/10**.
+
+### Avances
+
+- sistema de comunicaciones;
+- protocolo, sintaxis, semántica y temporización;
+- siete capas OSI y funciones;
+- OSI/TCP-IP;
+- encapsulamiento/desencapsulamiento;
+- datos/segmentos/paquetes/tramas/bits;
+- MAC/IP;
+- switch/router.
+
+### Pendientes detectados
+
+- TCP/IP como arquitectura/pila;
+- PDU;
+- puerto;
+- funciones de capa vs. dispositivo;
+- síncrona/asíncrona;
+- contenidos de comunicaciones todavía no estudiados.
+
+### Evidencia
+
+- `05-REGISTRO-DIARIO-DIA-04.md`
+- `04-MATRIZ-DE-PROGRESO-ACTUALIZACION-DIA-04.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-04.md`
+- `EVALUACIONES/2026-08-08_RESULTADOS-DIA-04.md`
+- `RESUMENES/2026-08-08_CIERRE-DIA-04.md`
+
+---
+
+## 2026-08-10 — Día 5 — PUD + POO + Modelo relacional
+
+**Etapa:** primera jornada intensiva de vacaciones  
+**Duración planificada:** 5,5 h núcleo; bloques detallados = 6 h  
+**Tiempo real:** no registrado con precisión  
+**Estado:** **CERRADO Y APROBADO**
+
+### Objetivos
+
+- consolidar modelos, metodología y PUD;
+- aplicar fundamentos POO y Java breve;
+- consolidar modelo relacional y claves;
+- recuperar errores de jornadas anteriores;
+- realizar evaluación escrita/integrada y defensa oral.
+
+### Actividades realizadas
+
+- recuperación inicial sin apuntes;
+- aplicación de PUD a `Programar Orden de Trabajo`;
+- clase/objeto, estado, comportamiento, identidad y encapsulamiento;
+- escritura de clase Java `OrdenTrabajo`;
+- relación, tupla, atributo, dominio, grado y cardinalidad;
+- superclave, candidata, primaria y foránea;
+- relación `SECTOR 1:N ORDEN_TRABAJO`;
+- recuperación TDA, sobrecarga/sobrescritura, PDU, puerto y síncrona/asíncrona;
+- evaluación final;
+- defensa oral de cinco preguntas.
+
+### Resultado
+
+| Instancia | Nota | Estado |
 |---|---:|---|
-| PUD | 1,75/3 | En aprendizaje |
-| Requerimientos | 1,5/2 | Comprendido, falta justificar |
-| `include` / `extend` | 1,25/2 | En aprendizaje |
-| Relaciones entre clases | 0,25/3 | Requiere recuperación |
+| Evaluación escrita/integrada | **9,0/10** | Aprobado |
+| Defensa oral | **9,0/10** | Aprobado |
+| **Global Día 5** | **9,0/10** | **APROBADO** |
 
-**Nota provisional de la materia:** 4,75/10.
+### Aciertos
 
-**Fortalezas:** clasificación RF/RNF; comprensión general de casos de uso; experiencia práctica aplicable.
+- PUD aplicado a un caso real y defendido oralmente.
+- Identidad diferenciada de ID.
+- Encapsulamiento justificado desde reglas del dominio.
+- Clave candidata fijada como superclave mínima.
+- FK y repetición en relación 1:N comprendidas.
+- Sobrecarga/sobrescritura recuperada.
+- Puerto recuperado.
 
-**Brechas:** arquitectura del software; asociación/agregación/composición; precisión terminológica del PUD.
+### Errores/ajustes
 
+- constructor Java escrito inicialmente como `public void contrictor(...)`;
+- dominio confundido inicialmente con valores observados;
+- superclave formulada inicialmente como combinación obligatoria;
+- FK considerada inicialmente no repetible;
+- PDU confundida primero con PUD y luego expandida incorrectamente;
+- síncrona/asíncrona volvió a confundirse inicialmente con retransmisión;
+- fases del PUD confundidas parcialmente con flujos de trabajo durante la defensa.
 
-### Avance parcial — Bloque 2: Programación Orientada a Objetos
+### Recuperaciones al cierre
 
-| Tema | Nota | Estado |
-|---|---:|---|
-| Fundamentos: clase, objeto, estado, comportamiento e identidad | 1,25/2 | En aprendizaje |
-| Sobrecarga y sobrescritura | 0/2 | No iniciado |
-| Clase abstracta e interfaz | 2/3 | Comprendido |
-| Lectura de Java y polimorfismo | 2,25/3 | Comprendido, falta terminología |
+- Construcción/Transición: consolidado.
+- Iteración/incremento: aplicado/defendido.
+- Estado/comportamiento: consolidado.
+- Identidad/ID: recuperado y defendido.
+- Sobrecarga/sobrescritura: recuperado.
+- Clave candidata/FK: recuperadas y defendidas.
+- PDU: corregida; pendiente de retención espaciada.
+- Síncrona/asíncrona: corregida; pendiente de retención espaciada.
+- TDA: comprendido; pendiente de automatizar `interfaz`.
 
-**Nota provisional de la materia:** 5,5/10.
+### Evidencia
 
-**Fortalezas:** comprensión práctica de clase abstracta, implementación del método y lectura del resultado.
+- `DIAS/2026-08-10_DIA-05_PUD-POO-MODELO-RELACIONAL.md`
+- `EVALUACIONES/2026-08-10_RESPUESTAS-DIA-05.md`
+- `EVALUACIONES/2026-08-10_RESULTADOS-DIA-05.md`
+- `04-MATRIZ-DE-PROGRESO-ACTUALIZACION-DIA-05.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-05.md`
+- `RESUMENES/2026-08-10_CIERRE-DIA-05.md`
 
-**Brechas:** definición académica de estado e identidad; diferencia entre sobrecarga y sobrescritura; nombrar explícitamente polimorfismo y despacho dinámico.
+### Próxima jornada
 
+**11/08/2026 — Día 6: Requisitos + Pilas + OSI/TCP-IP**.
 
-### Avance parcial — Bloque 3: Algoritmos y Estructuras de Datos
-
-| Tema | Nota | Estado |
-|---|---:|---|
-| Pilas y colas | 2,5/3 | Comprendido |
-| Arreglo y lista enlazada | 2,25/3 | Comprendido con ajustes |
-| Inserción al inicio de lista | 1,5/2 | Aplicado parcialmente |
-| Mergesort/Quicksort e inserción | 0,75/2 | En aprendizaje |
-
-**Nota provisional de la materia:** 7/10.
-
-**Fortalezas:** LIFO/FIFO, nodos, listas simples, idea de divide y vencerás.
-
-**Brechas:** formular casos de uso informáticos; criterios de elección entre arreglo y lista; complejidades exactas; pasos formales de inserción y mezcla/partición.
-
-
-### Avance parcial — Bloque 4: Base de Datos
-
-| Tema | Nota | Estado |
-|---|---:|---|
-| Modelo relacional | 0,5/2 | En aprendizaje |
-| Normalización | 2,5/3 | Comprendido en práctica |
-| `WHERE`, `GROUP BY`, `HAVING` | 2,5/3 | Comprendido |
-| Familias SQL | 0,5/2 | Incompleto |
-
-**Nota provisional de la materia:** 6/10.
-
-**Fortalezas:** diseño práctico, detección de redundancia, separación de entidades, uso de `WHERE`, `GROUP BY` y `HAVING`.
-
-**Brechas:** definiciones formales de relación, tupla, dominio, grado y cardinalidad; clasificación DCL/TCL; justificación académica de normalización.
-
-
-### Avance parcial — Bloque 5: Comunicaciones
-
-| Tema | Nota | Estado |
-|---|---:|---|
-| Modelo OSI y funciones | 1/3 | En aprendizaje |
-| OSI y TCP/IP | 1,5/2 | Comprendido con ajustes |
-| Switch y router | 1,5/2 | Comprendido con ajustes |
-| Transmisión y medios | 0,75/3 | En aprendizaje |
-
-**Nota provisional de la materia:** 4,75/10.
-
-**Fortalezas:** diferencia general entre OSI y TCP/IP; reconocimiento de switch, router, LAN, capa de enlace y capa de red; medios guiados/no guiados.
-
-**Brechas:** orden exacto y funciones de las siete capas; dirección MAC frente a IP; transmisión síncrona/asíncrona según la bibliografía.
-
-
-### Cierre — Situación integradora
-
-**Resultado aproximado:** 5,5/10.
-
-| Materia | Decisión observada | Evaluación |
-|---|---|---|
-| Análisis y Diseño | RF y RNF básicos correctamente identificados | Buena base; faltaron actores, casos de uso y arquitectura |
-| POO | Clase `OrdenTrabajo` con atributos | Correcto como inicio; faltaron métodos, encapsulamiento y relaciones |
-| Algoritmos y Estructuras | Arreglo y ordenación | Aplicable, pero la prioridad y fecha sugieren cola de prioridad o lista ordenada |
-| Base de Datos | Tabla `orden_trabajo` | Insuficiente para el caso completo; faltan entidades relacionadas |
-| Comunicaciones | Acceso móvil y router | Idea general válida; requiere formular arquitectura cliente-servidor y tecnologías de acceso |
-
-**Conclusión del Día 1:** El estudiante resuelve desde la experiencia, pero necesita convertir decisiones prácticas en modelos formales y justificar cada elección con vocabulario académico.
-
-
-#### Análisis completo del Día 1
-
-- Archivo: `RESUMENES/2026-08-05_ANALISIS-COMPLETO-DIA-01.md`
-- Promedio diagnóstico: 5,6/10.
-- Patrón central: experiencia práctica superior a precisión terminológica.
-- Prioridades: Análisis y Diseño, Comunicaciones, POO, Base de Datos y Estructuras.
-- Día 2 preparado: Análisis y Diseño + POO.
-
-
-### Día 3 preparado — 2026-08-07
-
-- Materias: Algoritmos y Estructuras + Base de Datos.
-- Duración: 2 h 30 min.
-- Temas: TDA, estáticas/dinámicas, arreglo, nodo, lista simple, modelo relacional, componentes y claves.
-- Incluye recuperación espaciada del Día 2.
-- Evaluación: 10 preguntas + 2 ejercicios + oral.
+Debe incluir recuperación breve de constructor Java, TDA/interfaz, PDU, síncrona/asíncrona y fases vs. flujos.
