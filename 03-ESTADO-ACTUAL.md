@@ -1,8 +1,9 @@
 # Estado actual — EFIP I
 
-**Fecha de actualización:** 7 de agosto de 2026  
-**Jornada:** Día 3 — Estructuras básicas + Modelo relacional — CERRADO  
-**Próxima acción:** preparar el Día 4 según el plan maestro, manteniendo recuperaciones breves de los Días 2 y 3.
+**Fecha académica registrada:** 8 de agosto de 2026  
+**Jornada:** Día 4 — Comunicaciones — CERRADO  
+**Modalidad evaluada:** exclusivamente escrita  
+**Próxima acción:** preparar el Día 5 manteniendo recuperación espaciada de conceptos pendientes.
 
 ## Resultado acumulado
 
@@ -10,65 +11,46 @@
 |---|---:|---:|---|
 | Análisis y Diseño | 4,75/10 | Día 2: 8,0/10 global | Comprendido |
 | Programación Orientada a Objetos | 5,5/10 | Día 2: 8,0/10 global | Comprendido, cercano a defendible |
-| Algoritmos y Estructuras | 7/10 | Día 3: 8,6 escrito + 8,0 oral | Aplicado en contenidos básicos |
-| Base de Datos | 6/10 | Día 3: 8,6 escrito + 8,0 oral | Comprendido y aplicado en modelo relacional básico |
-| Comunicaciones | 4,75/10 | — | En aprendizaje |
+| Algoritmos y Estructuras | 7/10 | Día 3: 8,3/10 global | Aplicado en contenidos básicos |
+| Base de Datos | 6/10 | Día 3: 8,3/10 global | Comprendido/Aplicado en modelo relacional básico |
+| Comunicaciones | 4,75/10 | Día 4: **8,6/10 escrito** | Comprendido; varios temas aplicados |
 
-## Resultado del Día 3
+## Resultado del Día 4
 
-- Evaluación escrita: **8,6/10**
-- Defensa oral inicial: **7,3/10**
-- Recuperación oral final: **correcta**
-- Defensa oral final ajustada: **8,0/10**
-- Resultado global aproximado: **8,3/10**
+- Área evaluada: **Comunicaciones**
+- Puntaje bruto: **5,16/6**
+- Nota normalizada: **8,6/10**
 - Estado: **APROBADO**
+- Defensa oral: **no realizada**
+- Caso integrador de otras materias: **no evaluado**
 
-## Recuperación del Día 2
+## Avances confirmados en Comunicaciones
 
-Quedaron correctamente recuperados:
-
-- Construcción frente a Transición.
-- Iteración frente a incremento.
-- Estado frente a comportamiento.
-- Idea general de sobrecarga frente a sobrescritura.
-
-La definición de sobrecarga todavía debe expresarse como “misma operación con distinta lista de parámetros”, no solamente “agregar más parámetros”.
-
-## Avances confirmados
-
-### Estructuras
-
-- TDA comprendido parcialmente.
-- Diferencia entre estructura estática y dinámica.
-- Arreglo, elemento e índice.
-- Capacidad frente a longitud utilizada.
-- Nodo y referencia siguiente.
-- Lista simplemente enlazada.
-- Inserción al inicio respetando el orden de referencias.
-- Selección básica entre arreglo y lista según operaciones.
-
-### Base de Datos
-
-- Relación, tupla y atributo.
-- Dominio.
-- Grado y cardinalidad.
-- Clave candidata, primaria y foránea.
-- Cabecera y tupla de ejemplo.
-- Diferencia entre memoria temporal y persistencia.
-- Aplicación sobre `ORDEN_TRABAJO`.
+- Objetivo de un sistema de comunicaciones.
+- Fuente, transmisor, medio, receptor y destino.
+- Concepto de protocolo.
+- Sintaxis, semántica y temporización.
+- Capas OSI y funciones generales.
+- Relación entre OSI y TCP/IP.
+- Encapsulamiento y desencapsulamiento.
+- Unidades de datos: datos, segmentos, paquetes, tramas y bits.
+- Direccionamiento MAC.
+- Direccionamiento IP.
+- Switch y router.
 
 ## Pendientes abiertos
 
-1. Definir TDA incluyendo interfaz independiente de implementación.
-2. No afirmar que una estructura dinámica cambia el tipo de los elementos.
-3. Expresar clave candidata como superclave mínima.
-4. Recordar que el dominio incluye tipo y restricciones de valores.
-5. Especificar que una clave foránea referencia una clave de otra relación.
-6. Consolidar sintaxis Java para nodos y listas.
-7. Recuperar sobrecarga/sobrescritura con ejemplos concretos.
-8. Mantener construcción/transición mediante recuperación espaciada.
+1. PDU: expresar que incluye datos + información de control.
+2. TCP/IP: definirlo como arquitectura/pila de protocolos y no como un único protocolo.
+3. IP: no restringirlo a equipos fuera de la LAN.
+4. Puerto: definirlo como identificador de un proceso o servicio.
+5. Diferenciar funciones generales de una capa de las funciones particulares de un dispositivo.
+6. Responder las capas OSI en el orden solicitado por la consigna.
+7. Transmisión síncrona/asíncrona permanece pendiente de recuperación.
+8. Continuar con los temas de Comunicaciones todavía no estudiados en profundidad.
 
-## Próxima prioridad
+## Criterio de cierre
 
-El Día 4 debe avanzar con contenido nuevo.  
-Los pendientes del Día 3 se revisarán mediante tarjetas y preguntas breves, sin repetir la jornada completa.
+El Día 4 se considera **cerrado y aprobado exclusivamente en Comunicaciones**.
+
+No se actualizan hoy las notas de Análisis y Diseño, POO, Algoritmos/Estructuras ni Base de Datos porque no fueron evaluadas en esta jornada.

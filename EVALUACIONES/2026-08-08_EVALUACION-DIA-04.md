@@ -1,122 +1,355 @@
-# Evaluación EFIP I — Día 4
-## Comunicaciones + mini integración
+# Evaluación escrita EFIP I — Día 4
+## Comunicaciones + integración de las cinco materias
 
-**Fecha:** 8/8/2026  
-**Tiempo recomendado:** 40–50 minutos  
-**Puntaje escrito:** 10 puntos  
-**Modalidad:** sin apuntes
+**Fecha de estudio:** 8/8/2026  
+**Modalidad:** exclusivamente escrita  
+**Tiempo recomendado:** 45–55 minutos  
+**Puntaje:** 10 puntos  
+**Condición:** resolver sin apuntes.
 
 ---
 
 # Parte A — Comunicaciones — 6 puntos
 
-## 1. Sistema de comunicaciones — 1 punto
+## 1. Sistema de comunicaciones — 0,8 puntos
 
-Explicá el objetivo de un sistema de comunicaciones y definí:
+Explicá brevemente cuál es el objetivo de un sistema de comunicaciones.
+
+Después definí la función de:
 
 - fuente;
 - transmisor;
-- medio;
+- medio de transmisión;
 - receptor;
 - destino.
 
-## 2. ETD, ETCD y protocolo — 1 punto
+---
 
-Diferenciá ETD y ETCD.
+## 2. Protocolo — 0,7 puntos
 
-Después explicá:
+Definí qué es un protocolo de comunicaciones.
+
+Explicá la diferencia entre:
 
 - sintaxis;
 - semántica;
 - temporización.
 
-## 3. Modelo OSI — 2 puntos
+Dá un ejemplo sencillo de por qué dos dispositivos necesitan respetar el mismo protocolo para poder comunicarse.
 
-Nombrá las siete capas en orden ascendente y explicá la función principal de cada una.
+---
 
-En al menos cuatro capas, agregá un ejemplo, protocolo, dispositivo o concepto asociado.
+## 3. Modelo OSI — 1,5 puntos
 
-## 4. OSI y TCP/IP — 0,8 puntos
+Escribí las **siete capas del modelo OSI en orden ascendente**, desde la capa 1 hasta la capa 7.
+
+Para cada capa indicá su función principal.
+
+Además, asociá correctamente los siguientes conceptos a una capa:
+
+```text
+bits
+trama
+MAC
+IP
+encaminamiento
+transporte extremo a extremo
+sesión
+representación de datos
+servicio a la aplicación
+```
+
+---
+
+## 4. OSI y TCP/IP — 1 punto
+
+Respondé:
+
+### a.
+¿Cuál es la diferencia general entre el modelo OSI y la arquitectura TCP/IP?
+
+### b.
+Escribí las cinco capas TCP/IP utilizadas en el material.
+
+### c.
+Completá la correspondencia:
+
+```text
+OSI Aplicación     → TCP/IP __________
+OSI Presentación   → TCP/IP __________
+OSI Sesión         → TCP/IP __________
+OSI Transporte     → TCP/IP __________
+OSI Red            → TCP/IP __________
+OSI Enlace         → TCP/IP __________
+OSI Física         → TCP/IP __________
+```
+
+---
+
+## 5. Encapsulamiento — 1,2 puntos
 
 Explicá:
 
-- qué tienen en común;
-- diferencia principal;
-- cinco capas TCP/IP usadas por el material;
-- correspondencia general entre ambos.
+- qué es encapsulamiento;
+- qué es desencapsulamiento;
+- qué es una PDU.
 
-## 5. Encapsulamiento y PDU — 0,7 puntos
+Después completá la cadena simplificada:
 
-Definí:
+```text
+Aplicación  → __________
+Transporte  → __________
+Red         → __________
+Enlace      → __________
+Física      → __________
+```
 
-- encapsulamiento;
-- desencapsulamiento;
-- PDU.
+Finalmente explicá qué ocurre con esa información cuando llega al equipo receptor.
 
-Explicá qué ocurre en emisor y receptor.
+---
 
-## 6. Switch y router — 0,5 puntos
+## 6. Direccionamiento y dispositivos — 0,8 puntos
 
-Compará:
+### a. Direcciones
 
-- capa;
-- unidad manejada;
-- dirección utilizada;
+Explicá la función general de:
+
+- dirección MAC;
+- dirección IP;
+- puerto.
+
+### b. Dispositivos
+
+Compará `switch` y `router` indicando:
+
+- capa principal;
+- dirección que utilizan;
+- unidad de información asociada;
 - función principal.
 
 ---
 
-# Parte B — Mini integración — 4 puntos
+# Parte B — Caso integrador escrito — 4 puntos
 
-Usando el sistema de OT cliente-servidor:
+## Caso
 
-## 7. Análisis y Diseño — 0,8 puntos
+Una cooperativa utiliza un sistema de Órdenes de Trabajo.
 
-- fase del PUD;
-- dos casos de uso;
-- un RF;
-- un RNF.
+Un encargado crea una OT desde una computadora de la oficina.  
+Un operario consulta desde su teléfono móvil las órdenes pendientes.  
+La aplicación se comunica con un servidor donde se encuentra la base de datos.
 
-## 8. POO — 0,8 puntos
+La OT contiene:
 
-Definí las clases `OrdenTrabajo` y `Operario` con al menos dos atributos y un comportamiento cada una.
+```text
+id_ot
+descripcion
+prioridad
+estado
+id_sector
+```
 
-## 9. Estructuras — 0,8 puntos
+Las órdenes pueden tener prioridad:
 
-Elegí arreglo, lista enlazada o lista ordenada para organizar las OT consultadas. Justificá según acceso, inserción, eliminación y orden.
+```text
+BAJA
+MEDIA
+ALTA
+```
+
+El sistema debe funcionar desde computadoras y teléfonos móviles.
+
+---
+
+## 7. Análisis y Diseño — 0,7 puntos
+
+Indicá:
+
+1. Dos actores.
+2. Dos casos de uso.
+3. Un requerimiento funcional.
+4. Un requerimiento no funcional.
+5. En qué fase del PUD ubicarías el trabajo de detallar casos de uso y estabilizar la arquitectura.
+
+Justificá la última respuesta.
+
+---
+
+## 8. POO — 0,7 puntos
+
+Definí una clase:
+
+```text
+OrdenTrabajo
+```
+
+Indicá:
+
+- cuatro atributos;
+- dos comportamientos;
+- un ejemplo de estado de un objeto;
+- cómo aplicarías encapsulamiento;
+- qué podría representar su identidad.
+
+No es necesario escribir código Java completo.
+
+---
+
+## 9. Estructuras de datos — 0,7 puntos
+
+La aplicación obtiene de la base las órdenes pendientes y debe mantenerlas temporalmente en memoria.
+
+Elegí entre:
+
+- arreglo;
+- lista enlazada;
+- lista ordenada.
+
+Explicá cuál utilizarías considerando:
+
+- acceso;
+- inserción;
+- eliminación;
+- prioridad;
+- fecha.
+
+No alcanza con nombrar la estructura: debe justificarse la decisión.
+
+---
 
 ## 10. Base de Datos — 0,8 puntos
 
-Proponé `OPERARIO` y `ORDEN_TRABAJO` indicando claves y relación entre ambas.
+Usando:
 
-## 11. Comunicaciones — 0,8 puntos
+```text
+ORDEN_TRABAJO(
+    id_ot,
+    descripcion,
+    prioridad,
+    estado,
+    id_sector
+)
+```
 
-Explicá el recorrido resumido de la solicitud desde el móvil hasta el servidor mediante OSI/TCP-IP.
+indicá:
+
+1. relación;
+2. atributos;
+3. una tupla de ejemplo;
+4. grado;
+5. qué representa la cardinalidad;
+6. clave primaria probable;
+7. clave foránea probable;
+8. dominio posible de `prioridad`.
 
 ---
 
-# Recuperación espaciada — no suma a la nota principal
+## 11. Comunicaciones aplicadas — 1,1 puntos
 
-1. TDA.
-2. Clave candidata.
-3. Clave foránea.
-4. Sobrecarga y sobrescritura.
-5. Construcción y Transición.
+El operario pulsa en su teléfono:
+
+> Consultar OT 145
+
+Explicá el recorrido de la solicitud desde la aplicación móvil hasta el servidor.
+
+Tu respuesta debe mencionar, como mínimo:
+
+- aplicación;
+- transporte;
+- IP;
+- enlace;
+- MAC;
+- medio físico o inalámbrico;
+- switch o router cuando corresponda;
+- encapsulamiento;
+- desencapsulamiento.
+
+No es necesario indicar protocolos específicos que no hayan sido estudiados.
 
 ---
 
-# Defensa oral
+# Parte C — Recuperación espaciada — sin puntaje
 
-Responder durante 8–10 minutos:
+Responder igualmente, porque se utilizará para verificar retención de los días anteriores.
 
-> Explique cómo una aplicación móvil consulta una orden de trabajo en un servidor, recorriendo el modelo OSI y TCP/IP, y relacione esa comunicación con el PUD, las clases, la estructura en memoria y la base de datos.
+## 12. TDA
 
-## Rúbrica oral
+¿Qué significa que un TDA sea independiente de su implementación?
 
-| Criterio | Puntos |
+---
+
+## 13. Claves
+
+¿Qué diferencia existe entre:
+
+- clave candidata;
+- clave primaria;
+- clave foránea?
+
+---
+
+## 14. PUD
+
+Explicá la diferencia entre:
+
+- Construcción;
+- Transición.
+
+---
+
+## 15. POO
+
+Explicá la diferencia entre:
+
+- sobrecarga;
+- sobrescritura.
+
+Dá un ejemplo conceptual de cada una.
+
+---
+
+# Rúbrica
+
+| Área | Puntaje |
 |---|---:|
-| Orden y claridad | 2 |
-| OSI y TCP/IP | 3 |
-| Encapsulamiento y direccionamiento | 2 |
-| Integración de las cinco materias | 2 |
-| Terminología académica | 1 |
+| Sistema de comunicaciones y protocolos | 1,5 |
+| OSI y TCP/IP | 2,5 |
+| Encapsulamiento, direccionamiento y dispositivos | 2 |
+| Integración Análisis/POO/Estructuras/BD | 2,9 |
+| Comunicaciones aplicadas al caso | 1,1 |
+| **Total** | **10** |
+
+---
+
+# Criterio de resultado
+
+```text
+9–10    Muy buen dominio
+8–8,9   Buen dominio
+7–7,9   Aprobado, con puntos a recuperar
+6–6,9   Conocimiento inestable
+< 6     Recuperación necesaria
+```
+
+La recuperación espaciada no modifica directamente la nota del Día 4, pero se registra para actualizar el estado general de progreso.
+
+---
+
+# Alcance de la evaluación
+
+La evaluación cubre solamente los contenidos trabajados en el Día 4 y los conceptos de integración ya estudiados en los Días 2 y 3.
+
+No incluye todavía en profundidad:
+
+- señales analógicas y digitales;
+- transmisión síncrona y asíncrona;
+- HDLC;
+- PPP;
+- Ethernet detallado;
+- LLC/MAC en profundidad;
+- WAN;
+- MPLS;
+- congestión;
+- última milla.
+
+Esos temas pertenecen al programa de Comunicaciones, pero serán desarrollados en jornadas posteriores.
