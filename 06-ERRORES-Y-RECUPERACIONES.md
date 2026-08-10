@@ -1,210 +1,149 @@
 # Registro de errores y recuperaciones
 
-No registrar solo la respuesta correcta. Registrar por qué se produjo el error y qué regla evita repetirlo.
+**Estado consolidado al 10/08/2026 — cierre del Día 5**
 
-## Plantilla
+Estados canónicos:
 
-### Error E-000
+- `abierto`: error o brecha todavía no corregida con evidencia suficiente;
+- `corregido`: respuesta correcta obtenida, pero requiere recuperación espaciada;
+- `consolidado`: recuperado en más de una instancia o defendido con evidencia suficiente.
 
-- **Fecha:**
-- **Materia:**
-- **Tema:**
-- **Tipo:** conceptual / terminológico / aplicación / sintaxis / defensa oral
-- **Respuesta o desarrollo incorrecto:**
-- **Corrección:**
-- **Por qué ocurrió:**
-- **Regla para no repetirlo:**
-- **Ejercicio de recuperación:**
-- **Fecha de recuperación:**
-- **Resultado:**
-- **Estado:** abierto / corregido / consolidado
+> Los archivos diarios conservan el detalle de cada recuperación. Este archivo es el índice canónico del estado actual y evita que errores ya recuperados sigan apareciendo como abiertos.
 
-## Errores abiertos
+## Resumen
 
-Todavía no se registraron errores.
+| Estado | Cantidad |
+|---|---:|
+| Consolidado | 15 |
+| Corregido, pendiente de consolidación | 8 |
+| Abierto | 8 |
+| **Total registrado** | **31** |
 
+---
 
-### Error E-001
+## Estado canónico de errores
 
-- **Fecha:** 2026-08-05
-- **Materia:** Análisis y Diseño
-- **Tema:** PUD centrado en la arquitectura
-- **Tipo:** conceptual / terminológico
-- **Respuesta o desarrollo incorrecto:** Se lo definió como centrado en la documentación.
-- **Corrección:** Se centra en las decisiones significativas sobre organización, elementos estructurales, interfaces, colaboraciones, subsistemas y estilo arquitectónico.
-- **Por qué ocurrió:** Se asoció arquitectura con documentación del proyecto.
-- **Regla para no repetirlo:** Arquitectura responde a cómo se organiza técnicamente el sistema; documentación es uno de sus artefactos, no su centro.
-- **Ejercicio de recuperación:** Explicar cómo casos de uso y arquitectura se equilibran dentro del PUD.
-- **Fecha de recuperación:** pendiente
-- **Resultado:** pendiente
-- **Estado:** abierto
+| Código | Materia | Tema | Estado | Regla/corrección vigente |
+|---|---|---|---|---|
+| E-001 | Análisis y Diseño | Arquitectura vs. documentación | **consolidado** | Arquitectura = decisiones significativas; documentación = artefactos que las representan |
+| E-002 | Análisis y Diseño | Asociación/agregación/composición | **abierto** | Asociación = relación; agregación = todo/parte débil; composición = todo/parte fuerte |
+| E-003 | POO | Estado vs. visibilidad | **consolidado** | Estado = valores actuales; visibilidad = quién accede |
+| E-004 | POO | Sobrecarga vs. sobrescritura | **consolidado** | Sobrecarga cambia lista de parámetros; sobrescritura redefine método heredado |
+| E-005 | Estructuras | Complejidades de ordenación | **abierto** | Inserción peor O(n²); Mergesort O(n log n); Quicksort según material O(n log n) habitual |
+| E-006 | Estructuras | Inserción al inicio de lista | **consolidado** | `nuevo.siguiente = cabeza; cabeza = nuevo` |
+| E-007 | Base de Datos | Terminología relacional | **consolidado** | Relación/tupla/atributo/dominio/grado/cardinalidad correctamente diferenciados |
+| E-008 | Base de Datos | DCL/TCL | **abierto** | `GRANT` = DCL; `COMMIT` = TCL |
+| E-009 | Comunicaciones | Capas OSI | **consolidado** | Física, Enlace, Red, Transporte, Sesión, Presentación, Aplicación |
+| E-010 | Comunicaciones | Síncrona/asíncrona | **corregido** | Asíncrona = carácter + start/stop; síncrona = bloque + cabecera/terminación |
+| E-011 | Estructuras | Selección de estructura | **abierto** | Elegir por operaciones dominantes y reglas del problema, no solo facilidad de recorrido |
+| E-012 | Base de Datos | Alcance del modelo de datos | **corregido** | Identificar entidades y relaciones antes de limitar el diseño a una sola tabla |
+| E-013 | Análisis y Diseño | Construcción vs. Transición | **consolidado** | Construcción = producto completo; Transición = beta/entrega/correcciones/capacitación |
+| E-014 | POO | Estado vs. comportamiento | **consolidado** | Estado = atributos/valores; comportamiento = métodos/operaciones |
+| E-015 | POO | Identidad vs. ID | **consolidado** | Identidad distingue al objeto; un ID puede representarla persistentemente |
+| E-016 | POO/Java | Sintaxis Java escrita | **abierto** | Mantener práctica breve de sintaxis; constructor fue el principal error del Día 5 |
+| E-017 | Estructuras | TDA sin interfaz/implementación | **corregido** | TDA = datos/objetos + operaciones + interfaz independiente de implementación |
+| E-018 | Estructuras | Dinámica vs. tipo de elemento | **corregido** | En una estructura dinámica cambia cantidad/tamaño; no necesariamente el tipo |
+| E-019 | Base de Datos | Dominio de estado | **consolidado** | Dominio = conjunto de valores permitidos; no confundir con booleano ni valores observados |
+| E-020 | Base de Datos | Clave candidata | **consolidado** | Clave candidata = superclave mínima |
+| E-021 | Base de Datos | Cardinalidad sin valor concreto | **consolidado** | Responder definición + valor pedido |
+| E-022 | Base de Datos | Clave foránea | **consolidado** | FK referencia una clave de otra relación y puede repetirse del lado N |
+| E-023 | POO | Sobrecarga expresada como “más parámetros” | **consolidado** | Misma operación con distinta cantidad o tipos de parámetros |
+| E-024 | Comunicaciones | TCP/IP tratado como protocolo único | **abierto** | TCP/IP = arquitectura/pila/conjunto de protocolos |
+| E-025 | Comunicaciones | PDU incompleta/confundida con PUD | **corregido** | PDU = Unidad de Datos de Protocolo = datos + información de control |
+| E-026 | Comunicaciones | IP limitada a fuera de LAN | **corregido** | IP es direccionamiento lógico también dentro de la LAN |
+| E-027 | Comunicaciones | Puerto | **consolidado** | Puerto = identificador de proceso/servicio de transporte dentro de un host |
+| E-028 | Comunicaciones | Función de dispositivo atribuida a capa | **abierto** | Distinguir función general de capa de implementación concreta de switch/router |
+| E-029 | Comunicaciones | Unidad de switch/router omitida | **abierto** | Switch → trama; Router → paquete/datagrama |
+| E-030 | POO/Java | Constructor escrito como método `void` | **corregido** | Constructor = mismo nombre de clase y sin tipo de retorno |
+| E-031 | Análisis y Diseño | Fases vs. flujos / ciclo vs. incremento | **corregido** | Fases ≠ flujos; iteración → incremento; ciclo completo → versión |
 
-### Error E-002
+---
 
-- **Fecha:** 2026-08-05
-- **Materia:** Análisis y Diseño
-- **Tema:** Asociación, agregación y composición
-- **Tipo:** conceptual
-- **Respuesta o desarrollo incorrecto:** Asociación se confundió con dependencia; agregación con herencia; composición con clase hija.
-- **Corrección:** Asociación conecta clases; agregación es una relación todo/parte débil; composición es una relación todo/parte fuerte con dependencia de ciclo de vida.
-- **Por qué ocurrió:** Se mezclaron relaciones UML distintas.
-- **Regla para no repetirlo:** Herencia = “es un”; agregación/composición = “tiene un”; asociación = “se relaciona con”.
-- **Ejercicio de recuperación:** Clasificar cuatro relaciones de un sistema de órdenes de trabajo.
-- **Fecha de recuperación:** pendiente
-- **Resultado:** pendiente
-- **Estado:** abierto
+## Errores abiertos prioritarios
 
+### Análisis y Diseño
 
-### Error E-003
+- **E-002:** relaciones UML.
 
-- **Fecha:** 2026-08-05
-- **Materia:** Programación Orientada a Objetos
-- **Tema:** Estado de un objeto
-- **Tipo:** conceptual
-- **Respuesta o desarrollo incorrecto:** Se definió el estado como editable/no editable o visible/no visible.
-- **Corrección:** El estado es el conjunto de valores actuales de los atributos del objeto en un momento determinado.
-- **Por qué ocurrió:** Se confundió estado con mutabilidad y visibilidad.
-- **Regla para no repetirlo:** Estado responde a “qué valores tiene ahora”; visibilidad responde a “quién puede acceder”.
-- **Ejercicio de recuperación:** Describir dos estados distintos del mismo objeto `OrdenTrabajo`.
-- **Fecha de recuperación:** pendiente
-- **Resultado:** pendiente
-- **Estado:** abierto
+### POO / Java
 
-### Error E-004
+- **E-016:** precisión de sintaxis Java escrita.
 
-- **Fecha:** 2026-08-05
-- **Materia:** Programación Orientada a Objetos
-- **Tema:** Sobrecarga y sobrescritura
-- **Tipo:** conceptual
-- **Respuesta o desarrollo incorrecto:** No se recordó la diferencia.
-- **Corrección:** Sobrecarga: mismo nombre y distinta lista de parámetros dentro de una clase. Sobrescritura: una subclase redefine un método heredado conservando su signatura.
-- **Por qué ocurrió:** Falta de repaso teórico puntual.
-- **Regla para no repetirlo:** Sobrecarga cambia parámetros; sobrescritura cambia implementación heredada.
-- **Ejercicio de recuperación:** Crear dos métodos `calcular(...)` sobrecargados y un método `ejecutar()` sobrescrito.
-- **Fecha de recuperación:** pendiente
-- **Resultado:** pendiente
-- **Estado:** abierto
+### Algoritmos y Estructuras
 
+- **E-005:** complejidades de ordenación.
+- **E-011:** selección de estructura según operaciones/reglas.
 
-### Error E-005
+### Base de Datos
 
-- **Fecha:** 2026-08-05
-- **Materia:** Algoritmos y Estructuras de Datos
-- **Tema:** Complejidad de algoritmos de ordenación
-- **Tipo:** conceptual / terminológico
-- **Respuesta o desarrollo incorrecto:** Se indicó `OlogN` para Mergesort/Quicksort y `On` para inserción.
-- **Corrección:** Mergesort es O(n log n). Quicksort es O(n log n) en condiciones normales según el material. Inserción es O(n²) en el peor caso y O(n) en el mejor caso cuando el arreglo ya está ordenado.
-- **Por qué ocurrió:** Se recordó la idea general, pero no la notación completa.
-- **Regla para no repetirlo:** Todo algoritmo debe relacionarse con su estrategia y complejidad: inserción = cuadrático en peor caso; mergesort/quicksort = n por log n.
-- **Ejercicio de recuperación:** Comparar los tres algoritmos en una tabla con estrategia, mejor caso, peor caso y memoria auxiliar.
-- **Fecha de recuperación:** pendiente
-- **Resultado:** pendiente
-- **Estado:** abierto
+- **E-008:** DCL/TCL.
 
-### Error E-006
+### Comunicaciones
 
-- **Fecha:** 2026-08-05
-- **Materia:** Algoritmos y Estructuras de Datos
-- **Tema:** Inserción al inicio de una lista
-- **Tipo:** aplicación / terminológico
-- **Respuesta o desarrollo incorrecto:** La idea fue correcta, pero no se explicitaron las dos asignaciones de referencia.
-- **Corrección:** Crear `X`; asignar `X.siguiente = cabeza`; actualizar `cabeza = X`.
-- **Por qué ocurrió:** La explicación se dio de forma gráfica y no algorítmica.
-- **Regla para no repetirlo:** En listas, describir siempre qué referencia cambia y en qué orden.
-- **Ejercicio de recuperación:** Escribir la inserción al inicio y al final de una lista simple.
-- **Fecha de recuperación:** pendiente
-- **Resultado:** pendiente
-- **Estado:** abierto
+- **E-024:** TCP/IP como arquitectura/pila.
+- **E-028:** función de capa vs. función de dispositivo.
+- **E-029:** trama para switch y paquete/datagrama para router.
 
+---
 
-### Error E-007
+## Corregidos que requieren recuperación espaciada
 
-- **Fecha:** 2026-08-05
-- **Materia:** Base de Datos
-- **Tema:** Modelo relacional
-- **Tipo:** conceptual / terminológico
-- **Respuesta o desarrollo incorrecto:** Relación se definió como tablas que comparten datos; grado como grado de normalización; cardinalidad como orden.
-- **Corrección:** Relación = tabla del modelo relacional; tupla = fila; atributo = columna; dominio = valores posibles de un atributo; grado = cantidad de atributos; cardinalidad = cantidad de tuplas.
-- **Por qué ocurrió:** Experiencia práctica sin repaso de terminología formal.
-- **Regla para no repetirlo:** Grado cuenta columnas; cardinalidad cuenta filas.
-- **Ejercicio de recuperación:** Describir formalmente una tabla real indicando relación, cabecera, cuerpo, grado, cardinalidad y dominios.
-- **Fecha de recuperación:** pendiente
-- **Resultado:** pendiente
-- **Estado:** abierto
+1. **E-010 — Síncrona/asíncrona.**
+2. **E-012 — Alcance del modelo de datos.**
+3. **E-017 — TDA e interfaz.**
+4. **E-018 — estructura dinámica/tipo.**
+5. **E-025 — PDU.**
+6. **E-026 — IP dentro/fuera de LAN.**
+7. **E-030 — constructor Java.**
+8. **E-031 — fases/flujos/ciclo/incremento.**
 
-### Error E-008
+---
 
-- **Fecha:** 2026-08-05
-- **Materia:** Base de Datos
-- **Tema:** Familias SQL
-- **Tipo:** terminológico
-- **Respuesta o desarrollo incorrecto:** `GRANT` y `COMMIT` quedaron sin clasificar.
-- **Corrección:** `GRANT` pertenece a DCL y concede privilegios; `COMMIT` pertenece a TCL y confirma una transacción.
-- **Por qué ocurrió:** Falta de repaso de sublenguajes SQL.
-- **Regla para no repetirlo:** DDL define; DML manipula; DCL controla permisos; TCL controla transacciones.
-- **Ejercicio de recuperación:** Clasificar veinte sentencias SQL en DDL, DML, DCL y TCL.
-- **Fecha de recuperación:** pendiente
-- **Resultado:** pendiente
-- **Estado:** abierto
+## Recuperaciones consolidadas destacadas
 
+### PUD
 
-### Error E-009
+```text
+Arquitectura ≠ documentación
+Construcción ≠ Transición
+Iteración ≠ incremento
+```
 
-- **Fecha:** 2026-08-05
-- **Materia:** Comunicaciones
-- **Tema:** Modelo OSI
-- **Tipo:** conceptual / terminológico
-- **Respuesta o desarrollo incorrecto:** Se nombraron solo red, enlace, transmisión, aplicación y seguridad.
-- **Corrección:** Las capas son física, enlace de datos, red, transporte, sesión, presentación y aplicación.
-- **Por qué ocurrió:** Recuerdo parcial de la materia.
-- **Regla para no repetirlo:** Memorizar el orden ascendente y asociar una función concreta a cada capa.
-- **Ejercicio de recuperación:** Escribir las siete capas y explicar una PDU o función por capa.
-- **Fecha de recuperación:** pendiente
-- **Resultado:** pendiente
-- **Estado:** abierto
+### POO
 
-### Error E-010
+```text
+Estado ≠ comportamiento
+Identidad ≠ ID
+Sobrecarga ≠ sobrescritura
+```
 
-- **Fecha:** 2026-08-05
-- **Materia:** Comunicaciones
-- **Tema:** Transmisión síncrona y asíncrona
-- **Tipo:** conceptual
-- **Respuesta o desarrollo incorrecto:** Se vinculó síncrona con mayor velocidad y reinicio total; asíncrona con segmentos y reenvío de paquetes.
-- **Corrección:** La transmisión asíncrona delimita cada carácter con bits de inicio y parada y admite intervalos variables. La síncrona transmite bloques con sincronismo a nivel de paquete, cabecera y terminación.
-- **Por qué ocurrió:** Se mezcló sincronización con control de errores y retransmisión.
-- **Regla para no repetirlo:** Asíncrona = carácter + start/stop; síncrona = bloque + cabecera/terminación.
-- **Ejercicio de recuperación:** Comparar ambas en una tabla con unidad transmitida, sincronización, sobrecarga y rendimiento.
-- **Fecha de recuperación:** pendiente
-- **Resultado:** pendiente
-- **Estado:** abierto
+### Base de Datos
 
+```text
+Grado = columnas/atributos
+Cardinalidad = filas/tuplas
+Candidata = superclave mínima
+FK puede repetirse en 1:N
+```
 
-### Error E-011
+### Comunicaciones
 
-- **Fecha:** 2026-08-05
-- **Materia:** Algoritmos y Estructuras de Datos
-- **Tema:** Selección de estructura para órdenes pendientes
-- **Tipo:** aplicación / justificación
-- **Respuesta o desarrollo incorrecto:** Se eligió un arreglo para mostrar y ordenar órdenes sin justificar cómo mantener prioridad y fecha.
-- **Corrección:** Para el requisito de atender por prioridad y fecha conviene analizar una cola de prioridad, una lista ordenada o una estructura que mantenga ambos criterios.
-- **Por qué ocurrió:** Se eligió una estructura por facilidad de recorrido, no por la regla de atención.
-- **Regla para no repetirlo:** La estructura se elige a partir de las operaciones dominantes y las reglas del problema.
-- **Ejercicio de recuperación:** Comparar arreglo, lista ordenada y cola de prioridad para órdenes pendientes.
-- **Fecha de recuperación:** pendiente
-- **Resultado:** pendiente
-- **Estado:** abierto
+```text
+OSI = 7 capas en orden
+Puerto = proceso/servicio
+```
 
-### Error E-012
+---
 
-- **Fecha:** 2026-08-05
-- **Materia:** Base de Datos
-- **Tema:** Alcance del modelo de datos
-- **Tipo:** aplicación / modelado
-- **Respuesta o desarrollo incorrecto:** Se propuso solamente una tabla `orden_trabajo`.
-- **Corrección:** El caso requiere, como mínimo, analizar entidades para orden, operario, sector, estado y asignación; la estructura exacta depende de los requerimientos.
-- **Por qué ocurrió:** Se simplificó el caso a la entidad principal.
-- **Regla para no repetirlo:** Identificar sustantivos del dominio y relaciones antes de definir tablas.
-- **Ejercicio de recuperación:** Crear un DER mínimo para órdenes, operarios y sectores.
-- **Fecha de recuperación:** pendiente
-- **Resultado:** pendiente
-- **Estado:** abierto
+## Archivos de evidencia
+
+- `06-ERRORES-Y-RECUPERACIONES-DIA-02.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-03.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-04.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-05.md`
+- `EVALUACIONES/2026-08-10_RESPUESTAS-DIA-05.md`
+- `EVALUACIONES/2026-08-10_RESULTADOS-DIA-05.md`
+
+## Regla de seguimiento
+
+Un error `corregido` solo pasa a `consolidado` después de una recuperación posterior sin ayuda o una defensa oral suficiente. No cerrar errores únicamente porque se haya mostrado la respuesta correcta durante la corrección.
