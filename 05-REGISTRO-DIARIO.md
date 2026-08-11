@@ -1,6 +1,6 @@
 # Registro diario — EFIP I
 
-**Actualizado al cierre del Día 5 — 10/08/2026**
+**Actualizado al cierre del Día 6 — 11/08/2026**
 
 Este archivo funciona como índice acumulado de jornadas. El detalle completo se conserva en `EVALUACIONES/`, `RESUMENES/`, archivos diarios de estado y matrices.
 
@@ -241,8 +241,92 @@ La capacidad práctica era superior a la precisión terminológica. Prioridades 
 - `06-ERRORES-Y-RECUPERACIONES-DIA-05.md`
 - `RESUMENES/2026-08-10_CIERRE-DIA-05.md`
 
+---
+
+## 2026-08-11 — Día 6 — Requisitos + Pilas + OSI/TCP-IP
+
+**Etapa:** segunda jornada intensiva de vacaciones  
+**Duración planificada:** 5,5 h núcleo; bloques detallados = 6 h  
+**Tiempo real:** no registrado con precisión  
+**Estado:** **CERRADO Y APROBADO**
+
+### Objetivos
+
+- estudiar Ingeniería de Requerimientos;
+- diferenciar elicitación, especificación y validación;
+- aplicar RF, RNF, reglas y calidad;
+- estudiar pila, LIFO y operaciones;
+- comparar pila con vector y lista enlazada;
+- recuperar OSI/TCP-IP, encapsulamiento y PDU;
+- integrar las tres materias en un único caso.
+
+### Actividades realizadas
+
+- recuperación TDA, fases/flujos, constructor, PDU y sincronismo;
+- clasificación RF/RNF/regla de negocio;
+- análisis de correcto, consistente, completo, realista, necesario, verificable y rastreable;
+- corrección de requerimientos ambiguos;
+- simulación `push/pop/peek`;
+- comparación vector/lista enlazada;
+- elección de pila para deshacer;
+- siete capas OSI y cinco TCP/IP;
+- correspondencia entre modelos;
+- recorrido PC/móvil → switch → router → servidor;
+- encapsulamiento, desencapsulamiento y `PDU = SDU + PCI`;
+- evaluación escrita;
+- defensa oral integrada.
+
+### Resultado
+
+| Instancia | Resultado | Estado |
+|---|---:|---|
+| Evaluación escrita | **7,35/8,00 = 9,2/10** | Aprobado |
+| Defensa oral | **1,80/2,00 = 9,0/10** | Aprobado |
+| **Global Día 6** | **9,15/10 → 9,2/10** | **APROBADO** |
+
+### Aciertos
+
+- Ingeniería de Requerimientos aplicada y defendida.
+- RF, RNF y reglas correctamente diferenciados.
+- Simulación LIFO perfecta.
+- TDA/interfaz/implementación recuperados.
+- Vector y lista enlazada comparados.
+- OSI y TCP/IP reproducidos sin errores.
+- MAC, IP y puerto correctamente diferenciados.
+- Defensa oral integrada entre necesidad, estructura y comunicación.
+
+### Errores/ajustes
+
+- completo confundido parcialmente con verificable;
+- riesgo de lista enlazada asociado también a desbordamiento fijo;
+- PDU expandida como “Unidad de datos de procesos”;
+- Red/Internet confundida oralmente con la creación de una trama;
+- Física expresada oralmente como transmisión de bytes;
+- constructor todavía no completamente automatizado;
+- `peek` formulado como “mostrar” en vez de consultar sin eliminar.
+
+### Recuperaciones al cierre
+
+- TDA/interfaz: consolidado.
+- fases/flujos PUD: consolidado.
+- síncrona/asíncrona: consolidado.
+- TCP/IP como pila: consolidado.
+- switch/router y unidades: consolidados.
+- PDU: concepto `SDU + PCI` correcto; sigla pendiente.
+- constructor: corregido; retención pendiente.
+
+### Evidencia
+
+- `DIAS/2026-08-11_DIA-06_REQUISITOS-PILAS-OSI-TCPIP.md`
+- `EVALUACIONES/2026-08-11_RESPUESTAS-DIA-06.md`
+- `EVALUACIONES/2026-08-11_RESULTADOS-DIA-06.md`
+- `04-MATRIZ-DE-PROGRESO-ACTUALIZACION-DIA-06.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-06.md`
+- `RESUMENES/2026-08-11_CIERRE-DIA-06.md`
+- `RESUMENES/2026-08-11_ESTADO-ACUMULADO-DIAS-01-A-06.md`
+
 ### Próxima jornada
 
-**11/08/2026 — Día 6: Requisitos + Pilas + OSI/TCP-IP**.
+**12/08/2026 — Día 7: Casos de uso + Herencia + DER**.
 
-Debe incluir recuperación breve de constructor Java, TDA/interfaz, PDU, síncrona/asíncrona y fases vs. flujos.
+Debe incluir recuperación breve de completo/verificable, constructor, PDU, paquete/trama, bits/bytes y riesgos de implementación de pila.
