@@ -1,10 +1,12 @@
 # Matriz de progreso del programa
 
-**Actualizada al cierre del Día 5 — 10/08/2026**
+**Actualizada al cierre del Día 6 — 11/08/2026**
 
 Usar los estados: `NI` No iniciado, `EA` En aprendizaje, `C` Comprendido, `A` Aplicado, `DO` Defendible oralmente.
 
 > `DO` describe únicamente temas efectivamente defendidos; no implica dominio de la asignatura completa.
+
+---
 
 ## 1. Análisis y Diseño de Software
 
@@ -22,19 +24,27 @@ Usar los estados: `NI` No iniciado, `EA` En aprendizaje, `C` Comprendido, `A` Ap
 | PUD: centrado en la arquitectura | DO | Arquitectura/documentación recuperado y defendido |
 | PUD: iterativo e incremental | DO | Iteración/incremento aplicado y defendido |
 | Inicio, elaboración, construcción y transición | DO | Diferenciadas y defendidas en Día 5 |
-| Flujos de requisitos, análisis, diseño, implementación y prueba | C | Diferenciados de las fases al cierre del oral Día 5 |
+| Flujos de requisitos, análisis, diseño, implementación y prueba | A | Diferenciados de fases y recuperados en Días 5–6 |
 | Artefacto, trabajador, actividad y flujo | NI | Pendiente |
-| Ingeniería de requerimientos | NI | Programado para Día 6 |
-| RF, RNF y calidad de requerimientos | C | Diagnóstico correcto; falta bloque formal del Día 6 |
+| Ingeniería de requerimientos | DO | Definida, aplicada y defendida en Día 6 |
+| Elicitación | DO | Entrevistas/preguntas/observación aplicadas al caso |
+| Especificación | DO | Necesidades transformadas en RF, RNF y reglas |
+| Validación de requerimientos | DO | Revisión con usuario, consistencia y retroalimentación |
+| RF, RNF y calidad de requerimientos | A | RF/RNF defendidos; siete propiedades aplicadas con ajustes |
+| Regla de negocio | DO | Diferenciada de RF/RNF y defendida |
+| Correcto, consistente, completo y realista | A | Evaluados en requerimientos del caso |
+| Necesario, verificable y rastreable | A | Aplicados; rastreabilidad origen→prueba comprendida |
 | Modelo de negocio y modelo de dominio | NI | Pendiente |
-| Actores y casos de uso | EA | Base práctica; bloque formal posterior |
+| Actores y casos de uso | EA | Base práctica; bloque formal del Día 7 |
 | `include`, `extend` y generalización | EA | Comprensión parcial; falta dirección/condiciones |
-| Precondiciones, postcondiciones y flujos | NI | Pendiente |
+| Precondiciones, postcondiciones y flujos | NI | Pendiente para Día 7 |
 | Modelo de análisis | NI | Pendiente |
 | Modelo de diseño | NI | Pendiente |
 | Modelo de implementación | NI | Pendiente |
 | Modelo de pruebas | NI | Pendiente |
 | Arquitectura, documentación, implementación y testeo | EA | Arquitectura aplicada; resto del bloque pendiente |
+
+---
 
 ## 2. Programación Orientada a Objetos
 
@@ -43,17 +53,17 @@ Usar los estados: `NI` No iniciado, `EA` En aprendizaje, `C` Comprendido, `A` Ap
 | Características básicas de Java | C | Clase Java escrita; sintaxis todavía en consolidación |
 | Clases y objetos | DO | Aplicado a `OrdenTrabajo` y defendido oralmente |
 | Estado, comportamiento e identidad | DO | Recuperado y defendido en Día 5 |
-| Atributos, métodos y constructores | A | Clase Java escrita; error formal de constructor corregido |
+| Atributos, métodos y constructores | A | Clase Java escrita; constructor todavía requiere retención |
 | Encapsulamiento y modificadores | DO | Encapsulamiento defendido; `private/public` aplicados |
 | `this`, `super` y miembros estáticos | EA | `this` aplicado; `super` y estáticos pendientes |
-| Herencia | NI | Pendiente como bloque formal |
-| Sobrecarga y sobrescritura | A | Recuperadas con ejemplos en Día 5 |
+| Herencia | NI | Programado para Día 7 |
+| Sobrecarga y sobrescritura | A | Recuperadas con ejemplos en Día 5; profundización Día 7 |
 | Polimorfismo | EA | Reconocido en diagnóstico; falta bloque formal |
 | Abstracción | NI | Pendiente |
 | Clase y método abstractos | C | Buena comprensión diagnóstica; profundización posterior |
 | Interfaces | C | Comprensión del contrato; profundización posterior |
 | Clase `Object` y comparación | NI | Pendiente |
-| Arreglos | NI | Pendiente dentro de POO; se trabajaron en Estructuras |
+| Arreglos | NI | Pendiente dentro de POO; trabajados en Estructuras |
 | `ArrayList` | NI | Pendiente |
 | Clase `String` | NI | Pendiente |
 | Excepciones | NI | Pendiente |
@@ -61,16 +71,20 @@ Usar los estados: `NI` No iniciado, `EA` En aprendizaje, `C` Comprendido, `A` Ap
 | Archivos | NI | Pendiente |
 | Aplicación Java escrita a mano | A | `OrdenTrabajo` escrita sin apuntes; constructor corregido |
 
+---
+
 ## 3. Algoritmos y Estructuras de Datos
 
 | Tema | Estado | Evidencia acumulada |
 |---|---|---|
-| TDA y estructuras estáticas/dinámicas | C | Día 3 + recuperación TDA Día 5; interfaz debe automatizarse |
+| TDA y estructuras estáticas/dinámicas | A | Interfaz independiente de implementación recuperada y aplicada Día 6 |
 | Arreglos y operaciones | A | Definición, capacidad/longitud y elección aplicadas |
 | Nodos y referencias | C | Dato + referencia comprendidos |
-| Pilas: concepto y operaciones | C | LIFO correcto en diagnóstico; profundización Día 6 |
-| Pilas con vectores | NI | Programado para Día 6 |
-| Pilas con listas enlazadas | NI | Programado para Día 6 |
+| Pilas: concepto y operaciones | DO | Pila/LIFO aplicados y defendidos en Día 6 |
+| Cima, `push`, `pop`, `peek`, `esVacia` | A | Simulación completa; `peek` requiere precisión terminológica |
+| Pilas con vectores | A | Índice `top`, capacidad y desbordamiento aplicados |
+| Pilas con listas enlazadas | A | Cabecera/top, nodos y tamaño variable aplicados |
+| Comparación vector/lista enlazada | A | Memoria, capacidad, riesgos e interfaz comparados |
 | Colas: concepto y operaciones | C | FIFO correcto en diagnóstico |
 | Colas con vectores | NI | Pendiente |
 | Colas con listas enlazadas | NI | Pendiente |
@@ -83,36 +97,40 @@ Usar los estados: `NI` No iniciado, `EA` En aprendizaje, `C` Comprendido, `A` Ap
 | Shellsort | NI | Pendiente |
 | Mergesort | C | Estrategia comprendida; complejidad a consolidar |
 | Quicksort | C | Pivote/recursión comprendidos; complejidad a consolidar |
-| Selección de estructura según problema | A | Criterios de acceso/inserción/eliminación/tamaño/recorrido aplicados |
+| Selección de estructura según problema | A | Pila elegida por operación dominante; generalización pendiente |
+
+---
 
 ## 4. Base de Datos I
 
 | Tema | Estado | Evidencia acumulada |
 |---|---|---|
 | Motor relacional | NI | Pendiente |
-| Relación, tupla, atributo y dominio | A | Modelo básico aplicado; dominio requirió corrección Día 5 |
+| Relación, tupla, atributo y dominio | A | Modelo básico aplicado; dominio corregido Día 5 |
 | Grado y cardinalidad | DO | Definidos, calculados y defendidos |
 | Claves primaria, candidata y foránea | DO | Candidata = superclave mínima; FK 1:N defendida |
 | Álgebra relacional | NI | Pendiente |
 | Selección y proyección | NI | Pendiente |
 | Unión, diferencia y producto cartesiano | NI | Pendiente |
 | Join | NI | Pendiente |
-| DER: entidades, atributos y relaciones | NI | Pendiente |
-| Cardinalidades | C | 1:N aplicado en Día 5; DER formal pendiente |
-| Pasaje de DER a tablas | NI | Pendiente |
+| DER: entidades, atributos y relaciones | NI | Programado para Día 7 |
+| Cardinalidades | C | 1:N aplicado; DER formal pendiente |
+| Pasaje de DER a tablas | NI | Programado para Día 7 |
 | Primera forma normal | EA | Práctica diagnóstica correcta; terminología a profundizar |
 | Segunda forma normal | EA | Falta dependencia parcial formal |
 | Tercera forma normal | EA | Falta dependencia transitiva formal |
 | DDL | C | `CREATE` identificado correctamente |
 | DML | C | `INSERT` identificado correctamente |
-| DCL | EA | `GRANT` sigue pendiente de recuperación |
-| TCL | EA | `COMMIT` sigue pendiente de recuperación |
+| DCL | EA | `GRANT` sigue pendiente |
+| TCL | EA | `COMMIT` sigue pendiente |
 | SELECT, JOIN y subconsultas | NI | Pendiente como bloque académico |
 | GROUP BY y HAVING | C | Diferencia comprendida; HAVING filtra grupos |
 | Bloques procedimentales | NI | Pendiente |
 | Procedimientos y funciones | NI | Pendiente |
 | Cursores | NI | Pendiente |
 | Triggers | NI | Pendiente |
+
+---
 
 ## 5. Comunicaciones
 
@@ -121,15 +139,21 @@ Usar los estados: `NI` No iniciado, `EA` En aprendizaje, `C` Comprendido, `A` Ap
 | Sistema de comunicaciones | C | Día 4: 8,6/10 escrito |
 | ETD y ETCD | EA | Introducido; no evaluado en profundidad |
 | Protocolos y normalización | A | Protocolo aplicado; normalización pendiente de mayor profundidad |
-| Modelo OSI | A | Siete capas recuperadas y funciones explicadas |
-| Funciones de las siete capas | A | Muy buena explicación Día 4 |
-| TCP/IP y comparación con OSI | C | Correspondencia aplicada; sigue E-024 sobre TCP/IP como pila |
-| Encapsulamiento y PDU | C | Encapsulamiento comprendido; PDU corregida Día 5, retención pendiente |
+| Modelo OSI | DO | Siete capas y recorrido defendidos Día 6 |
+| Funciones de las siete capas | DO en el núcleo recorrido | Transporte/Red/Enlace/Física aplicadas oralmente |
+| TCP/IP y comparación con OSI | DO | Arquitectura/pila y correspondencia defendidas |
+| Cinco capas TCP/IP | A | Reproducidas sin errores |
+| Encapsulamiento y desencapsulamiento | DO | Explicados y defendidos |
+| PDU, SDU y PCI | A | Fórmula comprendida; expansión de PDU todavía inestable |
+| Datos, segmento, paquete, trama y bits | A | Orden correcto escrito; ajustes orales paquete/trama y bits/bytes |
+| MAC, IP y puerto | DO | Diferenciados y defendidos |
+| Switch y router | A | Switch/trama/MAC frente a router/paquete/IP recuperados |
+| Procesamiento por nodos intermedios | A | Switch hasta capa 2; router hasta capa 3; destino completo |
 | Medida de la información | NI | Pendiente |
 | Señales analógicas y digitales | NI | Pendiente |
 | Frecuencia, período y muestreo | NI | Pendiente |
 | Serie/paralela | NI | Pendiente |
-| Síncrona/asíncrona | C | Corregida Día 5; requiere recuperación espaciada |
+| Síncrona/asíncrona | A | Consolidada en recuperación Día 6 |
 | Medios guiados/no guiados | C | Ejemplos correctos |
 | Atenuación, ruido, interferencia, dispersión y latencia | NI | Pendiente |
 | Dispositivos de capa física | NI | Pendiente |
@@ -143,9 +167,11 @@ Usar los estados: `NI` No iniciado, `EA` En aprendizaje, `C` Comprendido, `A` Ap
 | Conmutación de circuitos y paquetes | NI | Pendiente |
 | Topologías | NI | Pendiente |
 | LAN y WAN | C | Comprensión general correcta |
-| Enrutamiento | C | Router/IP comprendidos; profundización pendiente |
+| Enrutamiento | A | Router/IP y recorrido entre redes aplicados |
 | MPLS y congestión | NI | Pendiente |
 | Comunicaciones móviles y tendencias | NI | Pendiente |
+
+---
 
 ## Evidencia evaluativa acumulada
 
@@ -155,7 +181,20 @@ Usar los estados: `NI` No iniciado, `EA` En aprendizaje, `C` Comprendido, `A` Ap
 | Día 2 — Análisis y Diseño + POO | 8,0/10 global |
 | Día 3 — Estructuras + Base de Datos | 8,3/10 global |
 | Día 4 — Comunicaciones escrita | 8,6/10 |
-| Día 5 — PUD + POO + modelo relacional | **9,0/10 global** |
+| Día 5 — PUD + POO + modelo relacional | 9,0/10 global |
+| Día 6 — Requisitos + Pilas + OSI/TCP-IP | **9,2/10 global** |
+
+---
+
+## Pendientes de retención inmediata
+
+1. Completo frente a verificable.
+2. Constructor Java sin tipo de retorno.
+3. PDU = Unidad de Datos de Protocolo.
+4. Vector: desbordamiento fijo; lista: memoria/referencias.
+5. Internet/Red → paquete; Acceso/Enlace → trama.
+6. Física → bits/señales.
+7. `peek()` consulta sin eliminar.
 
 ## Regla de lectura
 
