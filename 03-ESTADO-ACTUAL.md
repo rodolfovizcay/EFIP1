@@ -1,9 +1,9 @@
 # Estado actual — EFIP I
 
-**Fecha académica registrada:** 11 de agosto de 2026  
-**Jornada:** Día 6 — Requisitos + Pilas + OSI/TCP-IP — CERRADO  
-**Modalidad evaluada:** escrita + defensa oral integrada  
-**Próxima acción:** preparar el Día 7 del 12/08/2026 con Casos de uso + Herencia + DER.
+**Fecha académica registrada:** 12 de agosto de 2026  
+**Jornada:** Día 7 — Casos de uso + Herencia + DER — CERRADO  
+**Modalidad evaluada:** escrita + defensa distribuida en controles interactivos  
+**Próxima acción:** preparar el Día 8 del 13/08/2026 con Modelo de análisis + Colas + Transmisión.
 
 ---
 
@@ -11,100 +11,121 @@
 
 | Materia | Diagnóstico Día 1 | Última evidencia | Estado actual |
 |---|---:|---:|---|
-| Análisis y Diseño | 4,75/10 | Día 6: evaluación integrada 9,2/10 + oral 9,0/10 | PUD e Ingeniería de Requerimientos aplicados y defendibles en los núcleos trabajados |
-| Programación Orientada a Objetos | 5,5/10 | Día 5: evaluación integrada 9,0/10 + oral 9,0/10 | Fundamentos aplicados y defendibles; sintaxis Java en consolidación |
-| Algoritmos y Estructuras | 7,0/10 | Día 6: evaluación integrada 9,2/10 + oral 9,0/10 | TDA y Pilas aplicados; LIFO defendible oralmente |
-| Base de Datos | 6,0/10 | Día 5: evaluación integrada 9,0/10 + oral 9,0/10 | Modelo relacional y claves aplicados y defendibles |
-| Comunicaciones | 4,75/10 | Día 6: evaluación integrada 9,2/10 + oral 9,0/10 | OSI/TCP-IP aplicado y defendible en el recorrido trabajado |
+| Análisis y Diseño | 4,75/10 | Día 7: casos de uso aplicados; global 8,3/10 | PUD y Requerimientos defendibles; casos de uso aplicados con notación UML pendiente |
+| Programación Orientada a Objetos | 5,5/10 | Día 7: jerarquía Java y herencia; global 8,3/10 | Fundamentos y herencia aplicados; constructor consolidado; `Object/toString` pendiente |
+| Algoritmos y Estructuras | 7,0/10 | Día 6: pila/LIFO defendidos; recuperaciones Día 7 | TDA y Pilas aplicados; Colas pendientes |
+| Base de Datos | 6,0/10 | Día 7: DER y pasaje a tablas; global 8,3/10 | Modelo relacional/claves defendibles; DER aplicado con simbología y clasificación pendientes |
+| Comunicaciones | 4,75/10 | Día 6: 9,2/10 global; recuperaciones Día 7 | OSI/TCP-IP defendible; PDU, paquete/trama y bits/señales consolidados |
 
-> Las notas de los Días 5 y 6 corresponden a evaluaciones integradas. No deben interpretarse como exámenes individuales completos de cada materia.
+> Las notas de los Días 5, 6 y 7 corresponden a evaluaciones integradas. No deben interpretarse como exámenes completos e independientes de cada materia.
 
 ---
 
-## Resultado del Día 6
+## Resultado del Día 7
 
-- Evaluación escrita: **7,35/8,00 = 9,2/10**.
-- Defensa oral: **1,80/2,00 = 9,0/10**.
-- Resultado global: **9,15/10 → 9,2/10 — APROBADO**.
-- Materias principales: **Análisis y Diseño + Algoritmos/Estructuras + Comunicaciones**.
-- Caso integrador: **deshacer la última modificación no confirmada de una OT**.
+- Evaluación escrita: **6,53/8,00 = 8,2/10**.
+- Defensa distribuida: **1,72/2,00 = 8,6/10**.
+- Resultado global: **8,25/10 → 8,3/10 — APROBADO**.
+- Materias principales: **Análisis y Diseño + POO + Base de Datos**.
+- Caso integrador: **crear, asignar y gestionar Órdenes de Trabajo mediante casos de uso, jerarquía de clases y DER**.
+
+> La defensa se obtuvo de respuestas justificadas durante los controles interactivos. No hubo una exposición única de 8–10 minutos; por eso los temas nuevos se registran principalmente como `A`, no como `DO` generalizado.
 
 ---
 
 ## Avances confirmados
 
-### Análisis y Diseño — Requerimientos
+### Análisis y Diseño — Casos de uso
 
-- Ingeniería de Requerimientos como proceso de descubrir, analizar, documentar y verificar.
-- Elicitación mediante entrevistas, preguntas, observación y otras técnicas.
-- Especificación como documentación organizada de servicios, propiedades y restricciones.
-- Validación mediante revisión con usuarios, prototipos, casos de prueba y consistencia.
-- Requerimiento funcional.
-- Requerimiento no funcional.
-- Regla de negocio.
-- Calidad: correcto, consistente, completo, realista, necesario, verificable y rastreable.
-- Aplicación sobre Órdenes de Trabajo.
+- Actor como rol externo.
+- Caso de uso como secuencia que aporta un resultado de valor.
+- Límite del sistema.
+- Asociación actor–caso.
+- Nombres verbales de casos de uso.
+- `include` como comportamiento obligatorio.
+- Dirección `BASE → INCLUIDO`.
+- `extend` como comportamiento opcional/condicionado.
+- Dirección `EXTENSIÓN → BASE`.
+- Generalización conceptual `HIJO → PADRE`.
+- Precondiciones como estados previos.
+- Disparador.
+- Flujo principal.
+- Flujo alternativo.
+- Excepción.
+- Postcondiciones de éxito/fallo.
+- Aplicación a `Crear Orden de Trabajo`.
 
-### Algoritmos y Estructuras — Pilas
+### POO / Java — Herencia
 
-- TDA con interfaz independiente de implementación.
-- Pila como estructura lineal restrictiva.
-- LIFO.
-- Cima/tope.
-- `push`, `pop`, `peek/primero` y `esVacia`.
-- Simulación completa sin errores.
-- Pila con vector e índice `top`.
-- Pila con lista enlazada y cabecera/top.
-- Comparación de capacidad, memoria y riesgos.
-- Elección de pila/lista enlazada para un historial de tamaño desconocido.
+- Herencia, superclase y subclase.
+- Especialización y reutilización.
+- Relación conceptual `es un`.
+- `extends`.
+- `this` frente a `super`.
+- `super(...)` como primera sentencia del constructor.
+- Miembros estáticos.
+- Sobrecarga.
+- Sobrescritura.
+- Jerarquía `UsuarioSistema → Encargado / Operario`.
+- Contador estático de instancias.
+- Constructor Java recuperado y consolidado.
 
-### Comunicaciones — OSI/TCP-IP
+### Base de Datos — DER
 
-- Siete capas OSI en orden.
-- Cinco capas TCP/IP adoptadas por el material.
-- TCP/IP definido como arquitectura/pila, no como protocolo único.
-- Correspondencia completa OSI–TCP/IP.
-- Encapsulamiento y desencapsulamiento.
-- `PDU = SDU + PCI`.
-- Datos, segmento, paquete, trama y bits.
-- MAC, IP y puerto.
-- Switch capa 2 y router capa 3.
-- Procesamiento parcial por nodos intermedios.
-- Recorrido completo móvil → servidor → respuesta.
+- DER como modelo conceptual.
+- Entidades, atributos y relaciones.
+- Identificadores.
+- Cardinalidad 1:N.
+- Cardinalidad N:M.
+- Participación mínima/máxima.
+- Entidad fuerte y débil en el núcleo conceptual.
+- Atributos multivaluados y derivados.
+- Participación total/parcial.
+- `SECTOR 1:N ORDEN_TRABAJO`.
+- `ORDEN_TRABAJO N:M OPERARIO`.
+- Tabla asociativa `ASIGNACION_OT`.
+- Atributos propios de una relación.
+- Pasaje inicial de entidades y relaciones a tablas.
+- Elección de PK según exista o no historial.
 
 ### Integración
 
-- Una necesidad informal se transforma en RF, RNF y regla de negocio.
-- La operación `deshacer` se modela mediante una pila LIFO.
-- Las acciones no confirmadas forman un historial temporal.
-- La pila se vacía después de la confirmación exitosa del servidor.
-- La confirmación se encapsula y viaja mediante TCP/IP.
+- Necesidad/RF → caso de uso.
+- Actor → participación externa.
+- Caso de uso → varias clases y métodos.
+- Jerarquía de usuarios mediante herencia.
+- Entidades y relaciones persistentes mediante DER.
+- FK del lado N.
+- Tabla asociativa para N:M.
+- Caso de prueba con OT en estado `PENDIENTE`.
 
 ---
 
-## Recuperaciones consolidadas en el Día 6
+## Recuperaciones consolidadas en el Día 7
 
-1. TDA = datos/objetos + operaciones + interfaz independiente de implementación.
-2. Fases del PUD frente a flujos de trabajo.
-3. Síncrona frente a asíncrona.
-4. TCP/IP como arquitectura/pila.
-5. Switch/trama/MAC frente a router/paquete/IP.
-6. Correspondencia OSI–TCP/IP.
-7. Procesamiento parcial de nodos y desencapsulamiento completo en destino.
+1. **Constructor Java:** mismo nombre de clase, sin tipo de retorno y sin `void`.
+2. **PDU:** `Protocol Data Unit = SDU + PCI`.
+3. **Paquete/trama:** Red/Internet → paquete; Enlace/Acceso → trama.
+4. **Bits/bytes:** Física transmite bits/señales.
+5. **Alcance del modelo de datos:** se identifican entidades y relaciones antes de pasar a tablas.
+6. **`peek`/`pop`:** consulta sin eliminar frente a devolución + eliminación.
 
 ---
 
-## Ajustes detectados durante el Día 6
+## Ajustes detectados durante el Día 7
 
-1. `Completo` y `verificable` son propiedades diferentes.
-2. `peek()` consulta/devuelve la cima sin eliminarla.
-3. Una pila enlazada no se desborda por una capacidad fija; está limitada por memoria y referencias.
-4. PDU significa **Unidad de Datos de Protocolo**, no de proceso.
-5. El constructor Java no declara tipo de retorno, ni siquiera `void`.
-6. Internet/Red forma un paquete; Acceso/Enlace forma una trama.
-7. Física transmite bits/señales, no bytes como unidad principal.
-8. La pila temporal debe vaciarse después de recibir confirmación exitosa del servidor.
-9. Un RNF de rendimiento necesita condiciones de carga y ambiente para ser completamente verificable.
+1. Un resultado de valor debe expresarse desde el objetivo del actor, no solo como “persistir”.
+2. `--|>` es una notación textual válida de generalización; la punta triangular apunta al padre.
+3. La consigna de postcondiciones exigía dos de éxito y una de fallo.
+4. `toString()` fue requerido pero omitido en el código final.
+5. Instancia significa ocurrencia concreta, no cantidad de objetos.
+6. Rectángulo doble = entidad débil.
+7. Línea doble = participación total.
+8. Una entidad/tabla asociativa no es débil automáticamente.
+9. Una relación N:M conceptual se implementa mediante una tabla asociativa en el modelo relacional.
+10. `Completo` volvió a mezclarse con `verificable` al incluir “medible”.
+11. En el pasaje a tablas faltó declarar un `UNIQUE` relevante.
+12. La PK compuesta `(id_ot,id_operario)` no permite varias asignaciones históricas de la misma pareja.
 
 ---
 
@@ -112,32 +133,42 @@
 
 ### Análisis y Diseño
 
-1. Relaciones UML: asociación, agregación, composición y dependencia.
-2. Completo frente a verificable — recuperación espaciada.
-3. Casos de uso, actores, `include`, `extend` y generalización.
+1. Asociación, agregación, composición y dependencia.
+2. Generalización UML: notación precisa.
+3. Completo frente a verificable.
+4. Resultado de valor frente a detalle técnico.
+5. Practicar una defensa integrada continua.
+6. Modelo de análisis: interfaz, control y entidad.
 
-### Programación Orientada a Objetos / Java
+### POO / Java
 
-4. Precisión de sintaxis Java escrita, especialmente constructor.
-5. Herencia, `extends`, `super` y miembros estáticos.
+7. Precisión general de sintaxis Java.
+8. `toString()` y clase `Object`.
+9. `equals/hashCode` y comparación.
+10. Abstracción, interfaces y polimorfismo.
 
 ### Algoritmos y Estructuras
 
-6. Complejidades de algoritmos de ordenación.
-7. Riesgo de vector frente a lista enlazada sin ayuda.
-8. Colas e implementaciones posteriores.
+11. Complejidades de ordenación.
+12. Riesgo de vector frente a lista enlazada.
+13. Colas, FIFO y sus implementaciones.
 
 ### Base de Datos
 
-9. DCL/TCL.
-10. DER y pasaje a tablas.
+14. Instancia como ocurrencia concreta.
+15. Simbología DER completa.
+16. Entidad asociativa frente a entidad débil.
+17. Reglas generales de pasaje a tablas.
+18. `UNIQUE` y claves para historial.
+19. DCL/TCL.
+20. Normalización y álgebra relacional.
 
 ### Comunicaciones
 
-11. PDU: expansión exacta de la sigla.
-12. Paquete frente a trama bajo presión oral.
-13. Bits frente a bytes en Física.
-14. Contenidos de transmisión, enlace, redes y WAN todavía no recorridos.
+21. Medida de la información.
+22. Señales, muestreo y transmisión.
+23. Serie/paralela.
+24. Profundizar enlace, Ethernet, WAN y conmutación.
 
 ---
 
@@ -145,26 +176,50 @@
 
 | Estado | Cantidad |
 |---|---:|
-| Consolidado | 21 |
-| Corregido, pendiente de consolidación | 6 |
-| Abierto | 8 |
-| **Total registrado** | **35** |
+| Consolidado | **26** |
+| Corregido, pendiente de consolidación | **3** |
+| Abierto | **10** |
+| **Total registrado** | **39** |
+
+Nuevos códigos del Día 7:
+
+- `E-036` — notación de generalización UML;
+- `E-037` — instancia confundida con cantidad;
+- `E-038` — simbología de entidad débil/participación total;
+- `E-039` — entidad asociativa confundida con entidad débil.
 
 ---
 
-## Evidencia principal del Día 6
+## Evidencia principal del Día 7
 
-- `EVALUACIONES/2026-08-11_RESPUESTAS-DIA-06.md`
-- `EVALUACIONES/2026-08-11_RESULTADOS-DIA-06.md`
-- `04-MATRIZ-DE-PROGRESO-ACTUALIZACION-DIA-06.md`
-- `06-ERRORES-Y-RECUPERACIONES-DIA-06.md`
-- `RESUMENES/2026-08-11_CIERRE-DIA-06.md`
-- `RESUMENES/2026-08-11_ESTADO-ACUMULADO-DIAS-01-A-06.md`
+- `DIAS/2026-08-12_DIA-07_CASOS-DE-USO-HERENCIA-DER.md`
+- `EVALUACIONES/2026-08-12_RESPUESTAS-DIA-07.md`
+- `EVALUACIONES/2026-08-12_RESULTADOS-DIA-07.md`
+- `04-MATRIZ-DE-PROGRESO-ACTUALIZACION-DIA-07.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-07.md`
+- `RESUMENES/2026-08-12_CIERRE-DIA-07.md`
+- `RESUMENES/2026-08-12_ESTADO-ACUMULADO-DIAS-01-A-07.md`
+
+---
+
+## Próxima jornada
+
+**Día 8 — 13/08/2026: Modelo de análisis + Colas + Transmisión**
+
+Recuperación inicial recomendada:
+
+- generalización UML;
+- instancia;
+- rectángulo doble/línea doble;
+- asociativa frente a débil;
+- completo/verificable;
+- `toString()`;
+- N:M conceptual frente a tabla asociativa.
 
 ---
 
 ## Criterio de cierre
 
-El Día 6 se considera **CERRADO Y APROBADO con 9,2/10**.
+El Día 7 se considera **CERRADO Y APROBADO con 8,3/10**.
 
-Los estados `Defendible oralmente` se aplican únicamente a los núcleos efectivamente defendidos durante esta jornada, no a la totalidad de cada asignatura.
+Los estados `Defendible oralmente` continúan limitados a núcleos formalmente defendidos. Los contenidos nuevos del Día 7 se consideran principalmente `Aplicados`.
