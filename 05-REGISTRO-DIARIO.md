@@ -1,19 +1,16 @@
 # Registro diario — EFIP I
 
-**Actualizado al cierre del Día 7 — 12/08/2026**
+**Actualizado al cierre del Día 8 — 13/08/2026**
 
-Este archivo funciona como índice acumulado de jornadas. El detalle completo se conserva en `EVALUACIONES/`, `RESUMENES/`, matrices específicas y archivos diarios de errores.
+Este archivo funciona como índice acumulado. El detalle se conserva en `EVALUACIONES/`, `RESUMENES/`, matrices y registros diarios de errores.
 
 ---
 
 ## 2026-08-05 — Día 1 — Diagnóstico general
 
-**Estado:** DIAGNÓSTICO  
-**Materias:** las cinco materias EFIP I
+**Estado:** DIAGNÓSTICO
 
-### Resultado
-
-| Materia | Nota diagnóstica |
+| Materia | Nota |
 |---|---:|
 | Análisis y Diseño | 4,75/10 |
 | POO | 5,5/10 |
@@ -22,168 +19,76 @@ Este archivo funciona como índice acumulado de jornadas. El detalle completo se
 | Comunicaciones | 4,75/10 |
 | **Promedio** | **5,6/10** |
 
-### Conclusión
-
-La capacidad práctica inicial era superior a la precisión terminológica. Se priorizaron Análisis y Diseño, Comunicaciones, POO, Base de Datos y Estructuras.
-
-### Evidencia
-
-- `EVALUACIONES/2026-08-05_DIAGNOSTICO-INICIAL.md`
-- `EVALUACIONES/2026-08-05_RESPUESTAS-DIAGNOSTICO.md`
-- `RESUMENES/2026-08-05_ANALISIS-COMPLETO-DIA-01.md`
+Conclusión: experiencia práctica superior a precisión terminológica.
 
 ---
 
 ## 2026-08-06 — Día 2 — Análisis y Diseño + POO
 
-**Estado:** CERRADO Y APROBADO
+**Estado:** CERRADO Y APROBADO  
+**Global:** **8,0/10**
 
-### Resultado
-
-- Evaluación escrita: **8,1/10**.
-- Defensa oral: **7,8/10**.
-- Resultado global: **8,0/10**.
-
-### Avances
+Avances:
 
 - modelos y metodología;
 - núcleo del PUD;
-- clase y objeto;
+- clase/objeto;
 - estado;
 - encapsulamiento;
 - constructor.
 
-### Pendientes
-
-- Construcción/Transición;
-- iteración/incremento;
-- identidad;
-- sobrecarga/sobrescritura;
-- sintaxis Java.
-
-### Evidencia
-
-- `EVALUACIONES/2026-08-06_RESULTADOS-DIA-02.md`
-- `RESUMENES/2026-08-06_CIERRE-DIA-02.md`
-- `06-ERRORES-Y-RECUPERACIONES-DIA-02.md`
-
 ---
 
-## 2026-08-07 — Día 3 — Estructuras básicas + Modelo relacional
+## 2026-08-07 — Día 3 — Estructuras + Modelo relacional
 
-**Estado:** CERRADO Y APROBADO
+**Estado:** CERRADO Y APROBADO  
+**Global:** **8,3/10**
 
-### Resultado
+Avances:
 
-- Evaluación escrita: **8,6/10**.
-- Defensa oral: **8,0/10**.
-- Resultado global aproximado: **8,3/10**.
-
-### Avances
-
-- TDA;
-- estructuras estáticas/dinámicas;
-- arreglo, nodo y lista enlazada;
+- TDA, arreglo, nodo y lista;
 - relación, tupla, atributo y dominio;
 - grado, cardinalidad, PK y FK.
-
-### Pendientes
-
-- interfaz independiente de implementación;
-- complejidades;
-- superclave/clave candidata;
-- precisión de FK.
-
-### Evidencia
-
-- `EVALUACIONES/2026-08-07_RESULTADOS-DIA-03.md`
-- `RESUMENES/2026-08-07_CIERRE-DIA-03.md`
-- `06-ERRORES-Y-RECUPERACIONES-DIA-03.md`
 
 ---
 
 ## 2026-08-08 — Día 4 — Comunicaciones
 
 **Estado:** CERRADO Y APROBADO  
-**Modalidad:** escrita
+**Nota escrita:** **8,6/10**
 
-### Resultado
-
-- Puntaje bruto: **5,16/6**.
-- Nota normalizada: **8,6/10**.
-
-### Avances
+Avances:
 
 - sistema de comunicaciones;
 - protocolo;
-- capas OSI;
-- TCP/IP;
+- OSI/TCP-IP;
 - encapsulamiento;
-- unidades de datos;
 - MAC/IP;
 - switch/router.
-
-### Pendientes
-
-- TCP/IP como arquitectura/pila;
-- PDU;
-- puerto;
-- funciones de capa vs. dispositivo;
-- síncrona/asíncrona.
-
-### Evidencia
-
-- `EVALUACIONES/2026-08-08_RESULTADOS-DIA-04.md`
-- `RESUMENES/2026-08-08_CIERRE-DIA-04.md`
-- `06-ERRORES-Y-RECUPERACIONES-DIA-04.md`
 
 ---
 
 ## 2026-08-10 — Día 5 — PUD + POO + Modelo relacional
 
-**Estado:** CERRADO Y APROBADO
+**Estado:** CERRADO Y APROBADO  
+**Global:** **9,0/10**
 
-### Resultado
-
-| Instancia | Nota |
-|---|---:|
-| Evaluación escrita/integrada | **9,0/10** |
-| Defensa oral | **9,0/10** |
-| **Global Día 5** | **9,0/10** |
-
-### Avances
+Avances:
 
 - PUD aplicado a `Programar Orden de Trabajo`;
 - fases, iteración e incremento;
-- clase/objeto/identidad/encapsulamiento;
+- objeto, identidad y encapsulamiento;
 - clase Java `OrdenTrabajo`;
-- modelo relacional;
-- superclave, candidata, primaria y foránea;
-- relación `SECTOR 1:N ORDEN_TRABAJO`.
+- modelo relacional y claves;
+- `SECTOR 1:N ORDEN_TRABAJO`.
 
-### Recuperaciones
+Recuperaciones principales:
 
 - Construcción/Transición;
-- iteración/incremento;
 - identidad/ID;
 - sobrecarga/sobrescritura;
-- clave candidata/FK;
+- candidata/FK;
 - puerto.
-
-### Pendientes
-
-- constructor Java;
-- TDA/interfaz;
-- PDU;
-- síncrona/asíncrona;
-- fases/flujos bajo presión.
-
-### Evidencia
-
-- `EVALUACIONES/2026-08-10_RESPUESTAS-DIA-05.md`
-- `EVALUACIONES/2026-08-10_RESULTADOS-DIA-05.md`
-- `RESUMENES/2026-08-10_CIERRE-DIA-05.md`
-- `06-ERRORES-Y-RECUPERACIONES-DIA-05.md`
 
 ---
 
@@ -191,153 +96,153 @@ La capacidad práctica inicial era superior a la precisión terminológica. Se p
 
 **Estado:** CERRADO Y APROBADO
 
-### Resultado
-
 | Instancia | Resultado |
 |---|---:|
-| Evaluación escrita | **7,35/8,00 = 9,2/10** |
-| Defensa oral | **1,80/2,00 = 9,0/10** |
-| **Global Día 6** | **9,15/10 → 9,2/10** |
+| Escrito | 7,35/8,00 = 9,2/10 |
+| Oral | 1,80/2,00 = 9,0/10 |
+| **Global** | **9,2/10** |
 
-### Avances
+Avances:
 
 - Ingeniería de Requerimientos;
-- elicitación, especificación y validación;
 - RF/RNF/regla de negocio;
 - calidad y trazabilidad;
-- pila/LIFO;
+- Pila/LIFO;
 - vector/lista enlazada;
 - OSI/TCP-IP;
 - encapsulamiento y PDU;
-- MAC/IP/puerto;
-- recorrido móvil-servidor.
-
-### Recuperaciones consolidadas
-
-- TDA/interfaz;
-- fases/flujos;
-- síncrona/asíncrona;
-- TCP/IP como pila;
-- switch/router y unidades.
-
-### Pendientes
-
-- completo/verificable;
-- constructor;
-- PDU exacta;
-- riesgo de lista enlazada;
-- paquete/trama;
-- bits/bytes;
-- `peek`.
-
-### Evidencia
-
-- `EVALUACIONES/2026-08-11_RESPUESTAS-DIA-06.md`
-- `EVALUACIONES/2026-08-11_RESULTADOS-DIA-06.md`
-- `RESUMENES/2026-08-11_CIERRE-DIA-06.md`
-- `06-ERRORES-Y-RECUPERACIONES-DIA-06.md`
+- MAC/IP/puerto.
 
 ---
 
 ## 2026-08-12 — Día 7 — Casos de uso + Herencia + DER
 
-**Etapa:** tercera jornada intensiva de vacaciones  
+**Estado:** CERRADO Y APROBADO
+
+| Instancia | Resultado |
+|---|---:|
+| Escrito | 6,53/8,00 = 8,2/10 |
+| Defensa distribuida | 1,72/2,00 = 8,6/10 |
+| **Global** | **8,3/10** |
+
+Avances:
+
+- actores, casos, límite, `include`, `extend` y generalización;
+- precondiciones, flujos y postcondiciones;
+- herencia, `extends`, `this`, `super` y `static`;
+- jerarquía Java;
+- DER, 1:N, N:M y tabla asociativa.
+
+Errores nuevos: `E-036` a `E-039`.
+
+---
+
+## 2026-08-13 — Día 8 — Modelo de análisis + Colas + Transmisión
+
+**Etapa:** cuarta jornada intensiva de vacaciones  
 **Estado:** **CERRADO Y APROBADO**  
-**Modalidad:** evaluación escrita + defensa distribuida durante controles interactivos
+**Modalidad:** evaluación escrita + defensa oral integrada
 
 ### Objetivos
 
-- estudiar actores, casos de uso y límite;
-- diferenciar `include`, `extend` y generalización;
-- redactar precondiciones, flujos y postcondiciones;
-- aplicar herencia, `extends`, `this`, `super` y `static`;
-- escribir una jerarquía Java;
-- construir un DER;
-- aplicar cardinalidades y pasaje inicial a tablas;
-- recuperar errores del Día 6.
+- estudiar el propósito y artefactos del análisis;
+- diferenciar casos de uso y modelo de análisis;
+- aplicar interfaz/control/entidad y colaboración;
+- estudiar Cola, FIFO y operaciones;
+- comparar vector y lista enlazada;
+- estudiar información, señales, frecuencia y muestreo;
+- diferenciar serie/paralela y síncrona/asíncrona;
+- integrar los tres bloques.
 
 ### Actividades realizadas
 
-- recuperación inicial de constructor, PDU, completo/verificable, paquete/trama, bits/señales y `peek/pop`;
-- actor, caso de uso, valor y límite;
-- relaciones UML de casos de uso;
-- caso `Crear Orden de Trabajo`;
-- herencia y relación `es un`;
-- constructores de superclase/subclase;
-- miembro estático;
-- sobrecarga/sobrescritura;
-- jerarquía `UsuarioSistema → Encargado / Operario`;
-- DER de Sector, OT, Operario y Asignación;
-- cardinalidades 1:N y N:M;
-- entidad fuerte/débil;
-- multivaluados/derivados;
-- tabla asociativa y elección de PK;
-- evaluación final;
-- corrección y defensa distribuida.
+- recuperación de generalización, instancia, DER, asociativa/débil, completo/verificable y `toString`;
+- modelo de análisis;
+- clases de interfaz, control y entidad;
+- realización y colaboración de `Registrar ejecución de OT`;
+- Cola/FIFO y simulaciones;
+- Cola con vector y lista;
+- Pila frente a Cola;
+- información/probabilidad/incertidumbre;
+- frecuencia/período;
+- muestreo;
+- transmisión serie/paralela y síncrona/asíncrona;
+- caso integrador;
+- evaluación escrita;
+- defensa oral;
+- creación de tarjetas de recuperación.
 
 ### Resultado
 
 | Instancia | Resultado | Estado |
 |---|---:|---|
-| Casos de uso | **2,10/2,50** | Aprobado |
-| Herencia/Java | **2,22/2,50** | Aprobado |
-| DER | **1,86/2,50** | Aprobado con ajustes |
-| Integración/recuperación | **0,35/0,50** | Aprobado |
-| Evaluación escrita | **6,53/8,00 = 8,2/10** | Aprobado |
-| Defensa distribuida | **1,72/2,00 = 8,6/10** | Aprobado |
-| **Global Día 7** | **8,25/10 → 8,3/10** | **APROBADO** |
+| Modelo de análisis | 2,10/2,50 | Aprobado |
+| Colas | 2,22/2,50 | Aprobado |
+| Transmisión | 1,57/2,50 | Aprobado con recuperación |
+| Integración/recuperación | 0,41/0,50 | Aprobado |
+| Evaluación escrita | 6,30/8,00 = 7,9/10 | Aprobado |
+| Defensa oral | 1,60/2,00 = 8,0/10 | Aprobado |
+| **Global Día 8** | **7,90/10** | **APROBADO** |
 
 ### Aciertos
 
-- actor, caso y límite correctamente diferenciados;
-- `include` y `extend` comprendidos;
-- caso de uso detallado aplicado;
-- herencia y jerarquía Java sólidas;
-- constructor recuperado;
-- `super`, `this`, `static`, sobrecarga y sobrescritura aplicados;
-- Sector–OT 1:N;
-- OT–Operario N:M;
-- tabla `ASIGNACION_OT` y atributos propios;
-- PDU, paquete/trama y bits/señales consolidados.
+- vista externa/interna diferenciadas;
+- interfaz/control/entidad defendidos;
+- colaboración conceptual aplicada;
+- Cola/FIFO defendida;
+- simulación perfecta;
+- vector/lista comparados;
+- frecuencia y muestreo calculados correctamente;
+- serie/paralela y síncrona/asíncrona clasificadas;
+- integración entre materias.
 
 ### Errores/ajustes
 
-- `--|>` de generalización interpretado como incorrecto;
-- instancia definida como cantidad de objetos;
-- rectángulo doble/línea doble confundidos;
-- `ASIGNACION_OT` clasificada automáticamente como débil;
-- completo volvió a mezclarse con verificable;
-- `toString()` omitido;
-- faltó una segunda postcondición de éxito;
-- faltó `UNIQUE` en el pasaje final.
+- alternativo sin conexión omitido en el escrito;
+- caso `Registrar ejecución` desviado inicialmente a crear OT;
+- contrato TDA/implementación no respondido en el escrito;
+- Pila parcialmente formulada como FIFO;
+- FIFO confundido oralmente con trazabilidad;
+- fórmula y unidades de información omitidas;
+- contradicción oral probabilidad/información;
+- amplitud, período, frecuencia y muestreo imprecisos;
+- digitalización justificada como necesidad universal;
+- línea doble omitida.
 
-### Nuevos códigos
+### Cambios de errores
 
-- `E-036` — notación de generalización UML;
-- `E-037` — instancia confundida con cantidad;
-- `E-038` — simbología entidad débil/participación total;
-- `E-039` — entidad asociativa confundida con débil.
+Consolidados:
 
-### Recuperaciones consolidadas
+- `E-011` — selección de estructura;
+- `E-032` — completo/verificable;
+- `E-033` — riesgo vector/lista.
 
-- `E-012` — alcance del modelo de datos;
-- `E-025` — PDU;
-- `E-030` — constructor Java;
-- `E-034` — paquete/trama;
-- `E-035` — bits/bytes.
+Corregidos:
+
+- `E-036` — generalización UML;
+- `E-037` — instancia;
+- `E-039` — asociativa/débil.
+
+Nuevos:
+
+- `E-040` a `E-045`.
+
+### Tarjetas
+
+```text
+TARJETAS/2026-08-13_TARJETAS-RECUPERACION-ERRORES-DIA-08.md
+```
 
 ### Evidencia
 
-- `DIAS/2026-08-12_DIA-07_CASOS-DE-USO-HERENCIA-DER.md`
-- `EVALUACIONES/2026-08-12_RESPUESTAS-DIA-07.md`
-- `EVALUACIONES/2026-08-12_RESULTADOS-DIA-07.md`
-- `04-MATRIZ-DE-PROGRESO-ACTUALIZACION-DIA-07.md`
-- `06-ERRORES-Y-RECUPERACIONES-DIA-07.md`
-- `RESUMENES/2026-08-12_CIERRE-DIA-07.md`
-- `RESUMENES/2026-08-12_ESTADO-ACUMULADO-DIAS-01-A-07.md`
+- `EVALUACIONES/2026-08-13_RESPUESTAS-DIA-08.md`
+- `EVALUACIONES/2026-08-13_RESULTADOS-DIA-08.md`
+- `04-MATRIZ-DE-PROGRESO-ACTUALIZACION-DIA-08.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-08.md`
+- `RESUMENES/2026-08-13_CIERRE-DIA-08.md`
+- `RESUMENES/2026-08-13_ESTADO-ACUMULADO-DIAS-01-A-08.md`
+- `TARJETAS/2026-08-13_TARJETAS-RECUPERACION-ERRORES-DIA-08.md`
 
 ### Próxima jornada
 
-**13/08/2026 — Día 8: Modelo de análisis + Colas + Transmisión**.
-
-Debe incluir recuperación breve de generalización UML, instancia, simbología DER, asociativa/débil, completo/verificable, `toString()` y N:M conceptual/tabla asociativa.
+**14/08/2026 — Día 9: Diseño + Abstracción/Polimorfismo + Normalización**.

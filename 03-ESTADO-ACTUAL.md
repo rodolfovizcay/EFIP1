@@ -1,225 +1,182 @@
 # Estado actual — EFIP I
 
-**Fecha académica registrada:** 12 de agosto de 2026  
-**Jornada:** Día 7 — Casos de uso + Herencia + DER — CERRADO  
-**Modalidad evaluada:** escrita + defensa distribuida en controles interactivos  
-**Próxima acción:** preparar el Día 8 del 13/08/2026 con Modelo de análisis + Colas + Transmisión.
+**Fecha académica registrada:** 13 de agosto de 2026  
+**Jornada:** Día 8 — Modelo de análisis + Colas + Transmisión — CERRADO  
+**Resultado global:** **7,9/10 — APROBADO**  
+**Próxima acción:** Día 9 — Diseño + Abstracción/Polimorfismo + Normalización.
 
 ---
 
-## Resultado acumulado
+## Resultado del Día 8
 
-| Materia | Diagnóstico Día 1 | Última evidencia | Estado actual |
-|---|---:|---:|---|
-| Análisis y Diseño | 4,75/10 | Día 7: casos de uso aplicados; global 8,3/10 | PUD y Requerimientos defendibles; casos de uso aplicados con notación UML pendiente |
-| Programación Orientada a Objetos | 5,5/10 | Día 7: jerarquía Java y herencia; global 8,3/10 | Fundamentos y herencia aplicados; constructor consolidado; `Object/toString` pendiente |
-| Algoritmos y Estructuras | 7,0/10 | Día 6: pila/LIFO defendidos; recuperaciones Día 7 | TDA y Pilas aplicados; Colas pendientes |
-| Base de Datos | 6,0/10 | Día 7: DER y pasaje a tablas; global 8,3/10 | Modelo relacional/claves defendibles; DER aplicado con simbología y clasificación pendientes |
-| Comunicaciones | 4,75/10 | Día 6: 9,2/10 global; recuperaciones Día 7 | OSI/TCP-IP defendible; PDU, paquete/trama y bits/señales consolidados |
+| Instancia | Resultado |
+|---|---:|
+| Modelo de análisis | 2,10/2,50 |
+| Colas | 2,22/2,50 |
+| Transmisión | 1,57/2,50 |
+| Integración/recuperación | 0,41/0,50 |
+| Evaluación escrita | 6,30/8,00 = 7,9/10 |
+| Defensa oral | 1,60/2,00 = 8,0/10 |
+| **Global** | **7,90/10** |
 
-> Las notas de los Días 5, 6 y 7 corresponden a evaluaciones integradas. No deben interpretarse como exámenes completos e independientes de cada materia.
-
----
-
-## Resultado del Día 7
-
-- Evaluación escrita: **6,53/8,00 = 8,2/10**.
-- Defensa distribuida: **1,72/2,00 = 8,6/10**.
-- Resultado global: **8,25/10 → 8,3/10 — APROBADO**.
-- Materias principales: **Análisis y Diseño + POO + Base de Datos**.
-- Caso integrador: **crear, asignar y gestionar Órdenes de Trabajo mediante casos de uso, jerarquía de clases y DER**.
-
-> La defensa se obtuvo de respuestas justificadas durante los controles interactivos. No hubo una exposición única de 8–10 minutos; por eso los temas nuevos se registran principalmente como `A`, no como `DO` generalizado.
+> La nota es integrada y no equivale a un examen completo independiente de cada materia.
 
 ---
 
-## Avances confirmados
+## Estado por materia
 
-### Análisis y Diseño — Casos de uso
-
-- Actor como rol externo.
-- Caso de uso como secuencia que aporta un resultado de valor.
-- Límite del sistema.
-- Asociación actor–caso.
-- Nombres verbales de casos de uso.
-- `include` como comportamiento obligatorio.
-- Dirección `BASE → INCLUIDO`.
-- `extend` como comportamiento opcional/condicionado.
-- Dirección `EXTENSIÓN → BASE`.
-- Generalización conceptual `HIJO → PADRE`.
-- Precondiciones como estados previos.
-- Disparador.
-- Flujo principal.
-- Flujo alternativo.
-- Excepción.
-- Postcondiciones de éxito/fallo.
-- Aplicación a `Crear Orden de Trabajo`.
-
-### POO / Java — Herencia
-
-- Herencia, superclase y subclase.
-- Especialización y reutilización.
-- Relación conceptual `es un`.
-- `extends`.
-- `this` frente a `super`.
-- `super(...)` como primera sentencia del constructor.
-- Miembros estáticos.
-- Sobrecarga.
-- Sobrescritura.
-- Jerarquía `UsuarioSistema → Encargado / Operario`.
-- Contador estático de instancias.
-- Constructor Java recuperado y consolidado.
-
-### Base de Datos — DER
-
-- DER como modelo conceptual.
-- Entidades, atributos y relaciones.
-- Identificadores.
-- Cardinalidad 1:N.
-- Cardinalidad N:M.
-- Participación mínima/máxima.
-- Entidad fuerte y débil en el núcleo conceptual.
-- Atributos multivaluados y derivados.
-- Participación total/parcial.
-- `SECTOR 1:N ORDEN_TRABAJO`.
-- `ORDEN_TRABAJO N:M OPERARIO`.
-- Tabla asociativa `ASIGNACION_OT`.
-- Atributos propios de una relación.
-- Pasaje inicial de entidades y relaciones a tablas.
-- Elección de PK según exista o no historial.
-
-### Integración
-
-- Necesidad/RF → caso de uso.
-- Actor → participación externa.
-- Caso de uso → varias clases y métodos.
-- Jerarquía de usuarios mediante herencia.
-- Entidades y relaciones persistentes mediante DER.
-- FK del lado N.
-- Tabla asociativa para N:M.
-- Caso de prueba con OT en estado `PENDIENTE`.
+| Materia | Diagnóstico Día 1 | Estado actual |
+|---|---:|---|
+| Análisis y Diseño | 4,75 | PUD y Requerimientos defendibles; casos de uso aplicados; modelo de análisis defendido en su núcleo |
+| POO | 5,5 | Fundamentos y herencia aplicados; abstracción/polimorfismo pendientes |
+| Algoritmos y Estructuras | 7,0 | Pila/LIFO y Cola/FIFO aplicadas; comparación vector/lista defendida |
+| Base de Datos | 6,0 | Modelo relacional y claves defendibles; DER aplicado con simbología pendiente |
+| Comunicaciones | 4,75 | OSI/TCP-IP defendible; Transmisión aplicada con fórmulas y unidades en recuperación |
 
 ---
 
-## Recuperaciones consolidadas en el Día 7
+## Avances confirmados del Día 8
 
-1. **Constructor Java:** mismo nombre de clase, sin tipo de retorno y sin `void`.
-2. **PDU:** `Protocol Data Unit = SDU + PCI`.
-3. **Paquete/trama:** Red/Internet → paquete; Enlace/Acceso → trama.
-4. **Bits/bytes:** Física transmite bits/señales.
-5. **Alcance del modelo de datos:** se identifican entidades y relaciones antes de pasar a tablas.
-6. **`peek`/`pop`:** consulta sin eliminar frente a devolución + eliminación.
+### Modelo de análisis
+
+- vista externa de casos de uso frente a vista interna conceptual;
+- propósito y artefactos del análisis;
+- clases `<<interfaz>>`, `<<control>>` y `<<entidad>>`;
+- responsabilidades conceptuales;
+- realización y colaboración;
+- mensajes de análisis frente a métodos definitivos;
+- colaboración frente a secuencia de diseño.
+
+### Colas
+
+- Cola como TDA FIFO;
+- frente, final y operaciones;
+- simulación sin errores;
+- Cola con vector y lista enlazada;
+- comparación de capacidad, memoria y riesgos;
+- Pila frente a Cola;
+- Cola de prioridad;
+- selección según política de orden.
+
+### Transmisión
+
+- probabilidad, incertidumbre e información;
+- cálculos simples de información y tasa;
+- señales analógicas/digitales;
+- período, frecuencia y muestreo;
+- regla `fs≥2·fmax`;
+- serie/paralela;
+- asíncrona/síncrona;
+- integración con una medición de sensor.
 
 ---
 
-## Ajustes detectados durante el Día 7
+## Recuperaciones consolidadas
 
-1. Un resultado de valor debe expresarse desde el objetivo del actor, no solo como “persistir”.
-2. `--|>` es una notación textual válida de generalización; la punta triangular apunta al padre.
-3. La consigna de postcondiciones exigía dos de éxito y una de fallo.
-4. `toString()` fue requerido pero omitido en el código final.
-5. Instancia significa ocurrencia concreta, no cantidad de objetos.
-6. Rectángulo doble = entidad débil.
-7. Línea doble = participación total.
-8. Una entidad/tabla asociativa no es débil automáticamente.
-9. Una relación N:M conceptual se implementa mediante una tabla asociativa en el modelo relacional.
-10. `Completo` volvió a mezclarse con `verificable` al incluir “medible”.
-11. En el pasaje a tablas faltó declarar un `UNIQUE` relevante.
-12. La PK compuesta `(id_ot,id_operario)` no permite varias asignaciones históricas de la misma pareja.
+- `E-011` — selección de estructura.
+- `E-032` — completo frente a verificable.
+- `E-033` — riesgo de vector frente a lista enlazada.
+- N:M conceptual frente a tabla asociativa, dentro del núcleo trabajado.
+
+Corregidos, pendientes de consolidación:
+
+- `E-036` — generalización UML.
+- `E-037` — instancia.
+- `E-039` — asociativa frente a débil.
+
+Continúa abierto:
+
+- `E-038` — línea doble = participación total.
 
 ---
 
-## Pendientes abiertos prioritarios
+## Pendientes prioritarios
 
 ### Análisis y Diseño
 
-1. Asociación, agregación, composición y dependencia.
-2. Generalización UML: notación precisa.
-3. Completo frente a verificable.
-4. Resultado de valor frente a detalle técnico.
-5. Practicar una defensa integrada continua.
-6. Modelo de análisis: interfaz, control y entidad.
+1. Realización con alternativo por falta de conexión.
+2. Mantener el objetivo exacto del caso durante la colaboración.
+3. Generalización UML con triángulo vacío.
+4. Asociación, agregación, composición y dependencia.
+5. Modelo de diseño.
 
 ### POO / Java
 
-7. Precisión general de sintaxis Java.
-8. `toString()` y clase `Object`.
-9. `equals/hashCode` y comparación.
-10. Abstracción, interfaces y polimorfismo.
+6. Implementar `toString()` cuando se solicita.
+7. `Object`, `equals` y `hashCode`.
+8. Abstracción, interfaces y polimorfismo.
 
-### Algoritmos y Estructuras
+### Estructuras
 
-11. Complejidades de ordenación.
-12. Riesgo de vector frente a lista enlazada.
-13. Colas, FIFO y sus implementaciones.
+9. Contrato del TDA frente a implementación.
+10. Pila=LIFO y Cola=FIFO bajo presión.
+11. Orden FIFO frente a trazabilidad.
+12. Complejidades de ordenación.
 
 ### Base de Datos
 
-14. Instancia como ocurrencia concreta.
-15. Simbología DER completa.
-16. Entidad asociativa frente a entidad débil.
-17. Reglas generales de pasaje a tablas.
-18. `UNIQUE` y claves para historial.
-19. DCL/TCL.
-20. Normalización y álgebra relacional.
+13. Instancia como ocurrencia concreta.
+14. Línea doble = participación total.
+15. Asociativa frente a débil.
+16. `UNIQUE`, historial, DCL/TCL y normalización.
 
 ### Comunicaciones
 
-21. Medida de la información.
-22. Señales, muestreo y transmisión.
-23. Serie/paralela.
-24. Profundizar enlace, Ethernet, WAN y conmutación.
+17. `I(E)=log₂(1/P(E))` y unidad bits.
+18. bits, bits/símbolo y bits/segundo.
+19. Amplitud, período y frecuencia.
+20. `f=1/T`, `T=1/f`.
+21. Definición de muestreo y efecto de aumentar `fs`.
+22. Digitalización, transmisión analógica y supuestos de protocolo.
 
 ---
 
-## Estado de errores canónico
+## Estado de errores
 
 | Estado | Cantidad |
 |---|---:|
-| Consolidado | **26** |
-| Corregido, pendiente de consolidación | **3** |
-| Abierto | **10** |
-| **Total registrado** | **39** |
+| Consolidado | **29** |
+| Corregido | **5** |
+| Abierto | **11** |
+| **Total** | **45** |
 
-Nuevos códigos del Día 7:
+Nuevos errores del Día 8:
 
-- `E-036` — notación de generalización UML;
-- `E-037` — instancia confundida con cantidad;
-- `E-038` — simbología de entidad débil/participación total;
-- `E-039` — entidad asociativa confundida con entidad débil.
+```text
+E-040 — realización de análisis incompleta/caso desviado
+E-041 — contrato TDA frente a implementación
+E-042 — Pila/Cola y orden frente a trazabilidad
+E-043 — información: relación, fórmula y unidades
+E-044 — parámetros de señal, fórmulas y muestreo
+E-045 — digitalización, política de envío y supuestos
+```
 
 ---
 
-## Evidencia principal del Día 7
+## Tarjetas de recuperación
 
-- `DIAS/2026-08-12_DIA-07_CASOS-DE-USO-HERENCIA-DER.md`
-- `EVALUACIONES/2026-08-12_RESPUESTAS-DIA-07.md`
-- `EVALUACIONES/2026-08-12_RESULTADOS-DIA-07.md`
-- `04-MATRIZ-DE-PROGRESO-ACTUALIZACION-DIA-07.md`
-- `06-ERRORES-Y-RECUPERACIONES-DIA-07.md`
-- `RESUMENES/2026-08-12_CIERRE-DIA-07.md`
-- `RESUMENES/2026-08-12_ESTADO-ACUMULADO-DIAS-01-A-07.md`
+```text
+TARJETAS/2026-08-13_TARJETAS-RECUPERACION-ERRORES-DIA-08.md
+```
+
+El mazo contiene tarjetas de análisis, TDA/Pila/Cola, información y unidades, señales, muestreo, transmisión y errores todavía activos del Día 7.
+
+---
+
+## Evidencia principal
+
+- `EVALUACIONES/2026-08-13_RESPUESTAS-DIA-08.md`
+- `EVALUACIONES/2026-08-13_RESULTADOS-DIA-08.md`
+- `04-MATRIZ-DE-PROGRESO-ACTUALIZACION-DIA-08.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-08.md`
+- `RESUMENES/2026-08-13_CIERRE-DIA-08.md`
+- `RESUMENES/2026-08-13_ESTADO-ACUMULADO-DIAS-01-A-08.md`
+- `TARJETAS/2026-08-13_TARJETAS-RECUPERACION-ERRORES-DIA-08.md`
 
 ---
 
 ## Próxima jornada
 
-**Día 8 — 13/08/2026: Modelo de análisis + Colas + Transmisión**
+**Día 9 — 14/08/2026: Diseño + Abstracción/Polimorfismo + Normalización**
 
-Recuperación inicial recomendada:
-
-- generalización UML;
-- instancia;
-- rectángulo doble/línea doble;
-- asociativa frente a débil;
-- completo/verificable;
-- `toString()`;
-- N:M conceptual frente a tabla asociativa.
-
----
-
-## Criterio de cierre
-
-El Día 7 se considera **CERRADO Y APROBADO con 8,3/10**.
-
-Los estados `Defendible oralmente` continúan limitados a núcleos formalmente defendidos. Los contenidos nuevos del Día 7 se consideran principalmente `Aplicados`.
+La recuperación inicial debe priorizar fórmulas/unidades de información, parámetros de señal, contrato TDA/implementación, Pila/Cola, trazabilidad, realización con alternativo y simbología DER.
