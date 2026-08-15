@@ -1,8 +1,8 @@
 # Registro diario — EFIP I
 
-**Actualizado al cierre del Día 8 — 13/08/2026**
+**Actualizado al cierre semanal por evidencia acumulada — 15/08/2026**
 
-Este archivo funciona como índice acumulado. El detalle se conserva en `EVALUACIONES/`, `RESUMENES/`, matrices y registros diarios de errores.
+Este archivo funciona como índice acumulado. El detalle se conserva en `EVALUACIONES/`, `EVIDENCIAS/`, `RESUMENES/`, matrices y registros de errores.
 
 ---
 
@@ -82,14 +82,6 @@ Avances:
 - modelo relacional y claves;
 - `SECTOR 1:N ORDEN_TRABAJO`.
 
-Recuperaciones principales:
-
-- Construcción/Transición;
-- identidad/ID;
-- sobrecarga/sobrescritura;
-- candidata/FK;
-- puerto.
-
 ---
 
 ## 2026-08-11 — Día 6 — Requisitos + Pilas + OSI/TCP-IP
@@ -133,116 +125,149 @@ Avances:
 - jerarquía Java;
 - DER, 1:N, N:M y tabla asociativa.
 
-Errores nuevos: `E-036` a `E-039`.
-
 ---
 
 ## 2026-08-13 — Día 8 — Modelo de análisis + Colas + Transmisión
 
-**Etapa:** cuarta jornada intensiva de vacaciones  
-**Estado:** **CERRADO Y APROBADO**  
-**Modalidad:** evaluación escrita + defensa oral integrada
+**Estado:** CERRADO Y APROBADO
 
-### Objetivos
+| Instancia | Resultado |
+|---|---:|
+| Modelo de análisis | 2,10/2,50 |
+| Colas | 2,22/2,50 |
+| Transmisión | 1,57/2,50 |
+| Integración/recuperación | 0,41/0,50 |
+| Escrito | 6,30/8,00 = 7,9/10 |
+| Oral | 1,60/2,00 = 8,0/10 |
+| **Global** | **7,9/10** |
 
-- estudiar el propósito y artefactos del análisis;
-- diferenciar casos de uso y modelo de análisis;
-- aplicar interfaz/control/entidad y colaboración;
-- estudiar Cola, FIFO y operaciones;
-- comparar vector y lista enlazada;
-- estudiar información, señales, frecuencia y muestreo;
-- diferenciar serie/paralela y síncrona/asíncrona;
-- integrar los tres bloques.
+Avances:
 
-### Actividades realizadas
-
-- recuperación de generalización, instancia, DER, asociativa/débil, completo/verificable y `toString`;
 - modelo de análisis;
-- clases de interfaz, control y entidad;
-- realización y colaboración de `Registrar ejecución de OT`;
-- Cola/FIFO y simulaciones;
-- Cola con vector y lista;
-- Pila frente a Cola;
-- información/probabilidad/incertidumbre;
-- frecuencia/período;
-- muestreo;
-- transmisión serie/paralela y síncrona/asíncrona;
-- caso integrador;
+- interfaz/control/entidad;
+- colaboración;
+- Cola/FIFO y vector/lista;
+- información, señales, frecuencia y muestreo;
+- serie/paralela y síncrona/asíncrona.
+
+---
+
+## 2026-08-14 — Día 9 — Diseño + Abstracción/Polimorfismo + Normalización
+
+**Estado:** **EN PAUSA**  
+**Nota:** no asignada  
+**Evaluación específica:** pendiente  
+**Defensa específica:** pendiente
+
+### Avance realizado
+
+#### Análisis y Diseño
+
+- análisis vs. diseño vs. implementación;
+- servicios, repositorios y Cola como elementos de diseño;
+- participantes, mensajes, línea de vida y foco de control;
+- secuencia normal;
+- alternativo sin conexión;
+- FIFO como necesidad y Cola como decisión.
+
+#### POO
+
+- abstracción vs. encapsulamiento;
+- clase y método abstractos;
+- interfaz `Auditable`;
+- `extends` e `implements`;
+- sobrescritura y polimorfismo;
+- código Java parcial de Email y Móvil.
+
+#### Base de Datos
+
+- anomalías;
+- 1FN y teléfonos;
+- 2FN y dependencias parciales;
+- 3FN y dependencia transitiva;
+- ID artificial frente a normalización.
+
+### Pendientes
+
+- caso integrador específico del Día 9;
 - evaluación escrita;
-- defensa oral;
-- creación de tarjetas de recuperación.
-
-### Resultado
-
-| Instancia | Resultado | Estado |
-|---|---:|---|
-| Modelo de análisis | 2,10/2,50 | Aprobado |
-| Colas | 2,22/2,50 | Aprobado |
-| Transmisión | 1,57/2,50 | Aprobado con recuperación |
-| Integración/recuperación | 0,41/0,50 | Aprobado |
-| Evaluación escrita | 6,30/8,00 = 7,9/10 | Aprobado |
-| Defensa oral | 1,60/2,00 = 8,0/10 | Aprobado |
-| **Global Día 8** | **7,90/10** | **APROBADO** |
-
-### Aciertos
-
-- vista externa/interna diferenciadas;
-- interfaz/control/entidad defendidos;
-- colaboración conceptual aplicada;
-- Cola/FIFO defendida;
-- simulación perfecta;
-- vector/lista comparados;
-- frecuencia y muestreo calculados correctamente;
-- serie/paralela y síncrona/asíncrona clasificadas;
-- integración entre materias.
-
-### Errores/ajustes
-
-- alternativo sin conexión omitido en el escrito;
-- caso `Registrar ejecución` desviado inicialmente a crear OT;
-- contrato TDA/implementación no respondido en el escrito;
-- Pila parcialmente formulada como FIFO;
-- FIFO confundido oralmente con trazabilidad;
-- fórmula y unidades de información omitidas;
-- contradicción oral probabilidad/información;
-- amplitud, período, frecuencia y muestreo imprecisos;
-- digitalización justificada como necesidad universal;
-- línea doble omitida.
-
-### Cambios de errores
-
-Consolidados:
-
-- `E-011` — selección de estructura;
-- `E-032` — completo/verificable;
-- `E-033` — riesgo vector/lista.
-
-Corregidos:
-
-- `E-036` — generalización UML;
-- `E-037` — instancia;
-- `E-039` — asociativa/débil.
-
-Nuevos:
-
-- `E-040` a `E-045`.
-
-### Tarjetas
-
-```text
-TARJETAS/2026-08-13_TARJETAS-RECUPERACION-ERRORES-DIA-08.md
-```
+- defensa;
+- cierre canónico.
 
 ### Evidencia
 
-- `EVALUACIONES/2026-08-13_RESPUESTAS-DIA-08.md`
-- `EVALUACIONES/2026-08-13_RESULTADOS-DIA-08.md`
-- `04-MATRIZ-DE-PROGRESO-ACTUALIZACION-DIA-08.md`
-- `06-ERRORES-Y-RECUPERACIONES-DIA-08.md`
-- `RESUMENES/2026-08-13_CIERRE-DIA-08.md`
-- `RESUMENES/2026-08-13_ESTADO-ACUMULADO-DIAS-01-A-08.md`
-- `TARJETAS/2026-08-13_TARJETAS-RECUPERACION-ERRORES-DIA-08.md`
+- `03-ESTADO-ACTUAL-PARCIAL-DIA-09.md`
+- `04-MATRIZ-DE-PROGRESO-PARCIAL-DIA-09.md`
+- `06-ERRORES-Y-RECUPERACIONES-PARCIAL-DIA-09.md`
+- `RESUMENES/2026-08-14_PROGRESO-PARCIAL-DIA-09.md`
 
-### Próxima jornada
+---
 
-**14/08/2026 — Día 9: Diseño + Abstracción/Polimorfismo + Normalización**.
+## 2026-08-15 — Caso integrador 1 y cierre semanal
+
+**Caso:** SIGO Móvil — Registrar ejecución de OT  
+**Práctica guiada:** COMPLETADA  
+**Evaluación formal de 100 puntos:** NO REALIZADA  
+**Puntaje del caso:** no asignado  
+**Semana:** **CERRADA POR EVIDENCIA ACUMULADA**
+
+### Actividades realizadas
+
+- recuperación inicial;
+- problema, objetivos, RF, RNF y reglas;
+- actores, casos de uso, `include`, `extend` y generalización;
+- flujo principal y alternativo sin conexión;
+- modelo de análisis y diseño;
+- POO y polimorfismo;
+- Pila/LIFO y Cola/FIFO;
+- FIFO frente a trazabilidad;
+- DER, cardinalidades y relaciones;
+- 1FN, 2FN y 3FN;
+- arquitectura TCP/IP;
+- información, frecuencia y muestreo;
+- integración oral de las cinco materias.
+
+### Decisión
+
+El estudiante decidió no rendir un examen semanal adicional porque las evaluaciones de los Días 5 a 8, las defensas y la práctica guiada ya aportaban evidencia suficiente.
+
+### Indicador semanal
+
+| Jornada cerrada | Nota |
+|---|---:|
+| Día 5 | 9,0/10 |
+| Día 6 | 9,2/10 |
+| Día 7 | 8,3/10 |
+| Día 8 | 7,9/10 |
+| **Promedio descriptivo** | **8,6/10** |
+
+```text
+Nivel semanal: ALTO
+Estado: APROBADO POR EVIDENCIA ACUMULADA
+```
+
+El promedio no es una nueva nota de examen y no cierra el Día 9.
+
+### Evidencia
+
+- `EVALUACIONES/2026-08-15_RESULTADO-SEMANAL-POR-EVIDENCIA.md`
+- `EVIDENCIAS/2026-08-15_EVIDENCIA-GUIADA-CASO-INTEGRADOR-01.md`
+- `RESUMENES/2026-08-15_RESUMEN-SEMANAL-POR-MATERIA.md`
+- `RESUMENES/2026-08-15_CIERRE-CASO-INTEGRADOR-01.md`
+
+---
+
+## Próxima acción
+
+**16/08/2026 — domingo opcional**
+
+```text
+Opción A: descanso completo.
+Opción B: completar Día 9.
+```
+
+Comando para continuar:
+
+```text
+Recuperar EFIP — 2026-08-16 — completar Día 9
+```
