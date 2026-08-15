@@ -1,182 +1,158 @@
 # Estado actual — EFIP I
 
-**Fecha académica registrada:** 13 de agosto de 2026  
-**Jornada:** Día 8 — Modelo de análisis + Colas + Transmisión — CERRADO  
-**Resultado global:** **7,9/10 — APROBADO**  
-**Próxima acción:** Día 9 — Diseño + Abstracción/Polimorfismo + Normalización.
+**Fecha académica registrada:** 15 de agosto de 2026  
+**Etapa:** Semana intensiva 1 — 10/08 al 15/08/2026  
+**Estado semanal:** **CERRADA POR EVIDENCIA ACUMULADA**  
+**Nivel semanal:** **ALTO / APROBADO**  
+**Indicador cuantitativo:** **8,6/10**  
+**Día 9:** **EN PAUSA — evaluación y defensa específicas pendientes**
+
+> El indicador 8,6/10 es el promedio de las cuatro evaluaciones cerradas de la semana: Día 5 = 9,0; Día 6 = 9,2; Día 7 = 8,3; Día 8 = 7,9. No es una nueva nota de examen semanal ni reemplaza la evaluación pendiente del Día 9.
 
 ---
 
-## Resultado del Día 8
+## Decisión de cierre semanal
 
-| Instancia | Resultado |
+La evaluación semanal de 100 puntos no se realizó por decisión del estudiante. El nivel semanal se determina mediante:
+
+- cuatro evaluaciones integradas ya corregidas y cerradas;
+- defensas orales de los Días 5, 6, 7 y 8;
+- progreso parcial documentado del Día 9;
+- resolución guiada del Caso integrador 1;
+- recuperaciones realizadas durante la semana;
+- capacidad de integrar las cinco materias en una explicación oral.
+
+El cierre semanal es académico y documental, pero no crea una calificación formal adicional.
+
+---
+
+## Resultados cerrados utilizados
+
+| Jornada | Resultado |
 |---|---:|
-| Modelo de análisis | 2,10/2,50 |
-| Colas | 2,22/2,50 |
-| Transmisión | 1,57/2,50 |
-| Integración/recuperación | 0,41/0,50 |
-| Evaluación escrita | 6,30/8,00 = 7,9/10 |
-| Defensa oral | 1,60/2,00 = 8,0/10 |
-| **Global** | **7,90/10** |
+| Día 5 — PUD + POO + modelo relacional | 9,0/10 |
+| Día 6 — Requisitos + Pilas + OSI/TCP-IP | 9,2/10 |
+| Día 7 — Casos de uso + Herencia + DER | 8,3/10 |
+| Día 8 — Modelo de análisis + Colas + Transmisión | 7,9/10 |
+| **Promedio de evidencia cerrada** | **8,6/10** |
 
-> La nota es integrada y no equivale a un examen completo independiente de cada materia.
+No se incorpora una nota del Día 9 porque su caso integrador, evaluación escrita y defensa específica todavía están pendientes.
 
 ---
 
-## Estado por materia
+## Nivel semanal por materia
 
-| Materia | Diagnóstico Día 1 | Estado actual |
-|---|---:|---|
-| Análisis y Diseño | 4,75 | PUD y Requerimientos defendibles; casos de uso aplicados; modelo de análisis defendido en su núcleo |
-| POO | 5,5 | Fundamentos y herencia aplicados; abstracción/polimorfismo pendientes |
-| Algoritmos y Estructuras | 7,0 | Pila/LIFO y Cola/FIFO aplicadas; comparación vector/lista defendida |
-| Base de Datos | 6,0 | Modelo relacional y claves defendibles; DER aplicado con simbología pendiente |
-| Comunicaciones | 4,75 | OSI/TCP-IP defendible; Transmisión aplicada con fórmulas y unidades en recuperación |
+| Materia | Nivel semanal | Evidencia principal | Precisión pendiente |
+|---|---|---|---|
+| Análisis y Diseño | **Alto — Aplicado y parcialmente defendible** | PUD, requisitos, casos de uso, análisis, diseño inicial y caso integrado | relaciones UML, secuencia/estados y precisión de alternativos |
+| POO | **Medio-alto — Aplicado** | encapsulamiento, herencia, abstracción, clase abstracta, interfaz y polimorfismo | completitud Java, validación de `String`, `toString()`, excepciones |
+| Estructuras | **Alto — Aplicado y defendible en Pila/Cola** | TDA, Pila LIFO, Cola FIFO, vector/lista y selección por política | FIFO vs. trazabilidad y algoritmos de ordenación |
+| Base de Datos | **Medio-alto — Aplicado** | modelo relacional, claves, DER, N:M, 1FN, 2FN y 3FN | asociativa/débil, claves históricas, `UNIQUE`, DCL/TCL |
+| Comunicaciones | **Medio-alto — Aplicado** | OSI/TCP-IP, encapsulamiento, PDU, switch/router, información, frecuencia y muestreo | supuestos de transmisión, definiciones/unidades y nivel físico avanzado |
+| Integración | **Alto — Aplicado oralmente** | cadena requisito→caso→análisis→diseño→POO/estructuras→datos→comunicaciones | practicar una defensa completa de 8–12 minutos |
 
 ---
 
-## Avances confirmados del Día 8
+## Avances de la semana
 
-### Modelo de análisis
+### Análisis y Diseño
 
-- vista externa de casos de uso frente a vista interna conceptual;
-- propósito y artefactos del análisis;
-- clases `<<interfaz>>`, `<<control>>` y `<<entidad>>`;
-- responsabilidades conceptuales;
-- realización y colaboración;
-- mensajes de análisis frente a métodos definitivos;
-- colaboración frente a secuencia de diseño.
+- PUD dirigido por casos de uso, centrado en la arquitectura e iterativo/incremental;
+- fases y flujos diferenciados;
+- Ingeniería de Requerimientos;
+- RF, RNF y reglas de negocio;
+- calidad de requisitos;
+- actores, casos, `include`, `extend` y generalización;
+- precondiciones, flujos y postcondiciones;
+- modelo de análisis e interfaz/control/entidad;
+- introducción al modelo de diseño, servicios, repositorios y secuencias.
 
-### Colas
+### POO
 
-- Cola como TDA FIFO;
-- frente, final y operaciones;
-- simulación sin errores;
-- Cola con vector y lista enlazada;
-- comparación de capacidad, memoria y riesgos;
-- Pila frente a Cola;
+- objeto, estado, comportamiento e identidad;
+- encapsulamiento;
+- constructores, `this`, `super` y `static`;
+- herencia, sobrecarga y sobrescritura;
+- abstracción y clase abstracta;
+- interfaz y `implements`;
+- polimorfismo mediante un tipo común;
+- `toString()` y validación de `String` en recuperación.
+
+### Estructuras
+
+- TDA e independencia de implementación;
+- Pila LIFO para deshacer;
+- Cola FIFO para solicitudes pendientes;
+- operaciones y simulaciones;
+- vector frente a lista enlazada;
 - Cola de prioridad;
-- selección según política de orden.
+- elección por política y operación dominante.
 
-### Transmisión
+### Base de Datos
 
-- probabilidad, incertidumbre e información;
-- cálculos simples de información y tasa;
-- señales analógicas/digitales;
+- modelo relacional y claves;
+- DER y cardinalidades;
+- relaciones 1:N y N:M;
+- tabla asociativa;
+- entidades fuertes y débiles;
+- pasaje a relaciones;
+- 1FN, 2FN y 3FN;
+- dependencias parciales y transitivas;
+- ID artificial frente a normalización.
+
+### Comunicaciones
+
+- sistema de comunicaciones;
+- OSI y TCP/IP;
+- encapsulamiento y desencapsulamiento;
+- PDU, SDU y PCI;
+- MAC, IP y puerto;
+- switch y router;
+- información e incertidumbre;
+- `I(E)=log₂(1/P(E))`;
 - período, frecuencia y muestreo;
-- regla `fs≥2·fmax`;
-- serie/paralela;
-- asíncrona/síncrona;
-- integración con una medición de sensor.
+- serie/paralela y síncrona/asíncrona.
 
 ---
 
-## Recuperaciones consolidadas
+## Caso integrador 1
 
-- `E-011` — selección de estructura.
-- `E-032` — completo frente a verificable.
-- `E-033` — riesgo de vector frente a lista enlazada.
-- N:M conceptual frente a tabla asociativa, dentro del núcleo trabajado.
+**Estado:** práctica guiada completada; evaluación formal de 100 puntos no realizada.
 
-Corregidos, pendientes de consolidación:
+Se trabajaron:
 
-- `E-036` — generalización UML.
-- `E-037` — instancia.
-- `E-039` — asociativa frente a débil.
+- problema, objetivos, RF, RNF y reglas;
+- actores, casos de uso y relaciones;
+- flujo principal y alternativo sin conexión;
+- modelo de análisis y diseño;
+- Pila, Cola y trazabilidad;
+- POO y polimorfismo;
+- DER, claves y normalización;
+- arquitectura TCP/IP y cálculos;
+- integración oral de las cinco materias.
 
-Continúa abierto:
-
-- `E-038` — línea doble = participación total.
+No se asigna una nota al Caso integrador 1.
 
 ---
 
 ## Pendientes prioritarios
 
-### Análisis y Diseño
-
-1. Realización con alternativo por falta de conexión.
-2. Mantener el objetivo exacto del caso durante la colaboración.
-3. Generalización UML con triángulo vacío.
-4. Asociación, agregación, composición y dependencia.
-5. Modelo de diseño.
-
-### POO / Java
-
-6. Implementar `toString()` cuando se solicita.
-7. `Object`, `equals` y `hashCode`.
-8. Abstracción, interfaces y polimorfismo.
-
-### Estructuras
-
-9. Contrato del TDA frente a implementación.
-10. Pila=LIFO y Cola=FIFO bajo presión.
-11. Orden FIFO frente a trazabilidad.
-12. Complejidades de ordenación.
-
-### Base de Datos
-
-13. Instancia como ocurrencia concreta.
-14. Línea doble = participación total.
-15. Asociativa frente a débil.
-16. `UNIQUE`, historial, DCL/TCL y normalización.
-
-### Comunicaciones
-
-17. `I(E)=log₂(1/P(E))` y unidad bits.
-18. bits, bits/símbolo y bits/segundo.
-19. Amplitud, período y frecuencia.
-20. `f=1/T`, `T=1/f`.
-21. Definición de muestreo y efecto de aumentar `fs`.
-22. Digitalización, transmisión analógica y supuestos de protocolo.
+1. Completar la evaluación y defensa específicas del Día 9.
+2. Escribir Java completo con `isBlank`, validación que detenga el flujo, `@Override` y `toString()` real.
+3. Automatizar la diferencia entidad asociativa/entidad débil.
+4. Consolidar secuencia sin conexión: `cabecera → envío → confirmación → trazabilidad → desencolar`.
+5. Practicar claves y cardinalidades de `EJECUCION_OT` y `SOLICITUD_PENDIENTE`.
+6. Declarar supuestos tecnológicos coherentes en Comunicaciones.
+7. Profundizar relaciones UML, DCL/TCL y algoritmos de ordenación.
 
 ---
 
-## Estado de errores
+## Próxima acción
 
-| Estado | Cantidad |
-|---|---:|
-| Consolidado | **29** |
-| Corregido | **5** |
-| Abierto | **11** |
-| **Total** | **45** |
-
-Nuevos errores del Día 8:
+**Domingo 16/08/2026 — recuperación opcional**
 
 ```text
-E-040 — realización de análisis incompleta/caso desviado
-E-041 — contrato TDA frente a implementación
-E-042 — Pila/Cola y orden frente a trazabilidad
-E-043 — información: relación, fórmula y unidades
-E-044 — parámetros de señal, fórmulas y muestreo
-E-045 — digitalización, política de envío y supuestos
+Recuperar EFIP — 2026-08-16 — completar Día 9
 ```
 
----
-
-## Tarjetas de recuperación
-
-```text
-TARJETAS/2026-08-13_TARJETAS-RECUPERACION-ERRORES-DIA-08.md
-```
-
-El mazo contiene tarjetas de análisis, TDA/Pila/Cola, información y unidades, señales, muestreo, transmisión y errores todavía activos del Día 7.
-
----
-
-## Evidencia principal
-
-- `EVALUACIONES/2026-08-13_RESPUESTAS-DIA-08.md`
-- `EVALUACIONES/2026-08-13_RESULTADOS-DIA-08.md`
-- `04-MATRIZ-DE-PROGRESO-ACTUALIZACION-DIA-08.md`
-- `06-ERRORES-Y-RECUPERACIONES-DIA-08.md`
-- `RESUMENES/2026-08-13_CIERRE-DIA-08.md`
-- `RESUMENES/2026-08-13_ESTADO-ACUMULADO-DIAS-01-A-08.md`
-- `TARJETAS/2026-08-13_TARJETAS-RECUPERACION-ERRORES-DIA-08.md`
-
----
-
-## Próxima jornada
-
-**Día 9 — 14/08/2026: Diseño + Abstracción/Polimorfismo + Normalización**
-
-La recuperación inicial debe priorizar fórmulas/unidades de información, parámetros de señal, contrato TDA/implementación, Pila/Cola, trazabilidad, realización con alternativo y simbología DER.
+También es válido tomar descanso completo. El cierre semanal ya está realizado y no depende de rendir el examen semanal de 100 puntos.
