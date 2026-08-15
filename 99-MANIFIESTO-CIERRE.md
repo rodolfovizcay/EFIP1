@@ -1,150 +1,222 @@
-# Manifiesto — Cierre Día 8
+# Manifiesto — Cierre semanal por evidencia acumulada
+## Semana intensiva 1 — 10/08 al 15/08/2026
 
-**Fecha:** 13/08/2026  
-**Estado:** **CERRADO Y APROBADO**  
-**Resultado global:** **7,9/10**
+**Fecha:** 15/08/2026  
+**Estado semanal:** **CERRADO — NIVEL ALTO / APROBADO**  
+**Indicador descriptivo:** **8,6/10**  
+**Examen semanal de 100 puntos:** no realizado  
+**Día 9:** en pausa
 
 ---
 
-## Archivos canónicos actualizados
+## 1. Criterio de cierre
 
-- `03-ESTADO-ACTUAL.md`
-- `04-MATRIZ-DE-PROGRESO.md`
-- `04-MATRIZ-DE-PROGRESO-ACTUALIZACION-DIA-08.md`
-- `05-REGISTRO-DIARIO.md`
-- `06-ERRORES-Y-RECUPERACIONES.md`
-- `06-ERRORES-Y-RECUPERACIONES-DIA-08.md`
+El cierre semanal se realiza sin una evaluación adicional porque existen suficientes evidencias independientes:
 
-## Evidencia del Día 8
-
-- `DIAS/2026-08-13_DIA-08_MODELO-ANALISIS-COLAS-TRANSMISION.md`
-- `FICHAS/2026-08-13_MAPA-MODELO-ANALISIS.md`
-- `FICHAS/2026-08-13_FICHA-COLA.md`
-- `FICHAS/2026-08-13_CUADRO-TRANSMISION.md`
-- `CASOS/2026-08-13_CASO-INTEGRADOR-ANALISIS-COLA-TRANSMISION.md`
-- `EVALUACIONES/2026-08-13_EVALUACION-DIA-08.md`
-- `EVALUACIONES/2026-08-13_RESPUESTAS-DIA-08.md`
-- `EVALUACIONES/2026-08-13_RESULTADOS-DIA-08.md`
-- `RESUMENES/2026-08-13_CIERRE-DIA-08.md`
-- `RESUMENES/2026-08-13_ESTADO-ACUMULADO-DIAS-01-A-08.md`
-
-## Tarjetas de recuperación
+- cuatro evaluaciones integradas cerradas;
+- cuatro instancias orales o defensas;
+- recuperaciones activas durante toda la semana;
+- progreso parcial del Día 9;
+- práctica guiada completa del Caso integrador 1;
+- integración oral de las cinco materias.
 
 ```text
-TARJETAS/2026-08-13_TARJETAS-RECUPERACION-ERRORES-DIA-08.md
+Día 5 = 9,0
+Día 6 = 9,2
+Día 7 = 8,3
+Día 8 = 7,9
+Promedio descriptivo = 8,6/10
+```
+
+El 8,6 no constituye una nueva nota formal ni una calificación del Caso integrador.
+
+---
+
+## 2. Estado académico
+
+```text
+Semana intensiva 1:
+CERRADA POR EVIDENCIA ACUMULADA
+
+Nivel semanal:
+ALTO / APROBADO
+
+Caso integrador 1:
+práctica guiada completada, sin puntaje formal
+
+Día 9:
+EN PAUSA
+
+Evaluación específica Día 9:
+pendiente
+
+Defensa específica Día 9:
+pendiente
 ```
 
 ---
 
-## Resultado
+## 3. Archivos canónicos actualizados
 
-| Instancia | Resultado |
-|---|---:|
-| Modelo de análisis | 2,10/2,50 |
-| Colas | 2,22/2,50 |
-| Transmisión | 1,57/2,50 |
-| Integración/recuperación | 0,41/0,50 |
-| Escrito | **6,30/8,00 = 7,9/10** |
-| Oral | **1,60/2,00 = 8,0/10** |
-| **Global** | **7,90/10** |
+- `03-ESTADO-ACTUAL.md`
+- `04-MATRIZ-DE-PROGRESO.md`
+- `05-REGISTRO-DIARIO.md`
+- `06-ERRORES-Y-RECUPERACIONES.md`
+- `99-MANIFIESTO-CIERRE.md`
 
 ---
 
-## Criterios aplicados
+## 4. Evidencia semanal
 
-1. Las respuestas reales se conservan con errores y omisiones.
-2. Las correcciones se documentan por separado.
-3. La nota es integrada y no equivale a una nota completa por materia.
-4. `DO` se limita a los núcleos defendidos.
-5. Los errores reaparecidos permanecen abiertos.
-6. Se diferencia material preparado, usado como guía y completado.
-7. Se incorpora un mazo de tarjetas para recuperación activa.
+- `EVALUACIONES/2026-08-15_RESULTADO-SEMANAL-POR-EVIDENCIA.md`
+- `EVALUACIONES/2026-08-15_RESPUESTAS-CASO-INTEGRADOR-01.md`
+- `EVIDENCIAS/2026-08-15_EVIDENCIA-GUIADA-CASO-INTEGRADOR-01.md`
+- `RESUMENES/2026-08-15_RESUMEN-SEMANAL-POR-MATERIA.md`
+- `RESUMENES/2026-08-15_CIERRE-CASO-INTEGRADOR-01.md`
+
+Evidencia previa utilizada:
+
+- resultados y defensas de los Días 5, 6, 7 y 8;
+- progreso parcial del Día 9;
+- tarjetas y registros de errores.
 
 ---
 
-## Avances publicados
+## 5. Nivel por materia
 
-### Análisis
+| Materia | Nivel semanal |
+|---|---|
+| Análisis y Diseño | Alto — aplicado y parcialmente defendible |
+| POO | Medio-alto — aplicado |
+| Estructuras | Alto — aplicado y defendible en Pila/Cola |
+| Base de Datos | Medio-alto — aplicado |
+| Comunicaciones | Medio-alto — aplicado |
+| Integración | Alto en práctica guiada |
 
-- propósito y artefactos;
-- casos de uso vs. análisis;
-- interfaz/control/entidad;
-- realización y colaboración;
-- mensajes conceptuales.
+No se asignan notas numéricas independientes por materia porque la evidencia de la semana proviene de evaluaciones integradas.
+
+---
+
+## 6. Avances publicados
+
+### Análisis y Diseño
+
+- PUD;
+- requisitos;
+- casos de uso;
+- análisis;
+- transición inicial al diseño;
+- alternativos sin conexión.
+
+### POO
+
+- encapsulamiento;
+- herencia;
+- abstracción;
+- clase abstracta;
+- interfaz;
+- polimorfismo.
 
 ### Estructuras
 
+- Pila/LIFO;
 - Cola/FIFO;
-- operaciones y simulación;
-- vector/lista enlazada;
-- Pila/Cola;
-- Cola de prioridad;
-- selección de estructura.
+- vector/lista;
+- selección por política;
+- confirmación antes de desencolar.
+
+### Base de Datos
+
+- modelo relacional;
+- DER;
+- 1:N y N:M;
+- tabla asociativa;
+- 1FN, 2FN y 3FN;
+- ID artificial frente a normalización.
 
 ### Comunicaciones
 
-- información e incertidumbre;
-- señales;
-- período/frecuencia;
-- muestreo;
-- serie/paralela;
-- asíncrona/síncrona.
+- OSI/TCP-IP;
+- encapsulamiento;
+- PDU;
+- switch/router;
+- cantidad de información;
+- frecuencia y muestreo.
 
 ---
 
-## Errores
+## 7. Estado de errores
 
-Consolidados en Día 8:
+| Estado | Cantidad |
+|---|---:|
+| Consolidado | **33** |
+| Corregido | **9** |
+| Abierto | **7** |
+| **Total** | **49** |
+
+Consolidados durante el cierre:
 
 ```text
-E-011 — selección de estructura
-E-032 — completo/verificable
-E-033 — riesgo vector/lista
+E-037 — instancia
+E-038 — simbología DER
+E-041 — contrato TDA Cola
+E-044 — frecuencia y muestreo
 ```
 
 Corregidos:
 
 ```text
-E-036 — generalización UML
-E-037 — instancia
-E-039 — asociativa/débil
+E-040 — realización/alternativo
+E-042 — Pila/Cola/trazabilidad
+E-043 — información/fórmula/unidad
+E-046 — String/validación
+E-047 — 2FN/ID artificial
+E-048 — confirmación antes de desencolar
 ```
 
-Nuevos:
+Reabierto:
 
 ```text
-E-040 — realización incompleta/caso desviado
-E-041 — contrato TDA/implementación
-E-042 — Pila/Cola y trazabilidad
-E-043 — información, fórmula y unidades
-E-044 — señales, fórmulas y muestreo
-E-045 — digitalización y supuestos
+E-039 — asociativa frente a débil
 ```
 
-Estado canónico:
+Nuevo abierto:
 
-| Estado | Cantidad |
-|---|---:|
-| Consolidado | 29 |
-| Corregido | 5 |
-| Abierto | 11 |
-| **Total** | **45** |
+```text
+E-049 — conectividad frente a sincronía/asíncronía
+```
 
 ---
 
-## Próxima acción
+## 8. Decisiones de integridad documental
 
-Preparar el **Día 9 — Diseño + Abstracción/Polimorfismo + Normalización**, recuperando primero:
-
-- realización con alternativo;
-- contrato TDA/implementación;
-- Pila/Cola y trazabilidad;
-- fórmula/unidades de información;
-- parámetros de señal y muestreo;
-- línea doble, instancia y asociativa/débil.
+1. No se inventa una respuesta del examen semanal no realizado.
+2. No se asigna una nota al Caso integrador 1.
+3. La práctica guiada se guarda en `EVIDENCIAS/`, no como examen formal.
+4. El promedio 8,6 se etiqueta como indicador descriptivo.
+5. El Día 9 permanece en pausa.
+6. Los estados por materia son cualitativos.
+7. Los errores que reaparecieron se mantienen o vuelven a abierto.
+8. El cierre semanal no impide completar Día 9 posteriormente.
 
 ---
 
-## Decisión documental
+## 9. Próxima acción
 
-El cierre está completo y listo para publicarse mediante PR separado hacia `main`. No debe fusionarse sin autorización explícita.
+**16/08/2026 — domingo opcional**
+
+```text
+Opción A:
+descanso completo.
+
+Opción B:
+Recuperar EFIP — 2026-08-16 — completar Día 9.
+```
+
+La semana ya está cerrada y no requiere rendir el examen semanal omitido.
+
+---
+
+## 10. Decisión documental
+
+El cierre semanal está completo. Debe publicarse mediante un PR separado hacia `main` y no fusionarse sin autorización explícita del estudiante.
