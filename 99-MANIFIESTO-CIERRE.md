@@ -1,62 +1,45 @@
-# Manifiesto — Cierre semanal por evidencia acumulada
-## Semana intensiva 1 — 10/08 al 15/08/2026
+# Manifiesto — Cierre semanal y cierre documental del Día 9
 
-**Fecha:** 15/08/2026  
-**Estado semanal:** **CERRADO — NIVEL ALTO / APROBADO**  
-**Indicador descriptivo:** **8,6/10**  
-**Examen semanal de 100 puntos:** no realizado  
-**Día 9:** en pausa
+**Fecha:** 16/08/2026  
+**Semana intensiva 1:** **CERRADA — NIVEL ALTO / APROBADO**  
+**Indicador semanal:** **8,6/10**  
+**Día 9:** **CERRADO SIN DEFENSA ORAL**  
+**Nota global Día 9:** no asignada
 
 ---
 
-## 1. Criterio de cierre
+# 1. Decisiones académicas
 
-El cierre semanal se realiza sin una evaluación adicional porque existen suficientes evidencias independientes:
-
-- cuatro evaluaciones integradas cerradas;
-- cuatro instancias orales o defensas;
-- recuperaciones activas durante toda la semana;
-- progreso parcial del Día 9;
-- práctica guiada completa del Caso integrador 1;
-- integración oral de las cinco materias.
+## Semana intensiva 1
 
 ```text
+Evaluaciones completas utilizadas:
 Día 5 = 9,0
 Día 6 = 9,2
 Día 7 = 8,3
 Día 8 = 7,9
+
 Promedio descriptivo = 8,6/10
 ```
 
-El 8,6 no constituye una nueva nota formal ni una calificación del Caso integrador.
+El indicador semanal no es una nueva nota formal ni una calificación del Caso integrador 1.
 
----
-
-## 2. Estado académico
+## Día 9
 
 ```text
-Semana intensiva 1:
-CERRADA POR EVIDENCIA ACUMULADA
-
-Nivel semanal:
-ALTO / APROBADO
-
-Caso integrador 1:
-práctica guiada completada, sin puntaje formal
-
-Día 9:
-EN PAUSA
-
-Evaluación específica Día 9:
-pendiente
-
-Defensa específica Día 9:
-pendiente
+Escrito = 5,70/8,00
+Porcentaje = 71,25 %
+Equivalencia escrita = 7,1/10
+Defensa oral = no realizada
+Nota global = no asignada
+Estado = cerrado documentalmente
 ```
+
+La defensa omitida no se convierte artificialmente en `0/2` y el escrito no se incorpora al promedio 8,6 porque no representa una modalidad completa comparable.
 
 ---
 
-## 3. Archivos canónicos actualizados
+# 2. Archivos canónicos actualizados
 
 - `03-ESTADO-ACTUAL.md`
 - `04-MATRIZ-DE-PROGRESO.md`
@@ -66,157 +49,180 @@ pendiente
 
 ---
 
-## 4. Evidencia semanal
+# 3. Evidencia nueva del Día 9
+
+- `EVALUACIONES/2026-08-16_RESPUESTAS-EVALUACION-DIA-09.md`
+- `EVALUACIONES/2026-08-16_RESULTADOS-DIA-09-SIN-DEFENSA.md`
+- `RESUMENES/2026-08-14_CIERRE-DIA-09.md`
+
+Se conservan como historia:
+
+- `03-ESTADO-ACTUAL-PARCIAL-DIA-09.md`;
+- `04-MATRIZ-DE-PROGRESO-PARCIAL-DIA-09.md`;
+- `06-ERRORES-Y-RECUPERACIONES-PARCIAL-DIA-09.md`;
+- `EVALUACIONES/2026-08-14_RESPUESTAS-DIA-09.md`.
+
+Estos archivos reflejan el estado anterior a la recuperación del 16/08.
+
+---
+
+# 4. Cierre semanal actualizado
 
 - `EVALUACIONES/2026-08-15_RESULTADO-SEMANAL-POR-EVIDENCIA.md`
-- `EVALUACIONES/2026-08-15_RESPUESTAS-CASO-INTEGRADOR-01.md`
-- `EVIDENCIAS/2026-08-15_EVIDENCIA-GUIADA-CASO-INTEGRADOR-01.md`
-- `RESUMENES/2026-08-15_RESUMEN-SEMANAL-POR-MATERIA.md`
 - `RESUMENES/2026-08-15_CIERRE-CASO-INTEGRADOR-01.md`
 
-Evidencia previa utilizada:
+Estado:
 
-- resultados y defensas de los Días 5, 6, 7 y 8;
-- progreso parcial del Día 9;
-- tarjetas y registros de errores.
+```text
+Semana intensiva 1:
+CERRADA POR EVIDENCIA ACUMULADA
 
----
+Nivel:
+ALTO / APROBADO
 
-## 5. Nivel por materia
+Indicador:
+8,6/10
 
-| Materia | Nivel semanal |
-|---|---|
-| Análisis y Diseño | Alto — aplicado y parcialmente defendible |
-| POO | Medio-alto — aplicado |
-| Estructuras | Alto — aplicado y defendible en Pila/Cola |
-| Base de Datos | Medio-alto — aplicado |
-| Comunicaciones | Medio-alto — aplicado |
-| Integración | Alto en práctica guiada |
+Caso integrador 1:
+práctica guiada completa, sin nota formal
 
-No se asignan notas numéricas independientes por materia porque la evidencia de la semana proviene de evaluaciones integradas.
+Día 9:
+cerrado sin defensa, sin nota global
+```
 
 ---
 
-## 6. Avances publicados
+# 5. Documento de repaso
 
-### Análisis y Diseño
+Se incorpora:
 
-- PUD;
-- requisitos;
-- casos de uso;
-- análisis;
-- transición inicial al diseño;
-- alternativos sin conexión.
+```text
+RESUMENES/2026-08-16_REPASO-SEMANAL-PUNTOS-DEBILES.md
+```
 
-### POO
+El documento contiene:
 
-- encapsulamiento;
-- herencia;
-- abstracción;
-- clase abstracta;
-- interfaz;
-- polimorfismo.
-
-### Estructuras
-
-- Pila/LIFO;
-- Cola/FIFO;
-- vector/lista;
-- selección por política;
-- confirmación antes de desencolar.
-
-### Base de Datos
-
-- modelo relacional;
-- DER;
-- 1:N y N:M;
-- tabla asociativa;
+- explicación de cada debilidad;
+- ejemplos incorrectos y corregidos;
+- Java completo de notificaciones;
+- clase abstracta frente a interfaz;
+- sobrescritura frente a polimorfismo;
+- análisis, diseño e implementación;
+- entidad frente a subsistema;
+- diagrama de estados;
+- secuencia offline segura;
+- FIFO frente a trazabilidad;
+- asociativa frente a débil;
+- modelo final con PK, FK y `UNIQUE`;
 - 1FN, 2FN y 3FN;
-- ID artificial frente a normalización.
-
-### Comunicaciones
-
-- OSI/TCP-IP;
-- encapsulamiento;
-- PDU;
-- switch/router;
-- cantidad de información;
-- frecuencia y muestreo.
+- supuestos de transmisión;
+- señal analógica y digitalización;
+- relaciones UML pendientes;
+- DCL/TCL;
+- algoritmos de ordenación;
+- plan de 60 minutos;
+- mini examen de veinte preguntas.
 
 ---
 
-## 7. Estado de errores
+# 6. Resultado del Día 9 por bloque
+
+| Parte | Máximo | Obtenido |
+|---|---:|---:|
+| Modelo de diseño | 2,50 | 1,85 |
+| Abstracción/Polimorfismo | 2,50 | 1,55 |
+| Normalización | 2,50 | 1,95 |
+| Integración | 0,50 | 0,35 |
+| **Total escrito** | **8,00** | **5,70** |
+
+Fortalezas:
+
+- secuencia sin conexión;
+- necesidad FIFO frente a decisión de Cola;
+- abstracción, interfaz y polimorfismo conceptuales;
+- 2FN, 3FN e ID artificial;
+- integración general.
+
+Debilidades:
+
+- Java completo;
+- uso de `super`;
+- `toString()` y `@Override`;
+- entidad frente a subsistema;
+- estados completos;
+- PK/FK/UNIQUE;
+- asociativa frente a débil.
+
+---
+
+# 7. Estado canónico de errores
 
 | Estado | Cantidad |
 |---|---:|
-| Consolidado | **33** |
-| Corregido | **9** |
-| Abierto | **7** |
-| **Total** | **49** |
+| Consolidado | **36** |
+| Corregido | **6** |
+| Abierto | **8** |
+| **Total** | **50** |
 
-Consolidados durante el cierre:
-
-```text
-E-037 — instancia
-E-038 — simbología DER
-E-041 — contrato TDA Cola
-E-044 — frecuencia y muestreo
-```
-
-Corregidos:
+Consolidados en este cierre:
 
 ```text
-E-040 — realización/alternativo
-E-042 — Pila/Cola/trazabilidad
-E-043 — información/fórmula/unidad
-E-046 — String/validación
-E-047 — 2FN/ID artificial
+E-040 — realización y alternativo sin conexión
+E-047 — 2FN e ID artificial
 E-048 — confirmación antes de desencolar
-```
-
-Reabierto:
-
-```text
-E-039 — asociativa frente a débil
 ```
 
 Nuevo abierto:
 
 ```text
-E-049 — conectividad frente a sincronía/asíncronía
+E-050 — modelo relacional final incompleto
 ```
 
----
-
-## 8. Decisiones de integridad documental
-
-1. No se inventa una respuesta del examen semanal no realizado.
-2. No se asigna una nota al Caso integrador 1.
-3. La práctica guiada se guarda en `EVIDENCIAS/`, no como examen formal.
-4. El promedio 8,6 se etiqueta como indicador descriptivo.
-5. El Día 9 permanece en pausa.
-6. Los estados por materia son cualitativos.
-7. Los errores que reaparecieron se mantienen o vuelven a abierto.
-8. El cierre semanal no impide completar Día 9 posteriormente.
-
----
-
-## 9. Próxima acción
-
-**16/08/2026 — domingo opcional**
+Prioridades abiertas:
 
 ```text
-Opción A:
-descanso completo.
-
-Opción B:
-Recuperar EFIP — 2026-08-16 — completar Día 9.
+E-002 — relaciones UML
+E-005 — complejidades de ordenación
+E-008 — DCL/TCL
+E-016 — Java completo
+E-039 — asociativa/débil
+E-045 — digitalización/supuestos
+E-049 — conectividad/sincronía
+E-050 — PK/FK/UNIQUE finales
 ```
-
-La semana ya está cerrada y no requiere rendir el examen semanal omitido.
 
 ---
 
-## 10. Decisión documental
+# 8. Integridad documental
 
-El cierre semanal está completo. Debe publicarse mediante un PR separado hacia `main` y no fusionarse sin autorización explícita del estudiante.
+1. No se inventa una defensa oral.
+2. No se asigna una nota global al Día 9.
+3. No se modifica el indicador semanal 8,6.
+4. Las respuestas originales se preservan separadas de la corrección.
+5. Los archivos parciales se conservan como historia.
+6. El Caso integrador 1 continúa sin puntaje formal.
+7. El repaso se deriva de errores y omisiones observados.
+8. Los estados `DO` no se elevan sin defensa suficiente.
+
+---
+
+# 9. Próxima etapa
+
+La semana intensiva 1 y el Día 9 quedan cerrados documentalmente.
+
+La continuación debe priorizar:
+
+```text
+repaso dirigido
+→ temas no recorridos
+→ Java breve y completo
+→ simulacro oral integral posterior
+```
+
+No se requiere realizar retroactivamente la defensa oral del Día 9 ni el examen semanal omitido.
+
+---
+
+# 10. Decisión de publicación
+
+El cierre documental está completo y debe publicarse mediante un PR separado hacia `main`. No debe fusionarse sin autorización explícita del estudiante.
