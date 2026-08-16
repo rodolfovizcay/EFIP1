@@ -1,6 +1,6 @@
 # Matriz de progreso del programa
 
-**Actualizada al cierre semanal por evidencia acumulada — 15/08/2026**
+**Actualizada al cierre documental del Día 9 — 16/08/2026**
 
 Estados:
 
@@ -10,7 +10,7 @@ Estados:
 - `A` = Aplicado
 - `DO` = Defendible oralmente
 
-> El cierre semanal no asigna una nueva nota por materia. Los estados reflejan la mejor evidencia de evaluaciones, defensas, recuperaciones y práctica guiada. El indicador semanal 8,6/10 es un promedio descriptivo de los Días 5 a 8.
+> El Día 9 se cerró con evaluación escrita `5,70/8,00` y sin defensa oral. Sus estados reflejan evidencia escrita y práctica, pero no se asigna una nota global. El indicador semanal `8,6/10` continúa calculado con los Días 5 a 8.
 
 ---
 
@@ -33,21 +33,28 @@ Estados:
 | Resultado de valor | C/A | Aplicado; evitar persistencia como única formulación |
 | `include` y `extend` | A | Obligatoriedad, opcionalidad y dirección aplicadas |
 | Generalización conceptual | A | Hijo→padre |
-| Notación de generalización UML | C | Dirección correcta; triángulo vacío requiere automatización |
+| Notación de generalización UML | C | Triángulo vacío pendiente de automatización |
 | Precondiciones, flujos y postcondiciones | A | Crear OT y Registrar ejecución |
 | Propósito del análisis | A/DO | Día 8 |
 | Caso de uso vs. modelo de análisis | DO | Vista externa/interna defendida |
 | Artefactos del análisis | C/A | Modelo, clase, realización, paquete y vista |
 | Interfaz/control/entidad | DO | Clasificados y defendidos |
-| Responsabilidades conceptuales | A | Casos Registrar ejecución |
+| Responsabilidades conceptuales | A | Registrar ejecución |
 | Realización y colaboración | A | Flujos normales aplicados |
-| Alternativo sin conexión | C/A | Aplicado con correcciones de secuencia |
+| Alternativo sin conexión | A | Consolidado en escrito Día 9 |
 | Mensajes vs. métodos definitivos | A | Diferenciados |
-| Análisis vs. diseño vs. implementación | A | Día 9 parcial y Caso integrador |
-| Modelo de diseño | A parcial | Servicios, repositorios, Cola y Sincronizador |
-| Diagrama de secuencia | C/A | Orden temporal aplicado; foco/líneas de vida a reforzar |
-| Diagrama de estados | C | Estados y transiciones comprendidos; producto completo pendiente |
-| Subsistemas e interfaces | C/A | Introducidos en Día 9 |
+| Análisis vs. diseño vs. implementación | A | Evaluación escrita Día 9 |
+| Modelo de diseño | A | Servicios, repositorios, Cola y Sincronizador |
+| Clase de diseño | C/A | Operaciones y parámetros comprendidos |
+| Realización de caso de uso–diseño | A | Secuencia normal/offline |
+| Diagrama de secuencia | A | Orden temporal y participantes aplicados |
+| Línea de vida | C | Definición corregida; práctica gráfica pendiente |
+| Foco de control | C | Definición comprendida |
+| Diagrama de estados | C/A | Flujo principal escrito; anulación omitida en evaluación |
+| Estado/evento/transición/acción | C/A | Comprendidos con precisión en recuperación |
+| Subsistemas de diseño | C | Sincronización/Notificaciones; entidad confundida una vez con subsistema |
+| Interfaces de diseño | C | Contrato comprendido; operaciones concretas pendientes |
+| Descripción de arquitectura | C | Alcance inicial |
 | Asociación/agregación/composición/dependencia | EA | Brecha prioritaria |
 | Modelo de implementación/pruebas | NI/EA | Pendiente como bloque formal |
 
@@ -60,30 +67,33 @@ Estados:
 | Clase y objeto | DO | Día 5 |
 | Estado, comportamiento e identidad | DO | Día 5 |
 | Encapsulamiento | DO | Aplicado a OT y solicitudes |
-| Atributos, métodos y constructor | A | Constructor consolidado |
-| `this` y `super` | A | Día 7 |
+| Atributos, métodos y constructor | A | Constructor conceptual consolidado |
+| `this` y `super` | A | Día 7; uso preciso de `super` requiere práctica |
 | Miembros estáticos | A | Contador de instancias |
 | Herencia y relación `es un` | A | UsuarioSistema y canales |
 | Superclase/subclase y `extends` | A | Aplicados |
-| Sobrecarga/sobrescritura | A | `buscarOT`/`getRol`/`enviar` |
+| Sobrecarga/sobrescritura | A | `buscarOT`, `getRol`, `enviar` |
 | Clase `Object` | C | Reconocida |
-| `toString()` conceptual | C/A | Comprendido; escritura autónoma a consolidar |
-| Abstracción | A | Día 9 parcial |
+| `toString()` conceptual | C/A | Comprendido; omitido en escrito final Día 9 |
+| Abstracción | A | Día 9 |
 | Abstracción vs. encapsulamiento | A | Diferenciadas |
 | Clase abstracta | A | `CanalNotificacion` |
 | Método abstracto | A | `enviar(String)` |
-| Constructor de abstracta | A | Parte común mediante `super(...)` |
+| Constructor de abstracta | C/A | Concepto correcto; implementación con error de `super` |
 | Interfaz | A | `Auditable` |
-| `implements` | A | Email, Móvil y capacidad auditable |
-| Clase abstracta vs. interfaz | C/A | Defendida en núcleo |
-| Polimorfismo | A | `List<CanalNotificacion>` |
-| Referencia común/objeto concreto | A | Explicado oralmente |
-| Validación de `String` | C | `==` corregido hacia `isBlank/isEmpty`; repetir en código |
-| `@Override` | C/A | Comprendido; omisión en código inicial |
-| Sintaxis/completitud Java | EA/A | Código funcional conceptual con errores puntuales |
+| `implements` | A | Email y Móvil |
+| Clase abstracta vs. interfaz | A | Decisión conceptual comprendida |
+| Polimorfismo | A | Tipo común y objetos concretos |
+| Referencia común/objeto concreto | A | Explicado en controles |
+| Sobrescritura polimórfica | A | Email/Push |
+| Comparación de `String` | C/A | `isBlank()` comprendido |
+| Validación que detiene | C | Excepción comprendida; código autónomo pendiente |
+| `@Override` | C/A | Aplicado parcialmente; omisión en auditoría |
+| Sintaxis/completitud Java | EA | Error en `super.validarDestinatario()`, `toString()` y archivos públicos |
 | `equals/hashCode` | NI | Pendiente |
-| Excepciones | EA | Utilizadas en corrección; bloque formal pendiente |
-| Colecciones/archivos | NI/EA | `List` aplicada; resto pendiente |
+| Excepciones | EA/C | `IllegalArgumentException` aplicada; bloque formal pendiente |
+| Colecciones | C/A | `List<CanalNotificacion>` comprendida |
+| Archivos | NI | Pendiente |
 
 ---
 
@@ -98,20 +108,23 @@ Estados:
 | Pila y LIFO | DO | Día 6 y Caso integrador |
 | `push`, `pop`, `peek`, cima | A | Simulaciones correctas |
 | Pila con vector/lista | A | Comparadas |
-| Cola y FIFO | DO | Día 8 y Caso integrador |
+| Cola y FIFO | DO | Día 8 y caso |
 | Frente y final | A | Aplicados |
 | `encolar`, `desencolar`, `cabecera` | A | Simulaciones y sincronización |
 | Cola con vector | A/DO | Índices, capacidad y reutilización |
 | Cola con lista enlazada | A/DO | Nodos, referencias y memoria |
 | Comparación vector/lista | A/DO | Riesgos consolidados |
-| Contrato TDA vs. implementación | A | Recuperado en Día 9 y caso |
+| Contrato TDA vs. implementación | A/DO | Consolidado |
 | Pila vs. Cola | A/DO | LIFO/FIFO aplicados |
-| FIFO vs. trazabilidad | C/A | Orden vs. historia diferenciados con corrección |
-| Confirmación antes de desencolar | C/A | Regla aplicada tras corrección |
+| FIFO vs. trazabilidad | C/A | Orden vs. historia diferenciados |
+| Confirmación antes de desencolar | A | Consolidado en evaluación Día 9 |
 | Cola de prioridad | C/A | Elegida para urgencias |
 | Selección de estructura | DO | Política y operación dominante |
 | Listas doble/circular/ordenada | NI | Pendiente |
-| Ordenación y complejidades | EA | Brecha prioritaria |
+| Inserción | EA/C | Estrategia general conocida |
+| Mergesort | C | Estrategia conocida; práctica pendiente |
+| Quicksort | C | Pivote/recursión conocidos; complejidad a reforzar |
+| Complejidades | EA | Brecha prioritaria |
 
 ---
 
@@ -125,27 +138,31 @@ Estados:
 | PK y FK | DO | Aplicadas |
 | DER: propósito | A | Día 7 |
 | Entidad, atributo y relación | A | Aplicados |
-| Instancia | A | Ocurrencia concreta recuperada |
-| Cardinalidad 1:1/1:N/N:M | A | Sector–OT, OT–Operario, ejecuciones |
+| Instancia | A | Ocurrencia concreta consolidada |
+| Cardinalidad 1:1/1:N/N:M | A | Sector–OT, OT–Operario y ejecuciones |
 | Participación mínima/máxima | A | 0..N y 1..1 con supuestos |
-| Entidad fuerte/débil | C | Concepto comprendido; aplicación bajo presión pendiente |
+| Entidad fuerte/débil | C | Aplicación bajo presión pendiente |
 | Entidad asociativa | A | `ASIGNACION_OT` |
-| Asociativa vs. débil | EA/C | Reapareció confusión oral; prioridad de recuperación |
-| Simbología DER | A | Rectángulo doble y línea doble recuperados |
+| Asociativa vs. débil | EA/C | Confusión reaparecida; prioridad alta |
+| Simbología DER | A | Rectángulo doble y línea doble consolidados |
 | Atributo multivaluado/derivado | A | Teléfono/edad |
 | Pasaje entidad→tabla | A | Día 7 |
 | Pasaje 1:N | A | FK en lado N |
 | Pasaje N:M | A | Tabla asociativa |
 | N:M conceptual vs. asociativa | A | Aplicado |
-| Historial y elección de PK | C/A | Fecha en clave, ID artificial y `UNIQUE` |
-| Restricción `UNIQUE` | C/A | Número de OT y clave histórica |
-| Normalización: propósito/anomalías | A | Día 9 parcial |
+| Historial y elección de PK | C/A | Fecha en clave e ID artificial |
+| Restricción `UNIQUE` | C/A | Concepto comprendido; escritura final incompleta |
+| Normalización: propósito/anomalías | A | Día 9 |
 | 1FN | A | Teléfonos atómicos |
-| 2FN | A | Dependencias parciales recuperadas |
+| Transformación a `OPERARIO_TELEFONO` | C/A | Concepto correcto; esquema omitido en escrito |
+| 2FN | A | Dependencias parciales consolidadas |
+| Dependencia parcial | A | Aplicada correctamente |
 | 3FN | A | Dependencia transitiva Sector |
-| Dependencias funcionales | C/A | Aplicadas; terminología a reforzar |
-| ID artificial vs. normalización | A | Comprendido |
-| Claves de Ejecución/Solicitud | C | Diseño recomendado; precisión pendiente |
+| Dependencia transitiva | A | Aplicada correctamente |
+| Dependencias funcionales | A | Identificadas |
+| ID artificial vs. normalización | A | Consolidado |
+| Modelo final 3FN | C/A | Estructura comprendida; atributos y claves omitidos |
+| PK de `OPERARIO_TELEFONO` | EA/C | Debe ser compuesta, no solo `UNIQUE` |
 | DDL/DML | C | `CREATE`/`INSERT` |
 | DCL/TCL | EA | `GRANT`/`COMMIT` pendientes |
 | Álgebra relacional y SQL académico | NI/EA | Pendiente |
@@ -167,22 +184,22 @@ Estados:
 | MAC, IP y puerto | DO | Día 6 |
 | Switch/router | A/DO | Capa, dirección y PDU |
 | MAC por enlace local | C/A | Corregido en caso |
-| Información e incertidumbre | C/A | Relación general aplicada |
-| Fórmula `I(E)` y unidad | C/A | Recuperada finalmente con `1/16=4 bits` |
+| Información e incertidumbre | C/A | Relación aplicada |
+| Fórmula `I(E)` y unidad | C/A | Recuperada con `1/16=4 bits` |
 | Entropía y tasa | C | Cálculos básicos |
 | bits / bits-símbolo / bits-segundo | C/A | Diferenciados |
 | Señal analógica/digital | A | Aplicadas |
 | Amplitud | EA/C | Diferencia con potencia pendiente |
-| Período y frecuencia | A | `500 Hz` calculado correctamente |
+| Período y frecuencia | A | Cálculos correctos |
 | `f=1/T`, `T=1/f` | A | Aplicadas |
 | Muestreo | A | Concepto y cálculo |
-| `fs≥2·fmax` | A | `8 k muestras/s` aplicado |
+| `fs≥2·fmax` | A | Aplicado |
 | Cuantificación/codificación | C/A | Integradas conceptualmente |
 | Serie/paralela | A | Diferenciadas |
 | Síncrona/asíncrona | A | Definiciones correctas |
 | Supuestos de transmisión | EA/C | No derivar asincronía de desconexión |
 | Transmisión analógica posible | C | Corregido |
-| Medios guiados/no guiados | C | Móvil puede iniciar por medio no guiado |
+| Medios guiados/no guiados | C | Móvil puede usar medio no guiado |
 | Atenuación/ruido/interferencia/dispersión/latencia | NI | Pendiente |
 | Enlace, Ethernet, WAN y última milla | NI/EA | Pendiente |
 
@@ -193,12 +210,13 @@ Estados:
 | Tema | Estado | Evidencia acumulada |
 |---|---|---|
 | Requisito→caso de uso | A/DO | Explicado oralmente |
-| Caso→análisis→diseño | A | Caso integrador |
+| Caso→análisis→diseño | A | Día 9 y Caso integrador |
 | Diseño→POO/estructuras | A | Servicios, Pila, Cola y polimorfismo |
 | Diseño→datos | A | DER y normalización |
 | Aplicación→comunicaciones | A | Recorrido TCP/IP |
 | Práctica guiada transversal | A | 15/08 |
-| Defensa continua 8–12 minutos | C/A | Integración oral parcial; simulacro formal pendiente |
+| Integración escrita Día 9 | C/A | Cadena correcta; modo offline omitido |
+| Defensa continua 8–12 minutos | C/A | Evidencia oral previa; defensa específica Día 9 no realizada |
 
 ---
 
@@ -215,29 +233,40 @@ Estados:
 | Día 7 — Casos de uso + Herencia + DER | 8,3/10 |
 | Día 8 — Modelo de análisis + Colas + Transmisión | 7,9/10 |
 | Semana 10–15/08 — promedio descriptivo Días 5–8 | **8,6/10** |
+| Día 9 — componente escrito | **5,70/8,00 = 71,25 %** |
 
 ```text
-Día 9: sin nota; permanece en pausa.
-Caso integrador 1: práctica guiada; sin puntaje formal.
+Día 9:
+cerrado sin defensa oral
+nota global no asignada
+
+Caso integrador 1:
+práctica guiada, sin puntaje formal
 ```
 
 ---
 
 # 8. Pendientes de retención inmediata
 
-1. Asociativa frente a débil.
-2. Generalización UML y relaciones UML restantes.
-3. Alternativo sin conexión con participantes completos.
-4. `String`, validaciones, `@Override` y `toString()`.
-5. Confirmación antes de desencolar.
-6. Claves/cardinalidades de ejecución y solicitud.
-7. `UNIQUE` histórico.
-8. Supuestos de transmisión.
-9. Amplitud y nivel físico.
-10. DCL/TCL y ordenación/complejidades.
+1. Java completo: constructor, `String`, `super`, `@Override` y `toString()`.
+2. Asociativa frente a débil.
+3. Entidad frente a subsistema.
+4. Diagrama de estados completo.
+5. Modelo final con PK/FK/UNIQUE y atributos.
+6. Generalización UML y relaciones UML restantes.
+7. Supuestos de transmisión.
+8. Amplitud y nivel físico.
+9. DCL/TCL.
+10. Ordenación y complejidades.
+
+Documento de repaso:
+
+```text
+RESUMENES/2026-08-16_REPASO-SEMANAL-PUNTOS-DEBILES.md
+```
 
 ---
 
 ## Regla de lectura
 
-La matriz resume la mejor evidencia disponible. `DO` no significa dominio total de la materia, sino capacidad de defender el núcleo trabajado. El cierre semanal no reemplaza la evaluación pendiente del Día 9.
+La matriz resume la mejor evidencia disponible. `DO` no significa dominio total. El Día 9 aporta evidencia escrita, pero no una nota global porque no se realizó su defensa oral.
