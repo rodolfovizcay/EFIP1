@@ -1,34 +1,40 @@
-# Cierre — Caso integrador 1
+# Cierre — Caso integrador 1 y Semana intensiva 1
 ## SIGO Móvil — Registrar ejecución de OT
 
-**Fecha:** 15/08/2026  
-**Estado:** **PRÁCTICA GUIADA CERRADA**  
+**Cierre inicial:** 15/08/2026  
+**Actualización:** 16/08/2026  
+**Práctica guiada:** **CERRADA**  
 **Evaluación de 100 puntos:** no realizada por decisión del estudiante  
-**Puntaje formal:** no asignado  
-**Defensa formal:** no realizada  
-**Evidencia oral integrada:** realizada durante la práctica
+**Puntaje formal del caso:** no asignado  
+**Semana:** **CERRADA POR EVIDENCIA ACUMULADA**  
+**Día 9:** **CERRADO SIN DEFENSA ORAL**
 
 ---
 
 # 1. Decisión
 
-El estudiante decidió cerrar la semana sin rendir la evaluación semanal adicional porque ya contaba con cuatro evaluaciones integradas corregidas, defensas orales y suficiente evidencia práctica para determinar el nivel semanal.
+El estudiante decidió cerrar la semana sin rendir una evaluación semanal adicional porque ya contaba con cuatro evaluaciones completas, defensas, recuperaciones y suficiente evidencia práctica.
 
-El caso se considera:
+Posteriormente, el 16/08 completó la evaluación escrita del Día 9 y decidió cerrarlo sin defensa oral.
 
 ```text
-resuelto de forma guiada
-+
-utilizado como evidencia de integración
-+
-no calificado como examen formal
-```
+Caso integrador 1
+→ práctica guiada completa
+→ sin nota formal
 
-No se inventa una nota ni se completan respuestas que no fueron rendidas como evaluación independiente.
+Día 9
+→ escrito realizado
+→ defensa no realizada
+→ sin nota global
+
+Semana
+→ cerrada por evidencia acumulada
+→ indicador descriptivo 8,6/10
+```
 
 ---
 
-# 2. Actividades realizadas
+# 2. Actividades del Caso integrador
 
 - [x] Recuperación inicial.
 - [x] Problema y objetivos.
@@ -55,11 +61,10 @@ No se inventa una nota ni se completan respuestas que no fueron rendidas como ev
 - [x] Cálculos de información, frecuencia y muestreo.
 - [x] Integración oral de las cinco materias.
 - [ ] Evaluación semanal formal de 100 puntos.
-- [ ] Defensa formal calificada.
 
 ---
 
-# 3. Evidencia principal
+# 3. Evidencia del Caso integrador
 
 ## Análisis y Diseño
 
@@ -101,8 +106,6 @@ interfaz Auditable.
 SECTOR 1:N ORDEN_TRABAJO
 ORDEN_TRABAJO N:M OPERARIO mediante ASIGNACION_OT
 OPERARIO 1:N OPERARIO_TELEFONO
-ORDEN_TRABAJO/OPERARIO 1:N EJECUCION_OT según supuesto
-EJECUCION_OT 0..1 SOLICITUD_PENDIENTE activa según supuesto
 ```
 
 ```text
@@ -134,86 +137,115 @@ fmax=4 kHz → fs mínima=8 k muestras/s
 
 ---
 
-# 4. Aciertos
+# 4. Resultado semanal
+
+| Jornada completa | Resultado |
+|---|---:|
+| Día 5 | 9,0/10 |
+| Día 6 | 9,2/10 |
+| Día 7 | 8,3/10 |
+| Día 8 | 7,9/10 |
+| **Promedio descriptivo** | **8,6/10** |
+
+```text
+Semana intensiva 1:
+CERRADA
+
+Nivel:
+ALTO / APROBADO
+
+Examen semanal:
+NO REALIZADO
+```
+
+---
+
+# 5. Evidencia adicional del Día 9
+
+| Parte escrita | Máximo | Obtenido |
+|---|---:|---:|
+| Modelo de diseño | 2,50 | 1,85 |
+| Abstracción/Polimorfismo | 2,50 | 1,55 |
+| Normalización | 2,50 | 1,95 |
+| Integración | 0,50 | 0,35 |
+| **Total escrito** | **8,00** | **5,70** |
+
+```text
+Escrito Día 9 = 5,70/8,00
+Porcentaje = 71,25 %
+Defensa = no realizada
+Nota global = no asignada
+```
+
+El resultado no modifica el indicador 8,6 porque no corresponde a una evaluación completa comparable.
+
+---
+
+# 6. Aciertos semanales
 
 1. Mantuvo el objetivo `Registrar ejecución de OT`.
 2. Diferenció análisis, diseño e implementación.
 3. Justificó Pila LIFO y Cola FIFO.
-4. Comprendió que la solicitud no se elimina antes de confirmar.
-5. Aplicó polimorfismo mediante un tipo común.
+4. Aplicó la secuencia segura de sincronización.
+5. Comprendió clase abstracta, interfaz y polimorfismo.
 6. Modeló N:M mediante `ASIGNACION_OT`.
 7. Aplicó 1FN, 2FN y 3FN.
 8. Explicó el recorrido TCP/IP.
-9. Recuperó correctamente `I(E)=log₂(1/P(E))` al final del bloque.
-10. Integró oralmente las cinco materias.
+9. Recuperó `I(E)=log₂(1/P(E))`.
+10. Integró las cinco materias.
 
 ---
 
-# 5. Ajustes observados
+# 7. Puntos débiles
 
-- el objetivo general inicial fue demasiado amplio;
-- algunos RNF no eran suficientemente verificables;
-- se confundió actor principal/secundario en notificaciones;
-- faltaron detalles de confirmación y trazabilidad en el primer alternativo;
-- se intentó desencolar antes de confirmar en una secuencia inicial;
-- `ASIGNACION_OT` volvió a mezclarse parcialmente con entidad débil;
-- claves de `EJECUCION_OT` y `SOLICITUD_PENDIENTE` necesitaron corrección;
-- la ausencia de conexión se usó erróneamente para justificar asincronía;
-- la unidad `4 kHz` se expresó oralmente una vez como `4 Hz`.
+- código Java completo y compilable;
+- validación de `String` y uso de `super`;
+- `toString()` y `@Override`;
+- entidad frente a subsistema;
+- diagrama de estados completo;
+- asociativa frente a débil;
+- modelo final con PK/FK/UNIQUE;
+- supuestos de transmisión;
+- DCL/TCL y algoritmos de ordenación.
 
----
-
-# 6. Resultado del caso
+Documento de repaso:
 
 ```text
-Práctica guiada: COMPLETADA
-Integración de materias: EVIDENCIADA
-Examen formal: NO REALIZADO
-Puntaje: NO ASIGNADO
-Aprobación formal del caso: NO APLICA
+RESUMENES/2026-08-16_REPASO-SEMANAL-PUNTOS-DEBILES.md
 ```
 
-El caso aporta evidencia cualitativa para el cierre semanal, pero no genera una nota adicional.
-
 ---
 
-# 7. Estado del Día 9
+# 8. Estado final
 
 ```text
-Caso integrador guiado de la semana:
-completado.
+Caso integrador 1:
+PRÁCTICA GUIADA CERRADA
+SIN NOTA FORMAL
 
-Evaluación específica del Día 9:
-pendiente.
-
-Defensa específica del Día 9:
-pendiente.
+Semana intensiva 1:
+CERRADA POR EVIDENCIA ACUMULADA
+INDICADOR 8,6/10
 
 Día 9:
-EN PAUSA.
+CERRADO SIN DEFENSA ORAL
+ESCRITO 5,70/8,00
+NOTA GLOBAL NO ASIGNADA
 ```
-
-No se declara el Día 9 aprobado mediante este cierre.
 
 ---
 
-# 8. Decisión de cierre
+# 9. Evidencia
 
-- [x] Práctica guiada del Caso integrador cerrada.
-- [x] Semana cerrada por evidencia acumulada.
-- [ ] Caso integrador evaluado formalmente.
-- [ ] Día 9 cerrado.
-
-**Justificación:** las evaluaciones de los Días 5 a 8 y la práctica guiada permiten determinar el nivel semanal sin una evaluación adicional. El promedio descriptivo de las evaluaciones cerradas es 8,6/10.
+- `EVALUACIONES/2026-08-15_RESULTADO-SEMANAL-POR-EVIDENCIA.md`
+- `EVIDENCIAS/2026-08-15_EVIDENCIA-GUIADA-CASO-INTEGRADOR-01.md`
+- `EVALUACIONES/2026-08-16_RESPUESTAS-EVALUACION-DIA-09.md`
+- `EVALUACIONES/2026-08-16_RESULTADOS-DIA-09-SIN-DEFENSA.md`
+- `RESUMENES/2026-08-14_CIERRE-DIA-09.md`
+- `RESUMENES/2026-08-16_REPASO-SEMANAL-PUNTOS-DEBILES.md`
 
 ---
 
-# 9. Próximo paso
+# 10. Próximo paso
 
-```text
-Opción A:
-descanso el 16/08.
-
-Opción B:
-Recuperar EFIP — 2026-08-16 — completar Día 9.
-```
+Continuar el plan con temas no recorridos y utilizar el repaso dirigido como recuperación espaciada. No es necesario volver a rendir el examen semanal omitido ni la defensa específica del Día 9.

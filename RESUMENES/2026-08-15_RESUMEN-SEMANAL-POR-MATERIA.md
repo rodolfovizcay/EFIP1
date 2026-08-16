@@ -1,12 +1,13 @@
 # Resumen semanal por materia
-## Semana intensiva 1 — 10/08 al 15/08/2026
+## Semana intensiva 1 — 10/08 al 16/08/2026
 
-**Fecha de cierre:** 15/08/2026  
+**Cierre inicial:** 15/08/2026  
+**Actualización:** 16/08/2026  
 **Modalidad:** cierre por evidencia acumulada  
 **Indicador descriptivo:** **8,6/10**  
 **Examen semanal adicional:** no realizado  
-**Caso integrador 1:** práctica guiada completada, sin puntaje formal  
-**Día 9:** en pausa, evaluación y defensa específicas pendientes
+**Caso integrador 1:** práctica guiada completa, sin puntaje formal  
+**Día 9:** cerrado sin defensa oral; escrito `5,70/8,00`; sin nota global
 
 ---
 
@@ -19,65 +20,50 @@ PUD
 Requisitos
 Casos de uso
 Modelo de análisis
-Modelo de diseño inicial
-Secuencia y alternativos
+Modelo de diseño
+Secuencia
+Estados
+Subsistemas e interfaces
 ```
 
-## Consolidado
+## Consolidado o aplicado
 
 - PUD dirigido por casos de uso, centrado en la arquitectura e iterativo/incremental.
 - Fases de Inicio, Elaboración, Construcción y Transición.
 - Ingeniería de Requerimientos, elicitación, especificación y validación.
 - RF, RNF y reglas de negocio.
-- Actor, caso de uso, límite del sistema y resultado de valor.
-- `include` obligatorio y `extend` opcional/condicionado.
+- Actor, caso de uso, resultado de valor y límite del sistema.
+- `include`, `extend` y generalización.
 - Modelo de análisis como vista interna conceptual.
 - Clases de interfaz, control y entidad.
+- Análisis frente a diseño e implementación.
+- Servicios, repositorios, Cola y Sincronizador como elementos de diseño.
+- Secuencia normal y alternativo sin conexión.
 
-## Aplicado durante la semana
+## Evidencia del Día 9
 
-- requisitos para Órdenes de Trabajo;
-- caso `Registrar ejecución de OT`;
-- alternativo sin conexión;
-- colaboración entre interfaz, control y entidades;
-- transición del análisis al diseño;
-- servicios, repositorios, Cola de sincronización y Sincronizador.
+```text
+Modelo de diseño:
+1,85/2,50 en el escrito.
+
+Secuencia offline:
+cabecera→envío→confirmación→trazabilidad→desencolar.
+
+Estados:
+flujo principal correcto; transición a ANULADA omitida.
+```
 
 ## Precisión pendiente
 
 - asociación, agregación, composición y dependencia;
-- triángulo vacío de generalización bajo presión;
-- secuencias con todos los participantes explícitos;
+- entidad frente a subsistema;
+- interfaz proporcionada con operaciones concretas;
 - diagrama de estados completo;
-- mantener estrictamente el objetivo del caso en alternativos.
+- líneas de vida y foco de control en representación gráfica.
 
-## Evidencia
+## Respuesta oral breve
 
-```text
-RF/RNF/RN:
-Días 6 y Caso integrador 1.
-
-Caso de uso:
-Día 7 y práctica del 15/08.
-
-Colaboración:
-Día 8.
-
-Diseño y secuencia:
-Día 9 parcial y Caso integrador 1.
-```
-
-## Respuesta oral de 60 segundos
-
-> Los requisitos expresan las necesidades y restricciones. Los casos de uso muestran externamente qué objetivo realiza el actor. El modelo de análisis explica conceptualmente qué objetos y responsabilidades colaboran, y el modelo de diseño transforma esa solución en clases, operaciones, servicios, repositorios e interfaces próximas a implementación. El código y la base de datos materializan esas decisiones.
-
-## Tarjetas a repetir
-
-- generalización UML;
-- resultado de valor;
-- alternativo sin conexión;
-- análisis frente a diseño;
-- secuencia y estados.
+> Los requisitos expresan necesidades y restricciones. Los casos de uso muestran externamente qué objetivo realiza el actor. El análisis explica conceptualmente qué objetos y responsabilidades colaboran. El diseño transforma esa solución en clases, operaciones, servicios, repositorios, interfaces y subsistemas próximos a implementación.
 
 ---
 
@@ -86,7 +72,7 @@ Día 9 parcial y Caso integrador 1.
 ## Temas recorridos
 
 ```text
-Clase/objeto
+Clase y objeto
 Encapsulamiento
 Herencia
 this/super/static
@@ -98,7 +84,7 @@ Polimorfismo
 toString()
 ```
 
-## Consolidado
+## Consolidado o aplicado
 
 - clase y objeto;
 - estado, comportamiento e identidad;
@@ -106,60 +92,49 @@ toString()
 - constructor Java sin retorno;
 - `this`, `super` y miembros estáticos;
 - herencia y relación `es un`;
-- sobrecarga y sobrescritura.
-
-## Aplicado durante la semana
-
-- jerarquía `UsuarioSistema`, `Encargado` y `Operario`;
-- clase abstracta `CanalNotificacion`;
-- subclases Email y Móvil;
+- sobrecarga y sobrescritura;
+- abstracción frente a encapsulamiento;
+- clase/método abstractos;
 - interfaz `Auditable`;
-- `extends` e `implements`;
-- colección polimórfica de canales;
-- diseño de `OrdenTrabajo`, `EjecucionOT` y `SolicitudPendiente`.
+- `extends`, `implements` y polimorfismo.
+
+## Evidencia del Día 9
+
+```text
+Abstracción/Polimorfismo:
+1,55/2,50 en el escrito.
+
+Código:
+CanalNotificacion, Email, Móvil y Auditable.
+```
 
 ## Precisión pendiente
 
-- comparar `String` por contenido y no mediante `==`;
-- validaciones que detengan una operación inválida;
-- `@Override`;
+- validar antes de asignar;
+- no llamar mediante `super` a un método de la propia clase;
+- comparar `String` por contenido;
 - `toString()` con atributos reales;
+- `@Override` completo;
 - una clase pública por archivo cuando corresponde;
-- `equals`, `hashCode`, excepciones y colecciones.
+- prueba polimórfica completa;
+- `equals`, `hashCode`, excepciones y archivos.
 
-## Evidencia de código
+## Ejemplo mínimo correcto
 
-```text
-Clase abstracta:
-CanalNotificacion.
-
-Interfaz:
-Auditable.
-
-Subclases:
-NotificacionEmail y NotificacionMovil.
-
-Validación:
-Conceptualmente corregida con null/isBlank.
-
-Polimorfismo:
-List<CanalNotificacion> + canal.enviar(...).
-
-toString():
-Comprendido; escritura autónoma todavía debe consolidarse.
+```java
+protected CanalNotificacion(String destinatario) {
+    if (destinatario == null || destinatario.isBlank()) {
+        throw new IllegalArgumentException(
+            "El destinatario es obligatorio"
+        );
+    }
+    this.destinatario = destinatario;
+}
 ```
 
-## Respuesta oral de 60 segundos
+## Respuesta oral breve
 
-> La abstracción representa lo esencial y el encapsulamiento protege el estado. Una clase abstracta puede aportar estado, constructor y comportamiento común, además de métodos abstractos. Una interfaz define un contrato. El polimorfismo permite utilizar una referencia común y ejecutar la implementación sobrescrita del objeto concreto.
-
-## Tarjetas a repetir
-
-- `String`: `==` frente a `equals/isBlank`;
-- constructor de clase abstracta;
-- clase abstracta frente a interfaz;
-- `toString()`;
-- sobrescritura frente a polimorfismo.
+> La abstracción representa lo esencial y el encapsulamiento protege el estado. Una clase abstracta comparte estado, constructor y comportamiento dentro de una familia; una interfaz define un contrato transversal. El polimorfismo permite que una referencia común ejecute el método sobrescrito del objeto concreto.
 
 ---
 
@@ -176,62 +151,36 @@ Frente/final
 Selección por operación dominante
 ```
 
-## Consolidado
+## Consolidado o aplicado
 
 - TDA e independencia de implementación;
-- Pila LIFO;
-- `push`, `pop`, `peek` y cima;
-- Cola FIFO;
-- `encolar`, `desencolar`, `cabecera`, frente y final;
+- Pila LIFO para deshacer;
+- Cola FIFO para pendientes;
+- `push`, `pop`, `peek`, `encolar`, `cabecera` y `desencolar`;
 - vector frente a lista enlazada;
-- elección de estructura por política y operación dominante.
+- elección de estructura por política;
+- confirmación antes de desencolar.
 
-## Aplicado durante la semana
+## Regla de sincronización consolidada
 
-- Pila para deshacer modificaciones locales;
-- Cola para solicitudes `PENDIENTE_ENVIO`;
-- conservación del frente hasta confirmación del servidor;
-- Cola de prioridad para urgencias;
-- comparación de capacidad, memoria y referencias.
+```text
+cabecera()
+→ enviar
+→ recibir confirmación
+→ registrar trazabilidad
+→ desencolar()
+```
 
 ## Precisión pendiente
 
-- FIFO no equivale a trazabilidad;
-- `cabecera()` consulta y `desencolar()` elimina;
-- no desencolar antes de la confirmación;
-- complejidades y algoritmos de ordenación;
-- listas doble, circular y ordenada.
+- FIFO frente a trazabilidad como definición automática;
+- listas doble, circular y ordenada;
+- algoritmos de ordenación;
+- complejidades de Inserción, Mergesort y Quicksort.
 
-## Evidencia
+## Respuesta oral breve
 
-```text
-Pila para:
-deshacer la última modificación no confirmada.
-
-Cola para:
-procesar pendientes por orden de llegada.
-
-Permanece en el TDA:
-política y operaciones.
-
-Cambia en implementación:
-vector/índices o nodos/referencias.
-
-Trazabilidad:
-requiere identificador, fecha/hora, estado, intentos y resultado.
-```
-
-## Respuesta oral de 60 segundos
-
-> La Pila trabaja con LIFO y sirve para deshacer el último cambio. La Cola trabaja con FIFO y sirve para enviar primero la solicitud que llegó primero. El contrato del TDA permanece aunque cambie la implementación interna. FIFO conserva el orden, pero la trazabilidad exige guardar la historia de cada solicitud.
-
-## Tarjetas a repetir
-
-- Pila vs. Cola;
-- cabecera vs. desencolar;
-- FIFO vs. trazabilidad;
-- vector vs. lista;
-- complejidades.
+> La Pila trabaja con LIFO y sirve para deshacer el último cambio. La Cola trabaja con FIFO y procesa primero la solicitud que llegó primero. La política y las operaciones del TDA permanecen aunque cambie la representación mediante vector o lista enlazada.
 
 ---
 
@@ -251,72 +200,78 @@ Entidad fuerte/débil/asociativa
 PK/FK/UNIQUE
 ```
 
-## Consolidado
+## Consolidado o aplicado
 
 - relación, tupla, atributo, dominio, grado y cardinalidad;
 - superclave, candidata, primaria y foránea;
-- relación 1:N con FK en el lado N;
-- relación N:M mediante tabla asociativa;
-- atributos multivaluados y derivados;
-- 1FN y valores atómicos.
+- 1:N con FK en el lado N;
+- N:M mediante entidad asociativa;
+- atributos multivaluados;
+- 1FN y valores atómicos;
+- 2FN y dependencias parciales;
+- 3FN y dependencia transitiva;
+- ID artificial frente a normalización.
 
-## Aplicado durante la semana
+## Evidencia del Día 9
 
-- `SECTOR 1:N ORDEN_TRABAJO`;
-- `ORDEN_TRABAJO N:M OPERARIO` mediante `ASIGNACION_OT`;
-- `OPERARIO_TELEFONO` para teléfonos múltiples;
-- dependencias parciales de 2FN;
-- dependencia transitiva `id_ot → id_sector → nombre_sector`;
-- esquema final hasta 3FN;
-- ID artificial frente a normalización;
-- claves históricas y `UNIQUE` alternativo.
+```text
+Normalización:
+1,95/2,50 en el escrito.
+
+Dependencias correctas:
+id_ot → datos de OT
+id_operario → datos de Operario
+clave completa → estado_asignacion
+
+Transitiva:
+id_ot → id_sector → nombre_sector
+```
 
 ## Precisión pendiente
 
 - entidad asociativa frente a entidad débil;
-- identidad propia no determina automáticamente fortaleza;
-- claves de `EJECUCION_OT` y `SOLICITUD_PENDIENTE`;
-- cardinalidades exactas por supuesto;
-- `UNIQUE` de claves candidatas históricas;
+- escribir todos los atributos finales;
+- diferenciar PK y `UNIQUE`;
+- `PK(id_operario, telefono)`;
+- claves históricas y cardinalidades exactas;
 - DCL/TCL y álgebra relacional.
 
-## Evidencia
+## Modelo mínimo que debe salir sin ayuda
 
 ```text
-Entidades:
-SECTOR, ORDEN_TRABAJO, OPERARIO, OPERARIO_TELEFONO,
-ASIGNACION_OT, EJECUCION_OT y SOLICITUD_PENDIENTE.
+SECTOR(id_sector PK, nombre_sector UNIQUE)
 
-Relación 1:N:
-SECTOR–ORDEN_TRABAJO.
+ORDEN_TRABAJO(
+  id_ot PK,
+  numero_ot UNIQUE,
+  descripcion_ot,
+  id_sector FK
+)
 
-Relación N:M:
-ORDEN_TRABAJO–OPERARIO mediante ASIGNACION_OT.
+OPERARIO(
+  id_operario PK,
+  nombre_operario,
+  especialidad_operario
+)
 
-1FN:
-separar varios teléfonos de una celda.
+OPERARIO_TELEFONO(
+  id_operario FK,
+  telefono,
+  PK(id_operario, telefono)
+)
 
-2FN:
-datos de OT dependen de id_ot; datos de Operario de id_operario.
-
-3FN:
-nombre_sector se traslada a SECTOR.
-
-ID artificial:
-facilita identificación, pero no elimina redundancia ni dependencias.
+ASIGNACION_OT(
+  id_ot FK,
+  id_operario FK,
+  fecha_asignacion,
+  estado_asignacion,
+  PK(id_ot, id_operario, fecha_asignacion)
+)
 ```
 
-## Respuesta oral de 60 segundos
+## Respuesta oral breve
 
-> La normalización descompone relaciones para reducir redundancia y anomalías. En 1FN los valores son atómicos; en 2FN cada atributo no clave depende de toda la clave compuesta; en 3FN no existen dependencias transitivas entre atributos no clave. Agregar un ID artificial no reemplaza el análisis de dependencias funcionales.
-
-## Tarjetas a repetir
-
-- asociativa vs. débil;
-- dependencia parcial;
-- dependencia transitiva;
-- PK compuesta vs. ID artificial;
-- `UNIQUE`, DCL y TCL.
+> En 1FN los valores son atómicos; por eso se separan los teléfonos. En 2FN todo atributo no clave depende de la clave compuesta completa; por eso se separan datos de OT y Operario. En 3FN no debe haber dependencias transitivas; por eso el nombre del Sector se guarda en SECTOR. Un ID artificial no elimina dependencias ni redundancias.
 
 ---
 
@@ -337,35 +292,27 @@ Serie/paralela
 Síncrona/asíncrona
 ```
 
-## Consolidado
+## Consolidado o aplicado
 
 - modelo OSI y arquitectura TCP/IP;
 - encapsulamiento y desencapsulamiento;
 - datos, segmento, paquete, trama y bits;
 - PDU, SDU y PCI;
 - MAC, IP y puerto;
-- switch en capa 2 y router en capa 3;
-- serie/paralela y síncrona/asíncrona.
-
-## Aplicado durante la semana
-
-- recorrido móvil–servidor;
-- funcionamiento local sin conexión;
+- switch y router;
 - `I(E)=log₂(1/P(E))`;
-- `f=1/T` y `T=1/f`;
-- `fs mínima=2·fmax`;
-- muestreo, cuantificación y representación digital;
-- cálculo de 4 bits para `P(E)=1/16`;
-- cálculo de 500 Hz y 8 k muestras/s.
+- `f=1/T`, `T=1/f`;
+- `fs≥2·fmax`;
+- serie/paralela y síncrona/asíncrona.
 
 ## Precisión pendiente
 
-- declarar correctamente supuestos de TCP/protocolo;
-- no deducir sincronía a partir de la falta de conexión;
+- declarar supuestos tecnológicos;
+- no deducir asincronía de la desconexión;
 - amplitud frente a potencia;
-- una señal analógica puede transmitirse analógicamente;
-- MAC por enlace local;
-- medios, ruido, atenuación, dispersión y latencia.
+- señal analógica puede transmitirse como analógica;
+- MAC cambia por enlace;
+- medios, atenuación, ruido, dispersión y latencia.
 
 ## Fórmulas
 
@@ -379,100 +326,47 @@ T=1/f
 fs mínima=2·fmax
 ```
 
-## Evidencia
+## Respuesta oral breve
 
-```text
-Recorrido móvil-servidor:
-Aplicación→Transporte→Internet→Acceso→Física.
-
-Switch:
-capa 2, MAC, trama.
-
-Router:
-capa 3, IP, paquete.
-
-PDU:
-SDU+PCI.
-
-Supuesto de transmisión:
-debe declararse según protocolo; la desconexión no lo determina.
-```
-
-## Respuesta oral de 60 segundos
-
-> La aplicación genera datos; Transporte agrega puertos y forma segmentos; Internet agrega IP y forma paquetes; Acceso agrega MAC y forma tramas; Física transmite bits mediante señales. En el servidor se desencapsula en sentido inverso. Una solicitud offline se conserva localmente y se envía cuando vuelve la conexión.
-
-## Tarjetas a repetir
-
-- información y unidades;
-- MAC por enlace;
-- analógica/digital;
-- supuesto síncrono/asíncrono;
-- medios y perturbaciones.
+> Aplicación genera datos; Transporte agrega puertos y forma segmentos; Internet agrega IP y forma paquetes; Acceso agrega MAC y forma tramas; Física transmite bits mediante señales. Sin conexión, la aplicación conserva la solicitud localmente y la transmite cuando vuelve la conectividad.
 
 ---
 
 # 6. Integración transversal
 
-## Cadena del caso
+## Cadena
 
 ```text
 Problema
 → objetivos
 → requisitos
 → casos de uso
-→ modelo de análisis
-→ modelo de diseño
+→ análisis
+→ diseño
 → POO y estructuras
-→ base de datos normalizada
+→ base normalizada
 → comunicaciones
 → pruebas
 ```
 
-## Decisión mejor justificada
+## Mayor fortaleza
 
 ```text
-Pila LIFO para deshacer y Cola FIFO para pendientes.
+Conectar conceptos académicos con el dominio real de Órdenes de Trabajo.
 ```
 
-## Decisión con mayor debilidad
+## Mayor debilidad
 
 ```text
-Identidad, cardinalidad y claves exactas de EjecucionOT/SolicitudPendiente,
-y supuestos de transmisión.
+Completar la solución con precisión técnica:
+código compilable, estados completos y claves finales.
 ```
-
-## Conceptos confundidos inicialmente
-
-```text
-Entidad asociativa vs. débil.
-FIFO vs. trazabilidad.
-Conectividad vs. síncrona/asíncrona.
-ID artificial vs. normalización.
-```
-
-## Correcciones realizadas
-
-```text
-cabecera→enviar→confirmar→trazar→desencolar
-I(E)=log₂(1/P(E))
-fs mínima=2·fmax
-PK artificial≠normalización
-```
-
-## Supuestos declarados
-
-- una OT puede tener varias ejecuciones de avance;
-- la sincronización puede activarse automáticamente al recuperar conexión;
-- el protocolo de transporte debe declararse si el caso no lo fija.
 
 ---
 
 # 7. Resultado semanal
 
-No se utiliza la tabla de 100 puntos porque el examen semanal no se rindió.
-
-| Evidencia cerrada | Resultado |
+| Evaluación completa | Resultado |
 |---|---:|
 | Día 5 | 9,0/10 |
 | Día 6 | 9,2/10 |
@@ -481,74 +375,46 @@ No se utiliza la tabla de 100 puntos porque el examen semanal no se rindió.
 | **Indicador promedio** | **8,6/10** |
 
 ```text
-Nivel semanal: ALTO
-Estado: APROBADO POR EVIDENCIA ACUMULADA
+Semana intensiva 1:
+CERRADA — NIVEL ALTO / APROBADO
+```
+
+Evidencia adicional:
+
+```text
+Día 9 escrito = 5,70/8,00 = 71,25 %
+Defensa Día 9 = no realizada
+Nota global Día 9 = no asignada
 ```
 
 ---
 
-# 8. Errores
+# 8. Prioridades de la siguiente etapa
 
-## Recuperados o consolidados durante la semana
+1. Java completo y compilable.
+2. Asociativa frente a débil.
+3. Modelo relacional con PK/FK/UNIQUE.
+4. Entidad frente a subsistema.
+5. Estados UML completos.
+6. Relaciones UML restantes.
+7. Supuestos de transmisión.
+8. DCL/TCL.
+9. Ordenación y complejidades.
+10. Simulacro oral integral posterior.
 
-- selección de estructura;
-- completo frente a verificable;
-- vector frente a lista;
-- instancia como ocurrencia concreta;
-- línea doble como participación total;
-- contrato TDA frente a implementación;
-- fórmulas de frecuencia y muestreo.
-
-## Corregidos, repetir después
-
-- generalización UML;
-- alternativo sin conexión;
-- FIFO frente a trazabilidad;
-- fórmula/unidades de información;
-- `String` y `toString()`;
-- 2FN e ID artificial;
-- confirmación antes de desencolar.
-
-## Abiertos
-
-- relaciones UML restantes;
-- sintaxis Java completa;
-- asociativa frente a débil bajo presión;
-- supuestos tecnológicos;
-- ordenación/complejidades;
-- DCL/TCL;
-- medios y nivel físico avanzado.
-
----
-
-# 9. Prioridades de la semana siguiente
-
-1. Completar Día 9.
-2. Java completo: validaciones, `toString()`, excepciones y colecciones.
-3. Arquitectura, listas y nivel físico.
-4. DCL/TCL, álgebra relacional y SQL académico.
-5. Simulaciones integradas y defensa oral continua.
-
----
-
-# 10. Resumen oral semanal
-
-> Durante la semana trabajé el desarrollo desde los requisitos hasta una solución conceptual e implementable. En Análisis y Diseño reforcé PUD, requisitos, casos de uso, análisis y diseño. En POO apliqué encapsulamiento, herencia, abstracción, interfaces y polimorfismo. En Estructuras utilicé Pila para deshacer y Cola para sincronizar. En Base de Datos construí DER y normalicé hasta 3FN. En Comunicaciones expliqué el recorrido TCP/IP y resolví información, frecuencia y muestreo. Mi principal fortaleza es integrar conceptos en un caso real; debo mejorar precisión de sintaxis, claves históricas y supuestos tecnológicos.
-
----
-
-# 11. Decisión documental
+Documento de estudio:
 
 ```text
-Caso integrador:
-práctica guiada completada, sin examen ni nota formal.
+RESUMENES/2026-08-16_REPASO-SEMANAL-PUNTOS-DEBILES.md
+```
 
-Día 9:
-permanece en pausa.
+---
 
-Estado canónico:
-semana cerrada por evidencia acumulada.
+# 9. Estado documental
 
-Recuperación siguiente:
-completar Día 9 o descansar el 16/08.
+```text
+Semana: CERRADA
+Caso integrador 1: práctica guiada, sin nota
+Día 9: CERRADO SIN DEFENSA ORAL
+Indicador semanal: 8,6/10
 ```

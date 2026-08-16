@@ -1,6 +1,6 @@
 # Registro diario — EFIP I
 
-**Actualizado al cierre semanal por evidencia acumulada — 15/08/2026**
+**Actualizado al cierre documental del Día 9 — 16/08/2026**
 
 Este archivo funciona como índice acumulado. El detalle se conserva en `EVALUACIONES/`, `EVIDENCIAS/`, `RESUMENES/`, matrices y registros de errores.
 
@@ -8,16 +8,8 @@ Este archivo funciona como índice acumulado. El detalle se conserva en `EVALUAC
 
 ## 2026-08-05 — Día 1 — Diagnóstico general
 
-**Estado:** DIAGNÓSTICO
-
-| Materia | Nota |
-|---|---:|
-| Análisis y Diseño | 4,75/10 |
-| POO | 5,5/10 |
-| Algoritmos y Estructuras | 7,0/10 |
-| Base de Datos | 6,0/10 |
-| Comunicaciones | 4,75/10 |
-| **Promedio** | **5,6/10** |
+**Estado:** DIAGNÓSTICO  
+**Promedio:** **5,6/10**
 
 Conclusión: experiencia práctica superior a precisión terminológica.
 
@@ -28,14 +20,7 @@ Conclusión: experiencia práctica superior a precisión terminológica.
 **Estado:** CERRADO Y APROBADO  
 **Global:** **8,0/10**
 
-Avances:
-
-- modelos y metodología;
-- núcleo del PUD;
-- clase/objeto;
-- estado;
-- encapsulamiento;
-- constructor.
+Avances: modelos, metodología, PUD, clase/objeto, estado, encapsulamiento y constructor.
 
 ---
 
@@ -44,11 +29,7 @@ Avances:
 **Estado:** CERRADO Y APROBADO  
 **Global:** **8,3/10**
 
-Avances:
-
-- TDA, arreglo, nodo y lista;
-- relación, tupla, atributo y dominio;
-- grado, cardinalidad, PK y FK.
+Avances: TDA, arreglo, nodo, lista, relación, tupla, atributo, dominio, grado, cardinalidad, PK y FK.
 
 ---
 
@@ -57,14 +38,7 @@ Avances:
 **Estado:** CERRADO Y APROBADO  
 **Nota escrita:** **8,6/10**
 
-Avances:
-
-- sistema de comunicaciones;
-- protocolo;
-- OSI/TCP-IP;
-- encapsulamiento;
-- MAC/IP;
-- switch/router.
+Avances: sistema de comunicaciones, protocolo, OSI/TCP-IP, encapsulamiento, MAC/IP y switch/router.
 
 ---
 
@@ -73,14 +47,7 @@ Avances:
 **Estado:** CERRADO Y APROBADO  
 **Global:** **9,0/10**
 
-Avances:
-
-- PUD aplicado a `Programar Orden de Trabajo`;
-- fases, iteración e incremento;
-- objeto, identidad y encapsulamiento;
-- clase Java `OrdenTrabajo`;
-- modelo relacional y claves;
-- `SECTOR 1:N ORDEN_TRABAJO`.
+Avances: PUD, fases, iteración/incremento, identidad, encapsulamiento, Java, modelo relacional y claves.
 
 ---
 
@@ -94,16 +61,7 @@ Avances:
 | Oral | 1,80/2,00 = 9,0/10 |
 | **Global** | **9,2/10** |
 
-Avances:
-
-- Ingeniería de Requerimientos;
-- RF/RNF/regla de negocio;
-- calidad y trazabilidad;
-- Pila/LIFO;
-- vector/lista enlazada;
-- OSI/TCP-IP;
-- encapsulamiento y PDU;
-- MAC/IP/puerto.
+Avances: Ingeniería de Requerimientos, RF/RNF/RN, Pila/LIFO, vector/lista, OSI/TCP-IP y PDU.
 
 ---
 
@@ -117,13 +75,7 @@ Avances:
 | Defensa distribuida | 1,72/2,00 = 8,6/10 |
 | **Global** | **8,3/10** |
 
-Avances:
-
-- actores, casos, límite, `include`, `extend` y generalización;
-- precondiciones, flujos y postcondiciones;
-- herencia, `extends`, `this`, `super` y `static`;
-- jerarquía Java;
-- DER, 1:N, N:M y tabla asociativa.
+Avances: actores, casos de uso, `include`, `extend`, herencia, Java, DER, 1:N, N:M y tabla asociativa.
 
 ---
 
@@ -133,107 +85,87 @@ Avances:
 
 | Instancia | Resultado |
 |---|---:|
-| Modelo de análisis | 2,10/2,50 |
-| Colas | 2,22/2,50 |
-| Transmisión | 1,57/2,50 |
-| Integración/recuperación | 0,41/0,50 |
 | Escrito | 6,30/8,00 = 7,9/10 |
 | Oral | 1,60/2,00 = 8,0/10 |
 | **Global** | **7,9/10** |
 
-Avances:
-
-- modelo de análisis;
-- interfaz/control/entidad;
-- colaboración;
-- Cola/FIFO y vector/lista;
-- información, señales, frecuencia y muestreo;
-- serie/paralela y síncrona/asíncrona.
+Avances: análisis, interfaz/control/entidad, Cola/FIFO, vector/lista, información, frecuencia, muestreo y transmisión.
 
 ---
 
 ## 2026-08-14 — Día 9 — Diseño + Abstracción/Polimorfismo + Normalización
 
-**Estado:** **EN PAUSA**  
-**Nota:** no asignada  
-**Evaluación específica:** pendiente  
-**Defensa específica:** pendiente
+### Primera etapa — 14/08
 
-### Avance realizado
+**Estado inicial:** EN PAUSA por cansancio.
 
-#### Análisis y Diseño
+Se trabajaron:
 
 - análisis vs. diseño vs. implementación;
-- servicios, repositorios y Cola como elementos de diseño;
-- participantes, mensajes, línea de vida y foco de control;
-- secuencia normal;
-- alternativo sin conexión;
-- FIFO como necesidad y Cola como decisión.
+- servicios, repositorios, secuencia y Cola de sincronización;
+- abstracción, clase abstracta, interfaz y polimorfismo;
+- código Java parcial;
+- anomalías, 1FN, 2FN y 3FN.
 
-#### POO
+La pausa quedó documentada sin nota.
 
-- abstracción vs. encapsulamiento;
-- clase y método abstractos;
-- interfaz `Auditable`;
-- `extends` e `implements`;
-- sobrescritura y polimorfismo;
-- código Java parcial de Email y Móvil.
+### Recuperación y evaluación — 16/08
 
-#### Base de Datos
+**Estado final:** **CERRADO DOCUMENTALMENTE — SIN DEFENSA ORAL**
 
-- anomalías;
-- 1FN y teléfonos;
-- 2FN y dependencias parciales;
-- 3FN y dependencia transitiva;
+| Instancia | Máximo | Resultado |
+|---|---:|---:|
+| Modelo de diseño | 2,50 | 1,85 |
+| Abstracción/Polimorfismo | 2,50 | 1,55 |
+| Normalización | 2,50 | 1,95 |
+| Integración | 0,50 | 0,35 |
+| **Escrito** | **8,00** | **5,70** |
+| Defensa oral | 2,00 | no realizada |
+| Nota global | 10,00 | no asignada |
+
+```text
+Escrito = 5,70/8,00
+Porcentaje = 71,25 %
+Equivalencia escrita = 7,1/10
+```
+
+### Aciertos
+
+- secuencia offline segura;
+- análisis/diseño/implementación;
+- clase abstracta, interfaz y polimorfismo conceptuales;
+- dependencias parciales y transitivas;
 - ID artificial frente a normalización.
 
-### Pendientes
+### Debilidades
 
-- caso integrador específico del Día 9;
-- evaluación escrita;
-- defensa;
-- cierre canónico.
+- código Java completo;
+- uso incorrecto de `super`;
+- `toString()` omitido;
+- `@Override` incompleto;
+- subsistema frente a entidad;
+- modelo final con PK/FK/UNIQUE incompleto;
+- asociativa frente a débil.
 
 ### Evidencia
 
-- `03-ESTADO-ACTUAL-PARCIAL-DIA-09.md`
-- `04-MATRIZ-DE-PROGRESO-PARCIAL-DIA-09.md`
-- `06-ERRORES-Y-RECUPERACIONES-PARCIAL-DIA-09.md`
-- `RESUMENES/2026-08-14_PROGRESO-PARCIAL-DIA-09.md`
+- `EVALUACIONES/2026-08-16_RESPUESTAS-EVALUACION-DIA-09.md`
+- `EVALUACIONES/2026-08-16_RESULTADOS-DIA-09-SIN-DEFENSA.md`
+- `RESUMENES/2026-08-14_CIERRE-DIA-09.md`
+- `RESUMENES/2026-08-16_REPASO-SEMANAL-PUNTOS-DEBILES.md`
 
 ---
 
 ## 2026-08-15 — Caso integrador 1 y cierre semanal
 
-**Caso:** SIGO Móvil — Registrar ejecución de OT  
 **Práctica guiada:** COMPLETADA  
 **Evaluación formal de 100 puntos:** NO REALIZADA  
-**Puntaje del caso:** no asignado  
+**Puntaje formal:** no asignado  
 **Semana:** **CERRADA POR EVIDENCIA ACUMULADA**
-
-### Actividades realizadas
-
-- recuperación inicial;
-- problema, objetivos, RF, RNF y reglas;
-- actores, casos de uso, `include`, `extend` y generalización;
-- flujo principal y alternativo sin conexión;
-- modelo de análisis y diseño;
-- POO y polimorfismo;
-- Pila/LIFO y Cola/FIFO;
-- FIFO frente a trazabilidad;
-- DER, cardinalidades y relaciones;
-- 1FN, 2FN y 3FN;
-- arquitectura TCP/IP;
-- información, frecuencia y muestreo;
-- integración oral de las cinco materias.
-
-### Decisión
-
-El estudiante decidió no rendir un examen semanal adicional porque las evaluaciones de los Días 5 a 8, las defensas y la práctica guiada ya aportaban evidencia suficiente.
 
 ### Indicador semanal
 
-| Jornada cerrada | Nota |
+| Jornada completa | Nota |
 |---|---:|
 | Día 5 | 9,0/10 |
 | Día 6 | 9,2/10 |
@@ -246,28 +178,17 @@ Nivel semanal: ALTO
 Estado: APROBADO POR EVIDENCIA ACUMULADA
 ```
 
-El promedio no es una nueva nota de examen y no cierra el Día 9.
+### Actualización del 16/08
 
-### Evidencia
-
-- `EVALUACIONES/2026-08-15_RESULTADO-SEMANAL-POR-EVIDENCIA.md`
-- `EVIDENCIAS/2026-08-15_EVIDENCIA-GUIADA-CASO-INTEGRADOR-01.md`
-- `RESUMENES/2026-08-15_RESUMEN-SEMANAL-POR-MATERIA.md`
-- `RESUMENES/2026-08-15_CIERRE-CASO-INTEGRADOR-01.md`
+El escrito del Día 9 agrega evidencia temática, pero no modifica el promedio 8,6 porque no se realizó la defensa y no existe una nota global comparable.
 
 ---
 
 ## Próxima acción
 
-**16/08/2026 — domingo opcional**
-
 ```text
-Opción A: descanso completo.
-Opción B: completar Día 9.
-```
-
-Comando para continuar:
-
-```text
-Recuperar EFIP — 2026-08-16 — completar Día 9
+1. Usar el repaso semanal de puntos débiles.
+2. Continuar el plan con temas todavía no recorridos.
+3. Practicar Java completo en bloques breves.
+4. Reservar una defensa integral para un simulacro posterior.
 ```

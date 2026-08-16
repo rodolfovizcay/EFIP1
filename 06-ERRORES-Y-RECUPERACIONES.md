@@ -1,6 +1,6 @@
 # Registro de errores y recuperaciones
 
-**Estado consolidado al cierre semanal — 15/08/2026**
+**Estado consolidado al cierre documental del Día 9 — 16/08/2026**
 
 Estados:
 
@@ -14,10 +14,10 @@ Estados:
 
 | Estado | Cantidad |
 |---|---:|
-| Consolidado | **33** |
-| Corregido | **9** |
-| Abierto | **7** |
-| **Total registrado** | **49** |
+| Consolidado | **36** |
+| Corregido | **6** |
+| Abierto | **8** |
+| **Total registrado** | **50** |
 
 ---
 
@@ -40,7 +40,7 @@ Estados:
 | E-013 | Análisis y Diseño | Construcción/Transición | consolidado | Producto vs. entrega/beta/capacitación |
 | E-014 | POO | Estado/comportamiento | consolidado | Valores vs. métodos |
 | E-015 | POO | Identidad/ID | consolidado | Identidad del objeto; ID puede representarla |
-| E-016 | POO/Java | Sintaxis/completitud | **abierto** | Código completo, validación efectiva, `@Override`, organización de archivos y `toString()` |
+| E-016 | POO/Java | Sintaxis/completitud | **abierto** | Validar antes de asignar; `super` correcto; `@Override`; `toString()`; archivos públicos y prueba polimórfica |
 | E-017 | Estructuras | TDA interfaz/implementación | consolidado | Contrato independiente de representación |
 | E-018 | Estructuras | Dinámica/tipo de elemento | corregido | Cambia cantidad/tamaño, no necesariamente tipo |
 | E-019 | Base de Datos | Dominio | consolidado | Valores permitidos, no observados |
@@ -61,59 +61,52 @@ Estados:
 | E-034 | Comunicaciones | Paquete/trama | consolidado | Red=paquete; Enlace=trama |
 | E-035 | Comunicaciones | Bits/bytes Física | consolidado | Física=bits/señales |
 | E-036 | Análisis y Diseño | Generalización UML | corregido | Línea continua, triángulo vacío hacia padre |
-| E-037 | Base de Datos | Instancia | **consolidado** | Ocurrencia concreta de una entidad |
-| E-038 | Base de Datos | Simbología DER | **consolidado** | Rectángulo doble=débil; línea doble=participación total |
-| E-039 | Base de Datos | Asociativa/débil | **abierto** | Asociativa representa relación; débil depende para identificar/existir; no decidir solo por FK o ID |
-| E-040 | Análisis y Diseño | Realización incompleta/caso desviado | **corregido** | Mantener `Registrar ejecución`; incluir alternativo y participantes completos |
-| E-041 | Estructuras | Contrato TDA Cola | **consolidado** | Permanece interfaz/FIFO; cambia vector/nodos |
-| E-042 | Estructuras | Pila/Cola/trazabilidad | **corregido** | Pila=LIFO; Cola=FIFO; trazabilidad requiere registros |
-| E-043 | Comunicaciones | Información fórmula/unidades | **corregido** | `P↑→I↓`; `I=log₂(1/P)`; unidad bits |
-| E-044 | Comunicaciones | Señales/fórmulas/muestreo | **consolidado** | A, T, f; `f=1/T`; `T=1/f`; `fs≥2·fmax` |
+| E-037 | Base de Datos | Instancia | consolidado | Ocurrencia concreta de una entidad |
+| E-038 | Base de Datos | Simbología DER | consolidado | Rectángulo doble=débil; línea doble=participación total |
+| E-039 | Base de Datos | Asociativa/débil | **abierto** | Asociativa representa relación; débil depende para identificar/existir; no decidir solo por FK, ID o atributos |
+| E-040 | Análisis y Diseño | Realización incompleta/caso desviado | **consolidado** | Mantener `Registrar ejecución`; alternativo y participantes completos |
+| E-041 | Estructuras | Contrato TDA Cola | consolidado | Permanece interfaz/FIFO; cambia vector/nodos |
+| E-042 | Estructuras | Pila/Cola/trazabilidad | corregido | Pila=LIFO; Cola=FIFO; trazabilidad requiere registros |
+| E-043 | Comunicaciones | Información fórmula/unidades | corregido | `P↑→I↓`; `I=log₂(1/P)`; unidad bits |
+| E-044 | Comunicaciones | Señales/fórmulas/muestreo | consolidado | A, T, f; `f=1/T`; `T=1/f`; `fs≥2·fmax` |
 | E-045 | Comunicaciones | Digitalización/política/supuestos | **abierto** | Analógica puede transmitirse; política decide envío; declarar protocolo |
-| E-046 | POO/Java | Comparación y validación de `String` | **corregido** | `==` compara referencias; usar `equals/isBlank`; la validación debe detener o rechazar |
-| E-047 | Base de Datos | 2FN e ID artificial | **corregido** | Dependencias de clave completa; ID artificial no elimina redundancia ni dependencias |
-| E-048 | Estructuras/Diseño | Eliminar pendiente antes de confirmar | **corregido** | `cabecera→enviar→confirmar→trazar→desencolar` |
+| E-046 | POO/Java | Comparación y validación de `String` | corregido | `==` compara referencias; usar `equals/isBlank`; la validación debe rechazar |
+| E-047 | Base de Datos | 2FN e ID artificial | **consolidado** | Datos dependen de clave completa; ID artificial no elimina redundancia ni dependencias |
+| E-048 | Estructuras/Diseño | Eliminar pendiente antes de confirmar | **consolidado** | `cabecera→enviar→confirmar→trazar→desencolar` |
 | E-049 | Comunicaciones | Conectividad usada para inferir sincronía | **abierto** | Sin conexión=no transmisión; síncrona/asíncrona depende del protocolo asumido |
+| E-050 | Base de Datos | Modelo relacional final incompleto | **abierto** | Escribir atributos, PK, FK y `UNIQUE`; `OPERARIO_TELEFONO` usa PK compuesta |
 
 ---
 
-## Cambios del cierre semanal
+## Cambios del cierre del Día 9
 
-### Pasaron a consolidados
-
-```text
-E-037 — instancia
-E-038 — simbología DER
-E-041 — contrato del TDA Cola
-E-044 — frecuencia y muestreo
-```
-
-### Pasaron a corregidos
+### Pasaron a consolidado
 
 ```text
-E-040 — alternativo y objetivo del caso
-E-042 — Pila/Cola/trazabilidad
-E-043 — fórmula y unidad de información
-```
-
-### Reabierto
-
-```text
-E-039 — asociativa frente a débil
-```
-
-Se reabre porque durante la integración oral volvió a justificarse `ASIGNACION_OT` mediante dependencia de existencia, mezclando función asociativa y debilidad.
-
-### Nuevos errores canónicos
-
-```text
-E-046 — String y validación
+E-040 — realización y alternativo sin conexión
 E-047 — 2FN e ID artificial
 E-048 — confirmación antes de desencolar
-E-049 — conectividad frente a sincronía
 ```
 
-Los códigos provisionales `P09-*` quedan absorbidos por estos errores o por `E-016`.
+Evidencia:
+
+- secuencia escrita correcta en la evaluación final;
+- dependencias parciales y transitivas correctas;
+- explicación correcta de ID artificial;
+- orden `cabecera→envío→confirmación→trazabilidad→desencolar` aplicado sin ayuda.
+
+### Nuevo error
+
+```text
+E-050 — modelo relacional final incompleto
+```
+
+En el escrito final:
+
+- faltaron atributos descriptivos;
+- faltaron `nombre_sector UNIQUE` y `numero_ot UNIQUE`;
+- `OPERARIO_TELEFONO` fue declarado con `UNIQUE` pero sin PK;
+- las FK no se escribieron con destino completo.
 
 ---
 
@@ -135,6 +128,7 @@ Los códigos provisionales `P09-*` quedan absorbidos por estos errores o por `E-
 
 - `E-008` — DCL/TCL.
 - `E-039` — asociativa frente a débil.
+- `E-050` — modelo final con PK/FK/UNIQUE.
 
 ### Comunicaciones
 
@@ -148,40 +142,51 @@ Los códigos provisionales `P09-*` quedan absorbidos por estos errores o por `E-
 1. `E-018` — estructura dinámica frente a tipo.
 2. `E-026` — IP dentro/fuera de LAN.
 3. `E-036` — triángulo vacío de generalización.
-4. `E-040` — realización y alternativo sin conexión.
-5. `E-042` — FIFO frente a trazabilidad.
-6. `E-043` — `I(E)=log₂(1/P(E))` y unidad.
-7. `E-046` — validación de `String`.
-8. `E-047` — 2FN e ID artificial.
-9. `E-048` — confirmación antes de desencolar.
+4. `E-042` — FIFO frente a trazabilidad.
+5. `E-043` — `I(E)=log₂(1/P(E))` y unidad.
+6. `E-046` — comparación y validación de `String`.
 
 ---
 
-## Reglas de recuperación semanal
+## Reglas de recuperación
+
+### Sin conexión
 
 ```text
-Caso sin conexión:
-solicitar→guardar PENDIENTE_ENVIO→encolar→informar
-→cabecera→enviar→confirmar→trazar→desencolar
+solicitar
+→ PENDIENTE_ENVIO
+→ encolar
+→ informar
+→ cabecera
+→ enviar
+→ confirmar
+→ trazar
+→ desencolar
 ```
 
+### Java
+
 ```text
-Java:
-String no se compara por contenido con ==
-validación inválida no debe continuar
+validar antes de asignar
+null || isBlank()
+`super` solo para la parte heredada
 `toString()` usa atributos reales
+`@Override` verifica la signatura
 ```
 
-```text
-Normalización:
-1FN=atómico
-2FN=dependencia de clave completa
-3FN=sin dependencia transitiva
-ID artificial≠normalización
-```
+### Normalización
 
 ```text
-Comunicaciones:
+1FN = valores atómicos
+2FN = dependencia de la PK completa
+3FN = sin dependencias transitivas
+ID artificial ≠ normalización
+PK ≠ UNIQUE
+```
+
+### Comunicaciones
+
+```text
 I(E)=log₂(1/P(E))
 f=1/T
 fs≥2·fmax
@@ -190,15 +195,25 @@ conectividad≠sincronía
 
 ---
 
+## Documento de repaso
+
+```text
+RESUMENES/2026-08-16_REPASO-SEMANAL-PUNTOS-DEBILES.md
+```
+
+Incluye explicación, ejemplos correctos/incorrectos, preguntas de control y mini examen.
+
+---
+
 ## Evidencia
 
-- `06-ERRORES-Y-RECUPERACIONES-PARCIAL-DIA-09.md`
-- `EVIDENCIAS/2026-08-15_EVIDENCIA-GUIADA-CASO-INTEGRADOR-01.md`
-- `EVALUACIONES/2026-08-15_RESULTADO-SEMANAL-POR-EVIDENCIA.md`
-- `RESUMENES/2026-08-15_RESUMEN-SEMANAL-POR-MATERIA.md`
+- `EVALUACIONES/2026-08-16_RESPUESTAS-EVALUACION-DIA-09.md`
+- `EVALUACIONES/2026-08-16_RESULTADOS-DIA-09-SIN-DEFENSA.md`
+- `RESUMENES/2026-08-14_CIERRE-DIA-09.md`
+- `RESUMENES/2026-08-16_REPASO-SEMANAL-PUNTOS-DEBILES.md`
 
 ---
 
 ## Regla de seguimiento
 
-Un error que reaparece vuelve a `abierto`. Un error `corregido` pasa a `consolidado` solo después de otra recuperación sin ayuda o una defensa suficiente.
+Un error que reaparece vuelve a `abierto`. Un error `corregido` pasa a `consolidado` solo después de otra recuperación sin ayuda o evidencia evaluativa suficiente.
