@@ -220,6 +220,30 @@ Elegir por las operaciones dominantes y no por costumbre.
 
 > La capa física transporta bits representados mediante señales eléctricas, luminosas o radioeléctricas. El medio puede ser guiado, como cobre o fibra, o no guiado, como radio o satélite. La elección depende de ancho de banda, distancia, retardo, costo, instalación y mantenimiento. La transmisión puede verse afectada por atenuación, ruido, interferencia, dispersión y latencia.
 
+## Par trenzado
+
+```text
+Los pares se trenzan
+→ las perturbaciones inducidas tienden a afectar ambos conductores de forma semejante
+→ el receptor puede reducir su efecto al interpretar la diferencia.
+```
+
+```text
+UTP
+→ sin blindaje adicional.
+
+FTP/STP
+→ incorporan blindaje según la construcción.
+
+Trenzado
+→ ayuda frente a interferencia y diafonía.
+
+Blindaje
+→ agrega protección electromagnética, pero exige instalación correcta.
+```
+
+No confundir `STP` como cable con `STP` como Spanning Tree Protocol.
+
 ---
 
 # 10. Perturbaciones
@@ -264,6 +288,17 @@ Repetidor
 
 Router
 → capa de red, IP y paquete.
+```
+
+Mapa rápido:
+
+```text
+Hub/repetidor → capa 1.
+Switch → capa 2, salvo función multicapa.
+Router → capa 3.
+Gateway → capa variable; el material lo presenta en transporte/aplicación.
+Firewall → capa 3/4 o 7 según inspección.
+VPN → capa 2, 3 o 7 según implementación.
 ```
 
 ---
@@ -378,6 +413,12 @@ Física = bits mediante señales.
 Atenuación ≠ latencia.
 
 Ruido ≠ interferencia electromagnética.
+
+Trenzado ≠ blindaje.
+
+STP cable ≠ Spanning Tree Protocol.
+
+Firewall/VPN → declarar función antes de asignar capa.
 
 Conectividad ≠ sincronía.
 ```

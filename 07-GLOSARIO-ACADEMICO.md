@@ -40,6 +40,10 @@ Este glosario debe crecer durante el estudio. Las definiciones se mantienen brev
 - **Abstracción:** selección de características esenciales y omisión de detalles irrelevantes.
 - **Clase abstracta:** clase no instanciable destinada a proporcionar estructura y comportamiento común.
 - **Interfaz:** contrato de operaciones que una clase se compromete a implementar.
+- **JVM:** máquina virtual que ejecuta bytecode Java y permite separar el programa de la plataforma concreta.
+- **Excepción checked:** excepción que Java obliga a capturar o declarar.
+- **Excepción unchecked:** excepción derivada de `RuntimeException` que no exige captura o declaración.
+- **SOLID:** conjunto de cinco principios para distribuir responsabilidades y dependencias en diseños orientados a objetos.
 
 ## Algoritmos y Estructuras
 
@@ -60,6 +64,8 @@ Este glosario debe crecer durante el estudio. Las definiciones se mantienen brev
 - **Cardinalidad:** cantidad de tuplas de una relación.
 - **Normalización:** proceso de descomposición de relaciones para disminuir redundancia y anomalías.
 - **Álgebra relacional:** conjunto formal de operaciones sobre relaciones.
+- **Transacción:** unidad lógica de trabajo que se confirma o deshace como conjunto.
+- **ACID:** Atomicidad, Consistencia, Aislamiento y Durabilidad de las transacciones.
 
 ## Comunicaciones
 
@@ -71,3 +77,22 @@ Este glosario debe crecer durante el estudio. Las definiciones se mantienen brev
 - **LAN:** red de área local.
 - **WAN:** red de área extensa.
 - **Topología:** disposición física o lógica de los elementos de una red.
+- **UTP:** par trenzado sin blindaje adicional.
+- **FTP/STP:** categorías de par trenzado con blindaje global o adicional, según su construcción.
+- **Diafonía:** interferencia producida entre conductores o pares próximos.
+- **CIDR:** notación de prefijo que expresa cuántos bits identifican la red.
+- **Broadcast:** dirección destinada a todos los hosts de una subred IPv4.
+- **Tabla MAC:** relación que aprende un switch entre direcciones MAC y puertos.
+- **Tabla de enrutamiento:** conjunto de redes destino y rutas utilizadas por un router.
+- **STP:** Spanning Tree Protocol; evita bucles de capa 2 bloqueando caminos redundantes.
+- **VPN:** red privada lógica construida sobre otra infraestructura mediante túneles y mecanismos de seguridad.
+- **DMZ:** segmento separado para publicar servicios limitando la exposición de la red interna.
+- **MPLS:** conmutación mediante etiquetas utilizada para transportar y organizar tráfico entre redes.
+
+## Seguridad conceptual complementaria
+
+- **Encoding:** cambio de representación o formato; es reversible y no brinda confidencialidad por sí mismo.
+- **Hashing:** cálculo de una huella normalmente unidireccional.
+- **Cifrado:** transformación reversible con la clave adecuada para proteger la confidencialidad.
+
+Las entradas agregadas desde el 17/08 son ampliaciones de defensa oral cuando no aparecen desarrolladas en los materiales suministrados.

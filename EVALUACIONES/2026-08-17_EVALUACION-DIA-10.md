@@ -139,12 +139,17 @@ Definí y diferenciá:
 
 ```text
 medio guiado / no guiado
+UTP / FTP / STP
+trenzado / blindaje
 atenuación
 ruido
+diafonía
 interferencia electromagnética
 dispersión
 latencia
 ```
+
+Explicá por qué los pares están trenzados y no confundas `STP` como cable con Spanning Tree Protocol.
 
 Caso:
 
@@ -172,6 +177,19 @@ módem
 repetidor
 última milla
 ```
+
+Completá y justificá:
+
+| Dispositivo/función | Capa principal |
+|---|---|
+| Hub/repetidor | |
+| Switch | |
+| Router | |
+| Gateway | |
+| Firewall | |
+| VPN | |
+
+Para firewall, VPN y gateway se acepta una capa variable únicamente si se declara la función o implementación considerada.
 
 Después respondé:
 
@@ -223,6 +241,8 @@ Conectividad ≠
 Desarrollo de 5–7 minutos:
 
 > Explique cómo la arquitectura organiza SIGO Rural mediante subsistemas, interfaces y dependencias. Justifique una lista simplemente enlazada para los puntos de relevamiento y describa inserción, búsqueda y eliminación. Finalmente, compare medios físicos para la última milla y explique atenuación, ruido, interferencia, dispersión y latencia.
+
+La defensa debe incluir una comparación breve UTP/FTP/STP y la ubicación razonada de switch, router y un firewall o VPN.
 
 ## Rúbrica
 

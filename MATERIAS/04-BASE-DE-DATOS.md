@@ -20,7 +20,26 @@ Convertir la experiencia práctica en dominio formal del modelo relacional, álg
 12. Procedimientos y funciones.
 13. Cursores.
 14. Triggers.
+15. Comparación de motores según el escenario.
+16. Transacciones y propiedades ACID.
 
 ## Riesgo personal
 
 Responder desde SQL laboral sin explicar el fundamento académico o la operación relacional correspondiente.
+
+## Motores y transacciones — ampliación 17/08/2026
+
+### Respaldado por el material
+
+- Oracle para escenarios empresariales;
+- MySQL para aplicaciones web y transaccionales;
+- SQLite para aplicaciones pequeñas, locales o móviles;
+- transacciones, `COMMIT`, `ROLLBACK` y `SAVEPOINT`.
+
+### Complementario para defensa oral
+
+- PostgreSQL y sus criterios de elección;
+- Atomicidad, Consistencia, Aislamiento y Durabilidad como propiedades ACID;
+- ejercicio: elegir un motor para un caso y justificar la decisión.
+
+PostgreSQL y ACID no deben presentarse como contenido textual del resumen universitario suministrado.
