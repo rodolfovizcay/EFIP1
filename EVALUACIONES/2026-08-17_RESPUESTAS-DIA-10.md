@@ -1,290 +1,195 @@
-# Respuestas del estudiante — Evaluación Día 10
+# Respuestas del estudiante — Día 10
 ## Arquitectura + Lista simple + Nivel físico
 
 **Fecha:** 17/08/2026  
-**Inicio:**  
-**Fin:**  
-**Tiempo total:**  
-**Apuntes utilizados:** no
+**Modalidad real:** evaluación progresiva dialogada, sin apuntes  
+**Tiempo real:** no cronometrado
 
-> Conservar las respuestas originales. Registrar correcciones en resultados, errores y cierre.
+> Este registro conserva las respuestas y operaciones principales. Las correcciones y la calificación se documentan por separado.
 
 ---
 
-# Parte A — Arquitectura
+# 1. Recuperación inicial
 
-## 1. Concepto y decisiones
+## Respuestas principales
 
-```text
-Arquitectura:
+- Asociación: relación entre clases.
+- Agregación: relación todo/parte débil; la parte puede existir sin el todo.
+- Composición: relación todo/parte fuerte; la parte no existe independientemente.
+- Dependencia: uso temporal de otra clase para una operación.
+- `EjecucionOT`: entidad del dominio con persistencia.
+- Sincronización: agrupación de clases, interfaces y responsabilidades.
+- Cohesión: agrupar elementos con un objetivo funcional común.
+- Bajo acoplamiento: dependencias mínimas y controladas mediante interfaces.
+- Constructor: validar antes de ejecutar `this.nombre = nombre`.
+- `super(...)`: constructor de la superclase; `super.metodo()`: implementación heredada.
+- Pila: LIFO. Cola: FIFO.
+- Inserción al inicio: `nuevo.siguiente = cabeza; cabeza = nuevo`.
+- Física: bits mediante señales.
+- Desconexión no implica transmisión asíncrona.
 
-Decisión 1:
-Decisión 2:
-Decisión 3:
-Decisión 4:
-
-Factor 1:
-Factor 2:
-```
-
-## 2. Subsistemas e interfaces
-
-```text
-Subsistema 1:
-Responsabilidad:
-
-Subsistema 2:
-Responsabilidad:
-
-Subsistema 3:
-Responsabilidad:
-```
-
-```text
-Subsistema elegido:
-Interfaz proporcionada:
-Dependencia:
-Alta cohesión:
-Bajo acoplamiento:
-```
-
-```text
-PuntoRelevamiento como entidad:
-Subsistema Relevamiento:
-```
-
-## 3. Vistas y documentación
-
-```text
-Propósito de las vistas:
-
-Vista de casos de uso:
-
-Vista lógica/diseño:
-
-Vista de despliegue:
-
-Arquitectura vs. tecnología:
-```
+**Resultado:** `8,75/12`; recuperación breve posterior: `4,5/5`.
 
 ---
 
-# Parte B — Lista simplemente enlazada
+# 2. Arquitectura
 
-## 4. Conceptos
+## Definición
 
-```text
-Lista simple:
-Nodo:
-Cabeza:
-Lista vacía:
-```
+> La arquitectura es el conjunto de decisiones significativas respecto de la organización del sistema, sus elementos estructurales, subsistemas e interfaces, condicionada por casos de uso, RNF, comunicación, plataforma, base de datos y sistemas heredados.
 
-### Simulación
+## Decisiones justificadas
+
+### Persistencia local
 
 ```text
-Inicio:
-cabeza → [A] → [B] → [C] → null
-
-Después de insertarInicio(X):
-
-Después de modificar(B,B2):
-
-Después de eliminar(A):
-
-Después de insertarFinal(D):
+Problema: pérdida de información cuando el teléfono pierde conexión.
+Decisión: persistir localmente para sincronizar después.
+Tecnología posible: SQLite.
+Beneficio: evitar pérdida de información.
+Riesgo: redundancia, conflictos o pérdidas si la sincronización falla.
 ```
 
-## 5. Algoritmos
+### Persistencia central
 
-### Insertar al inicio
+```text
+Problema: mantener un estado común para todos los teléfonos.
+Decisión: servidor central autoritativo.
+Tecnología posible: PostgreSQL.
+Beneficio: datos centralizados.
+Riesgo: disponibilidad, concurrencia, copias y capacidad del servidor.
+```
+
+### Comunicación
+
+```text
+Problema: transmitir información entre teléfonos y servidor.
+Decisión: interfaz cliente-servidor REST con JSON.
+Tecnologías posibles: Spring Boot y Android.
+Riesgos: desconexión, latencia, reintentos, seguridad y versionado.
+```
+
+## Subsistemas e interfaces
+
+- Relevamiento registra, valida y administra puntos.
+- Persistencia guarda y recupera información, sin conocer la captura.
+- Sincronización conoce qué, cuándo y en qué orden sincronizar.
+- Persistencia conoce cómo almacenar y recuperar.
+- Las dependencias apuntan al contrato utilizado.
+
+## Vistas 4+1
+
+```text
+casos de uso → escenario significativo
+lógica/diseño → clases, subsistemas e interfaces
+procesos → concurrencia, cola y reintentos
+implementación → componentes y archivos
+despliegue → dispositivos y servidores
+```
+
+## Decisión documentada
+
+Se eligió separar Sincronización como subsistema independiente. Durante la corrección se agregaron alternativas reales, consecuencias positivas y negativas, riesgos, RNF y artefactos afectados.
+
+---
+
+# 3. Lista simplemente enlazada
+
+## Inserción
 
 ```java
+nuevo.siguiente = cabeza;
+cabeza = nuevo;
 
+X.siguiente = A.siguiente;
+A.siguiente = X;
 ```
 
-### Buscar
+## Recorrido
 
 ```java
-
+Nodo actual = cabeza;
+while (actual != null) {
+    System.out.println(actual.dato);
+    actual = actual.siguiente;
+}
 ```
 
-### Eliminar
+## Búsqueda
 
 ```java
-
+while (actual != null) {
+    if (actual.dato == buscado) {
+        return actual;
+    }
+    actual = actual.siguiente;
+}
+return null;
 ```
 
-### Explicación
+## Eliminación recuperada
 
-```text
-Lista vacía:
-Eliminación de cabeza:
-Nodo anterior:
-Comparación de String:
+```java
+cabeza = cabeza.siguiente;
+anterior.siguiente = actual.siguiente;
 ```
 
-## 6. Comparación
-
-| Criterio | Arreglo | Lista simple |
-|---|---|---|
-| Capacidad | | |
-| Acceso | | |
-| Inserción/eliminación | | |
-| Memoria | | |
-| Elección | | |
+## Complejidad
 
 ```text
-Permanece en el TDA:
-Cambia en implementación:
+primer nodo = O(1)
+insertar al inicio = O(1)
+buscar = O(n)
+acceder por posición = O(n) en el peor caso
 ```
 
 ---
 
-# Parte C — Nivel físico
+# 4. Nivel físico
 
-## 7. Medios y perturbaciones
-
-```text
-Medio guiado:
-Medio no guiado:
-Por qué se trenzan los pares:
-UTP:
-FTP:
-STP como cable:
-STP como protocolo:
-Atenuación:
-Ruido:
-Diafonía:
-Interferencia electromagnética:
-Dispersión:
-Latencia:
-```
-
-### Caso rural
+- UTP, fibra y coaxial: guiados.
+- Radiofrecuencia y satélite: no guiados.
+- UTP transporta señales eléctricas; Física interpreta bits; Enlace reconoce tramas.
+- Los pares se trenzan para reducir interferencia.
+- UTP es apropiado en oficina común por costo y facilidad.
+- Entre edificios con interferencia eléctrica se eligió fibra por inmunidad electromagnética y aislamiento eléctrico.
 
 ```text
-Candidato 1:
-Tipo:
-Distancia:
-Obstáculos:
-Latencia:
-Costo:
-Mantenimiento:
-Interfaz/dispositivo:
-Supuesto:
-
-Candidato 2:
-Tipo:
-Distancia:
-Obstáculos:
-Latencia:
-Costo:
-Mantenimiento:
-Interfaz/dispositivo:
-Supuesto:
-
-Comparación/recomendación:
-```
-
-## 8. Dispositivos y última milla
-
-```text
-Interfaz física:
-Módem:
-Repetidor:
-Última milla:
-```
-
-### Capas y dispositivos
-
-| Dispositivo/función | Capa | Justificación |
-|---|---|---|
-| Hub/repetidor | | |
-| Switch | | |
-| Router | | |
-| Gateway | | |
-| Firewall | | |
-| VPN | | |
-
-```text
-Señal analógica:
-Conectividad y asincronía:
-Medio universalmente mejor:
+Repetidor/hub → capa 1 → señal/bits
+Switch → capa 2 → trama/MAC
+Router → capa 3 → paquete/IP
 ```
 
 ---
 
-# Parte D — Integración y recuperación
+# 5. Evaluación integradora real
 
-## 9. Integración
+Se respondieron diez consignas sobre:
 
+1. tecnología frente a decisión arquitectónica;
+2. cohesión y acoplamiento;
+3. vistas 4+1;
+4. RNF, consecuencias y riesgos;
+5. inserción y eliminación en Lista;
+6. complejidades;
+7. señales, bits y tramas;
+8. switch/router, capas y direcciones;
+9. medios guiados/no guiados;
+10. fibra entre edificios.
 
-## 10. Recuperación
+**Resultado:** `8,5/10`.
 
-```text
-Asociación =
-Agregación =
-Composición =
-Dependencia =
-
-Validación String =
-Inserción al inicio =
-
-Física transmite =
-Conectividad ≠
-```
-
----
-
-# Defensa oral
-
-## Esquema antes de hablar
+## Recuperación final
 
 ```text
-Arquitectura:
-Subsistemas:
-Interfaces:
-Dependencias:
-Lista:
-Operaciones:
-Medios:
-UTP/FTP/STP:
-Dispositivos/capas:
-Perturbaciones:
-Última milla:
-Integración:
+Implementación = cómo se organiza el software.
+Despliegue = dónde se ejecuta.
+APK = implementación.
+Teléfono = despliegue.
+Switch = capa 2, trama, MAC.
+Router = capa 3, paquete, IP.
+Consecuencia negativa = mayor complejidad/componentes.
+Riesgo = duplicados durante reintentos.
 ```
 
-## Transcripción o puntos principales
-
-
----
-
-# Autoevaluación previa
-
-| Criterio | 0 | 1 | 2 | 3 |
-|---|:---:|:---:|:---:|:---:|
-| Arquitectura | [ ] | [ ] | [ ] | [ ] |
-| Subsistemas/interfaces | [ ] | [ ] | [ ] | [ ] |
-| Lista y referencias | [ ] | [ ] | [ ] | [ ] |
-| Código Java | [ ] | [ ] | [ ] | [ ] |
-| Nivel físico | [ ] | [ ] | [ ] | [ ] |
-| Selección de medio | [ ] | [ ] | [ ] | [ ] |
-| Integración oral | [ ] | [ ] | [ ] | [ ] |
-
-## Dudas detectadas
-
-1.
-2.
-3.
-4.
-5.
-
-## Errores que no deben borrarse
-
-1.
-2.
-3.
-4.
-5.
+**Resultado de recuperación:** `4/4`.
