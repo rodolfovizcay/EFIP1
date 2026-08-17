@@ -272,6 +272,17 @@ satélite
 
 Puede considerarse cable de cobre si se justifica con infraestructura existente.
 
+Antes de seleccionar el acceso rural, ubicar:
+
+```text
+hub/repetidor
+switch
+router
+gateway
+```
+
+en el modelo OSI. Si se propone firewall o VPN, indicar qué inspecciona o cómo se implementa antes de asignarle una capa.
+
 ## C2. Criterios
 
 Para cada candidato completar:
@@ -340,6 +351,32 @@ Antes de decidir deben medirse ______.
 
 No presentar la recomendación como universal.
 
+## C7. Enlace interno del puesto técnico
+
+Además del acceso rural, el puesto de coordinación posee:
+
+```text
+distancia interna: 45 metros
+entorno: tablero eléctrico, motores y canalizaciones compartidas
+necesidad: conectar el puesto al switch del edificio
+```
+
+Comparar:
+
+```text
+UTP
+FTP/STP
+fibra óptica
+```
+
+Explicar:
+
+- por qué se trenzan los pares;
+- qué diferencia existe entre trenzado y blindaje;
+- cómo aparece la diafonía;
+- cuál elegiría y bajo qué supuesto;
+- por qué `STP` en este punto significa cable blindado y no Spanning Tree Protocol.
+
 ---
 
 # 6. Parte D — Integración
@@ -371,6 +408,8 @@ Proponer al menos seis:
 | CP-04 | P-01 en cabeza | Eliminar P-01 | Cabeza avanza al siguiente |
 | CP-05 | Código inexistente | Eliminar | Resultado controlado, lista intacta |
 | CP-06 | Medio rural candidato | Evaluar restricciones | Recomendación con supuestos |
+| CP-07 | Sala con interferencia alta | Comparar UTP/FTP-STP/fibra | Medio justificado por trenzado, blindaje e inmunidad |
+| CP-08 | Firewall o VPN propuesto | Asignar capa | Capa justificada por función/implementación |
 
 Agregar casos para:
 

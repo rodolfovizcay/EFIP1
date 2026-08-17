@@ -148,8 +148,14 @@ Cambia en implementación:
 ```text
 Medio guiado:
 Medio no guiado:
+Por qué se trenzan los pares:
+UTP:
+FTP:
+STP como cable:
+STP como protocolo:
 Atenuación:
 Ruido:
+Diafonía:
 Interferencia electromagnética:
 Dispersión:
 Latencia:
@@ -189,6 +195,17 @@ Módem:
 Repetidor:
 Última milla:
 ```
+
+### Capas y dispositivos
+
+| Dispositivo/función | Capa | Justificación |
+|---|---|---|
+| Hub/repetidor | | |
+| Switch | | |
+| Router | | |
+| Gateway | | |
+| Firewall | | |
+| VPN | | |
 
 ```text
 Señal analógica:
@@ -232,6 +249,8 @@ Dependencias:
 Lista:
 Operaciones:
 Medios:
+UTP/FTP/STP:
+Dispositivos/capas:
 Perturbaciones:
 Última milla:
 Integración:

@@ -7,6 +7,15 @@
 **Regreso al trabajo:** lunes **24/8**  
 **Domingos:** opcionales; se decide cada domingo si descansar, repasar o recuperar.
 
+## Actualización vigente — 17/08/2026
+
+- Las jornadas del **05/08 al 16/08** son historia académica cerrada.
+- No se modifican sus notas, respuestas, evaluaciones, cierres ni estados de dominio.
+- La actualización del plan comienza el **17/08/2026**.
+- Los contenidos respaldados por los materiales universitarios se conservan como núcleo.
+- Los contenidos solicitados que no aparecen desarrollados en esos materiales se identifican como **ampliación complementaria para defensa oral**.
+- No se declara como realizado ningún tema programado desde el 17/08.
+
 ---
 
 # 1. Criterio del plan
@@ -247,7 +256,8 @@ Hasta 2 horas:
 ### Java mínimo necesario
 
 - [ ] Características principales de Java.
-- [ ] JVM y portabilidad.
+- [ ] JVM y portabilidad. *(Ampliación complementaria.)*
+- [ ] Justificación de elección de Java: orientación a objetos, ecosistema, robustez y manejo de excepciones. *(Ampliación complementaria.)*
 - [ ] Tipos de datos.
 - [ ] Operadores.
 - [ ] Control de flujo.
@@ -292,9 +302,12 @@ Hasta 2 horas:
 - [ ] Clase `String`.
 - [ ] Excepciones.
 - [ ] `try`, `catch`, `finally`, `throw` y `throws`.
+- [ ] Excepciones checked y unchecked. *(Ampliación complementaria.)*
 - [ ] Excepciones propias.
 - [ ] Manipulación básica de archivos.
 - [ ] Aplicación Java integrada.
+- [ ] Principios SOLID: SRP, OCP, LSP, ISP y DIP, con una frase y un ejemplo sencillo. *(Ampliación complementaria.)*
+- [ ] Encoding, hashing y cifrado: finalidad, reversibilidad y ejemplos. *(Ampliación complementaria transversal.)*
 
 ---
 
@@ -353,6 +366,9 @@ Hasta 2 horas:
 ### Modelo relacional
 
 - [ ] Motor relacional.
+- [ ] Oracle, MySQL y SQLite según los escenarios desarrollados por el material.
+- [ ] PostgreSQL: comparación conceptual y justificación de uso. *(Ampliación complementaria.)*
+- [ ] Propiedades ACID vinculadas con transacciones. *(Ampliación complementaria sobre TCL y transacciones respaldadas.)*
 - [ ] Relación.
 - [ ] Tupla.
 - [ ] Atributo.
@@ -440,6 +456,8 @@ Hasta 2 horas:
 - [ ] Comparación OSI–TCP/IP.
 - [ ] Encapsulamiento y desencapsulamiento.
 - [ ] PDU.
+- [ ] Capas de hub/repetidor, switch, router y gateway.
+- [ ] Firewall y VPN según el tipo de inspección o implementación. *(Ampliación complementaria.)*
 
 ### Transmisión y nivel físico
 
@@ -451,6 +469,10 @@ Hasta 2 horas:
 - [ ] Transmisión serie y paralela.
 - [ ] Transmisión síncrona y asíncrona.
 - [ ] Medios guiados y no guiados.
+- [ ] Par trenzado UTP.
+- [ ] Motivo físico del trenzado. *(Ampliación complementaria.)*
+- [ ] UTP frente a FTP y STP como tipos de cable. *(Ampliación complementaria.)*
+- [ ] Diafonía e interferencia electromagnética.
 - [ ] Atenuación.
 - [ ] Ruido.
 - [ ] Interferencia.
@@ -471,6 +493,8 @@ Hasta 2 horas:
 - [ ] Tramas.
 - [ ] LLC y MAC.
 - [ ] IEEE 802.x.
+- [ ] Aprendizaje de direcciones MAC y tabla MAC. *(Ampliación complementaria.)*
+- [ ] STP y prevención de bucles de capa 2.
 
 ### Redes
 
@@ -485,8 +509,18 @@ Hasta 2 horas:
 - [ ] Protocolos enrutados.
 - [ ] Protocolos de enrutamiento.
 - [ ] Redes TCP/IP.
+- [ ] IPv4: 32 bits, máscara, red, broadcast y direcciones utilizables. *(Ampliación complementaria.)*
+- [ ] CIDR y cálculo de prefijos/hosts. *(Ampliación complementaria.)*
+- [ ] Clases A, B y C como clasificación histórica. *(Ampliación complementaria.)*
+- [ ] TCP frente a UDP: conexión, confiabilidad, orden, retransmisión y overhead. *(Desarrollo complementario sobre una mención del material.)*
+- [ ] Three-way handshake: `SYN → SYN-ACK → ACK`. *(Ampliación complementaria.)*
+- [ ] Tabla de enrutamiento: destino, prefijo, siguiente salto, interfaz y métrica. *(Ampliación complementaria.)*
+- [ ] Bucle de switching frente a bucle de routing; TTL, métricas y protocolos. *(Ampliación complementaria.)*
 - [ ] WAN.
+- [ ] MAN.
 - [ ] MPLS.
+- [ ] VPN y DMZ. *(Ampliación complementaria.)*
+- [ ] Servidor propio frente a servicio contratado. *(Ampliación complementaria de infraestructura.)*
 - [ ] Control de congestión.
 - [ ] Comunicaciones móviles.
 - [ ] Tendencias tecnológicas.
@@ -869,6 +903,8 @@ Descanso recomendado. Si se estudia, solo corregir errores del caso.
 
 ### Lunes 17/8 — Arquitectura, listas y nivel físico — 5,5 h núcleo
 
+**Estado al publicar esta actualización:** jornada preparada, no iniciada.
+
 #### Mañana M1 — Análisis y Diseño — 90 min
 
 - elementos de arquitectura;
@@ -891,6 +927,13 @@ Dibujar la evolución de una lista.
 #### Tarde T1 — Comunicaciones — 90 min
 
 - medios;
+- capas OSI de hub/repetidor, switch, router y gateway;
+- ubicación variable de firewall y VPN según implementación;
+- par trenzado UTP;
+- por qué se trenzan sus pares;
+- UTP frente a FTP y STP;
+- diafonía e interferencia electromagnética;
+- comparación con coaxial y fibra;
 - limitaciones;
 - atenuación, ruido, interferencia, dispersión y latencia;
 - dispositivos físicos;
@@ -899,8 +942,11 @@ Dibujar la evolución de una lista.
 #### Tarde T2 — 60 min
 
 - ejercicio de selección de medios;
+- cuadro dispositivo → capa → dirección/PDU cuando corresponda;
 - preguntas;
 - resumen.
+
+La ampliación sustituye parte del tratamiento genérico de medios; no agrega una cuarta materia ni convierte el día en una jornada exclusiva de redes.
 
 ---
 
@@ -912,7 +958,10 @@ Dibujar la evolución de una lista.
 - `ArrayList`;
 - `String`;
 - comparación de objetos;
-- excepciones.
+- por qué elegir Java y función de la JVM;
+- excepciones;
+- checked frente a unchecked;
+- `try`, `catch`, `finally`, `throw` y `throws`.
 
 #### Mañana M2 — Estructuras — 90 min
 
@@ -938,7 +987,10 @@ Comparar variantes de listas.
 
 - 20 minutos de Java escrito;
 - consultas SQL en papel;
+- definición oral de SRP, OCP, LSP, ISP y DIP con ejemplos mínimos;
 - resumen.
+
+SOLID se estudia para definir y reconocer los principios, no como un módulo avanzado de arquitectura.
 
 ---
 
@@ -951,6 +1003,8 @@ Comparar variantes de listas.
 - subsistemas;
 - nodos;
 - despliegue.
+- decisión de infraestructura: servidor propio frente a servidor/hosting contratado;
+- ventajas, riesgos y criterios de elección.
 
 #### Mañana M2 — POO — 90 min
 
@@ -970,11 +1024,17 @@ Relacionar clases UML con código y componentes.
 - Ethernet;
 - tramas;
 - LLC y MAC;
-- IEEE 802.x.
+- IEEE 802.x;
+- funcionamiento del switch;
+- aprendizaje de MAC y relación `MAC → puerto`;
+- tabla MAC y decisión de reenvío;
+- STP y bucles de capa 2;
+- diferencia inicial con un bucle de enrutamiento.
 
 #### Tarde T2 — 60 min
 
 - oral de enlace;
+- comparar `switch: MAC → puerto` con `router: red IP → siguiente salto/interfaz`;
 - mapa;
 - resumen.
 
@@ -1009,13 +1069,20 @@ Ordenar manualmente una serie.
 - `GROUP BY`;
 - `HAVING`;
 - `ORDER BY`;
-- DCL y TCL.
+- DCL y TCL;
+- Oracle, MySQL y SQLite según el material;
+- PostgreSQL como ampliación comparativa;
+- propiedades ACID y relación con transacciones.
 
 #### Tarde T2 — 60 min
 
 - evaluación;
+- decisión oral de motor de base de datos según un caso;
+- bloque conceptual breve: encoding, hashing y cifrado;
 - corrección;
 - resumen.
+
+El bloque de seguridad conceptual se limita a finalidad, reversibilidad y ejemplos (`Base64`, `SHA-256`, `AES`). No se transforma en criptografía avanzada.
 
 ---
 
@@ -1045,21 +1112,32 @@ Explicar ambos algoritmos y los objetos procedimentales.
 
 #### Tarde T1 — Comunicaciones — 90 min
 
-- redes de difusión y conmutadas;
-- topologías;
-- LAN;
-- interconexión;
-- enrutamiento;
-- WAN;
-- MPLS;
-- congestión;
-- comunicaciones móviles.
+- **IPv4 y subneteo:** 32 bits, máscara, CIDR, red, broadcast, direcciones totales y hosts utilizables;
+- interpretación de `/32`, `/30`, `/29`, `/28` y selección de prefijo;
+- cálculo `2^(bits de host)` para direcciones totales y `2^h - 2` para hosts en el esquema tradicional, aclarando `/31` y `/32` como casos especiales;
+- clases A/B/C únicamente como clasificación histórica;
+- **TCP frente a UDP:** conexión, confiabilidad, orden, retransmisión, overhead y aplicaciones;
+- establecimiento TCP: `SYN → SYN-ACK → ACK`;
+- función del router y tabla de enrutamiento;
+- destino, prefijo, siguiente salto, interfaz y métrica.
 
 #### Tarde T2 — 60 min
 
-- diseño de red;
+- redes de difusión y conmutadas, topologías, LAN, MAN y WAN;
+- interconexión, enrutamiento, congestión y comunicaciones móviles;
+- STP frente a bucle de routing; TTL, métricas y protocolos de enrutamiento;
+- VPN, DMZ, MPLS y firewall;
+- diseño de red integrador;
 - preguntas orales;
 - resumen.
+
+**Ejercicios obligatorios:**
+
+- cantidad de direcciones y hosts de `/29` y `/28`;
+- elegir prefijo para 3, 14, 30, 36 y 62 hosts;
+- determinar red y broadcast de un ejemplo sencillo;
+- justificar TCP o UDP para una aplicación;
+- interpretar una tabla de enrutamiento pequeña.
 
 ---
 
@@ -1068,6 +1146,21 @@ Explicar ambos algoritmos y los objetos procedimentales.
 ## Mañana — examen escrito — 3 h
 
 Caso desconocido con preguntas de las cinco materias.
+
+El caso debe verificar, como mínimo:
+
+- UTP/FTP/STP y motivo del trenzado;
+- capas OSI y dispositivos;
+- un ejercicio CIDR/subneteo;
+- TCP frente a UDP y handshake;
+- switch, tabla MAC, router y tabla de routing;
+- VPN, DMZ y MPLS;
+- LAN/MAN/WAN y servidor propio/contratado;
+- excepciones checked/unchecked y al menos un principio SOLID;
+- encoding, hashing y cifrado;
+- elección de motor y ACID.
+
+Los puntos pueden integrarse dentro de un mismo escenario; no necesitan convertirse en quince preguntas aisladas.
 
 ## Tarde — corrección y oral — 3 h
 
@@ -1124,6 +1217,7 @@ Solo se permite recuperar un error bloqueante del simulacro.
 
 - diseñar una red;
 - explicar OSI/TCP-IP;
+- recuperar subneteo, TCP/UDP, routing, VPN/DMZ/MPLS y dispositivos si el simulacro mostró errores;
 - relacionar despliegue, componentes y arquitectura.
 
 **Evaluación:** oral de 15 minutos.
@@ -1155,6 +1249,8 @@ Completar:
 12. comunicaciones;
 13. pruebas;
 14. defensa.
+
+La parte de comunicaciones debe incluir selección de red/medio, direccionamiento, transporte y seguridad conceptual cuando resulte pertinente al caso.
 
 ---
 
@@ -1370,10 +1466,20 @@ Materiales por materia:
 
 No se incorporan al plan obligatorio temas que no estén respaldados por el programa oficial o por estos materiales.
 
+## Trazabilidad de la ampliación del 17/08
+
+- **Respaldado por los materiales:** OSI, dispositivos principales, UTP, medios guiados/no guiados, ruido, diafonía, interferencia, STP como Spanning Tree, MPLS, LAN/MAN/redes extensas, excepciones Java, MySQL/SQLite/Oracle y transacciones.
+- **Parcialmente respaldado y ampliado:** TCP/UDP y funcionamiento de switch/router.
+- **Complementario para defensa oral:** FTP/STP como categorías de cable, IPv4/CIDR/subneteo, handshake TCP, tabla MAC, tabla de routing, VPN, DMZ, firewall por capas, bucles de routing, servidor propio/contratado, JVM/portabilidad, checked/unchecked, SOLID, PostgreSQL, ACID y encoding/hashing/cifrado.
+
+Un tema complementario no debe presentarse como exigencia oficial sin corroborarlo contra `PROGRAMA EFIP I - INFORMATICA NUEVO.pdf`.
+
 ---
 
-# 12. Primer paso
+# 12. Paso actual
 
-El miércoles 5/8 comenzar con:
+Las jornadas del 05/08 al 16/08 permanecen cerradas. El paso vigente es:
 
-> **Iniciar EFIP — 5/8 — diagnóstico general**
+> **Iniciar EFIP — 2026-08-17 — Día 10**
+
+El 17/08 debe cerrarse únicamente después de conservar respuestas reales, corregir la evaluación y registrar la defensa o evidencia oral correspondiente.

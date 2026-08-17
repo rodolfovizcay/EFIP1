@@ -2,7 +2,8 @@
 ## 17/08/2026 — Arquitectura + Lista simple + Nivel físico
 
 **Estado:** PREPARADO — NO INICIADO  
-**Rama:** `agent/preparacion-dia-10-2026-08-17`
+- **Rama de preparación original:** `agent/preparacion-dia-10-2026-08-17`
+- **Rama de ampliación:** `agent/actualizar-plan-desde-2026-08-17`
 
 ---
 
@@ -65,6 +66,11 @@ interfaces físicas
 módem
 repetidor
 última milla
+hub/repetidor, switch, router y gateway por capa
+firewall/VPN según implementación
+UTP, FTP y STP
+motivo del trenzado
+diafonía e interferencia electromagnética
 ```
 
 ---
@@ -134,6 +140,45 @@ RESUMENES/2026-08-16_REPASO-SEMANAL-PUNTOS-DEBILES.md
 6. El nivel físico se centra en medios, perturbaciones, dispositivos y última milla.
 7. No se inventan prestaciones numéricas de medios que el caso no proporciona.
 8. Las decisiones de medios deben declararse como recomendaciones condicionadas.
+9. UTP, par trenzado, diafonía e interferencia están respaldados por `COMUNICACIONES.md`.
+10. FTP/STP como categorías de cable y la explicación detallada del trenzado se marcan como complemento solicitado.
+11. Firewall, VPN y gateway no reciben una capa única sin declarar la función considerada.
+12. `STP` como cable se diferencia explícitamente de Spanning Tree Protocol.
+13. La ampliación reemplaza parte del tratamiento genérico de medios y no altera los 5,5 h núcleo.
+
+## Distribución aprobada de las demás ampliaciones
+
+```text
+18/08
+→ Java/JVM, excepciones completas y SOLID conceptual
+
+19/08
+→ tabla MAC, forwarding, STP y bucles
+→ servidor propio frente a contratado
+
+20/08
+→ motores, PostgreSQL, ACID
+→ encoding, hashing y cifrado
+
+21/08
+→ IPv4/CIDR, TCP/UDP, handshake
+→ routing, LAN/MAN/WAN, VPN/DMZ/MPLS
+
+22/08
+→ Simulacro completo 1 con cobertura integrada
+```
+
+Esta redistribución evita convertir el 21/08 en una jornada inviable y no elimina contenidos originales.
+
+La ampliación sincroniza:
+
+```text
+plan maestro y matriz
+mapas de POO, Base de Datos y Comunicaciones
+glosario, banco de preguntas y mapa de fuentes
+estado preparado, guía, ficha, caso, evaluación,
+respuestas, resumen y cierre del Día 10
+```
 
 ---
 
@@ -148,6 +193,8 @@ No se modifican como cierre:
 06-ERRORES-Y-RECUPERACIONES.md
 99-MANIFIESTO-CIERRE.md
 ```
+
+`04-MATRIZ-DE-PROGRESO.md` recibe únicamente filas planificadas en estado `NI`; no se cambian sus evidencias ni estados históricos. Los demás archivos de cierre del bloque anterior permanecen intactos.
 
 No se asigna:
 
@@ -207,5 +254,8 @@ Material: preparado
 Jornada: no iniciada
 Evaluación: no respondida
 Cierre: plantilla
-Archivos canónicos: sin modificar
+Estado/registro/errores/cierre canónicos: sin modificar
+Plan y matriz: ampliados sin declarar avance
 ```
+
+La preparación fue ampliada documentalmente el 17/08/2026. El estado académico continúa siendo **NO INICIADO** hasta obtener respuestas reales.

@@ -66,6 +66,36 @@ satélite
 láser a través del aire
 ```
 
+## Par trenzado: UTP, FTP y STP
+
+Los conductores se organizan en pares y se trenzan para que las perturbaciones inducidas afecten de manera semejante a ambos conductores y puedan reducirse al interpretar la diferencia de la señal.
+
+```text
+Trenzado
+→ reduce susceptibilidad a interferencia y diafonía.
+
+Blindaje
+→ agrega protección frente a campos electromagnéticos externos.
+```
+
+| Cable | Idea principal | Ventaja | Condición a considerar |
+|---|---|---|---|
+| UTP | Par trenzado sin blindaje adicional | costo e instalación habituales | más dependiente del ambiente electromagnético |
+| FTP | Pares con blindaje global mediante lámina | mayor protección externa | instalación y puesta a tierra correctas |
+| STP | Par trenzado con blindaje adicional según construcción | mayor inmunidad en ambientes exigentes | costo, rigidez y terminación |
+
+No confundir:
+
+```text
+STP — cable
+→ Shielded Twisted Pair.
+
+STP — protocolo
+→ Spanning Tree Protocol.
+```
+
+`COMUNICACIONES.md` menciona UTP, par trenzado, diafonía e interferencia. La comparación FTP/STP y la explicación detallada del trenzado son ampliaciones complementarias.
+
 ---
 
 # 3. Criterios de selección
@@ -110,7 +140,8 @@ Supuesto:
 
 | Medio | Tipo | Ventaja conceptual | Limitación a analizar | Escenario típico |
 |---|---|---|---|---|
-| Par trenzado | Guiado | Instalación extendida y costo moderado | distancia, interferencia y calidad del cable | red local/acceso existente |
+| UTP | Guiado | Instalación extendida y costo moderado | distancia, interferencia y calidad del cable | red local/acceso existente |
+| FTP/STP | Guiado | blindaje frente a interferencia electromagnética | costo, puesta a tierra y terminación | entorno industrial o eléctricamente ruidoso |
 | Coaxial | Guiado | Buen confinamiento de señal | instalación y tecnología disponible | redes y distribución específicas |
 | Fibra óptica | Guiado | alta capacidad y resistencia a interferencia electromagnética | costo, terminación e interfaces compatibles | troncales y enlaces exigentes |
 | Radio/Wi-Fi | No guiado | despliegue sin cable | obstáculos, interferencia y cobertura | acceso local/móvil |
@@ -318,7 +349,25 @@ No alcanza con elegir fibra si los equipos no poseen transceptores o interfaces 
 
 ---
 
-# 13. Módem
+# 13. Mapa OSI de dispositivos
+
+| Dispositivo o función | Capa principal | Qué examina o trata |
+|---|---:|---|
+| Hub/repetidor | 1 — Física | bits y señales |
+| Switch de capa 2 | 2 — Enlace | tramas y direcciones MAC |
+| Switch multicapa | 2/3 | tramas y, según función, paquetes IP |
+| Router | 3 — Red | paquetes, redes y direcciones IP |
+| Gateway | Variable; el material lo presenta en transporte/aplicación | traducción entre protocolos o aplicaciones |
+| Firewall | 3/4 o 7, según inspección | IP, puertos, estado o contenido de aplicación |
+| VPN | 2, 3 o 7, según implementación | encapsulación/túnel en la capa declarada |
+
+Regla de defensa:
+
+> No memorizar una única capa para firewall, VPN o gateway sin indicar qué función concreta realizan.
+
+---
+
+# 14. Módem
 
 Módem significa modulador–demodulador.
 
@@ -341,7 +390,7 @@ inalámbrica
 
 ---
 
-# 14. Repetidor
+# 15. Repetidor
 
 Un repetidor es un dispositivo de capa física que:
 
@@ -355,7 +404,7 @@ Permite superar limitaciones de distancia, pero agrega retardo y no interpreta d
 
 ---
 
-# 15. Última milla
+# 16. Última milla
 
 La última milla o bucle de abonado es el tramo que conecta al usuario final con el operador de telecomunicaciones.
 
@@ -386,7 +435,7 @@ No existe una única solución universal.
 
 ---
 
-# 16. Caso rural
+# 17. Caso rural
 
 Escenario:
 
@@ -418,7 +467,7 @@ sin analizar disponibilidad y costo.
 
 ---
 
-# 17. Recuperación de supuestos
+# 18. Recuperación de supuestos
 
 ## Señal analógica
 
@@ -445,7 +494,7 @@ La organización síncrona/asíncrona depende del protocolo asumido.
 
 ---
 
-# 18. Ejercicio de selección
+# 19. Ejercicio de selección
 
 ## Escenario A
 
@@ -471,9 +520,11 @@ Cliente rural sin tendido y con obstáculos.
 
 Sala industrial con motores y alta interferencia electromagnética.
 
+Comparar obligatoriamente UTP, FTP/STP y fibra. Justificar qué aporta el trenzado, qué aporta el blindaje y por qué la fibra es inmune a interferencia electromagnética en el medio.
+
 ---
 
-# 19. Preguntas de control
+# 20. Preguntas de control
 
 1. ¿Qué transporta la capa física?
 2. ¿Qué diferencia existe entre medio guiado y no guiado?
@@ -487,3 +538,7 @@ Sala industrial con motores y alta interferencia electromagnética.
 10. ¿Qué hace un repetidor?
 11. ¿Qué es la última milla?
 12. ¿Por qué no hay un medio universalmente mejor?
+13. ¿Por qué se trenzan los pares?
+14. ¿Qué diferencias conceptuales existen entre UTP, FTP y STP?
+15. ¿En qué capas trabajan hub, switch y router?
+16. ¿Por qué firewall y VPN no tienen necesariamente una capa única?

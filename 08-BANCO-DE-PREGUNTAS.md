@@ -30,6 +30,9 @@ Marcar cada pregunta con: `[ ] no respondida`, `[~] parcial`, `[x] defendible`.
 - [ ] ¿Cuándo usar una interfaz?
 - [ ] ¿Cómo se comparan objetos?
 - [ ] ¿Qué diferencia existe entre `throw` y `throws`?
+- [ ] ¿Qué diferencia existe entre una excepción checked y una unchecked?
+- [ ] ¿Por qué Java puede considerarse portable y qué función cumple la JVM?
+- [ ] ¿Qué significa cada principio SOLID y qué ejemplo mínimo lo representa?
 - [ ] ¿Cuándo conviene usar `ArrayList`?
 
 ## Algoritmos y Estructuras
@@ -61,6 +64,8 @@ Marcar cada pregunta con: `[ ] no respondida`, `[~] parcial`, `[x] defendible`.
 - [ ] ¿Qué diferencia existe entre DDL, DML, DCL y TCL?
 - [ ] ¿Qué diferencia existe entre `WHERE` y `HAVING`?
 - [ ] ¿Qué diferencia existe entre procedimiento, función, cursor y trigger?
+- [ ] ¿Cuándo elegiría Oracle, MySQL, PostgreSQL o SQLite?
+- [ ] ¿Cómo se relacionan Atomicidad, Consistencia, Aislamiento y Durabilidad con una transacción?
 
 ## Comunicaciones
 
@@ -75,7 +80,18 @@ Marcar cada pregunta con: `[ ] no respondida`, `[~] parcial`, `[x] defendible`.
 - [ ] ¿Qué diferencia existe entre transmisión síncrona y asíncrona?
 - [ ] ¿Qué funciones tienen LLC y MAC?
 - [ ] ¿Qué diferencia existe entre switch y router?
+- [ ] ¿En qué capa trabajan hub/repetidor, switch, router, gateway y firewall?
+- [ ] ¿Por qué se trenzan los pares de un cable y qué diferencias existen entre UTP, FTP y STP?
+- [ ] ¿Cómo aprende un switch la relación `MAC → puerto`?
+- [ ] ¿Qué problema resuelve STP y por qué no resuelve un bucle entre routers?
 - [ ] ¿Qué diferencia existe entre LAN y WAN?
+- [ ] ¿Cómo se distinguen LAN, MAN y WAN frente a un caso?
+- [ ] ¿Qué significa `/29` y cuántas direcciones/hosts permite?
+- [ ] ¿Cómo se determinan red, broadcast y hosts utilizables de una subred IPv4?
+- [ ] ¿Qué diferencia existe entre TCP y UDP?
+- [ ] ¿Cuál es el propósito de `SYN → SYN-ACK → ACK`?
+- [ ] ¿Qué campos mínimos contiene una tabla de enrutamiento?
+- [ ] ¿Qué diferencias básicas existen entre VPN, DMZ y MPLS?
 - [ ] ¿Qué es la última milla?
 - [ ] ¿Qué problema resuelve MPLS o el control de congestión?
 
@@ -85,4 +101,8 @@ Marcar cada pregunta con: `[ ] no respondida`, `[~] parcial`, `[x] defendible`.
 - [ ] ¿Cómo se relaciona una clase Java con una entidad de base de datos sin afirmar que son lo mismo?
 - [ ] ¿Qué estructura de datos elegiría para trabajos pendientes y por qué?
 - [ ] ¿Qué decisiones de arquitectura afectan la red y la base de datos?
+- [ ] ¿Cuándo elegiría servidor propio y cuándo un servicio contratado?
+- [ ] ¿Qué diferencia existe entre encoding, hashing y cifrado?
 - [ ] ¿Cómo se prueba que un caso de uso fue implementado correctamente?
+
+> Las preguntas de IPv4/CIDR, VPN/DMZ, tablas MAC/routing, SOLID, PostgreSQL, ACID y seguridad conceptual son ampliaciones complementarias incorporadas el 17/08/2026.

@@ -44,6 +44,11 @@ Estructuras
 
 Comunicaciones
 → medios guiados y no guiados
+→ capas OSI de hub/repetidor, switch, router y gateway
+→ firewall/VPN según implementación, como complemento
+→ UTP, FTP y STP
+→ motivo del trenzado
+→ diafonía e interferencia electromagnética
 → limitaciones del canal
 → atenuación
 → ruido
@@ -129,6 +134,24 @@ Brechas relevantes:
 - dispositivos del nivel físico;
 - problemática de última milla.
 
+Ampliación prevista para esta jornada:
+
+```text
+hub/repetidor → capa 1
+switch → capa 2, salvo equipos multicapa
+router → capa 3
+gateway → depende de la función; el material lo ubica en transporte/aplicación
+firewall/VPN → capa variable según inspección o implementación
+
+UTP/FTP/STP
+→ trenzado
+→ blindaje
+→ diafonía
+→ selección según el ambiente
+```
+
+UTP, par trenzado, diafonía e interferencia están respaldados por `COMUNICACIONES.md`. FTP/STP como categorías de cable, la explicación detallada del trenzado y la variación de capa en firewall/VPN se incorporan como complemento solicitado.
+
 ---
 
 # 4. Recuperación inicial prevista
@@ -163,6 +186,10 @@ Para cerrar la jornada deberán existir evidencias del estudiante sobre:
 - inserción, búsqueda, modificación y eliminación;
 - comparación lista/arreglo;
 - medios guiados y no guiados;
+- capas de los dispositivos principales;
+- motivo del trenzado de pares;
+- comparación UTP/FTP/STP;
+- diafonía e interferencia electromagnética;
 - atenuación, ruido, interferencia, dispersión y latencia;
 - módem, repetidor e interfaz física;
 - problemática de la última milla;

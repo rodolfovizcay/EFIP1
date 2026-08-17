@@ -12,6 +12,8 @@ Estados:
 
 > El Día 9 se cerró con evaluación escrita `5,70/8,00` y sin defensa oral. Sus estados reflejan evidencia escrita y práctica, pero no se asigna una nota global. El indicador semanal `8,6/10` continúa calculado con los Días 5 a 8.
 
+> **Ampliación planificada el 17/08/2026:** se agregan filas `NI` para dar trazabilidad a contenidos que serán estudiados desde el Día 10. Esto no modifica la evidencia ni los estados históricos del 05/08 al 16/08. Cuando el material universitario no desarrolla el tema, se lo identifica como complementario.
+
 ---
 
 # 1. Análisis y Diseño de Software
@@ -94,6 +96,10 @@ Estados:
 | Excepciones | EA/C | `IllegalArgumentException` aplicada; bloque formal pendiente |
 | Colecciones | C/A | `List<CanalNotificacion>` comprendida |
 | Archivos | NI | Pendiente |
+| Elección de Java, JVM y portabilidad | NI | Complementario; previsto 18/08 |
+| Excepciones checked/unchecked y flujo completo | NI | Complementario; previsto 18/08 |
+| Principios SOLID | NI | Complementario conceptual; previsto 18/08 |
+| Encoding, hashing y cifrado | NI | Complementario transversal; previsto 20/08 |
 
 ---
 
@@ -167,6 +173,9 @@ Estados:
 | DCL/TCL | EA | `GRANT`/`COMMIT` pendientes |
 | Álgebra relacional y SQL académico | NI/EA | Pendiente |
 | Procedimientos, cursores y triggers | NI | Pendiente |
+| Oracle/MySQL/SQLite: elección por escenario | NI/EA | Motores respaldados por el material; previsto 20/08 |
+| PostgreSQL: comparación conceptual | NI | Complementario; previsto 20/08 |
+| Transacciones y propiedades ACID | NI/EA | TCL/transacciones respaldadas; ACID complementario; previsto 20/08 |
 
 ---
 
@@ -202,6 +211,22 @@ Estados:
 | Medios guiados/no guiados | C | Móvil puede usar medio no guiado |
 | Atenuación/ruido/interferencia/dispersión/latencia | NI | Pendiente |
 | Enlace, Ethernet, WAN y última milla | NI/EA | Pendiente |
+| Hub/repetidor/switch/router/gateway por capa | C/A | Núcleo respaldado; repaso ampliado 17/08 |
+| UTP, trenzado, diafonía e interferencia | NI/EA | UTP/diafonía respaldados; previsto 17/08 |
+| FTP/STP como tipos de cable | NI | Complementario; previsto 17/08 |
+| Switch: aprendizaje y tabla MAC | NI | Complementario sobre función respaldada; previsto 19/08 |
+| STP y bucles de capa 2 | NI/EA | Respaldado; previsto 19/08 |
+| Bucle de routing, TTL y métricas | NI | Complementario; previsto 19/08–21/08 |
+| IPv4, máscara, red y broadcast | NI | Complementario; previsto 21/08 |
+| CIDR y selección de prefijo | NI | Complementario; previsto 21/08 |
+| Clases A/B/C históricas | NI | Complementario; previsto 21/08 |
+| TCP frente a UDP | NI/EA | Mención respaldada y desarrollo complementario; previsto 21/08 |
+| Three-way handshake | NI | Complementario; previsto 21/08 |
+| Router y tabla de enrutamiento | NI/EA | Función respaldada y tabla complementaria; previsto 21/08 |
+| LAN/MAN/WAN | NI/EA | Respaldado; previsto 21/08 |
+| MPLS | NI/EA | Respaldado; previsto 21/08 |
+| VPN, DMZ y firewall por capas | NI | Complementario; previsto 21/08 |
+| Servidor propio frente a contratado | NI | Complementario de infraestructura; previsto 19/08 |
 
 ---
 

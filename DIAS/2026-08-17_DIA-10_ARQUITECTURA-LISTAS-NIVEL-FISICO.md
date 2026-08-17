@@ -19,7 +19,10 @@ Al finalizar, el estudiante deberá poder:
 6. diferenciar medios guiados y no guiados;
 7. explicar atenuación, ruido, interferencia, dispersión y latencia;
 8. reconocer interfaces físicas, módems, repetidores y última milla;
-9. integrar arquitectura, estructura de datos y elección de medio en un caso.
+9. ubicar hub/repetidor, switch, router y gateway en el modelo OSI;
+10. explicar por qué se trenzan los pares y comparar UTP, FTP y STP;
+11. relacionar diafonía, interferencia y blindaje con la elección del cable;
+12. integrar arquitectura, estructura de datos y elección de medio en un caso.
 
 ---
 
@@ -168,13 +171,20 @@ lista vacía
 
 ---
 
-## Tarde T1 — Nivel físico — 90 minutos
+## Tarde T1 — Nivel físico y mapa de dispositivos — 90 minutos
 
 ### Conceptos
 
 - función de la capa física;
 - bits y señales;
 - medios guiados y no guiados;
+- mapa de dispositivos por capa: hub/repetidor, switch, router y gateway;
+- firewall y VPN como dispositivos/funciones cuya capa depende de la inspección o implementación;
+- par trenzado UTP;
+- cancelación de interferencias mediante el trenzado;
+- UTP frente a FTP y STP;
+- diafonía;
+- comparación con coaxial y fibra óptica;
 - criterios de elección: ancho de banda, retardo, costo, instalación y mantenimiento;
 - enlace punto a punto y multipunto;
 - caminos directos, indirectos y alternativos;
@@ -210,6 +220,22 @@ Para cada escenario justificar:
 - latencia;
 - interfaz/dispositivo necesario;
 - supuesto declarado.
+
+En el escenario C se debe comparar explícitamente:
+
+```text
+UTP
+FTP/STP
+fibra óptica
+```
+
+La respuesta debe separar:
+
+```text
+trenzado → ayuda a cancelar perturbaciones inducidas
+blindaje → agrega protección frente a interferencia
+fibra → no transporta la señal mediante corriente eléctrica
+```
 
 ### Producto
 
@@ -285,6 +311,9 @@ Nivel físico
 - no afirmar que un medio es siempre mejor;
 - declarar distancia, costo, obstáculos y mantenimiento;
 - conectividad no determina sincronía/asíncronía.
+- no confundir STP como cable blindado con STP como Spanning Tree Protocol;
+- no asignar una capa única a todo firewall o VPN sin declarar su tipo;
+- gateway es un término funcional amplio; para el examen se conserva la ubicación indicada por el material y se aclara el supuesto.
 
 ---
 
@@ -295,6 +324,7 @@ Nivel físico
 - ficha de lista simple;
 - código Java de lista simple;
 - cuadro de nivel físico;
+- tabla dispositivo → capa → unidad/dirección utilizada;
 - caso integrador;
 - evaluación;
 - respuestas preservadas;
