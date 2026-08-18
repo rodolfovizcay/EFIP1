@@ -1,6 +1,6 @@
 # Registro diario — EFIP I
 
-**Actualizado al cierre académico del Día 10 — 17/08/2026**
+**Actualizado al cierre académico del Día 11 — 18/08/2026**
 
 Este archivo funciona como índice acumulado. El detalle se conserva en `EVALUACIONES/`, `EVIDENCIAS/`, `RESUMENES/`, matrices y registros de errores.
 
@@ -217,12 +217,64 @@ El escrito del Día 9 agrega evidencia temática, pero no modifica el promedio 8
 
 ---
 
+## 2026-08-18 — Día 11 — Java complementario + Listas avanzadas + SQL
+
+**Estado:** **CERRADO Y APROBADO**<br>
+**Evaluación final:** **9,2/10**<br>
+**Recuperación oral posterior:** completada<br>
+**Tiempo real:** no cronometrado
+
+### Resultado
+
+| Parte | Máximo | Obtenido |
+|---|---:|---:|
+| Java | 3,00 | 2,50 |
+| Listas avanzadas | 3,00 | 2,80 |
+| SQL | 3,00 | 2,90 |
+| Integración/SOLID | 1,00 | 1,00 |
+| **Total** | **10,00** | **9,20** |
+
+### Avances
+
+- arreglo frente a `ArrayList`;
+- igualdad de objetos y contrato `equals()`/`hashCode()`;
+- JDK, bytecode, JVM y portabilidad;
+- checked/unchecked y `try/catch/finally/throw/throws`;
+- listas doble, circular y ordenada;
+- iteradores y eliminación segura;
+- DDL, DML, TCL y DCL;
+- consultas, cambios seguros y restricciones SQL;
+- SRP, DIP y validación complementaria Java/base.
+
+### Recuperación oral
+
+Se recuperó la diferencia entre `throw` y `throws`. Quedó asentado que la obligación de capturar o declarar corresponde a checked y que una unchecked solo interrumpe si ocurre y no se captura. La recuperación no modifica la nota original.
+
+### Pendientes conservados
+
+- programa Java autónomo y archivos separados;
+- manipulación de archivos y excepciones propias;
+- recuperación espaciada de excepciones;
+- ordenación y complejidades;
+- asociativa/débil y modelo relacional final;
+- temas de Comunicaciones programados para jornadas siguientes.
+
+### Evidencia
+
+- `EVALUACIONES/2026-08-18_RESPUESTAS-DIA-11.md`
+- `EVALUACIONES/2026-08-18_RESULTADOS-DIA-11.md`
+- `RESUMENES/2026-08-18_CIERRE-DIA-11.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-11.md`
+
+---
+
 ## Próxima acción
 
 
 ```text
-1. Iniciar el Día 11 del 18/08/2026.
-2. Trabajar Java complementario, listas avanzadas y SQL.
-3. Reintegrar brevemente las recuperaciones del Día 10.
-4. Reservar la defensa integral para un simulacro posterior.
+1. Preparar e iniciar el Día 12 del 19/08/2026.
+2. Trabajar modelo de implementación, componentes, nodos y despliegue.
+3. Escribir Java con archivos y excepciones propias.
+4. Estudiar enlace de datos, Ethernet, tabla MAC y STP.
+5. Reintegrar una recuperación breve de excepciones del Día 11.
 ```

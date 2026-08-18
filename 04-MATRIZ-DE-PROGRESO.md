@@ -1,6 +1,6 @@
 # Matriz de progreso del programa
 
-**Actualizada al cierre académico del Día 10 — 17/08/2026**
+**Actualizada al cierre académico del Día 11 — 18/08/2026**
 
 Estados:
 
@@ -13,6 +13,8 @@ Estados:
 > El Día 9 se cerró con evaluación escrita `5,70/8,00` y sin defensa oral. Sus estados reflejan evidencia escrita y práctica, pero no se asigna una nota global. El indicador semanal `8,6/10` continúa calculado con los Días 5 a 8.
 
 > **Día 10 cerrado el 17/08/2026:** evaluación integradora real `8,5/10` y recuperación selectiva `4/4`. Los estados cambian únicamente donde existe evidencia del estudiante; los contenidos preparados pero no trabajados permanecen `NI` o `EA`.
+
+> **Día 11 cerrado el 18/08/2026:** evaluación final `9,2/10` y recuperación oral posterior de excepciones. Java complementario, listas avanzadas, SQL y SOLID se elevan solo según la evidencia real; la ejecución automática de ejemplos durante la preparación no se atribuye al estudiante.
 
 ---
 
@@ -77,7 +79,7 @@ Estados:
 | Superclase/subclase y `extends` | A | Aplicados |
 | Sobrecarga/sobrescritura | A | `buscarOT`, `getRol`, `enviar` |
 | Clase `Object` | C | Reconocida |
-| `toString()` conceptual | C/A | Comprendido; omitido en escrito final Día 9 |
+| `toString()` conceptual | A | Función explicada correctamente en Día 11 |
 | Abstracción | A | Día 9 |
 | Abstracción vs. encapsulamiento | A | Diferenciadas |
 | Clase abstracta | A | `CanalNotificacion` |
@@ -89,17 +91,17 @@ Estados:
 | Polimorfismo | A | Tipo común y objetos concretos |
 | Referencia común/objeto concreto | A | Explicado en controles |
 | Sobrescritura polimórfica | A | Email/Push |
-| Comparación de `String` | C/A | `isBlank()` comprendido |
+| Comparación de `String` | A/DO | `==` como referencia y `equals()` como contenido defendidos tras recuperación |
 | Validación que detiene | C | Excepción comprendida; código autónomo pendiente |
 | `@Override` | C/A | Aplicado parcialmente; omisión en auditoría |
 | Sintaxis/completitud Java | EA | Error en `super.validarDestinatario()`, `toString()` y archivos públicos |
-| `equals/hashCode` | NI | Pendiente |
-| Excepciones | EA/C | `IllegalArgumentException` aplicada; bloque formal pendiente |
-| Colecciones | C/A | `List<CanalNotificacion>` comprendida |
+| `equals/hashCode` | C/A | Igualdad por `id` y contrato de hash aplicados; requiere recuperación espaciada |
+| Excepciones | A | Checked/unchecked y flujo completo aplicados; precisión final recuperada |
+| Colecciones | A/DO | Arreglo, `ArrayList`, acceso, redimensionamiento e iterador defendidos |
 | Archivos | NI | Pendiente |
-| Elección de Java, JVM y portabilidad | NI | Complementario; previsto 18/08 |
-| Excepciones checked/unchecked y flujo completo | NI | Complementario; previsto 18/08 |
-| Principios SOLID | NI | Complementario conceptual; previsto 18/08 |
+| Elección de Java, JVM y portabilidad | A/DO | `.java→bytecode→JVM` y límites por rutas/comandos defendidos |
+| Excepciones checked/unchecked y flujo completo | A | Casos de compilación y propagación correctos; repaso espaciado pendiente |
+| Principios SOLID | A/DO | SRP, DIP y OCP aplicados a `AgendaTrabajos` |
 | Encoding, hashing y cifrado | NI | Complementario transversal; previsto 20/08 |
 
 ---
@@ -109,7 +111,7 @@ Estados:
 | Tema | Estado | Evidencia acumulada |
 |---|---|---|
 | TDA e interfaz/implementación | A/DO | Contrato aplicado a Pila y Cola |
-| Arreglos, capacidad y longitud | A | Día 3 |
+| Arreglos, capacidad y longitud | A/DO | Comparados con `ArrayList` en Día 11 |
 | Nodos y referencias | A/DO | Inserción, recorrido, búsqueda y eliminación ejecutados mentalmente |
 | Lista simplemente enlazada | A/DO | Cabeza, lista vacía, inserción, recorrido, búsqueda, eliminación y complejidad |
 | Pila y LIFO | DO | Día 6 y Caso integrador |
@@ -127,11 +129,12 @@ Estados:
 | Confirmación antes de desencolar | A | Consolidado en evaluación Día 9 |
 | Cola de prioridad | C/A | Elegida para urgencias |
 | Selección de estructura | DO | Política y operación dominante |
-| Listas doble/circular/ordenada | NI | Pendiente |
+| Listas doble/circular/ordenada | A/DO | Enlaces, finales, ventajas, riesgos y complejidades aplicados |
+| Iteradores | A/DO | `hasNext()`, `next()` y `Iterator.remove()` explicados y aplicados |
 | Inserción | A | Inicio y posición intermedia aplicados; inserción final pendiente |
 | Mergesort | C | Estrategia conocida; práctica pendiente |
 | Quicksort | C | Pivote/recursión conocidos; complejidad a reforzar |
-| Complejidades | EA | Brecha prioritaria |
+| Complejidades | C/A | Listas: búsqueda `O(n)` y enlaces conocidos `O(1)`; ordenación sigue abierta |
 
 ---
 
@@ -158,7 +161,7 @@ Estados:
 | Pasaje N:M | A | Tabla asociativa |
 | N:M conceptual vs. asociativa | A | Aplicado |
 | Historial y elección de PK | C/A | Fecha en clave e ID artificial |
-| Restricción `UNIQUE` | C/A | Concepto comprendido; escritura final incompleta |
+| Restricción `UNIQUE` | A | Diferenciada de PK y aplicada con restricciones SQL |
 | Normalización: propósito/anomalías | A | Día 9 |
 | 1FN | A | Teléfonos atómicos |
 | Transformación a `OPERARIO_TELEFONO` | C/A | Concepto correcto; esquema omitido en escrito |
@@ -170,13 +173,13 @@ Estados:
 | ID artificial vs. normalización | A | Consolidado |
 | Modelo final 3FN | C/A | Estructura comprendida; atributos y claves omitidos |
 | PK de `OPERARIO_TELEFONO` | EA/C | Debe ser compuesta, no solo `UNIQUE` |
-| DDL/DML | C | `CREATE`/`INSERT` |
-| DCL/TCL | EA | `GRANT`/`COMMIT` pendientes |
-| Álgebra relacional y SQL académico | NI/EA | Pendiente |
+| DDL/DML | A/DO | `CREATE`, `ALTER`, `SELECT`, `INSERT`, `UPDATE` y `DELETE` clasificados |
+| DCL/TCL | A/DO | `GRANT` y `COMMIT` clasificados correctamente en dos instancias |
+| Álgebra relacional y SQL académico | A | Proyección, filtro, orden y cambios seguros aplicados; álgebra formal pendiente |
 | Procedimientos, cursores y triggers | NI | Pendiente |
 | Oracle/MySQL/SQLite: elección por escenario | NI/EA | Motores respaldados por el material; previsto 20/08 |
 | PostgreSQL: comparación conceptual | NI | Complementario; previsto 20/08 |
-| Transacciones y propiedades ACID | NI/EA | TCL/transacciones respaldadas; ACID complementario; previsto 20/08 |
+| Transacciones y propiedades ACID | C/EA | `BEGIN`, `COMMIT` y `ROLLBACK` comprendidos; propiedades ACID pendientes |
 
 ---
 
@@ -239,12 +242,13 @@ Estados:
 |---|---|---|
 | Requisito→caso de uso | A/DO | Explicado oralmente |
 | Caso→análisis→diseño | A | Día 9 y Caso integrador |
-| Diseño→POO/estructuras | A | Servicios, Pila, Cola y polimorfismo |
+| Diseño→POO/estructuras | A/DO | Servicios, colecciones, listas, excepciones y SOLID integrados |
 | Diseño→datos | A | DER y normalización |
 | Aplicación→comunicaciones | A | Recorrido TCP/IP |
 | Práctica guiada transversal | A | 15/08 |
 | Integración escrita Día 9 | C/A | Cadena correcta; modo offline omitido |
 | Defensa continua 8–12 minutos | C/A | Evidencia oral previa; defensa específica Día 9 no realizada |
+| Validación Java + restricciones de base | A/DO | Detección temprana e integridad ante múltiples vías defendidas |
 
 ---
 
@@ -263,6 +267,7 @@ Estados:
 | Semana 10–15/08 — promedio descriptivo Días 5–8 | **8,6/10** |
 | Día 9 — componente escrito | **5,70/8,00 = 71,25 %** |
 | Día 10 — evaluación integradora adaptada | **8,5/10 + recuperación 4/4** |
+| Día 11 — Java + listas avanzadas + SQL + SOLID | **9,2/10** |
 
 ```text
 Día 9:
@@ -277,16 +282,16 @@ práctica guiada, sin puntaje formal
 
 # 8. Pendientes de retención inmediata
 
-1. Java completo: `@Override`, archivos y prueba polimórfica.
+1. Java completo: archivos separados, ejecución autónoma y prueba polimórfica.
 2. Asociativa frente a débil.
 3. Diagrama de estados completo.
 4. Modelo final con PK/FK/UNIQUE y atributos.
 5. Generalización UML y relaciones UML restantes.
 6. Digitalización, política y supuestos de transmisión.
 7. Atenuación, ruido, dispersión, latencia, gateway, módem y última milla.
-8. Inserción final, modificación y código Java completo de Lista.
-9. DCL/TCL.
-10. Ordenación y complejidades.
+8. Manipulación de archivos y excepciones propias integradas.
+9. Recuperación espaciada de checked/unchecked y `throw`/`throws`.
+10. Ordenación y sus complejidades.
 
 Documento de repaso:
 
@@ -298,4 +303,4 @@ RESUMENES/2026-08-16_REPASO-SEMANAL-PUNTOS-DEBILES.md
 
 ## Regla de lectura
 
-La matriz resume la mejor evidencia disponible. `DO` no significa dominio total. El Día 9 aporta evidencia escrita sin nota global. El Día 10 aporta una evaluación integradora adaptada de 8,5/10 y recuperación 4/4; no se atribuye el desglose 8+2 del instrumento preparado.
+La matriz resume la mejor evidencia disponible. `DO` no significa dominio total. El Día 9 aporta evidencia escrita sin nota global. El Día 10 aporta `8,5/10 + 4/4`; el Día 11 aporta `9,2/10` y recuperación oral posterior sin cambio de nota.

@@ -1,6 +1,6 @@
 # Registro de errores y recuperaciones
 
-**Estado consolidado al cierre académico del Día 10 — 17/08/2026**
+**Estado consolidado al cierre académico del Día 11 — 18/08/2026**
 
 Estados:
 
@@ -14,10 +14,10 @@ Estados:
 
 | Estado | Cantidad |
 |---|---:|
-| Consolidado | **36** |
-| Corregido | **13** |
-| Abierto | **6** |
-| **Total registrado** | **55** |
+| Consolidado | **39** |
+| Corregido | **15** |
+| Abierto | **5** |
+| **Total registrado** | **59** |
 
 ---
 
@@ -32,7 +32,7 @@ Estados:
 | E-005 | Estructuras | Complejidades de ordenación | **abierto** | Inserción O(n²); mergesort O(n log n); quicksort según material |
 | E-006 | Estructuras | Inserción al inicio | consolidado | `nuevo.siguiente=cabeza; cabeza=nuevo` |
 | E-007 | Base de Datos | Terminología relacional | consolidado | Relación/tupla/atributo/dominio/grado/cardinalidad |
-| E-008 | Base de Datos | DCL/TCL | **abierto** | `GRANT`=DCL; `COMMIT`=TCL |
+| E-008 | Base de Datos | DCL/TCL | consolidado | `GRANT`=DCL; `COMMIT`=TCL; evidencia repetida en Día 11 |
 | E-009 | Comunicaciones | Capas OSI | consolidado | Física a Aplicación, siete capas |
 | E-010 | Comunicaciones | Síncrona/asíncrona | consolidado | Carácter+start/stop vs. bloque+cabecera/terminación |
 | E-011 | Estructuras | Selección de estructura | consolidado | Elegir por política, operación dominante y volumen |
@@ -42,7 +42,7 @@ Estados:
 | E-015 | POO | Identidad/ID | consolidado | Identidad del objeto; ID puede representarla |
 | E-016 | POO/Java | Sintaxis/completitud | **abierto** | Validar antes de asignar; `super` correcto; `@Override`; `toString()`; archivos públicos y prueba polimórfica |
 | E-017 | Estructuras | TDA interfaz/implementación | consolidado | Contrato independiente de representación |
-| E-018 | Estructuras | Dinámica/tipo de elemento | corregido | Cambia cantidad/tamaño, no necesariamente tipo |
+| E-018 | Estructuras | Dinámica/tipo de elemento | consolidado | Cambia cantidad/tamaño, no necesariamente tipo; arreglo/ArrayList defendidos |
 | E-019 | Base de Datos | Dominio | consolidado | Valores permitidos, no observados |
 | E-020 | Base de Datos | Clave candidata | consolidado | Superclave mínima |
 | E-021 | Base de Datos | Cardinalidad concreta | consolidado | Definición + valor solicitado |
@@ -70,7 +70,7 @@ Estados:
 | E-043 | Comunicaciones | Información fórmula/unidades | corregido | `P↑→I↓`; `I=log₂(1/P)`; unidad bits |
 | E-044 | Comunicaciones | Señales/fórmulas/muestreo | consolidado | A, T, f; `f=1/T`; `T=1/f`; `fs≥2·fmax` |
 | E-045 | Comunicaciones | Digitalización/política/supuestos | **abierto** | Analógica puede transmitirse; política decide envío; declarar protocolo |
-| E-046 | POO/Java | Comparación y validación de `String` | corregido | `==` compara referencias; usar `equals/isBlank`; la validación debe rechazar |
+| E-046 | POO/Java | Comparación y validación de `String` | consolidado | `==` compara referencias; usar `equals/isBlank`; evidencia repetida en Día 11 |
 | E-047 | Base de Datos | 2FN e ID artificial | **consolidado** | Datos dependen de clave completa; ID artificial no elimina redundancia ni dependencias |
 | E-048 | Estructuras/Diseño | Eliminar pendiente antes de confirmar | **consolidado** | `cabecera→enviar→confirmar→trazar→desencolar` |
 | E-049 | Comunicaciones | Conectividad usada para inferir sincronía | corregido | Sin conexión=no transmisión; síncrona/asíncrona depende del protocolo asumido |
@@ -80,6 +80,10 @@ Estados:
 | E-053 | Estructuras | Eliminación y reconexión de nodos | corregido | `cabeza=cabeza.siguiente`; `anterior.siguiente=actual.siguiente` |
 | E-054 | Análisis y Diseño | Alternativas, consecuencias y riesgos | corregido | Alternativas distintas; consecuencia real; riesgo posible |
 | E-055 | Comunicaciones | Nomenclatura OSI y dispositivo/PDU/dirección | corregido | Switch C2/trama/MAC; router C3/paquete/IP |
+| E-056 | POO/Java | Igualdad lógica e identidad por `id` | corregido | Instancias distintas pueden ser iguales; `equals()` verdadero exige mismo `hashCode()` |
+| E-057 | POO/Java | Checked/unchecked y `throw`/`throws` | corregido | `throw` lanza; `throws` declara; checked obliga a capturar o declarar; unchecked no |
+| E-058 | Estructuras | Complejidad con referencias conocidas | corregido | Enlazar/desenlazar es `O(1)` si las referencias ya están disponibles; buscar es `O(n)` |
+| E-059 | Estructuras | Lista circular de un nodo | corregido | En una circular no vacía de un nodo, `nodo.siguiente = nodo` |
 
 
 ---
@@ -128,7 +132,6 @@ En el escrito final:
 
 ### Base de Datos
 
-- `E-008` — DCL/TCL.
 - `E-039` — asociativa frente a débil.
 - `E-050` — modelo final con PK/FK/UNIQUE.
 
@@ -141,18 +144,20 @@ En el escrito final:
 ## Corregidos que requieren recuperación espaciada
 
 1. `E-002` — asociación/agregación/composición.
-2. `E-018` — estructura dinámica frente a tipo.
-3. `E-026` — IP dentro/fuera de LAN.
-4. `E-036` — triángulo vacío de generalización.
-5. `E-042` — FIFO frente a trazabilidad.
-6. `E-043` — `I(E)=log₂(1/P(E))` y unidad.
-7. `E-046` — comparación y validación de `String`.
-8. `E-049` — conectividad frente a sincronía.
-9. `E-051` — implementación frente a despliegue.
-10. `E-052` — cabeza frente a nodo centinela.
-11. `E-053` — eliminación y reconexión de nodos.
-12. `E-054` — alternativas, consecuencias y riesgos.
-13. `E-055` — nomenclatura OSI y dispositivo/PDU/dirección.
+2. `E-026` — IP dentro/fuera de LAN.
+3. `E-036` — triángulo vacío de generalización.
+4. `E-042` — FIFO frente a trazabilidad.
+5. `E-043` — `I(E)=log₂(1/P(E))` y unidad.
+6. `E-049` — conectividad frente a sincronía.
+7. `E-051` — implementación frente a despliegue.
+8. `E-052` — cabeza frente a nodo centinela.
+9. `E-053` — eliminación y reconexión de nodos.
+10. `E-054` — alternativas, consecuencias y riesgos.
+11. `E-055` — nomenclatura OSI y dispositivo/PDU/dirección.
+12. `E-056` — igualdad lógica e identidad por `id`.
+13. `E-057` — checked/unchecked y `throw`/`throws`.
+14. `E-058` — complejidad con referencias conocidas.
+15. `E-059` — lista circular de un nodo.
 
 ---
 
@@ -248,3 +253,27 @@ Un error que reaparece vuelve a `abierto`. Un error `corregido` pasa a `consolid
 - `EVALUACIONES/2026-08-17_RESPUESTAS-DIA-10.md`
 - `EVALUACIONES/2026-08-17_RESULTADOS-DIA-10.md`
 - `RESUMENES/2026-08-17_CIERRE-DIA-10.md`
+
+---
+
+## Cambios del cierre del Día 11
+
+### Pasaron a consolidado
+
+- `E-008`: `COMMIT` y `GRANT` fueron clasificados correctamente en práctica y evaluación;
+- `E-018`: arreglo y `ArrayList` se compararon nuevamente por tamaño y tipo admitido;
+- `E-046`: `==` y `equals()` se diferenciaron en varias instancias después de la corrección inicial.
+
+### Nuevos errores corregidos en la jornada
+
+- `E-056`: al principio se exigió la misma instancia para considerar iguales dos trabajos con el mismo `id`; luego se recuperó la igualdad lógica y el contrato de hash;
+- `E-057`: se generalizó la obligación de `throws` y se presentó el fallo unchecked como seguro; la recuperación oral incorporó la regla exacta;
+- `E-058`: se respondió `O(n)` para enlazar con referencias ya conocidas; se corrigió a `O(1)` y se separó el costo de búsqueda;
+- `E-059`: se indicó `null` para un único nodo circular; se corrigió el autoenlace.
+
+### Evidencia
+
+- `EVALUACIONES/2026-08-18_RESPUESTAS-DIA-11.md`
+- `EVALUACIONES/2026-08-18_RESULTADOS-DIA-11.md`
+- `RESUMENES/2026-08-18_CIERRE-DIA-11.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-11.md`
