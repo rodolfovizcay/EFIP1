@@ -422,3 +422,28 @@ Firewall/VPN → declarar función antes de asignar capa.
 
 Conectividad ≠ sincronía.
 ```
+
+---
+
+# Estado de uso y repaso personal — cierre 17/08/2026
+
+**Evaluación integradora:** `8,5/10`  
+**Recuperación final:** `4/4`  
+**Estado:** aprobado
+
+## Errores que deben repasarse
+
+1. Implementación significa cómo se organiza el software; despliegue, dónde se ejecuta.
+2. `cabeza` apunta al primer nodo; no es un nodo con dato cero salvo centinela explícito.
+3. Eliminar primero: `cabeza = cabeza.siguiente`.
+4. Eliminar intermedio: `anterior.siguiente = actual.siguiente`.
+5. Una alternativa debe ser diferente de la opción elegida.
+6. Una consecuencia puede ser positiva o negativa; un riesgo es un problema posible.
+7. UTP transporta señales; Física interpreta bits; Enlace reconoce tramas.
+8. Switch: capa 2, trama, MAC. Router: capa 3, paquete, IP.
+
+## Pendientes no cubiertos
+
+- código Java completo, modificación e inserción final de Lista;
+- atenuación, ruido, dispersión y latencia;
+- gateway, módem, última milla y caso integrador completo.

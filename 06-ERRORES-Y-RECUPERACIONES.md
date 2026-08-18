@@ -1,6 +1,6 @@
 # Registro de errores y recuperaciones
 
-**Estado consolidado al cierre documental del Día 9 — 16/08/2026**
+**Estado consolidado al cierre académico del Día 10 — 17/08/2026**
 
 Estados:
 
@@ -15,9 +15,9 @@ Estados:
 | Estado | Cantidad |
 |---|---:|
 | Consolidado | **36** |
-| Corregido | **6** |
-| Abierto | **8** |
-| **Total registrado** | **50** |
+| Corregido | **13** |
+| Abierto | **6** |
+| **Total registrado** | **55** |
 
 ---
 
@@ -26,7 +26,7 @@ Estados:
 | Código | Materia | Tema | Estado | Regla vigente |
 |---|---|---|---|---|
 | E-001 | Análisis y Diseño | Arquitectura/documentación | consolidado | Arquitectura=decisiones; documentación=artefactos |
-| E-002 | Análisis y Diseño | Asociación/agregación/composición | **abierto** | Asociación; agregación todo/parte débil; composición fuerte |
+| E-002 | Análisis y Diseño | Asociación/agregación/composición | corregido | Definiciones correctas; requiere recuperación espaciada |
 | E-003 | POO | Estado/visibilidad | consolidado | Estado=valores; visibilidad=quién accede |
 | E-004 | POO | Sobrecarga/sobrescritura | consolidado | Parámetros distintos vs. método heredado redefinido |
 | E-005 | Estructuras | Complejidades de ordenación | **abierto** | Inserción O(n²); mergesort O(n log n); quicksort según material |
@@ -73,8 +73,14 @@ Estados:
 | E-046 | POO/Java | Comparación y validación de `String` | corregido | `==` compara referencias; usar `equals/isBlank`; la validación debe rechazar |
 | E-047 | Base de Datos | 2FN e ID artificial | **consolidado** | Datos dependen de clave completa; ID artificial no elimina redundancia ni dependencias |
 | E-048 | Estructuras/Diseño | Eliminar pendiente antes de confirmar | **consolidado** | `cabecera→enviar→confirmar→trazar→desencolar` |
-| E-049 | Comunicaciones | Conectividad usada para inferir sincronía | **abierto** | Sin conexión=no transmisión; síncrona/asíncrona depende del protocolo asumido |
+| E-049 | Comunicaciones | Conectividad usada para inferir sincronía | corregido | Sin conexión=no transmisión; síncrona/asíncrona depende del protocolo asumido |
 | E-050 | Base de Datos | Modelo relacional final incompleto | **abierto** | Escribir atributos, PK, FK y `UNIQUE`; `OPERARIO_TELEFONO` usa PK compuesta |
+| E-051 | Análisis y Diseño | Implementación frente a despliegue | corregido | Implementación=cómo se organiza; despliegue=dónde se ejecuta |
+| E-052 | Estructuras | Cabeza frente a nodo centinela | corregido | `cabeza` referencia el primer nodo salvo centinela explícito |
+| E-053 | Estructuras | Eliminación y reconexión de nodos | corregido | `cabeza=cabeza.siguiente`; `anterior.siguiente=actual.siguiente` |
+| E-054 | Análisis y Diseño | Alternativas, consecuencias y riesgos | corregido | Alternativas distintas; consecuencia real; riesgo posible |
+| E-055 | Comunicaciones | Nomenclatura OSI y dispositivo/PDU/dirección | corregido | Switch C2/trama/MAC; router C3/paquete/IP |
+
 
 ---
 
@@ -112,10 +118,6 @@ En el escrito final:
 
 ## Abiertos prioritarios
 
-### Análisis y Diseño
-
-- `E-002` — asociación/agregación/composición.
-
 ### POO / Java
 
 - `E-016` — sintaxis y completitud de código.
@@ -133,18 +135,24 @@ En el escrito final:
 ### Comunicaciones
 
 - `E-045` — digitalización, política y supuestos.
-- `E-049` — conectividad frente a síncrona/asíncrona.
 
 ---
 
 ## Corregidos que requieren recuperación espaciada
 
-1. `E-018` — estructura dinámica frente a tipo.
-2. `E-026` — IP dentro/fuera de LAN.
-3. `E-036` — triángulo vacío de generalización.
-4. `E-042` — FIFO frente a trazabilidad.
-5. `E-043` — `I(E)=log₂(1/P(E))` y unidad.
-6. `E-046` — comparación y validación de `String`.
+1. `E-002` — asociación/agregación/composición.
+2. `E-018` — estructura dinámica frente a tipo.
+3. `E-026` — IP dentro/fuera de LAN.
+4. `E-036` — triángulo vacío de generalización.
+5. `E-042` — FIFO frente a trazabilidad.
+6. `E-043` — `I(E)=log₂(1/P(E))` y unidad.
+7. `E-046` — comparación y validación de `String`.
+8. `E-049` — conectividad frente a sincronía.
+9. `E-051` — implementación frente a despliegue.
+10. `E-052` — cabeza frente a nodo centinela.
+11. `E-053` — eliminación y reconexión de nodos.
+12. `E-054` — alternativas, consecuencias y riesgos.
+13. `E-055` — nomenclatura OSI y dispositivo/PDU/dirección.
 
 ---
 
@@ -217,3 +225,26 @@ Incluye explicación, ejemplos correctos/incorrectos, preguntas de control y min
 ## Regla de seguimiento
 
 Un error que reaparece vuelve a `abierto`. Un error `corregido` pasa a `consolidado` solo después de otra recuperación sin ayuda o evidencia evaluativa suficiente.
+
+---
+
+## Cambios del cierre del Día 10
+
+### Pasaron de abierto a corregido
+
+- `E-002`: las cuatro relaciones UML se diferenciaron sin apuntes;
+- `E-049`: se explicó que la desconexión no determina sincronía o asincronía.
+
+### Nuevos errores corregidos en la misma jornada
+
+- `E-051`: implementación y despliegue se invirtieron en la evaluación y luego se recuperaron `4/4`;
+- `E-052`: se supuso inicialmente una cabeza con dato `0`; se corrigió la referencia al primer nodo;
+- `E-053`: se intentó conservar el nodo al eliminar; se corrigió la reconexión;
+- `E-054`: se repitió la opción elegida como alternativa; se diferenciaron alternativas, consecuencias y riesgos;
+- `E-055`: se mezclaron nombres OSI/TCP-IP y se omitieron direcciones; la recuperación final fue correcta.
+
+### Evidencia
+
+- `EVALUACIONES/2026-08-17_RESPUESTAS-DIA-10.md`
+- `EVALUACIONES/2026-08-17_RESULTADOS-DIA-10.md`
+- `RESUMENES/2026-08-17_CIERRE-DIA-10.md`

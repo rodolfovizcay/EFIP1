@@ -1,6 +1,6 @@
 # Matriz de progreso del programa
 
-**Actualizada al cierre documental del Día 9 — 16/08/2026**
+**Actualizada al cierre académico del Día 10 — 17/08/2026**
 
 Estados:
 
@@ -12,7 +12,7 @@ Estados:
 
 > El Día 9 se cerró con evaluación escrita `5,70/8,00` y sin defensa oral. Sus estados reflejan evidencia escrita y práctica, pero no se asigna una nota global. El indicador semanal `8,6/10` continúa calculado con los Días 5 a 8.
 
-> **Ampliación planificada el 17/08/2026:** se agregan filas `NI` para dar trazabilidad a contenidos que serán estudiados desde el Día 10. Esto no modifica la evidencia ni los estados históricos del 05/08 al 16/08. Cuando el material universitario no desarrolla el tema, se lo identifica como complementario.
+> **Día 10 cerrado el 17/08/2026:** evaluación integradora real `8,5/10` y recuperación selectiva `4/4`. Los estados cambian únicamente donde existe evidencia del estudiante; los contenidos preparados pero no trabajados permanecen `NI` o `EA`.
 
 ---
 
@@ -54,11 +54,12 @@ Estados:
 | Foco de control | C | Definición comprendida |
 | Diagrama de estados | C/A | Flujo principal escrito; anulación omitida en evaluación |
 | Estado/evento/transición/acción | C/A | Comprendidos con precisión en recuperación |
-| Subsistemas de diseño | C | Sincronización/Notificaciones; entidad confundida una vez con subsistema |
-| Interfaces de diseño | C | Contrato comprendido; operaciones concretas pendientes |
-| Descripción de arquitectura | C | Alcance inicial |
-| Asociación/agregación/composición/dependencia | EA | Brecha prioritaria |
-| Modelo de implementación/pruebas | NI/EA | Pendiente como bloque formal |
+| Subsistemas de diseño | A/DO | Relevamiento, Análisis Técnico, Persistencia y Sincronización defendidos con responsabilidades |
+| Interfaces de diseño | A/DO | Contratos, operaciones y dirección de dependencias aplicados |
+| Descripción de arquitectura | A/DO | Decisiones, alternativas, RNF, consecuencias, riesgos y artefactos aplicados |
+| Asociación/agregación/composición/dependencia | C/A | Definiciones correctas en recuperación inicial; requiere repaso espaciado |
+| Vistas arquitectónicas 4+1 | A/DO | Casos de uso, lógica, procesos, implementación y despliegue recuperados 4/4 |
+| Modelo de implementación/pruebas | NI/EA | Vista de implementación comprendida; bloque formal y pruebas pendientes |
 
 ---
 
@@ -109,8 +110,8 @@ Estados:
 |---|---|---|
 | TDA e interfaz/implementación | A/DO | Contrato aplicado a Pila y Cola |
 | Arreglos, capacidad y longitud | A | Día 3 |
-| Nodos y referencias | C/A | Listas, Pilas y Colas |
-| Lista simplemente enlazada | A | Inserción/recorrido |
+| Nodos y referencias | A/DO | Inserción, recorrido, búsqueda y eliminación ejecutados mentalmente |
+| Lista simplemente enlazada | A/DO | Cabeza, lista vacía, inserción, recorrido, búsqueda, eliminación y complejidad |
 | Pila y LIFO | DO | Día 6 y Caso integrador |
 | `push`, `pop`, `peek`, cima | A | Simulaciones correctas |
 | Pila con vector/lista | A | Comparadas |
@@ -127,7 +128,7 @@ Estados:
 | Cola de prioridad | C/A | Elegida para urgencias |
 | Selección de estructura | DO | Política y operación dominante |
 | Listas doble/circular/ordenada | NI | Pendiente |
-| Inserción | EA/C | Estrategia general conocida |
+| Inserción | A | Inicio y posición intermedia aplicados; inserción final pendiente |
 | Mergesort | C | Estrategia conocida; práctica pendiente |
 | Quicksort | C | Pivote/recursión conocidos; complejidad a reforzar |
 | Complejidades | EA | Brecha prioritaria |
@@ -208,12 +209,14 @@ Estados:
 | Síncrona/asíncrona | A | Definiciones correctas |
 | Supuestos de transmisión | EA/C | No derivar asincronía de desconexión |
 | Transmisión analógica posible | C | Corregido |
-| Medios guiados/no guiados | C | Móvil puede usar medio no guiado |
+| Medios guiados/no guiados | A/DO | UTP, coaxial, fibra, radiofrecuencia y satélite clasificados |
 | Atenuación/ruido/interferencia/dispersión/latencia | NI | Pendiente |
 | Enlace, Ethernet, WAN y última milla | NI/EA | Pendiente |
-| Hub/repetidor/switch/router/gateway por capa | C/A | Núcleo respaldado; repaso ampliado 17/08 |
-| UTP, trenzado, diafonía e interferencia | NI/EA | UTP/diafonía respaldados; previsto 17/08 |
-| FTP/STP como tipos de cable | NI | Complementario; previsto 17/08 |
+| Hub/repetidor/switch/router por capa | A/DO | Capa, PDU y dirección defendidas; recuperación final correcta |
+| Gateway por capa | NI/EA | Preparado, pero no evaluado en la jornada real |
+| UTP y motivo del trenzado | A/DO | Medio guiado, señal eléctrica y reducción de interferencia explicados |
+| Diafonía e interferencia | C | Relación general comprendida; precisión sobre diafonía pendiente |
+| FTP/STP como tipos de cable | C/A | Blindaje comprendido; diferencia con Spanning Tree aclarada |
 | Switch: aprendizaje y tabla MAC | NI | Complementario sobre función respaldada; previsto 19/08 |
 | STP y bucles de capa 2 | NI/EA | Respaldado; previsto 19/08 |
 | Bucle de routing, TTL y métricas | NI | Complementario; previsto 19/08–21/08 |
@@ -259,6 +262,7 @@ Estados:
 | Día 8 — Modelo de análisis + Colas + Transmisión | 7,9/10 |
 | Semana 10–15/08 — promedio descriptivo Días 5–8 | **8,6/10** |
 | Día 9 — componente escrito | **5,70/8,00 = 71,25 %** |
+| Día 10 — evaluación integradora adaptada | **8,5/10 + recuperación 4/4** |
 
 ```text
 Día 9:
@@ -273,14 +277,14 @@ práctica guiada, sin puntaje formal
 
 # 8. Pendientes de retención inmediata
 
-1. Java completo: constructor, `String`, `super`, `@Override` y `toString()`.
+1. Java completo: `@Override`, archivos y prueba polimórfica.
 2. Asociativa frente a débil.
-3. Entidad frente a subsistema.
-4. Diagrama de estados completo.
-5. Modelo final con PK/FK/UNIQUE y atributos.
-6. Generalización UML y relaciones UML restantes.
-7. Supuestos de transmisión.
-8. Amplitud y nivel físico.
+3. Diagrama de estados completo.
+4. Modelo final con PK/FK/UNIQUE y atributos.
+5. Generalización UML y relaciones UML restantes.
+6. Digitalización, política y supuestos de transmisión.
+7. Atenuación, ruido, dispersión, latencia, gateway, módem y última milla.
+8. Inserción final, modificación y código Java completo de Lista.
 9. DCL/TCL.
 10. Ordenación y complejidades.
 
@@ -294,4 +298,4 @@ RESUMENES/2026-08-16_REPASO-SEMANAL-PUNTOS-DEBILES.md
 
 ## Regla de lectura
 
-La matriz resume la mejor evidencia disponible. `DO` no significa dominio total. El Día 9 aporta evidencia escrita, pero no una nota global porque no se realizó su defensa oral.
+La matriz resume la mejor evidencia disponible. `DO` no significa dominio total. El Día 9 aporta evidencia escrita sin nota global. El Día 10 aporta una evaluación integradora adaptada de 8,5/10 y recuperación 4/4; no se atribuye el desglose 8+2 del instrumento preparado.

@@ -1,6 +1,6 @@
 # Registro diario — EFIP I
 
-**Actualizado al cierre documental del Día 9 — 16/08/2026**
+**Actualizado al cierre académico del Día 10 — 17/08/2026**
 
 Este archivo funciona como índice acumulado. El detalle se conserva en `EVALUACIONES/`, `EVIDENCIAS/`, `RESUMENES/`, matrices y registros de errores.
 
@@ -184,11 +184,45 @@ El escrito del Día 9 agrega evidencia temática, pero no modifica el promedio 8
 
 ---
 
+## 2026-08-17 — Día 10 — Arquitectura + Lista simple + Nivel físico
+
+**Estado:** **CERRADO Y APROBADO EN SU ALCANCE REAL**  
+**Evaluación integradora adaptada:** **8,5/10**  
+**Recuperación selectiva final:** **4/4**  
+**Tiempo real:** no cronometrado
+
+### Avances
+
+- arquitectura como decisiones significativas;
+- tecnología frente a decisión documentada;
+- RNF, consecuencias, riesgos y artefactos;
+- subsistemas, interfaces, cohesión y acoplamiento;
+- vistas arquitectónicas 4+1;
+- Lista simple: cabeza, nodos, recorrido, búsqueda, inserción, eliminación y complejidades;
+- medios guiados/no guiados, UTP, trenzado, blindaje y fibra;
+- repetidor/hub, switch y router por capa, PDU y dirección.
+
+### Pendientes conservados
+
+- código Java completo, modificación e inserción final de Lista;
+- atenuación, ruido, dispersión y latencia;
+- gateway, módem, última milla y caso integrador completo.
+
+### Evidencia
+
+- `EVALUACIONES/2026-08-17_RESPUESTAS-DIA-10.md`
+- `EVALUACIONES/2026-08-17_RESULTADOS-DIA-10.md`
+- `RESUMENES/2026-08-17_CIERRE-DIA-10.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-10.md`
+
+---
+
 ## Próxima acción
 
+
 ```text
-1. Usar el repaso semanal de puntos débiles.
-2. Continuar el plan con temas todavía no recorridos.
-3. Practicar Java completo en bloques breves.
-4. Reservar una defensa integral para un simulacro posterior.
+1. Iniciar el Día 11 del 18/08/2026.
+2. Trabajar Java complementario, listas avanzadas y SQL.
+3. Reintegrar brevemente las recuperaciones del Día 10.
+4. Reservar la defensa integral para un simulacro posterior.
 ```

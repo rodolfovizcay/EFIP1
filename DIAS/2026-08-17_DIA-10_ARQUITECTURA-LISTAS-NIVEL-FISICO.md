@@ -3,7 +3,7 @@
 **Fecha:** 17/08/2026  
 **Duración núcleo:** 5,5 horas  
 **Materias:** Análisis y Diseño + Estructuras de Datos + Comunicaciones  
-**Estado:** preparado, no iniciado
+**Estado:** cerrado y aprobado en su alcance real
 
 ---
 
@@ -363,3 +363,27 @@ defensa integrada
 ```text
 Iniciar EFIP — 2026-08-17 — Día 10
 ```
+
+---
+
+# Cierre real de la jornada
+
+```text
+Evaluación integradora adaptada = 8,5/10
+Recuperación selectiva final = 4/4
+Estado = CERRADO Y APROBADO
+```
+
+La secuencia real fue progresiva: recuperación inicial, actividades guiadas, evaluación integradora y recuperación selectiva. El instrumento preparado de `8+2` no se ejecutó con ese formato exacto.
+
+Quedaron reprogramados, sin marcar como dominados:
+
+- código Java completo, modificación e inserción final de Lista;
+- atenuación, ruido, dispersión y latencia;
+- gateway, módem, última milla y caso integrador completo.
+
+Fuentes de evidencia:
+
+- `EVALUACIONES/2026-08-17_RESPUESTAS-DIA-10.md`
+- `EVALUACIONES/2026-08-17_RESULTADOS-DIA-10.md`
+- `RESUMENES/2026-08-17_CIERRE-DIA-10.md`

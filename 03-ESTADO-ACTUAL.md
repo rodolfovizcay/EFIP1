@@ -1,47 +1,27 @@
 # Estado actual — EFIP I
 
-**Fecha académica registrada:** 16 de agosto de 2026  
-**Semana intensiva 1:** **CERRADA POR EVIDENCIA ACUMULADA**  
-**Nivel semanal:** **ALTO / APROBADO**  
-**Indicador descriptivo:** **8,6/10**  
+**Actualizado al cierre académico del Día 10 — 17/08/2026**  
+**Día 10:** **CERRADO Y APROBADO EN SU ALCANCE REAL**  
+**Evaluación integradora:** **8,5/10**  
+**Recuperación selectiva final:** **4/4**  
+**Semana intensiva 1:** **CERRADA POR EVIDENCIA ACUMULADA — 8,6/10**  
 **Día 9:** **CERRADO DOCUMENTALMENTE — SIN DEFENSA ORAL**
 
 ---
 
-# 1. Integridad de los resultados
+# 1. Integridad del resultado
 
-## Semana intensiva 1
-
-El indicador semanal continúa calculado únicamente con evaluaciones completas y comparables:
-
-| Jornada | Resultado |
-|---|---:|
-| Día 5 | 9,0/10 |
-| Día 6 | 9,2/10 |
-| Día 7 | 8,3/10 |
-| Día 8 | 7,9/10 |
-| **Promedio descriptivo** | **8,6/10** |
+El Día 10 se desarrolló mediante recuperación inicial, actividades guiadas por bloque, evaluación integradora de diez consignas y recuperación selectiva final.
 
 ```text
-Semana: CERRADA
-Nivel: ALTO / APROBADO
-Examen semanal adicional: NO REALIZADO
+Evaluación integradora real = 8,5/10
+Recuperación final = 4/4
+Estado = cerrado y aprobado
 ```
 
-El promedio 8,6 no es una nueva nota de examen ni una calificación del Caso integrador 1.
+La evaluación preparada originalmente con desglose `8 puntos escritos + 2 de defensa` no se ejecutó con esa modalidad exacta. No se inventa un desglose por área ni una defensa formal: se conserva el instrumento real y la evidencia dialogada equivalente.
 
-## Día 9
-
-```text
-Evaluación escrita: 5,70/8,00
-Porcentaje escrito: 71,25 %
-Equivalencia escrita: 7,1/10
-Defensa oral: NO REALIZADA
-Nota global: NO ASIGNADA
-Estado: CERRADO SIN DEFENSA ORAL
-```
-
-El resultado escrito aporta evidencia temática, pero no se incorpora al promedio semanal porque la modalidad completa del Día 9 incluía 2 puntos de defensa.
+El cierre no declara cobertura de contenidos que no fueron trabajados. Continúan pendientes el código Java completo de Lista, inserción al final y modificación, perturbaciones avanzadas del canal, gateway, módem, última milla y el caso integrador completo.
 
 ---
 
@@ -49,149 +29,102 @@ El resultado escrito aporta evidencia temática, pero no se incorpora al promedi
 
 | Materia | Nivel actual | Evidencia principal | Precisión pendiente |
 |---|---|---|---|
-| Análisis y Diseño | **Alto — aplicado y parcialmente defendible** | PUD, requisitos, casos de uso, análisis, diseño, secuencias y caso integrado | relaciones UML, subsistemas/interfaces y estados completos |
-| POO | **Medio-alto — aplicado conceptualmente** | encapsulamiento, herencia, abstracción, clase abstracta, interfaz y polimorfismo | Java completo, constructor, `String`, `toString()`, `@Override` |
-| Estructuras | **Alto — aplicado y defendible en Pila/Cola** | TDA, LIFO, FIFO, vector/lista y secuencia segura de sincronización | algoritmos de ordenación y complejidades |
-| Base de Datos | **Medio-alto — aplicado** | modelo relacional, DER, N:M, 1FN, 2FN y 3FN | asociativa/débil y modelo final con PK/FK/UNIQUE completos |
-| Comunicaciones | **Medio-alto — aplicado** | OSI/TCP-IP, PDU, switch/router, información, frecuencia y muestreo | supuestos de transmisión y nivel físico avanzado |
-| Integración | **Alto — aplicado** | cadena requisito→caso→análisis→diseño→POO/estructuras→datos→comunicaciones | defensa continua formal en simulacro posterior |
+| Análisis y Diseño | **Alto — aplicado y defendible en arquitectura básica** | decisiones significativas, RNF, subsistemas, interfaces, dependencias, cohesión/acoplamiento y vistas 4+1 | modelo de implementación formal, diagramas de estados y relaciones UML restantes |
+| POO | **Medio-alto — aplicado conceptualmente** | constructor, `super`, `String`, `toString()` y distinción entidad/subsistema recuperados | Java completo, `@Override`, archivos y prueba polimórfica |
+| Estructuras | **Alto — aplicado en Lista simple, Pila y Cola** | nodo/cabeza, recorrido, búsqueda, inserción, eliminación y complejidades básicas | implementación Java completa, modificación, inserción final y listas avanzadas |
+| Base de Datos | **Medio-alto — aplicado** | modelo relacional y normalización ya evidenciados | asociativa/débil y modelo final con atributos, PK, FK y `UNIQUE` |
+| Comunicaciones | **Medio-alto — aplicado en medios y dispositivos principales** | guiados/no guiados, UTP, trenzado, FTP/STP, fibra, repetidor/hub, switch y router | perturbaciones completas, gateway, módem, última milla y enlaces |
 
 ---
 
-# 3. Avances confirmados del Día 9
+# 3. Evidencia del Día 10
 
-## Modelo de diseño
+## Recuperación inicial
 
-- análisis, diseño e implementación diferenciados;
-- servicios y repositorios reconocidos como elementos de diseño;
-- secuencia normal construida;
-- alternativo sin conexión aplicado;
-- regla segura:
+- asociaciones UML explicadas correctamente;
+- entidad frente a subsistema recuperado;
+- constructor validado antes de asignar;
+- `super`, `String`, LIFO/FIFO, señales y modelo relacional repasados;
+- resultado inicial: `8,75/12`, seguido por recuperación breve `4,5/5`.
 
-```text
-cabecera()
-→ envío
-→ confirmación
-→ trazabilidad
-→ desencolar()
-```
+## Arquitectura
 
-- Cola diferenciada de la necesidad FIFO;
-- diagrama de estados comprendido, con anulación omitida en el escrito;
-- subsistemas e interfaces comprendidos en alcance introductorio.
+- diferencia entre tecnología y decisión arquitectónica;
+- decisión local SQLite, persistencia central PostgreSQL y comunicación REST justificadas;
+- subsistemas, interfaces y dirección de dependencias;
+- separación de Sincronización documentada con alternativas, consecuencias, riesgos, RNF y artefactos;
+- vistas 4+1 identificadas y recuperadas hasta `4/4`.
 
-## Abstracción y Polimorfismo
+## Lista simple
 
-- abstracción y encapsulamiento diferenciados;
-- clase y método abstractos aplicados;
-- interfaz `Auditable` aplicada;
-- `extends`, `implements` y sobrescritura comprendidos;
-- polimorfismo comprendido mediante tipo común y objetos concretos;
-- código Java todavía presenta errores estructurales.
+- `cabeza` comprendida como referencia al primer nodo;
+- inserción al inicio y entre nodos;
+- recorrido y búsqueda secuenciales;
+- eliminación de cabeza y nodo intermedio;
+- complejidades `O(1)` y `O(n)`;
+- errores de referencias corregidos mediante ejecución mental.
 
-## Normalización
+## Nivel físico
 
-- anomalías identificadas;
-- 1FN aplicada conceptualmente;
-- dependencias parciales de 2FN identificadas;
-- dependencia transitiva de 3FN identificada;
-- ID artificial diferenciado de normalización;
-- modelo final comprendido, pero escrito con omisiones de atributos y claves.
+- medios guiados y no guiados;
+- señal eléctrica, bits y trama diferenciados;
+- UTP, trenzado, blindaje y elección de fibra entre edificios;
+- hub/repetidor, switch y router ubicados por capa, PDU y dirección.
 
 ---
 
-# 4. Caso integrador 1
-
-```text
-Práctica guiada: COMPLETADA
-Integración de materias: EVIDENCIADA
-Evaluación formal de 100 puntos: NO REALIZADA
-Puntaje formal: NO ASIGNADO
-```
-
-La práctica permanece como evidencia cualitativa y no como examen.
-
----
-
-# 5. Estado de errores
+# 4. Estado de errores
 
 | Estado | Cantidad |
 |---|---:|
 | Consolidado | **36** |
-| Corregido | **6** |
-| Abierto | **8** |
-| **Total registrado** | **50** |
+| Corregido | **13** |
+| Abierto | **6** |
+| **Total registrado** | **55** |
 
-Cambios del cierre del Día 9:
+Abiertos prioritarios:
 
 ```text
-Consolidados:
-E-040 — realización y alternativo sin conexión
-E-047 — 2FN e ID artificial
-E-048 — confirmación antes de desencolar
-
-Nuevo abierto:
-E-050 — modelo relacional final incompleto
+E-005 — complejidades de ordenación
+E-008 — DCL/TCL
+E-016 — Java completo
+E-039 — entidad asociativa frente a débil
+E-045 — digitalización, política y supuestos
+E-050 — modelo relacional final completo
 ```
 
-Continúan como prioridades:
+Recuperados durante el Día 10:
 
 ```text
-E-016 — código Java completo
-E-039 — asociativa frente a débil
-E-045 — digitalización y supuestos
-E-049 — conectividad frente a sincronía
-```
-
----
-
-# 6. Puntos débiles prioritarios
-
-1. Constructor Java: validar antes de asignar.
-2. No utilizar `super` para métodos de la propia clase.
-3. Escribir `toString()` con valores reales.
-4. Aplicar `@Override` de forma completa.
-5. Diferenciar entidad y subsistema.
-6. Completar diagramas de estados.
-7. Automatizar asociativa frente a débil.
-8. Escribir el modelo final con todos los atributos, PK, FK y `UNIQUE`.
-9. Declarar supuestos tecnológicos coherentes.
-10. Profundizar DCL/TCL, relaciones UML y ordenación.
-
-Documento de estudio:
-
-```text
-RESUMENES/2026-08-16_REPASO-SEMANAL-PUNTOS-DEBILES.md
+E-002 — asociación/agregación/composición → corregido
+E-049 — conectividad frente a sincronía → corregido
+E-051 — implementación frente a despliegue → corregido
+E-052 — cabeza frente a nodo centinela → corregido
+E-053 — eliminación y reconexión de nodos → corregido
+E-054 — alternativas/consecuencias/riesgos arquitectónicos → corregido
+E-055 — nomenclatura OSI y dispositivo/PDU/dirección → corregido
 ```
 
 ---
 
-# 7. Evidencia principal nueva
+# 5. Evidencias canónicas
 
-- `EVALUACIONES/2026-08-16_RESPUESTAS-EVALUACION-DIA-09.md`
-- `EVALUACIONES/2026-08-16_RESULTADOS-DIA-09-SIN-DEFENSA.md`
-- `RESUMENES/2026-08-14_CIERRE-DIA-09.md`
-- `RESUMENES/2026-08-16_REPASO-SEMANAL-PUNTOS-DEBILES.md`
-- `EVALUACIONES/2026-08-15_RESULTADO-SEMANAL-POR-EVIDENCIA.md`
-
-Los archivos parciales del Día 9 se conservan como historia del estado previo a la recuperación.
+- `EVALUACIONES/2026-08-17_RESPUESTAS-DIA-10.md`
+- `EVALUACIONES/2026-08-17_RESULTADOS-DIA-10.md`
+- `RESUMENES/2026-08-17_RESUMEN-GUIADO-DIA-10.md`
+- `RESUMENES/2026-08-17_CIERRE-DIA-10.md`
+- `04-MATRIZ-DE-PROGRESO-ACTUALIZACION-DIA-10.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-10.md`
 
 ---
 
-# 8. Próxima etapa
-
-La semana intensiva 1 y el Día 9 ya están cerrados documentalmente.
-
-La siguiente etapa debe combinar:
+# 6. Próxima acción
 
 ```text
-repaso dirigido de puntos débiles
-+
-continuación de temas todavía no recorridos
-+
-práctica breve de Java
-+
-simulacro oral integral posterior
+18/08/2026 — Día 11
+→ Java complementario
+→ listas avanzadas
+→ SQL
 ```
 
-No es necesario repetir las evaluaciones ya cerradas.
+No es necesario repetir el Día 10 completo. Las recuperaciones deben ser espaciadas y breves, integradas en jornadas futuras.
