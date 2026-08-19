@@ -1,40 +1,38 @@
-# Manifiesto — Cierre académico del Día 11
+# Manifiesto — Cierre académico del Día 12
 
-**Fecha:** 18/08/2026<br>
-**Día 11:** **CERRADO Y APROBADO**<br>
-**Evaluación:** **9,2/10**<br>
-**Recuperación oral de excepciones:** **COMPLETADA**<br>
-**Día 10:** **CERRADO — 8,5/10 + 4/4**<br>
-**Semana intensiva 1:** **CERRADA — 8,6/10**
+**Fecha:** 19/08/2026<br>
+**Día 12:** **CERRADO Y APROBADO**<br>
+**Evaluación:** **8,05/10**<br>
+**Recuperación inicial:** **10,5/12**<br>
+**Defensa integradora:** **1/1**<br>
+**Día 11:** **CERRADO — 9,2/10**<br>
+**Día 10:** **CERRADO — 8,5/10 + 4/4**
 
 ---
 
 # 1. Decisión académica
 
-Se cierra el Día 11 por evidencia real suficiente en Java complementario, listas avanzadas, SQL e integración/SOLID.
-
-La nota se conserva tal como fue evaluada:
+Se cierra el Día 12 por evidencia real suficiente en implementación/despliegue, archivos y excepciones Java, enlace de datos e integración transversal.
 
 ```text
-Java = 2,5/3
-Listas avanzadas = 2,8/3
-SQL = 2,9/3
-Integración/SOLID = 1/1
-Total = 9,2/10
+Implementación y despliegue = 2,30/3,00
+Java, archivos y excepciones = 2,50/3,00
+Enlace de datos = 2,25/3,00
+Integración oral = 1,00/1,00
+Total = 8,05/10
+Estado = APROBADO
 ```
-
-La explicación oral posterior recuperó la precisión sobre excepciones, pero no modifica retroactivamente el resultado.
 
 ---
 
 # 2. Integridad académica
 
-- se preservan las respuestas y errores del estudiante;
-- las correcciones se documentan por separado;
-- los controles formativos no se promedian nuevamente;
-- la ejecución automática de ejemplos durante la preparación no se atribuye al estudiante;
-- no se declaran dominados archivos Java, ordenación, ACID ni contenidos de jornadas futuras;
-- la preparación del Día 11 permanece como antecedente histórico.
+- se preservan respuestas reales, errores y correcciones;
+- la respuesta modelo no se atribuye al estudiante;
+- los controles formativos no se vuelven a promediar;
+- `DemoDia12` fue validado durante la preparación, pero no cuenta como ejecución autónoma del estudiante;
+- HDLC/PPP/Ethernet y bucle L2/routing no se declaran dominados;
+- el cierre no elimina los pendientes acumulados de Java, ordenación y Base de Datos.
 
 ---
 
@@ -48,87 +46,89 @@ La explicación oral posterior recuperó la precisión sobre excepciones, pero n
 
 ---
 
-# 4. Evidencias del Día 11
+# 4. Evidencias del Día 12
 
-- `03-ESTADO-ACTUAL-CIERRE-DIA-11.md`
-- `04-MATRIZ-DE-PROGRESO-ACTUALIZACION-DIA-11.md`
-- `06-ERRORES-Y-RECUPERACIONES-DIA-11.md`
-- `EVALUACIONES/2026-08-18_RESPUESTAS-DIA-11.md`
-- `EVALUACIONES/2026-08-18_RESULTADOS-DIA-11.md`
-- `RESUMENES/2026-08-18_RESUMEN-GUIADO-DIA-11.md`
-- `RESUMENES/2026-08-18_CIERRE-DIA-11.md`
-- `DIAS/2026-08-18_DIA-11_JAVA-LISTAS-AVANZADAS-SQL.md`
+- `03-ESTADO-ACTUAL-CIERRE-DIA-12.md`
+- `04-MATRIZ-DE-PROGRESO-ACTUALIZACION-DIA-12.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-12.md`
+- `EVALUACIONES/2026-08-19_RESPUESTAS-ESTUDIANTE-DIA-12.md`
+- `EVALUACIONES/2026-08-19_RESULTADOS-DIA-12.md`
+- `RESUMENES/2026-08-19_CIERRE-DIA-12.md`
+- `DIAS/2026-08-19_DIA-12_IMPLEMENTACION-ARCHIVOS-ENLACE.md`
 
 ---
 
-# 5. Cambios de estado
+# 5. Cambios de errores
 
 ```text
-E-008 → consolidado
-E-018 → consolidado
-E-046 → consolidado
-E-056 → nuevo, corregido
-E-057 → nuevo, corregido
-E-058 → nuevo, corregido
-E-059 → nuevo, corregido
+E-051 → consolidado
+E-055 → consolidado
+E-057 → consolidado
+E-060 → nuevo, corregido
+E-061 → nuevo, corregido
+E-062 → nuevo, corregido
+E-063 → nuevo, abierto
+E-064 → nuevo, corregido
+E-065 → nuevo, abierto
 ```
 
 Estado canónico:
 
 ```text
-39 consolidados
-15 corregidos
-5 abiertos
-59 registrados
+42 consolidados
+16 corregidos
+7 abiertos
+65 registrados
 ```
 
 ---
 
 # 6. Cobertura demostrada
 
-- arreglo y `ArrayList`;
-- `String`, igualdad y hash;
-- JVM y portabilidad;
-- excepciones y flujo de control;
-- SRP, DIP y OCP conceptual;
-- listas doble, circular y ordenada;
-- iteradores;
-- DDL, DML, TCL y DCL;
-- SQL de consulta y cambio seguro;
-- restricciones e integridad Java/base.
+- implementación frente a despliegue;
+- trazabilidad UML→Java→artefacto→nodo;
+- decisión de infraestructura;
+- archivos, UTF-8 y cierre automático;
+- excepción propia con causa;
+- trama, LLC, MAC y FCS;
+- aprendizaje, flooding y reenvío del switch;
+- función general de STP;
+- switch C2/MAC frente a router C3/IP;
+- defensa transversal completa.
 
 ---
 
 # 7. Cobertura pendiente
 
+- componente frente a subsistema y artefacto;
 - programa Java autónomo con archivos separados;
-- manipulación de archivos y excepciones propias;
-- recuperación espaciada de excepciones;
-- algoritmos de ordenación y complejidades;
+- HDLC frente a PPP frente a Ethernet;
+- bucle de capa 2 frente a bucle de enrutamiento;
+- IEEE 802.x y envejecimiento MAC;
+- ordenación y complejidades;
 - entidad asociativa frente a débil;
-- modelo relacional final completo;
-- ACID y SQL avanzado;
-- contenidos de enlace de datos y jornadas posteriores.
+- modelo relacional final y SQL avanzado.
 
 ---
 
 # 8. Historia preservada
 
-El Día 10 mantiene `8,5/10 + recuperación 4/4`. La Semana intensiva 1 conserva `8,6/10`. El Día 9 conserva `5,70/8,00` escrito, sin defensa y sin nota global.
+El Día 11 conserva `9,2/10`; el Día 10 mantiene `8,5/10 + recuperación 4/4`; la Semana intensiva 1 conserva `8,6/10`; el Día 9 conserva `5,70/8,00` escrito, sin defensa ni nota global.
 
 ---
 
 # 9. Próximo paso
 
 ```text
-19/08/2026 — Día 12
-→ modelo de implementación
-→ archivos y excepciones propias
-→ enlace de datos, Ethernet, tabla MAC y STP
+20/08/2026 — Día 13
+→ recuperación selectiva del Día 12
+→ pruebas y modelo de prueba
+→ inserción y Shellsort
+→ SQL avanzado
 ```
 
 ---
 
 # 10. Decisión de publicación
 
-Este cierre debe publicarse en una rama separada mediante un único commit y PR borrador. No debe fusionarse sin autorización explícita del estudiante.
+Este cierre queda preparado localmente. Publicarlo, abrir un PR o fusionarlo en `main` requiere una autorización explícita posterior.

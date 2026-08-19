@@ -1,32 +1,30 @@
 # Estado actual — EFIP I
 
-**Actualizado al cierre académico del Día 11 — 18/08/2026**<br>
-**Día 11:** **CERRADO Y APROBADO**<br>
-**Evaluación:** **9,2/10**<br>
-**Recuperación oral de excepciones:** **COMPLETADA**<br>
+**Actualizado al cierre académico del Día 12 — 19/08/2026**<br>
+**Día 12:** **CERRADO Y APROBADO**<br>
+**Evaluación:** **8,05/10**<br>
+**Recuperación inicial:** **10,5/12**<br>
+**Defensa integradora:** **1/1**<br>
+**Día 11:** **CERRADO Y APROBADO — 9,2/10**<br>
 **Día 10:** **CERRADO Y APROBADO — 8,5/10 + recuperación 4/4**<br>
-**Semana intensiva 1:** **CERRADA POR EVIDENCIA ACUMULADA — 8,6/10**<br>
-**Día 9:** **CERRADO DOCUMENTALMENTE — SIN DEFENSA ORAL**
+**Semana intensiva 1:** **CERRADA POR EVIDENCIA ACUMULADA — 8,6/10**
 
 ---
 
 # 1. Integridad del resultado
 
-El Día 11 se desarrolló mediante recuperación inicial, actividades guiadas, controles formativos, evaluación final de diez puntos y una recuperación oral posterior sobre excepciones.
+El Día 12 se desarrolló mediante recuperación inicial, actividades guiadas, recuperaciones selectivas, evaluación final de diez puntos y defensa integradora.
 
 ```text
-Evaluación final = 9,2/10
-Java = 2,5/3
-Listas avanzadas = 2,8/3
-SQL = 2,9/3
-Integración/SOLID = 1/1
-Recuperación oral posterior = completada
+Implementación y despliegue = 2,30/3,00
+Java, archivos y excepciones = 2,50/3,00
+Enlace de datos = 2,25/3,00
+Integración oral = 1,00/1,00
+Total = 8,05/10
 Estado = cerrado y aprobado
 ```
 
-La recuperación posterior mejora la precisión entre checked/unchecked y `throw`/`throws`, pero no altera retroactivamente el `9,2/10`.
-
-El cierre no atribuye al estudiante la ejecución automática de ejemplos realizada durante la preparación. Continúan pendientes un programa Java autónomo con archivos separados, algoritmos de ordenación, asociativa frente a débil, el modelo relacional final completo y los temas de Comunicaciones reprogramados.
+La nota conserva los errores observados. Las correcciones posteriores permitieron cerrar la jornada, pero no modifican retroactivamente el puntaje. La ejecución automática de `DemoDia12` realizada durante la preparación no se atribuye al estudiante.
 
 ---
 
@@ -34,45 +32,48 @@ El cierre no atribuye al estudiante la ejecución automática de ejemplos realiz
 
 | Materia | Nivel actual | Evidencia principal | Precisión pendiente |
 |---|---|---|---|
-| Análisis y Diseño | **Alto — aplicado y defendible en arquitectura básica** | decisiones significativas, RNF, subsistemas, interfaces, dependencias, cohesión/acoplamiento y vistas 4+1 | modelo de implementación formal, diagramas de estados y relaciones UML restantes |
-| POO | **Alto conceptual — aplicado y parcialmente defendible** | arreglo/`ArrayList`, igualdad, JVM, excepciones y SOLID aplicados | programa Java autónomo, archivos y recuperación espaciada de excepciones |
-| Estructuras | **Alto — aplicado y defendible** | Lista simple, doble, circular, ordenada, Pila, Cola e iteradores | algoritmos de ordenación y código autónomo completo |
-| Base de Datos | **Alto en SQL básico — aplicado y defendible** | DDL/DML/TCL/DCL, consultas, cambios seguros y restricciones | asociativa/débil, modelo final completo, SQL avanzado y ACID |
-| Comunicaciones | **Medio-alto — aplicado en medios y dispositivos principales** | guiados/no guiados, UTP, trenzado, FTP/STP, fibra, repetidor/hub, switch y router | perturbaciones completas, gateway, módem, última milla y enlaces |
+| Análisis y Diseño | **Alto — aplicado y defendible** | arquitectura, vistas, implementación/despliegue, trazabilidad e infraestructura | componente/subsistema/artefacto y modelo de pruebas |
+| POO | **Alto conceptual — aplicado y parcialmente defendible** | colecciones, igualdad, JVM, archivos, excepciones propias y SOLID | programa autónomo con archivos separados y sintaxis completa |
+| Estructuras | **Alto — aplicado y defendible** | listas simples y avanzadas, Pila, Cola e iteradores | algoritmos de ordenación y complejidades |
+| Base de Datos | **Alto en SQL básico — aplicado y defendible** | DDL/DML/TCL/DCL, consultas, cambios y restricciones | asociativa/débil, modelo final, SQL avanzado y ACID |
+| Comunicaciones | **Medio-alto — aplicado** | OSI/TCP-IP, medios, Ethernet, switch, tabla MAC, router y STP | HDLC/PPP/Ethernet, bucles L2/routing, perturbaciones y direccionamiento |
 
 ---
 
-# 3. Evidencia del Día 11
+# 3. Evidencia del Día 12
 
-## Recuperación inicial
+## Implementación y despliegue
 
-- resultado `11/12`;
-- corrección principal: `==` compara referencias, no tipos;
-- vistas, listas, Java básico y SQL recuperados antes de avanzar.
+- implementación como organización de piezas de software;
+- despliegue como distribución en nodos;
+- interfaz, fuente, componente/artefacto y nodo aplicados;
+- trazabilidad UML→Java→artefacto→teléfono;
+- servidor propio frente a infraestructura contratada;
+- DIP y OCP al reemplazar el repositorio local.
 
-## Java complementario
+## Java, archivos y excepciones
 
-- arreglo frente a `ArrayList`;
-- `==`, `equals()`, `hashCode()` y `toString()`;
-- bytecode, JDK, JVM y límites de portabilidad;
-- checked/unchecked y `try/catch/finally/throw/throws`;
-- SRP, DIP y reconocimiento de OCP aplicados a `AgendaTrabajos`.
+- `Path`, `Files`, UTF-8 y `try-with-resources`;
+- lectura y escritura de texto;
+- `CREATE`, `TRUNCATE_EXISTING` y `APPEND`;
+- `IOException` checked;
+- excepción propia con mensaje y causa;
+- traducción de `NumberFormatException` a `FormatoArchivoException`;
+- separación SRP entre dominio, persistencia y presentación.
 
-## Listas avanzadas
+## Enlace de datos
 
-- cuatro enlaces de inserción en lista doble;
-- recorrido circular y caso de un único nodo;
-- inserción ordenada y corte temprano;
-- iterador, `hasNext()`, `next()` y `remove()`;
-- diferencia entre costo de búsqueda `O(n)` y actualización directa `O(1)`.
+- HDLC, PPP y Ethernet trabajados;
+- trama, LLC, MAC y FCS;
+- aprendizaje por MAC origen y consulta de MAC destino;
+- flooding y reenvío selectivo;
+- tabla MAC final correcta;
+- STP frente a enlaces redundantes;
+- switch C2/MAC frente a router C3/IP.
 
-## SQL e integración
+## Integración
 
-- DDL, DML, TCL y DCL clasificados;
-- `SELECT`, filtros y orden múltiple;
-- `INSERT`, verificación previa, `UPDATE` y `DELETE` con `WHERE`;
-- PK, FK, `NOT NULL`, `UNIQUE` y `CHECK`;
-- validación temprana en Java e integridad garantizada en la base.
+La defensa final obtuvo `1/1` al relacionar clase UML, archivo Java, artefacto, teléfono, almacenamiento local, trama Ethernet, tabla MAC y router.
 
 ---
 
@@ -80,12 +81,36 @@ El cierre no atribuye al estudiante la ejecución automática de ejemplos realiz
 
 | Estado | Cantidad |
 |---|---:|
-| Consolidado | **39** |
-| Corregido | **15** |
-| Abierto | **5** |
-| **Total registrado** | **59** |
+| Consolidado | **42** |
+| Corregido | **16** |
+| Abierto | **7** |
+| **Total registrado** | **65** |
 
-Abiertos prioritarios:
+Consolidados durante el Día 12:
+
+```text
+E-051 — implementación frente a despliegue
+E-055 — switch/router: capa, PDU y dirección
+E-057 — checked/unchecked y throw/throws
+```
+
+Nuevos errores corregidos:
+
+```text
+E-060 — componente/subsistema/artefacto
+E-061 — traducción de excepción de formato
+E-062 — aprendizaje y reenvío del switch
+E-064 — LLC/MAC
+```
+
+Nuevos abiertos:
+
+```text
+E-063 — HDLC/PPP/Ethernet
+E-065 — bucle L2 frente a bucle de enrutamiento
+```
+
+Abiertos prioritarios acumulados:
 
 ```text
 E-005 — complejidades de ordenación
@@ -93,45 +118,31 @@ E-016 — Java completo
 E-039 — entidad asociativa frente a débil
 E-045 — digitalización, política y supuestos
 E-050 — modelo relacional final completo
-```
-
-Consolidados durante el Día 11:
-
-```text
-E-008 — DCL/TCL
-E-018 — estructura dinámica frente a tipo
-E-046 — comparación de String
-```
-
-Nuevos corregidos:
-
-```text
-E-056 — igualdad lógica por id y contrato hashCode
-E-057 — checked/unchecked y throw/throws
-E-058 — costo con referencias conocidas
-E-059 — lista circular de un nodo
+E-063 — HDLC/PPP/Ethernet
+E-065 — bucle L2 frente a routing
 ```
 
 ---
 
 # 5. Evidencias canónicas
 
-- `EVALUACIONES/2026-08-18_RESPUESTAS-DIA-11.md`
-- `EVALUACIONES/2026-08-18_RESULTADOS-DIA-11.md`
-- `RESUMENES/2026-08-18_RESUMEN-GUIADO-DIA-11.md`
-- `RESUMENES/2026-08-18_CIERRE-DIA-11.md`
-- `04-MATRIZ-DE-PROGRESO-ACTUALIZACION-DIA-11.md`
-- `06-ERRORES-Y-RECUPERACIONES-DIA-11.md`
+- `03-ESTADO-ACTUAL-CIERRE-DIA-12.md`
+- `04-MATRIZ-DE-PROGRESO-ACTUALIZACION-DIA-12.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-12.md`
+- `EVALUACIONES/2026-08-19_RESPUESTAS-ESTUDIANTE-DIA-12.md`
+- `EVALUACIONES/2026-08-19_RESULTADOS-DIA-12.md`
+- `RESUMENES/2026-08-19_CIERRE-DIA-12.md`
 
 ---
 
 # 6. Próxima acción
 
 ```text
-19/08/2026 — Día 12
-→ modelo de implementación, componentes, nodos y despliegue
-→ archivos y excepciones propias
-→ enlace de datos, Ethernet, tabla MAC y STP
+20/08/2026 — Día 13
+→ recuperación selectiva del Día 12
+→ pruebas y modelo de prueba
+→ inserción y Shellsort
+→ SQL avanzado
 ```
 
-No es necesario repetir el Día 11 completo. La precisión de excepciones debe reaparecer en una recuperación breve y espaciada.
+No es necesario repetir el Día 12 completo. Los errores E-063 y E-065 deben reaparecer al inicio de una jornada posterior.

@@ -1,6 +1,6 @@
 # Matriz de progreso del programa
 
-**Actualizada al cierre académico del Día 11 — 18/08/2026**
+**Actualizada al cierre académico del Día 12 — 19/08/2026**
 
 Estados:
 
@@ -15,6 +15,8 @@ Estados:
 > **Día 10 cerrado el 17/08/2026:** evaluación integradora real `8,5/10` y recuperación selectiva `4/4`. Los estados cambian únicamente donde existe evidencia del estudiante; los contenidos preparados pero no trabajados permanecen `NI` o `EA`.
 
 > **Día 11 cerrado el 18/08/2026:** evaluación final `9,2/10` y recuperación oral posterior de excepciones. Java complementario, listas avanzadas, SQL y SOLID se elevan solo según la evidencia real; la ejecución automática de ejemplos durante la preparación no se atribuye al estudiante.
+
+> **Día 12 cerrado el 19/08/2026:** evaluación final `8,05/10` y defensa integradora `1/1`. Implementación/despliegue, archivos Java y enlace de datos avanzan según evidencia real; HDLC/PPP/Ethernet y bucle L2 frente a routing quedan abiertos.
 
 ---
 
@@ -61,7 +63,12 @@ Estados:
 | Descripción de arquitectura | A/DO | Decisiones, alternativas, RNF, consecuencias, riesgos y artefactos aplicados |
 | Asociación/agregación/composición/dependencia | C/A | Definiciones correctas en recuperación inicial; requiere repaso espaciado |
 | Vistas arquitectónicas 4+1 | A/DO | Casos de uso, lógica, procesos, implementación y despliegue recuperados 4/4 |
-| Modelo de implementación/pruebas | NI/EA | Vista de implementación comprendida; bloque formal y pruebas pendientes |
+| Modelo de implementación | A | Componentes, artefactos y trazabilidad aplicados en el Día 12 |
+| Modelo de despliegue y nodos | A/DO | Diferencia con implementación defendida en la integración final |
+| Modelo de pruebas | NI/EA | Bloque formal previsto para el Día 13 |
+| Trazabilidad diseño→código→artefacto→nodo | A/DO | Defensa integradora del Día 12 `1/1` |
+| Decisión de infraestructura | A | Servidor propio/contratado comparados por costo, control, disponibilidad y riesgo |
+| Componente/subsistema/artefacto | C/A | Aplicado con imprecisiones; recuperación espaciada requerida |
 
 ---
 
@@ -98,9 +105,11 @@ Estados:
 | `equals/hashCode` | C/A | Igualdad por `id` y contrato de hash aplicados; requiere recuperación espaciada |
 | Excepciones | A | Checked/unchecked y flujo completo aplicados; precisión final recuperada |
 | Colecciones | A/DO | Arreglo, `ArrayList`, acceso, redimensionamiento e iterador defendidos |
-| Archivos | NI | Pendiente |
+| Archivos | C/A | `Path`, `Files`, lectura/escritura y opciones de apertura aplicados en Día 12 |
+| UTF-8 y `try-with-resources` | A | Codificación y cierre automático explicados |
+| Excepciones propias con causa | A | `FormatoArchivoException`, `throw`, `throws` y causa aplicados |
 | Elección de Java, JVM y portabilidad | A/DO | `.java→bytecode→JVM` y límites por rutas/comandos defendidos |
-| Excepciones checked/unchecked y flujo completo | A | Casos de compilación y propagación correctos; repaso espaciado pendiente |
+| Excepciones checked/unchecked y flujo completo | A/DO | Consolidadas con archivos y excepción propia en Día 12 |
 | Principios SOLID | A/DO | SRP, DIP y OCP aplicados a `AgendaTrabajos` |
 | Encoding, hashing y cifrado | NI | Complementario transversal; previsto 20/08 |
 
@@ -214,25 +223,28 @@ Estados:
 | Transmisión analógica posible | C | Corregido |
 | Medios guiados/no guiados | A/DO | UTP, coaxial, fibra, radiofrecuencia y satélite clasificados |
 | Atenuación/ruido/interferencia/dispersión/latencia | NI | Pendiente |
-| Enlace, Ethernet, WAN y última milla | NI/EA | Pendiente |
+| Enlace y Ethernet | C/A | Trama, MAC, FCS y aplicación en LAN trabajados en Día 12 |
+| WAN y última milla | NI/EA | Pendiente |
 | Hub/repetidor/switch/router por capa | A/DO | Capa, PDU y dirección defendidas; recuperación final correcta |
 | Gateway por capa | NI/EA | Preparado, pero no evaluado en la jornada real |
 | UTP y motivo del trenzado | A/DO | Medio guiado, señal eléctrica y reducción de interferencia explicados |
 | Diafonía e interferencia | C | Relación general comprendida; precisión sobre diafonía pendiente |
 | FTP/STP como tipos de cable | C/A | Blindaje comprendido; diferencia con Spanning Tree aclarada |
-| Switch: aprendizaje y tabla MAC | NI | Complementario sobre función respaldada; previsto 19/08 |
-| STP y bucles de capa 2 | NI/EA | Respaldado; previsto 19/08 |
-| Bucle de routing, TTL y métricas | NI | Complementario; previsto 19/08–21/08 |
+| HDLC/PPP/Ethernet | EA/C | Trabajados; comparación final incompleta, E-063 abierto |
+| LLC/MAC | C/A | Funciones recuperadas; evitar “enrutamiento físico” |
+| Switch: aprendizaje y tabla MAC | A | Aprendizaje por origen, consulta de destino, flooding y reenvío selectivo aplicados |
+| STP y bucles de capa 2 | C/A | Función comprendida; comparación con routing pendiente |
+| Bucle de routing, TTL y métricas | EA | Diferencia final no demostrada sin apoyo; E-065 abierto |
 | IPv4, máscara, red y broadcast | NI | Complementario; previsto 21/08 |
 | CIDR y selección de prefijo | NI | Complementario; previsto 21/08 |
 | Clases A/B/C históricas | NI | Complementario; previsto 21/08 |
 | TCP frente a UDP | NI/EA | Mención respaldada y desarrollo complementario; previsto 21/08 |
 | Three-way handshake | NI | Complementario; previsto 21/08 |
-| Router y tabla de enrutamiento | NI/EA | Función respaldada y tabla complementaria; previsto 21/08 |
+| Router y tabla de enrutamiento | C/A | Función integrada en defensa final; desarrollo de métricas pendiente |
 | LAN/MAN/WAN | NI/EA | Respaldado; previsto 21/08 |
 | MPLS | NI/EA | Respaldado; previsto 21/08 |
 | VPN, DMZ y firewall por capas | NI | Complementario; previsto 21/08 |
-| Servidor propio frente a contratado | NI | Complementario de infraestructura; previsto 19/08 |
+| Servidor propio frente a contratado | A | Decisión justificada con costo, control, disponibilidad, riesgo y mitigación |
 
 ---
 
@@ -268,6 +280,7 @@ Estados:
 | Día 9 — componente escrito | **5,70/8,00 = 71,25 %** |
 | Día 10 — evaluación integradora adaptada | **8,5/10 + recuperación 4/4** |
 | Día 11 — Java + listas avanzadas + SQL + SOLID | **9,2/10** |
+| Día 12 — Implementación + archivos Java + enlace de datos | **8,05/10** |
 
 ```text
 Día 9:
@@ -289,9 +302,11 @@ práctica guiada, sin puntaje formal
 5. Generalización UML y relaciones UML restantes.
 6. Digitalización, política y supuestos de transmisión.
 7. Atenuación, ruido, dispersión, latencia, gateway, módem y última milla.
-8. Manipulación de archivos y excepciones propias integradas.
-9. Recuperación espaciada de checked/unchecked y `throw`/`throws`.
-10. Ordenación y sus complejidades.
+8. Programa Java autónomo con archivos separados.
+9. HDLC frente a PPP frente a Ethernet.
+10. Bucle de capa 2 frente a bucle de enrutamiento.
+11. Componente frente a subsistema y artefacto.
+12. Ordenación y sus complejidades.
 
 Documento de repaso:
 
@@ -303,4 +318,4 @@ RESUMENES/2026-08-16_REPASO-SEMANAL-PUNTOS-DEBILES.md
 
 ## Regla de lectura
 
-La matriz resume la mejor evidencia disponible. `DO` no significa dominio total. El Día 9 aporta evidencia escrita sin nota global. El Día 10 aporta `8,5/10 + 4/4`; el Día 11 aporta `9,2/10` y recuperación oral posterior sin cambio de nota.
+La matriz resume la mejor evidencia disponible. `DO` no significa dominio total. El Día 9 aporta evidencia escrita sin nota global. El Día 10 aporta `8,5/10 + 4/4`; el Día 11 aporta `9,2/10`; el Día 12 aporta `8,05/10` y defensa integradora `1/1`.

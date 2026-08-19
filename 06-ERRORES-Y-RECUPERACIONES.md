@@ -1,6 +1,6 @@
 # Registro de errores y recuperaciones
 
-**Estado consolidado al cierre académico del Día 11 — 18/08/2026**
+**Estado consolidado al cierre académico del Día 12 — 19/08/2026**
 
 Estados:
 
@@ -14,10 +14,10 @@ Estados:
 
 | Estado | Cantidad |
 |---|---:|
-| Consolidado | **39** |
-| Corregido | **15** |
-| Abierto | **5** |
-| **Total registrado** | **59** |
+| Consolidado | **42** |
+| Corregido | **16** |
+| Abierto | **7** |
+| **Total registrado** | **65** |
 
 ---
 
@@ -75,15 +75,21 @@ Estados:
 | E-048 | Estructuras/Diseño | Eliminar pendiente antes de confirmar | **consolidado** | `cabecera→enviar→confirmar→trazar→desencolar` |
 | E-049 | Comunicaciones | Conectividad usada para inferir sincronía | corregido | Sin conexión=no transmisión; síncrona/asíncrona depende del protocolo asumido |
 | E-050 | Base de Datos | Modelo relacional final incompleto | **abierto** | Escribir atributos, PK, FK y `UNIQUE`; `OPERARIO_TELEFONO` usa PK compuesta |
-| E-051 | Análisis y Diseño | Implementación frente a despliegue | corregido | Implementación=cómo se organiza; despliegue=dónde se ejecuta |
+| E-051 | Análisis y Diseño | Implementación frente a despliegue | consolidado | Implementación=cómo se organiza; despliegue=dónde se ejecuta; defensa repetida en Día 12 |
 | E-052 | Estructuras | Cabeza frente a nodo centinela | corregido | `cabeza` referencia el primer nodo salvo centinela explícito |
 | E-053 | Estructuras | Eliminación y reconexión de nodos | corregido | `cabeza=cabeza.siguiente`; `anterior.siguiente=actual.siguiente` |
 | E-054 | Análisis y Diseño | Alternativas, consecuencias y riesgos | corregido | Alternativas distintas; consecuencia real; riesgo posible |
-| E-055 | Comunicaciones | Nomenclatura OSI y dispositivo/PDU/dirección | corregido | Switch C2/trama/MAC; router C3/paquete/IP |
+| E-055 | Comunicaciones | Nomenclatura OSI y dispositivo/PDU/dirección | consolidado | Switch C2/trama/MAC; router C3/paquete/IP; integrado en defensa Día 12 |
 | E-056 | POO/Java | Igualdad lógica e identidad por `id` | corregido | Instancias distintas pueden ser iguales; `equals()` verdadero exige mismo `hashCode()` |
-| E-057 | POO/Java | Checked/unchecked y `throw`/`throws` | corregido | `throw` lanza; `throws` declara; checked obliga a capturar o declarar; unchecked no |
+| E-057 | POO/Java | Checked/unchecked y `throw`/`throws` | consolidado | `throw` lanza; `throws` declara; checked obliga a capturar o declarar; aplicado con archivos en Día 12 |
 | E-058 | Estructuras | Complejidad con referencias conocidas | corregido | Enlazar/desenlazar es `O(1)` si las referencias ya están disponibles; buscar es `O(n)` |
 | E-059 | Estructuras | Lista circular de un nodo | corregido | En una circular no vacía de un nodo, `nodo.siguiente = nodo` |
+| E-060 | Análisis y Diseño | Componente/subsistema/artefacto | corregido | Componente=pieza modular; subsistema=agrupación coherente; artefacto=archivo físico producido/usado |
+| E-061 | POO/Java | Traducción de excepción | corregido | Capturar `NumberFormatException` y lanzar `FormatoArchivoException(mensaje, causa)` |
+| E-062 | Comunicaciones | Aprendizaje y reenvío del switch | corregido | Aprende origen; consulta destino; desconocido=flooding; conocido=reenvío selectivo |
+| E-063 | Comunicaciones | HDLC/PPP/Ethernet | **abierto** | HDLC=control de enlace; PPP=punto a punto; Ethernet=LAN, trama y MAC |
+| E-064 | Comunicaciones | LLC/MAC | corregido | LLC mira a capa 3; MAC arma tramas, direcciona y controla acceso hacia capa física |
+| E-065 | Comunicaciones | Bucle L2 frente a routing | **abierto** | L2=tramas sin TTL y STP; routing=paquetes/rutas con TTL o Hop Limit |
 
 
 ---
@@ -138,6 +144,8 @@ En el escrito final:
 ### Comunicaciones
 
 - `E-045` — digitalización, política y supuestos.
+- `E-063` — HDLC frente a PPP frente a Ethernet.
+- `E-065` — bucle de capa 2 frente a bucle de enrutamiento.
 
 ---
 
@@ -149,15 +157,16 @@ En el escrito final:
 4. `E-042` — FIFO frente a trazabilidad.
 5. `E-043` — `I(E)=log₂(1/P(E))` y unidad.
 6. `E-049` — conectividad frente a sincronía.
-7. `E-051` — implementación frente a despliegue.
-8. `E-052` — cabeza frente a nodo centinela.
-9. `E-053` — eliminación y reconexión de nodos.
-10. `E-054` — alternativas, consecuencias y riesgos.
-11. `E-055` — nomenclatura OSI y dispositivo/PDU/dirección.
-12. `E-056` — igualdad lógica e identidad por `id`.
-13. `E-057` — checked/unchecked y `throw`/`throws`.
-14. `E-058` — complejidad con referencias conocidas.
-15. `E-059` — lista circular de un nodo.
+7. `E-052` — cabeza frente a nodo centinela.
+8. `E-053` — eliminación y reconexión de nodos.
+9. `E-054` — alternativas, consecuencias y riesgos.
+10. `E-056` — igualdad lógica e identidad por `id`.
+11. `E-058` — complejidad con referencias conocidas.
+12. `E-059` — lista circular de un nodo.
+13. `E-060` — componente/subsistema/artefacto.
+14. `E-061` — traducción de excepción.
+15. `E-062` — aprendizaje y reenvío del switch.
+16. `E-064` — LLC/MAC.
 
 ---
 
@@ -277,3 +286,32 @@ Un error que reaparece vuelve a `abierto`. Un error `corregido` pasa a `consolid
 - `EVALUACIONES/2026-08-18_RESULTADOS-DIA-11.md`
 - `RESUMENES/2026-08-18_CIERRE-DIA-11.md`
 - `06-ERRORES-Y-RECUPERACIONES-DIA-11.md`
+
+---
+
+## Cambios del cierre del Día 12
+
+### Pasaron a consolidado
+
+- `E-051`: implementación y despliegue se diferenciaron nuevamente y se integraron en la defensa final;
+- `E-055`: switch y router se defendieron por capa, PDU y dirección;
+- `E-057`: checked/unchecked y `throw`/`throws` se aplicaron a archivos y excepción propia.
+
+### Nuevos errores corregidos
+
+- `E-060`: se corrigió la clasificación entre componente, subsistema y artefacto;
+- `E-061`: se corrigió la traducción de `NumberFormatException` a `FormatoArchivoException` conservando la causa;
+- `E-062`: la simulación inicial del switch se recuperó con aprendizaje por origen y decisión por destino;
+- `E-064`: se eliminó “enrutamiento físico” de la responsabilidad MAC y se precisó LLC.
+
+### Nuevos errores abiertos
+
+- `E-063`: la comparación HDLC/PPP/Ethernet quedó incompleta en la evaluación;
+- `E-065`: no se completó la diferencia entre bucle de capa 2 y bucle de enrutamiento.
+
+### Evidencia
+
+- `EVALUACIONES/2026-08-19_RESPUESTAS-ESTUDIANTE-DIA-12.md`
+- `EVALUACIONES/2026-08-19_RESULTADOS-DIA-12.md`
+- `RESUMENES/2026-08-19_CIERRE-DIA-12.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-12.md`

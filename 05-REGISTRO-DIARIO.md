@@ -1,6 +1,6 @@
 # Registro diario — EFIP I
 
-**Actualizado al cierre académico del Día 11 — 18/08/2026**
+**Actualizado al cierre académico del Día 12 — 19/08/2026**
 
 Este archivo funciona como índice acumulado. El detalle se conserva en `EVALUACIONES/`, `EVIDENCIAS/`, `RESUMENES/`, matrices y registros de errores.
 
@@ -268,13 +268,68 @@ Se recuperó la diferencia entre `throw` y `throws`. Quedó asentado que la obli
 
 ---
 
+## 2026-08-19 — Día 12 — Implementación + Archivos Java + Enlace de datos
+
+**Estado:** **CERRADO Y APROBADO**<br>
+**Evaluación final:** **8,05/10**<br>
+**Recuperación inicial:** **10,5/12**<br>
+**Defensa integradora:** **1/1**<br>
+**Tiempo real:** no cronometrado
+
+### Resultado
+
+| Parte | Máximo | Obtenido |
+|---|---:|---:|
+| Implementación y despliegue | 3,00 | 2,30 |
+| Java, archivos y excepciones | 3,00 | 2,50 |
+| Enlace de datos | 3,00 | 2,25 |
+| Integración oral | 1,00 | 1,00 |
+| **Total** | **10,00** | **8,05** |
+
+### Avances
+
+- modelo de implementación y modelo de despliegue;
+- trazabilidad UML→Java→artefacto→nodo;
+- decisión de infraestructura;
+- `Path`, `Files`, UTF-8 y `try-with-resources`;
+- lectura/escritura, opciones de apertura y excepciones propias;
+- trama, FCS, LLC y MAC;
+- aprendizaje, flooding y reenvío selectivo del switch;
+- STP y enlaces redundantes;
+- integración entre software, almacenamiento local y red.
+
+### Errores recuperados
+
+- implementación frente a despliegue;
+- checked/unchecked y `throw`/`throws`;
+- traducción de `NumberFormatException` a excepción propia;
+- aprendizaje por MAC origen y consulta por MAC destino;
+- LLC/MAC sin confundir MAC con enrutamiento.
+
+### Pendientes conservados
+
+- componente, subsistema y artefacto;
+- programa Java autónomo con archivos separados;
+- HDLC frente a PPP frente a Ethernet;
+- bucle de capa 2 frente a bucle de enrutamiento;
+- envejecimiento de tabla MAC e IEEE 802.x en amplitud;
+- pendientes acumulados de ordenación y Base de Datos.
+
+### Evidencia
+
+- `EVALUACIONES/2026-08-19_RESPUESTAS-ESTUDIANTE-DIA-12.md`
+- `EVALUACIONES/2026-08-19_RESULTADOS-DIA-12.md`
+- `RESUMENES/2026-08-19_CIERRE-DIA-12.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-12.md`
+
+---
+
 ## Próxima acción
 
-
 ```text
-1. Preparar e iniciar el Día 12 del 19/08/2026.
-2. Trabajar modelo de implementación, componentes, nodos y despliegue.
-3. Escribir Java con archivos y excepciones propias.
-4. Estudiar enlace de datos, Ethernet, tabla MAC y STP.
-5. Reintegrar una recuperación breve de excepciones del Día 11.
+1. Iniciar el Día 13 del 20/08/2026.
+2. Realizar recuperación selectiva del Día 12.
+3. Trabajar pruebas y modelo de prueba.
+4. Practicar inserción y Shellsort.
+5. Avanzar con SQL académico.
 ```
