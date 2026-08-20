@@ -321,7 +321,7 @@ Un error que reaparece vuelve a `abierto`. Un error `corregido` pasa a `consolid
 
 ## Cambios del cierre del Día 13
 
-### Pasaron a consolidado
+### Pasaron de abiertos a corregidos
 
 - `E-005`: complejidades de inserción y dependencia de gaps resueltas con ayuda;
 - `E-063`: HDLC, PPP y Ethernet recuperados con apoyo;
