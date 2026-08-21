@@ -1,6 +1,6 @@
 # Registro de errores y recuperaciones
 
-**Estado consolidado al cierre académico del Día 12 — 19/08/2026**
+**Estado consolidado al cierre académico del Día 13 — 20/08/2026**
 
 Estados:
 
@@ -15,9 +15,9 @@ Estados:
 | Estado | Cantidad |
 |---|---:|
 | Consolidado | **42** |
-| Corregido | **16** |
-| Abierto | **7** |
-| **Total registrado** | **65** |
+| Corregido | **21** |
+| Abierto | **4** |
+| **Total registrado** | **67** |
 
 ---
 
@@ -29,7 +29,7 @@ Estados:
 | E-002 | Análisis y Diseño | Asociación/agregación/composición | corregido | Definiciones correctas; requiere recuperación espaciada |
 | E-003 | POO | Estado/visibilidad | consolidado | Estado=valores; visibilidad=quién accede |
 | E-004 | POO | Sobrecarga/sobrescritura | consolidado | Parámetros distintos vs. método heredado redefinido |
-| E-005 | Estructuras | Complejidades de ordenación | **abierto** | Inserción O(n²); mergesort O(n log n); quicksort según material |
+| E-005 | Estructuras | Complejidades de ordenación | corregido | Inserción: mejor `O(n)`, peor `O(n²)`; Shellsort depende de gaps; falta recuperación autónoma |
 | E-006 | Estructuras | Inserción al inicio | consolidado | `nuevo.siguiente=cabeza; cabeza=nuevo` |
 | E-007 | Base de Datos | Terminología relacional | consolidado | Relación/tupla/atributo/dominio/grado/cardinalidad |
 | E-008 | Base de Datos | DCL/TCL | consolidado | `GRANT`=DCL; `COMMIT`=TCL; evidencia repetida en Día 11 |
@@ -87,9 +87,11 @@ Estados:
 | E-060 | Análisis y Diseño | Componente/subsistema/artefacto | corregido | Componente=pieza modular; subsistema=agrupación coherente; artefacto=archivo físico producido/usado |
 | E-061 | POO/Java | Traducción de excepción | corregido | Capturar `NumberFormatException` y lanzar `FormatoArchivoException(mensaje, causa)` |
 | E-062 | Comunicaciones | Aprendizaje y reenvío del switch | corregido | Aprende origen; consulta destino; desconocido=flooding; conocido=reenvío selectivo |
-| E-063 | Comunicaciones | HDLC/PPP/Ethernet | **abierto** | HDLC=control de enlace; PPP=punto a punto; Ethernet=LAN, trama y MAC |
+| E-063 | Comunicaciones | HDLC/PPP/Ethernet | corregido | HDLC=control de enlace; PPP=punto a punto; Ethernet=LAN, trama y MAC; falta recuperación autónoma |
 | E-064 | Comunicaciones | LLC/MAC | corregido | LLC mira a capa 3; MAC arma tramas, direcciona y controla acceso hacia capa física |
-| E-065 | Comunicaciones | Bucle L2 frente a routing | **abierto** | L2=tramas sin TTL y STP; routing=paquetes/rutas con TTL o Hop Limit |
+| E-065 | Comunicaciones | Bucle L2 frente a routing | corregido | L2=tramas sin TTL y STP; routing=paquetes/rutas con TTL o Hop Limit; falta recuperación autónoma |
+| E-066 | Pruebas | Excepción esperada y resultado | corregido | Si la excepción esperada se produce, la prueba pasa |
+| E-067 | Estructuras | Shellsort por subsecuencias | corregido | Con gap `g`, continuar por `i-g`, `i-2g`, etc., sin mezclar subsecuencias |
 
 
 ---
@@ -132,10 +134,6 @@ En el escrito final:
 
 - `E-016` — sintaxis y completitud de código.
 
-### Estructuras
-
-- `E-005` — complejidades de ordenación.
-
 ### Base de Datos
 
 - `E-039` — asociativa frente a débil.
@@ -144,8 +142,6 @@ En el escrito final:
 ### Comunicaciones
 
 - `E-045` — digitalización, política y supuestos.
-- `E-063` — HDLC frente a PPP frente a Ethernet.
-- `E-065` — bucle de capa 2 frente a bucle de enrutamiento.
 
 ---
 
@@ -167,6 +163,11 @@ En el escrito final:
 14. `E-061` — traducción de excepción.
 15. `E-062` — aprendizaje y reenvío del switch.
 16. `E-064` — LLC/MAC.
+17. `E-066` — excepción esperada y resultado de prueba.
+18. `E-067` — recorrido Shellsort por subsecuencias.
+19. `E-005` — complejidades de ordenación.
+20. `E-063` — HDLC/PPP/Ethernet.
+21. `E-065` — bucle L2 frente a routing.
 
 ---
 
@@ -267,7 +268,7 @@ Un error que reaparece vuelve a `abierto`. Un error `corregido` pasa a `consolid
 
 ## Cambios del cierre del Día 11
 
-### Pasaron a consolidado
+### Pasaron de abiertos a corregidos
 
 - `E-008`: `COMMIT` y `GRANT` fueron clasificados correctamente en práctica y evaluación;
 - `E-018`: arreglo y `ArrayList` se compararon nuevamente por tamaño y tipo admitido;
@@ -315,3 +316,27 @@ Un error que reaparece vuelve a `abierto`. Un error `corregido` pasa a `consolid
 - `EVALUACIONES/2026-08-19_RESULTADOS-DIA-12.md`
 - `RESUMENES/2026-08-19_CIERRE-DIA-12.md`
 - `06-ERRORES-Y-RECUPERACIONES-DIA-12.md`
+
+---
+
+## Cambios del cierre del Día 13
+
+### Pasaron de abiertos a corregidos
+
+- `E-005`: complejidades de inserción y dependencia de gaps resueltas con ayuda;
+- `E-063`: HDLC, PPP y Ethernet recuperados con apoyo;
+- `E-065`: bucle L2 y routing diferenciados con apoyo mediante trama/paquete, STP y TTL.
+
+### Nuevos corregidos
+
+- `E-066`: se corrigió que una excepción esperada implica éxito del caso negativo;
+- `E-067`: se corrigió la detención prematura y mezcla de índices en Shellsort.
+
+No pasan a consolidados porque la evaluación no fue autónoma.
+
+### Evidencia
+
+- `EVALUACIONES/2026-08-20_RESPUESTAS-ESTUDIANTE-DIA-13.md`
+- `EVALUACIONES/2026-08-20_RESULTADOS-DIA-13.md`
+- `RESUMENES/2026-08-20_CIERRE-DIA-13.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-13.md`

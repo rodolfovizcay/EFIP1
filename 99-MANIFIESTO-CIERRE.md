@@ -1,134 +1,89 @@
-# Manifiesto — Cierre académico del Día 12
+# Manifiesto — Cierre académico del Día 13
 
-**Fecha:** 19/08/2026<br>
-**Día 12:** **CERRADO Y APROBADO**<br>
-**Evaluación:** **8,05/10**<br>
-**Recuperación inicial:** **10,5/12**<br>
-**Defensa integradora:** **1/1**<br>
-**Día 11:** **CERRADO — 9,2/10**<br>
-**Día 10:** **CERRADO — 8,5/10 + 4/4**
+**Fecha:** 20/08/2026
+**Estado:** **CERRADO Y APROBADO CON REFUERZO PENDIENTE**
+**Corrección técnica:** **10,00/10,00**
+**Nota general ajustada:** **8,0/10**
+**Defensa integradora:** **COMPLETADA CON APOYO**
 
 ---
 
 # 1. Decisión académica
 
-Se cierra el Día 12 por evidencia real suficiente en implementación/despliegue, archivos y excepciones Java, enlace de datos e integración transversal.
+Se cierra el Día 13 con nota general `8,0/10`. Las respuestas entregadas alcanzaron corrección técnica completa, pero la resolución y la defensa fueron asistidas; por eso no corresponde registrar `10/10` como nota académica ni declarar dominio autónomo.
 
 ```text
-Implementación y despliegue = 2,30/3,00
-Java, archivos y excepciones = 2,50/3,00
-Enlace de datos = 2,25/3,00
-Integración oral = 1,00/1,00
-Total = 8,05/10
-Estado = APROBADO
+Corrección técnica = 10,00/10,00
+Ajuste por asistencia = -2,00
+Nota académica general = 8,0/10
 ```
 
 ---
 
 # 2. Integridad académica
 
-- se preservan respuestas reales, errores y correcciones;
-- la respuesta modelo no se atribuye al estudiante;
-- los controles formativos no se vuelven a promediar;
-- `DemoDia12` fue validado durante la preparación, pero no cuenta como ejecución autónoma del estudiante;
-- HDLC/PPP/Ethernet y bucle L2/routing no se declaran dominados;
-- el cierre no elimina los pendientes acumulados de Java, ordenación y Base de Datos.
+- respuestas reales y solucionario se conservan en archivos distintos;
+- la nota general descuenta la falta de autonomía durante la evaluación;
+- no se atribuyen ejecuciones automáticas al estudiante;
+- los errores históricos abiertos se conservan;
+- la defensa confirma comprensión transversal, pero no agrega puntos sobre diez.
 
 ---
 
-# 3. Archivos canónicos actualizados
+# 3. Cambios canónicos
+
+```text
+E-005 → corregido
+E-063 → corregido
+E-065 → corregido
+E-066 → nuevo, corregido
+E-067 → nuevo, corregido
+```
+
+Estado resultante:
+
+```text
+42 consolidados
+21 corregidos
+4 abiertos
+67 registrados
+```
+
+---
+
+# 4. Archivos actualizados
 
 - `03-ESTADO-ACTUAL.md`
 - `04-MATRIZ-DE-PROGRESO.md`
 - `05-REGISTRO-DIARIO.md`
 - `06-ERRORES-Y-RECUPERACIONES.md`
 - `99-MANIFIESTO-CIERRE.md`
+- `RESUMENES/2026-08-20_CIERRE-DIA-13.md`
+- `EVALUACIONES/2026-08-20_RESPUESTAS-ESTUDIANTE-DIA-13.md`
+- `EVALUACIONES/2026-08-20_RESULTADOS-DIA-13.md`
 
 ---
 
-# 4. Evidencias del Día 12
+# 5. Pendientes no eliminados
 
-- `03-ESTADO-ACTUAL-CIERRE-DIA-12.md`
-- `04-MATRIZ-DE-PROGRESO-ACTUALIZACION-DIA-12.md`
-- `06-ERRORES-Y-RECUPERACIONES-DIA-12.md`
-- `EVALUACIONES/2026-08-19_RESPUESTAS-ESTUDIANTE-DIA-12.md`
-- `EVALUACIONES/2026-08-19_RESULTADOS-DIA-12.md`
-- `RESUMENES/2026-08-19_CIERRE-DIA-12.md`
-- `DIAS/2026-08-19_DIA-12_IMPLEMENTACION-ARCHIVOS-ENLACE.md`
-
----
-
-# 5. Cambios de errores
-
-```text
-E-051 → consolidado
-E-055 → consolidado
-E-057 → consolidado
-E-060 → nuevo, corregido
-E-061 → nuevo, corregido
-E-062 → nuevo, corregido
-E-063 → nuevo, abierto
-E-064 → nuevo, corregido
-E-065 → nuevo, abierto
-```
-
-Estado canónico:
-
-```text
-42 consolidados
-16 corregidos
-7 abiertos
-65 registrados
-```
-
----
-
-# 6. Cobertura demostrada
-
-- implementación frente a despliegue;
-- trazabilidad UML→Java→artefacto→nodo;
-- decisión de infraestructura;
-- archivos, UTF-8 y cierre automático;
-- excepción propia con causa;
-- trama, LLC, MAC y FCS;
-- aprendizaje, flooding y reenvío del switch;
-- función general de STP;
-- switch C2/MAC frente a router C3/IP;
-- defensa transversal completa.
-
----
-
-# 7. Cobertura pendiente
-
-- componente frente a subsistema y artefacto;
-- programa Java autónomo con archivos separados;
-- HDLC frente a PPP frente a Ethernet;
-- bucle de capa 2 frente a bucle de enrutamiento;
-- IEEE 802.x y envejecimiento MAC;
-- ordenación y complejidades;
+- Java completo y autónomo;
 - entidad asociativa frente a débil;
-- modelo relacional final y SQL avanzado.
+- modelo relacional final con claves y restricciones;
+- digitalización, política y supuestos de transmisión;
+- recuperación espaciada de pruebas negativas, Shellsort, complejidades y redes, solo cuando sea solicitada.
 
 ---
 
-# 8. Historia preservada
-
-El Día 11 conserva `9,2/10`; el Día 10 mantiene `8,5/10 + recuperación 4/4`; la Semana intensiva 1 conserva `8,6/10`; el Día 9 conserva `5,70/8,00` escrito, sin defensa ni nota global.
-
----
-
-# 9. Próximo paso
+# 6. Próximo paso
 
 ```text
-20/08/2026 — Día 13
-→ recuperación selectiva del Día 12
-→ pruebas y modelo de prueba
-→ inserción y Shellsort
-→ SQL avanzado
+Estado = PAUSADO
+→ no se inicia una jornada nueva automáticamente
+→ los refuerzos y el Día 14 se retomarán cuando el estudiante lo solicite
 ```
 
 ---
 
-# 10. Decisión de publicación
+# 7. Decisión de publicación
 
-Este cierre queda preparado localmente. Publicarlo, abrir un PR o fusionarlo en `main` requiere una autorización explícita posterior.
+El cierre queda preparado localmente. Publicarlo o fusionarlo en `main` requiere autorización explícita posterior.
