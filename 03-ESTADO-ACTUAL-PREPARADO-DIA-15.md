@@ -8,7 +8,15 @@
 
 # 1. Dependencia académica
 
-El Día 15 está preparado, pero no presupone que el Día 14 esté aprobado.
+El Día 14 quedó cerrado y aprobado con recuperación selectiva:
+
+```text
+corrección técnica → 9,80/10,00
+nota académica     → 8,0/10
+autonomía plena    → no demostrada
+```
+
+El avance al Día 15 está habilitado. Esto no elimina los refuerzos E-068 a E-073.
 
 Antes de comenzar se debe leer:
 

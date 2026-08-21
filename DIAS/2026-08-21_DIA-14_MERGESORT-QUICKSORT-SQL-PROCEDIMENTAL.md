@@ -2,7 +2,9 @@
 
 **Fecha:** 21/08/2026
 **Duración núcleo:** 5,5 horas
-**Estado:** **PREPARADO — NO INICIADO**
+**Estado:** **CERRADO Y APROBADO CON RECUPERACIÓN SELECTIVA**
+**Corrección técnica:** **9,80/10,00**
+**Nota académica:** **8,0/10 — resolución asistida**
 
 ---
 
@@ -254,3 +256,33 @@ Se avanza al Día 15 si:
 - la evaluación alcanza al menos `7/10`.
 
 Una respuesta asistida puede ser técnicamente correcta, pero no se registra como dominio autónomo.
+
+---
+
+# 10. Cierre real de la jornada
+
+## Evidencia obtenida
+
+- recuperación inicial: `11/12` respuestas correctas o aceptables; Ethernet/STP quedó parcial;
+- Mergesort: división, mezclas, estabilidad y complejidad trabajadas;
+- Quicksort: partición completa, recursión, casos de complejidad y pila trabajados;
+- SQL procedimental: procedimiento, función, cursor y trigger explicados;
+- caso SIGO: orden estable, trabajo offline, sincronización, transacción e historial integrados;
+- evaluación final: corrección técnica `9,80/10,00`;
+- nota académica: `8,0/10` por resolución asistida.
+
+## Límites
+
+- no hubo evidencia documentada de ejecución autónoma de `DemoDia14.java`;
+- no hubo evidencia documentada de ejecución del script MySQL;
+- la respuesta final omitió la pila `O(n)` de Quicksort en el peor caso;
+- casos base, costo por nivel y algunas características SQL requirieron corrección guiada.
+
+## Decisión
+
+```text
+Día 14 = cerrado
+Estado = aprobado con recuperación selectiva
+Avance al Día 15 = habilitado
+Dominio autónomo completo = no demostrado
+```

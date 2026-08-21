@@ -1,6 +1,6 @@
 # Registro diario — EFIP I
 
-**Actualizado al cierre académico del Día 13 — 20/08/2026**
+**Actualizado al cierre académico del Día 14 — 21/08/2026**
 
 Este archivo funciona como índice acumulado. El detalle se conserva en `EVALUACIONES/`, `EVIDENCIAS/`, `RESUMENES/`, matrices y registros de errores.
 
@@ -368,10 +368,55 @@ Se recuperó la diferencia entre `throw` y `throws`. Quedó asentado que la obli
 
 ---
 
+## 2026-08-21 — Día 14 — Mergesort/Quicksort + SQL procedimental
+
+**Estado:** **CERRADO Y APROBADO CON RECUPERACIÓN SELECTIVA**
+**Corrección técnica:** **9,80/10,00**
+**Nota académica:** **8,0/10**
+**Defensa integradora:** **COMPLETADA CON APOYO**
+**Tiempo real:** no cronometrado
+
+### Resultado
+
+| Ítem | Máximo | Obtenido |
+|---|---:|---:|
+| División y conquista | 1,00 | 1,00 |
+| Mergesort | 1,50 | 1,50 |
+| Quicksort | 1,50 | 1,50 |
+| Comparación | 1,00 | 0,80 |
+| SQL procedimental | 4,00 | 4,00 |
+| Integración | 1,00 | 1,00 |
+| **Corrección técnica** | **10,00** | **9,80** |
+| **Nota académica** | **10,00** | **8,00** |
+
+### Avances
+
+- división y conquista, casos base y recursión;
+- Mergesort: división, mezcla, estabilidad y `O(n log n)`;
+- Quicksort: pivote, partición, equilibrio y peor caso;
+- comparación de inserción, Shellsort, Mergesort y Quicksort;
+- procedimiento, función, cursor y trigger;
+- transacción, historial y sincronización aplicados a SIGO.
+
+### Recuperaciones
+
+- E-005, E-065, E-066 y E-067 pasan a consolidados;
+- E-068 a E-073 quedan corregidos;
+- no se declara ejecución autónoma ni dominio completo.
+
+### Evidencia
+
+- `EVALUACIONES/2026-08-21_RESPUESTAS-ESTUDIANTE-DIA-14.md`
+- `EVALUACIONES/2026-08-21_RESULTADOS-DIA-14.md`
+- `RESUMENES/2026-08-21_CIERRE-DIA-14.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-14.md`
+
+---
+
 ## Próxima acción
 
 ```text
 1. Mantener el plan pausado.
-2. Recuperar E-005, E-063, E-065, E-066 y E-067 cuando sea solicitado.
-3. Iniciar el Día 14 únicamente por pedido expreso del estudiante.
+2. Retomar E-068 a E-073 mediante ejercicios nuevos y sin ayuda.
+3. Iniciar el Día 15 únicamente por pedido expreso del estudiante.
 ```
