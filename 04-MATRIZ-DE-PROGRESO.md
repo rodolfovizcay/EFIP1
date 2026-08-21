@@ -1,6 +1,6 @@
 # Matriz de progreso del programa
 
-**Actualizada al cierre académico del Día 13 — 20/08/2026**
+**Actualizada al cierre académico del Día 14 — 21/08/2026**
 
 Estados:
 
@@ -19,6 +19,8 @@ Estados:
 > **Día 12 cerrado el 19/08/2026:** evaluación final `8,05/10` y defensa integradora `1/1`. Implementación/despliegue, archivos Java y enlace de datos avanzan según evidencia real; HDLC/PPP/Ethernet y bucle L2 frente a routing quedan abiertos.
 
 > **Día 13 cerrado el 20/08/2026:** corrección técnica `10,00/10`, nota general ajustada `8,0/10` por resolución asistida y defensa completada con apoyo. Los avances se registran sin declarar dominio autónomo. E-005, E-063 y E-065 pasan de abiertos a corregidos.
+
+> **Día 14 cerrado el 21/08/2026:** corrección técnica `9,80/10`, nota académica `8,0/10` por resolución asistida. Mergesort, Quicksort y SQL procedimental avanzan a comprendido/aplicado con apoyo; no se atribuye ejecución autónoma de Java ni MySQL.
 
 ---
 
@@ -145,9 +147,9 @@ Estados:
 | Inserción | A | Inicio y posición intermedia aplicados; inserción final pendiente |
 | Inserción directa | C/A | Traza final correcta con asistencia; falta confirmación autónoma |
 | Shellsort | C/A | Gaps y subsecuencias recuperados tras errores; falta nueva traza autónoma |
-| Mergesort | C | Estrategia conocida; práctica pendiente |
-| Quicksort | C | Pivote/recursión conocidos; complejidad a reforzar |
-| Complejidades | C/A | Reglas correctas con apoyo; E-005 corregido, no consolidado |
+| Mergesort | C/A | División, mezclas, `O(n log n)`, auxiliar `O(n)` y estabilidad aplicados con apoyo |
+| Quicksort | C/A | Pivote, partición, recursión y casos de complejidad aplicados con apoyo |
+| Complejidades | C/A | E-005 consolidado; profundidad, tiempo y pila de Quicksort requieren recuperación autónoma |
 
 ---
 
@@ -189,7 +191,7 @@ Estados:
 | DDL/DML | A/DO | `CREATE`, `ALTER`, `SELECT`, `INSERT`, `UPDATE` y `DELETE` clasificados |
 | DCL/TCL | A/DO | `GRANT` y `COMMIT` clasificados correctamente en dos instancias |
 | Álgebra relacional y SQL académico | A | JOIN, agregación, `HAVING`, subconsultas y cambios seguros aplicados con apoyo durante la evaluación |
-| Procedimientos, cursores y triggers | NI | Pendiente |
+| Procedimientos, funciones, cursores y triggers | C/A | Clasificados y aplicados conceptualmente a SIGO; ejecución SQL no documentada |
 | Oracle/MySQL/SQLite: elección por escenario | A | SQLite local y motores servidor comparados por plataforma, costo, concurrencia y soporte |
 | PostgreSQL: comparación conceptual | A | Seleccionado para servicio central multiusuario con riesgo de sincronización explícito |
 | Transacciones y propiedades ACID | A | `BEGIN`, `COMMIT`, `ROLLBACK` y ACID aplicados; autonomía pendiente de confirmar |
@@ -285,6 +287,8 @@ Estados:
 | Día 10 — evaluación integradora adaptada | **8,5/10 + recuperación 4/4** |
 | Día 11 — Java + listas avanzadas + SQL + SOLID | **9,2/10** |
 | Día 12 — Implementación + archivos Java + enlace de datos | **8,05/10** |
+| Día 13 — Pruebas + ordenamiento + SQL avanzado | **8,0/10 — técnica 10,00/10 asistida** |
+| Día 14 — Mergesort/Quicksort + SQL procedimental | **8,0/10 — técnica 9,80/10 asistida** |
 
 ```text
 Día 9:
@@ -310,7 +314,8 @@ práctica guiada, sin puntaje formal
 9. HDLC frente a PPP frente a Ethernet.
 10. Bucle de capa 2 frente a bucle de enrutamiento.
 11. Componente frente a subsistema y artefacto.
-12. Ordenación y sus complejidades.
+12. Mergesort/Quicksort y memoria recursiva sin ayuda.
+13. Escritura y ejecución autónoma de procedimientos, funciones y triggers.
 
 Documento de repaso:
 
@@ -322,4 +327,4 @@ RESUMENES/2026-08-16_REPASO-SEMANAL-PUNTOS-DEBILES.md
 
 ## Regla de lectura
 
-La matriz resume la mejor evidencia disponible. `DO` no significa dominio total. El Día 9 aporta evidencia escrita sin nota global. El Día 10 aporta `8,5/10 + 4/4`; el Día 11 aporta `9,2/10`; el Día 12 aporta `8,05/10` y defensa integradora `1/1`.
+La matriz resume la mejor evidencia disponible. `DO` no significa dominio total. El Día 14 aporta `9,80/10` técnico y `8,0/10` académico; la resolución asistida no prueba dominio autónomo ni ejecución práctica.

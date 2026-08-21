@@ -1,6 +1,6 @@
 # Registro de errores y recuperaciones
 
-**Estado consolidado al cierre académico del Día 13 — 20/08/2026**
+**Estado consolidado al cierre académico del Día 14 — 21/08/2026**
 
 Estados:
 
@@ -14,10 +14,10 @@ Estados:
 
 | Estado | Cantidad |
 |---|---:|
-| Consolidado | **42** |
-| Corregido | **21** |
+| Consolidado | **46** |
+| Corregido | **23** |
 | Abierto | **4** |
-| **Total registrado** | **67** |
+| **Total registrado** | **73** |
 
 ---
 
@@ -29,7 +29,7 @@ Estados:
 | E-002 | Análisis y Diseño | Asociación/agregación/composición | corregido | Definiciones correctas; requiere recuperación espaciada |
 | E-003 | POO | Estado/visibilidad | consolidado | Estado=valores; visibilidad=quién accede |
 | E-004 | POO | Sobrecarga/sobrescritura | consolidado | Parámetros distintos vs. método heredado redefinido |
-| E-005 | Estructuras | Complejidades de ordenación | corregido | Inserción: mejor `O(n)`, peor `O(n²)`; Shellsort depende de gaps; falta recuperación autónoma |
+| E-005 | Estructuras | Complejidades de ordenación | consolidado | Inserción: mejor `O(n)`, peor `O(n²)`; Shellsort depende de gaps; recuperación espaciada correcta en Día 14 |
 | E-006 | Estructuras | Inserción al inicio | consolidado | `nuevo.siguiente=cabeza; cabeza=nuevo` |
 | E-007 | Base de Datos | Terminología relacional | consolidado | Relación/tupla/atributo/dominio/grado/cardinalidad |
 | E-008 | Base de Datos | DCL/TCL | consolidado | `GRANT`=DCL; `COMMIT`=TCL; evidencia repetida en Día 11 |
@@ -89,9 +89,15 @@ Estados:
 | E-062 | Comunicaciones | Aprendizaje y reenvío del switch | corregido | Aprende origen; consulta destino; desconocido=flooding; conocido=reenvío selectivo |
 | E-063 | Comunicaciones | HDLC/PPP/Ethernet | corregido | HDLC=control de enlace; PPP=punto a punto; Ethernet=LAN, trama y MAC; falta recuperación autónoma |
 | E-064 | Comunicaciones | LLC/MAC | corregido | LLC mira a capa 3; MAC arma tramas, direcciona y controla acceso hacia capa física |
-| E-065 | Comunicaciones | Bucle L2 frente a routing | corregido | L2=tramas sin TTL y STP; routing=paquetes/rutas con TTL o Hop Limit; falta recuperación autónoma |
-| E-066 | Pruebas | Excepción esperada y resultado | corregido | Si la excepción esperada se produce, la prueba pasa |
-| E-067 | Estructuras | Shellsort por subsecuencias | corregido | Con gap `g`, continuar por `i-g`, `i-2g`, etc., sin mezclar subsecuencias |
+| E-065 | Comunicaciones | Bucle L2 frente a routing | consolidado | L2=tramas sin TTL y STP; routing=paquetes/rutas con TTL o Hop Limit; recuperación correcta en Día 14 |
+| E-066 | Pruebas | Excepción esperada y resultado | consolidado | Si la excepción esperada se produce, la prueba pasa |
+| E-067 | Estructuras | Shellsort por subsecuencias | consolidado | Con gap `g`, continuar por `i-g`, `i-2g`, etc., sin mezclar subsecuencias |
+| E-068 | Estructuras | Caso base de Mergesort | corregido | Una porción de tamaño 0 o 1 ya está ordenada |
+| E-069 | Estructuras | Trabajo por nivel frente a memoria | corregido | Cada nivel procesa `n` elementos; auxiliar `O(n)` es un costo espacial separado |
+| E-070 | Estructuras | Caso base de Quicksort | corregido | Detener la recursión en particiones de tamaño 0 o 1 |
+| E-071 | Estructuras | Profundidad, tiempo y pila de Quicksort | corregido | Equilibrado: `O(log n)` de profundidad y `O(n log n)` de tiempo; peor: pila `O(n)` y tiempo `O(n²)` |
+| E-072 | Base de Datos | Retorno de procedimiento | corregido | Un procedimiento no devuelve obligatoriamente como función; puede usar parámetros `OUT` o resultados según dialecto |
+| E-073 | Base de Datos | `READS SQL DATA` frente a permisos | corregido | Es una característica de acceso a datos de la rutina, no un privilegio de usuario |
 
 
 ---
@@ -163,11 +169,13 @@ En el escrito final:
 14. `E-061` — traducción de excepción.
 15. `E-062` — aprendizaje y reenvío del switch.
 16. `E-064` — LLC/MAC.
-17. `E-066` — excepción esperada y resultado de prueba.
-18. `E-067` — recorrido Shellsort por subsecuencias.
-19. `E-005` — complejidades de ordenación.
-20. `E-063` — HDLC/PPP/Ethernet.
-21. `E-065` — bucle L2 frente a routing.
+17. `E-063` — HDLC/PPP/Ethernet.
+18. `E-068` — caso base de Mergesort.
+19. `E-069` — trabajo por nivel frente a memoria auxiliar.
+20. `E-070` — caso base de Quicksort.
+21. `E-071` — profundidad, tiempo y pila de Quicksort.
+22. `E-072` — retorno de procedimiento.
+23. `E-073` — `READS SQL DATA` frente a permisos.
 
 ---
 
@@ -340,3 +348,32 @@ No pasan a consolidados porque la evaluación no fue autónoma.
 - `EVALUACIONES/2026-08-20_RESULTADOS-DIA-13.md`
 - `RESUMENES/2026-08-20_CIERRE-DIA-13.md`
 - `06-ERRORES-Y-RECUPERACIONES-DIA-13.md`
+
+---
+
+## Cambios del cierre del Día 14
+
+### Pasaron de corregidos a consolidados
+
+- `E-005`: complejidades de inserción y Shellsort recuperadas en el control inicial;
+- `E-065`: bucle L2 y routing diferenciados nuevamente;
+- `E-066`: excepción esperada identificada correctamente como éxito;
+- `E-067`: recorrido Shellsort `i-gap` aplicado sin mezclar subsecuencias.
+
+### Nuevos corregidos
+
+- `E-068`: caso base de Mergesort;
+- `E-069`: trabajo temporal por nivel frente a memoria auxiliar;
+- `E-070`: caso base de Quicksort;
+- `E-071`: profundidad, tiempo y pila recursiva de Quicksort;
+- `E-072`: contrato de retorno de procedimiento;
+- `E-073`: significado de `READS SQL DATA`.
+
+No se consolidan porque las correcciones nuevas fueron guiadas y la evaluación final fue asistida.
+
+### Evidencia
+
+- `EVALUACIONES/2026-08-21_RESPUESTAS-ESTUDIANTE-DIA-14.md`
+- `EVALUACIONES/2026-08-21_RESULTADOS-DIA-14.md`
+- `RESUMENES/2026-08-21_CIERRE-DIA-14.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-14.md`
