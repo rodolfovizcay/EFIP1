@@ -1,6 +1,6 @@
 # Matriz de progreso del programa
 
-**Actualizada al cierre académico del Día 12 — 19/08/2026**
+**Actualizada al cierre académico del Día 13 — 20/08/2026**
 
 Estados:
 
@@ -17,6 +17,8 @@ Estados:
 > **Día 11 cerrado el 18/08/2026:** evaluación final `9,2/10` y recuperación oral posterior de excepciones. Java complementario, listas avanzadas, SQL y SOLID se elevan solo según la evidencia real; la ejecución automática de ejemplos durante la preparación no se atribuye al estudiante.
 
 > **Día 12 cerrado el 19/08/2026:** evaluación final `8,05/10` y defensa integradora `1/1`. Implementación/despliegue, archivos Java y enlace de datos avanzan según evidencia real; HDLC/PPP/Ethernet y bucle L2 frente a routing quedan abiertos.
+
+> **Día 13 cerrado el 20/08/2026:** corrección técnica `10,00/10`, nota general ajustada `8,0/10` por resolución asistida y defensa completada con apoyo. Los avances se registran sin declarar dominio autónomo. E-005, E-063 y E-065 pasan de abiertos a corregidos.
 
 ---
 
@@ -65,7 +67,7 @@ Estados:
 | Vistas arquitectónicas 4+1 | A/DO | Casos de uso, lógica, procesos, implementación y despliegue recuperados 4/4 |
 | Modelo de implementación | A | Componentes, artefactos y trazabilidad aplicados en el Día 12 |
 | Modelo de despliegue y nodos | A/DO | Diferencia con implementación defendida en la integración final |
-| Modelo de pruebas | NI/EA | Bloque formal previsto para el Día 13 |
+| Modelo de pruebas | C/A | V&V, artefactos, niveles y enfoques resueltos con apoyo; requiere recuperación autónoma |
 | Trazabilidad diseño→código→artefacto→nodo | A/DO | Defensa integradora del Día 12 `1/1` |
 | Decisión de infraestructura | A | Servidor propio/contratado comparados por costo, control, disponibilidad y riesgo |
 | Componente/subsistema/artefacto | C/A | Aplicado con imprecisiones; recuperación espaciada requerida |
@@ -111,7 +113,7 @@ Estados:
 | Elección de Java, JVM y portabilidad | A/DO | `.java→bytecode→JVM` y límites por rutas/comandos defendidos |
 | Excepciones checked/unchecked y flujo completo | A/DO | Consolidadas con archivos y excepción propia en Día 12 |
 | Principios SOLID | A/DO | SRP, DIP y OCP aplicados a `AgendaTrabajos` |
-| Encoding, hashing y cifrado | NI | Complementario transversal; previsto 20/08 |
+| Encoding, hashing y cifrado | C/A | Base64, SHA-256 y AES diferenciados con apoyo; recuperación espaciada pendiente |
 
 ---
 
@@ -141,9 +143,11 @@ Estados:
 | Listas doble/circular/ordenada | A/DO | Enlaces, finales, ventajas, riesgos y complejidades aplicados |
 | Iteradores | A/DO | `hasNext()`, `next()` y `Iterator.remove()` explicados y aplicados |
 | Inserción | A | Inicio y posición intermedia aplicados; inserción final pendiente |
+| Inserción directa | C/A | Traza final correcta con asistencia; falta confirmación autónoma |
+| Shellsort | C/A | Gaps y subsecuencias recuperados tras errores; falta nueva traza autónoma |
 | Mergesort | C | Estrategia conocida; práctica pendiente |
 | Quicksort | C | Pivote/recursión conocidos; complejidad a reforzar |
-| Complejidades | C/A | Listas: búsqueda `O(n)` y enlaces conocidos `O(1)`; ordenación sigue abierta |
+| Complejidades | C/A | Reglas correctas con apoyo; E-005 corregido, no consolidado |
 
 ---
 
@@ -184,11 +188,11 @@ Estados:
 | PK de `OPERARIO_TELEFONO` | EA/C | Debe ser compuesta, no solo `UNIQUE` |
 | DDL/DML | A/DO | `CREATE`, `ALTER`, `SELECT`, `INSERT`, `UPDATE` y `DELETE` clasificados |
 | DCL/TCL | A/DO | `GRANT` y `COMMIT` clasificados correctamente en dos instancias |
-| Álgebra relacional y SQL académico | A | Proyección, filtro, orden y cambios seguros aplicados; álgebra formal pendiente |
+| Álgebra relacional y SQL académico | A | JOIN, agregación, `HAVING`, subconsultas y cambios seguros aplicados con apoyo durante la evaluación |
 | Procedimientos, cursores y triggers | NI | Pendiente |
-| Oracle/MySQL/SQLite: elección por escenario | NI/EA | Motores respaldados por el material; previsto 20/08 |
-| PostgreSQL: comparación conceptual | NI | Complementario; previsto 20/08 |
-| Transacciones y propiedades ACID | C/EA | `BEGIN`, `COMMIT` y `ROLLBACK` comprendidos; propiedades ACID pendientes |
+| Oracle/MySQL/SQLite: elección por escenario | A | SQLite local y motores servidor comparados por plataforma, costo, concurrencia y soporte |
+| PostgreSQL: comparación conceptual | A | Seleccionado para servicio central multiusuario con riesgo de sincronización explícito |
+| Transacciones y propiedades ACID | A | `BEGIN`, `COMMIT`, `ROLLBACK` y ACID aplicados; autonomía pendiente de confirmar |
 
 ---
 
@@ -230,11 +234,11 @@ Estados:
 | UTP y motivo del trenzado | A/DO | Medio guiado, señal eléctrica y reducción de interferencia explicados |
 | Diafonía e interferencia | C | Relación general comprendida; precisión sobre diafonía pendiente |
 | FTP/STP como tipos de cable | C/A | Blindaje comprendido; diferencia con Spanning Tree aclarada |
-| HDLC/PPP/Ethernet | EA/C | Trabajados; comparación final incompleta, E-063 abierto |
+| HDLC/PPP/Ethernet | C/A | Comparación recuperada con ayuda; E-063 corregido, no consolidado |
 | LLC/MAC | C/A | Funciones recuperadas; evitar “enrutamiento físico” |
 | Switch: aprendizaje y tabla MAC | A | Aprendizaje por origen, consulta de destino, flooding y reenvío selectivo aplicados |
-| STP y bucles de capa 2 | C/A | Función comprendida; comparación con routing pendiente |
-| Bucle de routing, TTL y métricas | EA | Diferencia final no demostrada sin apoyo; E-065 abierto |
+| STP y bucles de capa 2 | A | Tramas sin TTL, redundancia y bloqueo lógico explicados con apoyo |
+| Bucle de routing, TTL y métricas | C/A | Diferencia comprendida con ayuda; E-065 corregido, no consolidado |
 | IPv4, máscara, red y broadcast | NI | Complementario; previsto 21/08 |
 | CIDR y selección de prefijo | NI | Complementario; previsto 21/08 |
 | Clases A/B/C históricas | NI | Complementario; previsto 21/08 |

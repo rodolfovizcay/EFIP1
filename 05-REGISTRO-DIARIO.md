@@ -1,6 +1,6 @@
 # Registro diario — EFIP I
 
-**Actualizado al cierre académico del Día 12 — 19/08/2026**
+**Actualizado al cierre académico del Día 13 — 20/08/2026**
 
 Este archivo funciona como índice acumulado. El detalle se conserva en `EVALUACIONES/`, `EVIDENCIAS/`, `RESUMENES/`, matrices y registros de errores.
 
@@ -8,7 +8,7 @@ Este archivo funciona como índice acumulado. El detalle se conserva en `EVALUAC
 
 ## 2026-08-05 — Día 1 — Diagnóstico general
 
-**Estado:** DIAGNÓSTICO  
+**Estado:** DIAGNÓSTICO
 **Promedio:** **5,6/10**
 
 Conclusión: experiencia práctica superior a precisión terminológica.
@@ -17,7 +17,7 @@ Conclusión: experiencia práctica superior a precisión terminológica.
 
 ## 2026-08-06 — Día 2 — Análisis y Diseño + POO
 
-**Estado:** CERRADO Y APROBADO  
+**Estado:** CERRADO Y APROBADO
 **Global:** **8,0/10**
 
 Avances: modelos, metodología, PUD, clase/objeto, estado, encapsulamiento y constructor.
@@ -26,7 +26,7 @@ Avances: modelos, metodología, PUD, clase/objeto, estado, encapsulamiento y con
 
 ## 2026-08-07 — Día 3 — Estructuras + Modelo relacional
 
-**Estado:** CERRADO Y APROBADO  
+**Estado:** CERRADO Y APROBADO
 **Global:** **8,3/10**
 
 Avances: TDA, arreglo, nodo, lista, relación, tupla, atributo, dominio, grado, cardinalidad, PK y FK.
@@ -35,7 +35,7 @@ Avances: TDA, arreglo, nodo, lista, relación, tupla, atributo, dominio, grado, 
 
 ## 2026-08-08 — Día 4 — Comunicaciones
 
-**Estado:** CERRADO Y APROBADO  
+**Estado:** CERRADO Y APROBADO
 **Nota escrita:** **8,6/10**
 
 Avances: sistema de comunicaciones, protocolo, OSI/TCP-IP, encapsulamiento, MAC/IP y switch/router.
@@ -44,7 +44,7 @@ Avances: sistema de comunicaciones, protocolo, OSI/TCP-IP, encapsulamiento, MAC/
 
 ## 2026-08-10 — Día 5 — PUD + POO + Modelo relacional
 
-**Estado:** CERRADO Y APROBADO  
+**Estado:** CERRADO Y APROBADO
 **Global:** **9,0/10**
 
 Avances: PUD, fases, iteración/incremento, identidad, encapsulamiento, Java, modelo relacional y claves.
@@ -158,9 +158,9 @@ Equivalencia escrita = 7,1/10
 
 ## 2026-08-15 — Caso integrador 1 y cierre semanal
 
-**Práctica guiada:** COMPLETADA  
-**Evaluación formal de 100 puntos:** NO REALIZADA  
-**Puntaje formal:** no asignado  
+**Práctica guiada:** COMPLETADA
+**Evaluación formal de 100 puntos:** NO REALIZADA
+**Puntaje formal:** no asignado
 **Semana:** **CERRADA POR EVIDENCIA ACUMULADA**
 
 ### Indicador semanal
@@ -186,9 +186,9 @@ El escrito del Día 9 agrega evidencia temática, pero no modifica el promedio 8
 
 ## 2026-08-17 — Día 10 — Arquitectura + Lista simple + Nivel físico
 
-**Estado:** **CERRADO Y APROBADO EN SU ALCANCE REAL**  
-**Evaluación integradora adaptada:** **8,5/10**  
-**Recuperación selectiva final:** **4/4**  
+**Estado:** **CERRADO Y APROBADO EN SU ALCANCE REAL**
+**Evaluación integradora adaptada:** **8,5/10**
+**Recuperación selectiva final:** **4/4**
 **Tiempo real:** no cronometrado
 
 ### Avances
@@ -324,12 +324,54 @@ Se recuperó la diferencia entre `throw` y `throws`. Quedó asentado que la obli
 
 ---
 
+## 2026-08-20 — Día 13 — Pruebas + Ordenamiento + SQL avanzado
+
+**Estado:** **CERRADO Y APROBADO CON REFUERZO PENDIENTE**
+**Corrección técnica:** **10,00/10,00**
+**Nota general ajustada:** **8,0/10**
+**Defensa integradora:** **COMPLETADA CON APOYO**
+**Tiempo real:** no cronometrado
+
+### Resultado
+
+| Parte | Máximo | Obtenido |
+|---|---:|---:|
+| Pruebas | 3,00 | 3,00 |
+| Inserción y Shellsort | 3,00 | 3,00 |
+| SQL y transacciones | 3,00 | 3,00 |
+| Decisión y seguridad | 1,00 | 1,00 |
+| **Corrección técnica** | **10,00** | **10,00** |
+| Ajuste por resolución asistida |  | **-2,00** |
+| **Nota general** | **10,00** | **8,00** |
+
+### Avances
+
+- modelo, niveles y enfoques de prueba;
+- fronteras y registro de defectos;
+- inserción y Shellsort;
+- JOIN, agregaciones, subconsultas y transacciones;
+- ACID, DCL, motores y seguridad conceptual;
+- defensa transversal completa.
+
+### Recuperaciones
+
+- E-005, E-063 y E-065 pasan de abiertos a corregidos;
+- E-066 y E-067 quedan corregidos;
+- no se declara consolidación autónoma porque hubo ayuda.
+
+### Evidencia
+
+- `EVALUACIONES/2026-08-20_RESPUESTAS-ESTUDIANTE-DIA-13.md`
+- `EVALUACIONES/2026-08-20_RESULTADOS-DIA-13.md`
+- `RESUMENES/2026-08-20_CIERRE-DIA-13.md`
+- `06-ERRORES-Y-RECUPERACIONES-DIA-13.md`
+
+---
+
 ## Próxima acción
 
 ```text
-1. Iniciar el Día 13 del 20/08/2026.
-2. Realizar recuperación selectiva del Día 12.
-3. Trabajar pruebas y modelo de prueba.
-4. Practicar inserción y Shellsort.
-5. Avanzar con SQL académico.
+1. Mantener el plan pausado.
+2. Recuperar E-005, E-063, E-065, E-066 y E-067 cuando sea solicitado.
+3. Iniciar el Día 14 únicamente por pedido expreso del estudiante.
 ```
