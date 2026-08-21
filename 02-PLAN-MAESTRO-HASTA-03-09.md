@@ -1086,17 +1086,27 @@ El bloque de seguridad conceptual se limita a finalidad, reversibilidad y ejempl
 
 ---
 
-### Viernes 21/8 — Mergesort/Quicksort, SQL procedimental y redes — 5,5 h núcleo
+### Viernes 21/8 — Día 14 — Mergesort/Quicksort y SQL procedimental — 5,5 h núcleo
 
-#### Mañana M1 — Estructuras — 90 min
+El bloque original se divide para evitar introducir dos algoritmos recursivos, SQL procedimental y redes avanzadas en una sola jornada. El 21/8 se concentra en Estructuras y Base de Datos; Redes pasa al 22/8.
+
+#### Recuperación inicial — 20 min
+
+- prueba negativa y excepción esperada;
+- recorrido Shellsort por subsecuencias;
+- complejidades de inserción y Shellsort;
+- HDLC/PPP/Ethernet y bucle L2/routing como retención espaciada.
+
+#### Mañana M1 — Estructuras — 110 min
 
 - mergesort;
 - quicksort;
 - división y conquista;
 - partición;
-- comparación de algoritmos.
+- recursividad, casos base y comparación de algoritmos;
+- traza manual de ambos métodos.
 
-#### Mañana M2 — Base de Datos — 90 min
+#### Mañana M2 — Base de Datos — 80 min
 
 - bloques procedimentales;
 - variables;
@@ -1106,46 +1116,71 @@ El bloque de seguridad conceptual se limita a finalidad, reversibilidad y ejempl
 - cursores;
 - triggers.
 
-#### Cierre de mañana — 30 min
+#### Cierre de mañana — 20 min
 
-Explicar ambos algoritmos y los objetos procedimentales.
+Explicar ambos algoritmos, diferenciar procedimiento/función y ordenar el ciclo de un cursor.
 
-#### Tarde T1 — Comunicaciones — 90 min
+#### Tarde T1 — Aplicación — 50 min
 
-- **IPv4 y subneteo:** 32 bits, máscara, CIDR, red, broadcast, direcciones totales y hosts utilizables;
-- interpretación de `/32`, `/30`, `/29`, `/28` y selección de prefijo;
-- cálculo `2^(bits de host)` para direcciones totales y `2^h - 2` para hosts en el esquema tradicional, aclarando `/31` y `/32` como casos especiales;
-- clases A/B/C únicamente como clasificación histórica;
-- **TCP frente a UDP:** conexión, confiabilidad, orden, retransmisión, overhead y aplicaciones;
-- establecimiento TCP: `SYN → SYN-ACK → ACK`;
-- función del router y tabla de enrutamiento;
-- destino, prefijo, siguiente salto, interfaz y métrica.
+- ejecución y explicación de Mergesort/Quicksort en Java;
+- diseño de un procedimiento, una función, un cursor y un trigger para SIGO;
+- caso integrador de prioridad, ordenación e historial.
 
-#### Tarde T2 — 60 min
+#### Tarde T2 — Evaluación y defensa — 50 min
 
-- redes de difusión y conmutadas, topologías, LAN, MAN y WAN;
-- interconexión, enrutamiento, congestión y comunicaciones móviles;
-- STP frente a bucle de routing; TTL, métricas y protocolos de enrutamiento;
-- VPN, DMZ, MPLS y firewall;
-- diseño de red integrador;
-- preguntas orales;
-- resumen.
+- evaluación de 10 puntos;
+- defensa breve;
+- corrección y resumen;
+- cierre del Día 14 sin modificar el estado canónico antes de contar con evidencia.
 
 **Ejercicios obligatorios:**
 
-- cantidad de direcciones y hosts de `/29` y `/28`;
-- elegir prefijo para 3, 14, 30, 36 y 62 hosts;
-- determinar red y broadcast de un ejemplo sencillo;
-- justificar TCP o UDP para una aplicación;
-- interpretar una tabla de enrutamiento pequeña.
+- trazar Mergesort sobre ocho valores;
+- particionar manualmente un arreglo por Quicksort con pivote declarado;
+- comparar tiempo, memoria y estabilidad;
+- ordenar `OPEN → FETCH → CLOSE` y explicar por qué se requiere un bucle;
+- diferenciar procedimiento, función y trigger.
 
 ---
 
-### Sábado 22/8 — Simulacro completo 1 — 6 h
+### Sábado 22/8 — Día 15 — Redes y escrito del simulacro completo 1 — 6 h
 
-## Mañana — examen escrito — 3 h
+#### Mañana M1 — Direccionamiento — 70 min
+
+- **IPv4 y subneteo:** 32 bits, máscara, CIDR, red, broadcast, direcciones totales y hosts utilizables;
+- interpretación de `/32`, `/30`, `/29`, `/28`, `/27` y `/26`;
+- selección de prefijo para 3, 14, 30, 36 y 62 hosts;
+- cálculo de red y broadcast;
+- clases A/B/C solo como clasificación histórica;
+- TCP frente a UDP y `SYN → SYN-ACK → ACK`.
+
+#### Mañana M2 — Transporte, redes e interconexión — 80 min
+
+- redes de difusión y conmutadas;
+- LAN, MAN y WAN;
+- router y tabla de enrutamiento;
+- destino, prefijo, siguiente salto, interfaz y métrica;
+- congestión y segmentación;
+- STP frente a bucle de routing;
+- VPN, DMZ, MPLS y firewall;
+- diseño de red para SIGO.
+
+#### Control de redes — 30 min
+
+- calcular `/29`, `/28`, `/27` y `/26`;
+- determinar red y broadcast de un caso;
+- justificar TCP o UDP;
+- interpretar una tabla de enrutamiento.
+
+#### Tarde — examen escrito — 2 h 30 min
 
 Caso desconocido con preguntas de las cinco materias.
+
+#### Resguardo de evidencia — 10 min
+
+- registrar hora de cierre y ayudas recibidas;
+- separar dudas sin alterar las respuestas;
+- conservar el escrito para corregirlo el 23/8.
 
 El caso debe verificar, como mínimo:
 
@@ -1160,33 +1195,29 @@ El caso debe verificar, como mínimo:
 - encoding, hashing y cifrado;
 - elección de motor y ACID.
 
-Los puntos pueden integrarse dentro de un mismo escenario; no necesitan convertirse en quince preguntas aisladas.
-
-## Tarde — corrección y oral — 3 h
-
-1. autocorrección guiada;
-2. defensa oral de 20 a 30 minutos;
-3. clasificación de errores:
-   - conceptual;
-   - terminológico;
-   - práctico;
-   - sintaxis;
-   - justificación.
+Los puntos se integran en un único escenario. El 22/8 se conserva la respuesta escrita sin corregirla durante la ejecución. La corrección y la defensa pasan al 23/8 para separar producción de evidencia y evaluación.
 
 ## Producto
 
-- nota por materia;
-- nota global;
-- tres debilidades prioritarias;
-- plan de recuperación para el 24 al 28 de agosto.
+- respuestas escritas del simulacro;
+- autoidentificación preliminar de dudas, sin cambiar respuestas;
+- evidencia lista para corregir el 23/8.
 
 ---
 
-### Domingo 23/8 — Opcional
+### Domingo 23/8 — Cierre de las dos semanas intensivas — 3 a 3,5 h
 
-Se recomienda descansar antes de volver al trabajo.
+No se incorpora teoría nueva.
 
-Solo se permite recuperar un error bloqueante del simulacro.
+1. corregir el simulacro con la rúbrica;
+2. asignar nota por materia y nota global;
+3. realizar defensa oral de 20 a 30 minutos;
+4. clasificar errores como conceptual, terminológico, práctico, sintáctico o de justificación;
+5. seleccionar tres debilidades prioritarias;
+6. actualizar estado, matriz, registro diario, errores y manifiesto;
+7. definir el plan de recuperación del 24 al 28 de agosto.
+
+Solo se recupera inmediatamente un error que bloquee la defensa. Las demás brechas pasan al plan final.
 
 ---
 
